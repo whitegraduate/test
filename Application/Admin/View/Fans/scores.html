@@ -1,0 +1,47 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$fans.nickname}的积分明细</h2>
+    </div>
+
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th>积分类型</th>
+                        <th>积分数量</th>
+                        <th>变动说明</th>
+                        <th>发生时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$vo.log_type|get_dic_desc='SCORE_TYPE',###}</td>
+                        <td>{$vo.score}</td>
+                        <td>{$vo.intro}</td>
+                        <td>{$vo.createtime|date='Y-m-d H:i:s', ###}</td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="4" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('scores')}");
+    </script>
+</block>

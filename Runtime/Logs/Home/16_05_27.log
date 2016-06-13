@@ -1,0 +1,324 @@
+[ 2016-05-27T06:26:28+08:00 ] 121.42.0.35 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001352s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464301588 AND ( deadline = 0 OR deadline > 1464301588 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-05-27T06:44:57+08:00 ] 101.226.61.186 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464302697 AND ( deadline = 0 OR deadline > 1464302697 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-05-27T06:44:57+08:00 ] 117.185.27.103 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001455s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464302697 AND ( deadline = 0 OR deadline > 1464302697 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-05-27T07:03:13+08:00 ] 117.135.173.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464303793 AND ( deadline = 0 OR deadline > 1464303793 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-05-27T07:03:13+08:00 ] 101.226.125.116 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464303793 AND ( deadline = 0 OR deadline > 1464303793 ) ORDER BY `id` DESC  [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-05-27T07:23:22+08:00 ] 140.207.62.210 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464305002 AND ( deadline = 0 OR deadline > 1464305002 ) ORDER BY `id` DESC  [ RunTime:0.0031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-05-27T07:23:22+08:00 ] 117.185.27.143 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001210s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464305002 AND ( deadline = 0 OR deadline > 1464305002 ) ORDER BY `id` DESC  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-05-27T08:29:22+08:00 ] 140.207.185.125 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464308962 AND ( deadline = 0 OR deadline > 1464308962 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-05-27T08:29:22+08:00 ] 117.185.27.144 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464308962 AND ( deadline = 0 OR deadline > 1464308962 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-05-27T10:09:14+08:00 ] 220.188.44.161 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464314954 AND ( deadline = 0 OR deadline > 1464314954 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2016-05-27T10:12:33+08:00 ] 42.156.250.97 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464315153 AND ( deadline = 0 OR deadline > 1464315153 ) ORDER BY `id` DESC  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-05-27T10:12:33+08:00 ] 42.156.250.97 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001441s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464315153 AND ( deadline = 0 OR deadline > 1464315153 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-05-27T10:21:14+08:00 ] 121.42.0.60 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464315674 AND ( deadline = 0 OR deadline > 1464315674 ) ORDER BY `id` DESC  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-05-27T11:01:25+08:00 ] 140.207.54.144 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464318085 AND ( deadline = 0 OR deadline > 1464318085 ) ORDER BY `id` DESC  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-05-27T11:01:25+08:00 ] 117.144.246.77 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001371s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0034s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464318085 AND ( deadline = 0 OR deadline > 1464318085 ) ORDER BY `id` DESC  [ RunTime:0.0031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-05-27T11:16:35+08:00 ] 117.144.246.149 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464318995 AND ( deadline = 0 OR deadline > 1464318995 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2016-05-27T17:54:28+08:00 ] 117.135.173.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464342868 AND ( deadline = 0 OR deadline > 1464342868 ) ORDER BY `id` DESC  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-05-27T17:54:28+08:00 ] 101.226.61.190 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001211s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `fg_category` WHERE `status` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `fg_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1464342868 AND ( deadline = 0 OR deadline > 1464342868 ) ORDER BY `id` DESC  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+

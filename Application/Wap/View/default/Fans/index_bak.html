@@ -1,0 +1,77 @@
+ 
+
+  
+
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+<div class="cont">
+    <div class="personal">
+       <div class="tup"><img src="{$fans.headimgurl}" width="100%"></div>
+       <div class="wz">
+          <span>{$fans.nickname}【{$fans.grade}】</span>
+          <p style="display:none;">绿源D001 2010年</p>
+          <p>积分：{$fans.score}</p>
+       </div>
+       <div class="gd">
+          <span id="my">个人信息</span>
+          <span id="score">我的积分</span>
+          <span id="myorder" style="color:#00b189">我的订单</span>
+       </div>
+    </div>
+    <ul class="p_center">
+       <li class="core1">
+          <div class="tb1"></div>
+          <p>维修订单</p>
+       </li>
+        <li class="core2">
+          <div class="tb2"></div>
+          <p>保养订单</p>
+       </li>
+        <li class="core3">
+          <div class="tb3"></div>
+          <p>租车订单</p>
+       </li>
+        <li id="charge" class="core3">
+          <div class="tb4"></div>
+          <p>充电订单</p>
+       </li>
+         <li class="core4">
+          <div class="tb5"></div>
+          <p>购车/配件订单</p>
+       </li>
+    </ul>
+    
+</div>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".core1").click(function(){
+			top.location.href = "{:U('Fans/order_repair')}";
+		});
+		$(".core2").click(function(){
+			top.location.href = "{:U('Fans/order_maintain')}";
+		});
+		$(".core3").click(function(){
+			top.location.href = "{:U('Fans/order_rent')}";
+		});
+		$("#charge").click(function(){
+			top.location.href = "{:U('Fans/order_charge')}";
+		});
+		$(".core4").click(function(){
+			top.location.href = "{:U('Fans/order_mall')}";
+		});
+		$("#my").click(function(){
+			top.location.href = "{:U('Fans/my')}";
+		});
+		$("#score").click(function(){
+			top.location.href = "{:U('Fans/score_get')}";
+		});
+	});
+	</script>
+</block>

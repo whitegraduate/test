@@ -1,0 +1,85 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}会员等级</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">最低积分<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="min_score" value="{$info.min_score|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">最高积分<span class="check-tips"></span>
+            </label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="max_score" value="{$info.max_score|default=''}">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">默认有效期<span class="check-tips">（单位：月,0为永久）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="expire" value="{$info.expire|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">最小订单数</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="min_orders" value="{$info.min_orders|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">最低消费金额</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="min_money" value="{$info.min_money|default=''}">
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        Think.setValue("hide", {$info.hide|default = 0});
+        Think.setValue("is_dev", {$info.is_dev|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        $(document).ready(function(){
+            console.log('2,');
+        	$('.menu_type').change(function(){
+                console.log('3,');
+        		var val 	= $(this).val();
+        		if(val == 1){
+        			$('#dKeyword').css('display','');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','none');
+        		}else if(val == 2){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','');		
+        			$('#dSys').css('display','none');
+        		}else if(val == 3){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','');
+        		}
+        	});
+
+        });
+    </script>
+</block>

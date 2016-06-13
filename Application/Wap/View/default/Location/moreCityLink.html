@@ -1,0 +1,9 @@
+<style>
+ .citychange a{margin: 5px; color: #477fc0  }
+</style>
+<div class="citychange">
+    <p>{$message}</p>
+    <volist name="citys" id="vo">
+        <a href="#" class="city" id="{$vo.id}">{$vo.city}</a>
+    </volist>
+</div>

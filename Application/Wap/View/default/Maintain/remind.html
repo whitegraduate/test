@@ -1,0 +1,29 @@
+<extend name="Base/common" />
+<block name="header">
+ 
+<link rel="stylesheet" href="__CSS__/swipe.css" type="text/css" />
+</block>
+
+<block name="body"> 
+
+<div class="cont">
+    
+    <div class="p_title">您的爱车【{$bike.brandid|get_brand_id}-{$bike.bike}】有部分零件即将到期</div>
+    <volist id="ps" name="list"> 
+     <div class="prompt">
+       <div class="title">{$ps.parts} <span>{$ps.remain_days}</span></div>
+       <div class="wz"><div class="tb1"></div><p>保修期：{$ps.remind_month}个月</p></div>
+      <div class="wz"> <div class="tb2"></div> <p>过保时间：{$ps.expire_time|date='Y-m-d',###}</p></div>
+    </div>
+    </volist>
+</div> 
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script language="javascript">
+  $(document).ready(function(){
+	  $('body').attr('style','background:#f1f1ef;')
+  });
+  </script>
+</block>

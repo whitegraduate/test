@@ -1,0 +1,66 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$fans.nickname}的订单</h2>
+    </div>
+    <div class="tab-wrap">
+        <ul class="tab-nav nav">
+            <li ><a href="/admin.php/Fans/orders/ordertype/MaintainOrder/uid/{$fans.id}">保养订单</a></li>
+            <li ><a href="/admin.php/Fans/orders/ordertype/MallOrder/uid/{$fans.id}">商城订单</a></li>
+            <li ><a href="/admin.php/Fans/orders/ordertype/RentbikeOrder/uid/{$fans.id}">租车订单</a></li>
+            <li ><a href="/admin.php/Fans/orders/ordertype/RepairOrder/uid/{$fans.id}">维修订单</a></li>
+            <li ><a href="/admin.php/Fans/orders/ordertype/ChargeOrder/uid/{$fans.id}">充电订单</a></li>
+        </ul>
+    </div>
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>订单号</th>
+                        <th>订单类型</th>
+                        <th>订单价格</th>
+                        <th>订单状态</th>
+                        <th>下单时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td><empty name="vo.orderid">{$vo.transid}<else/>{$vo.orderid}</empty></td>
+                        <td>{$ordertype|get_order_type_desc}</td>
+                        <td>{$vo.price}</td>
+                        <td>{$vo.status_desc}</td>
+                        <td>{$vo.create_time|date='Y-m-d H:i:s', ###}</td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="5" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('scores')}");
+
+        $(document).ready(function(){
+            var a = $(".tab-nav li a[href*='{$ordertype}']");
+            if (a) {
+                a.parent().addClass('current');
+            }
+        });
+    </script>
+</block>

@@ -1,0 +1,73 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+
+    <div class="content">
+        <ul>
+            <li <if condition="($_GET['type'] eq 1) or ($_GET['type'] eq 0)">class="xuanzhong"</if>>保养</li>
+            <li <if condition="$_GET['type'] eq 2">class="xuanzhong"</if>>洗车</li>
+            <li <if condition="($_GET['type'] eq 2)">class="xuanzhong"</if>>配件</li>
+
+            <div class="clearflx"></div>
+        </ul>
+    </div>
+<notempty name="lstMaintain">
+    <volist id="list" name="lstMaintain">
+    <switch name="list.type">
+        <case value="1">
+            <div class="shangpin li0">
+                <a href="{:U('Maintain/details',array('pid'=>$list['id']))}">
+                    <div class="shantu"><img src="{$list.picture1}" width="100%"></div>
+                    <div class="shanwen">{$list.name}</div>
+                    <div class="shanjia">￥{$list.price}</div>
+                </a>
+            </div>
+        </case>
+
+        <case value="2">
+            <div class="shangpin li1">
+                <a href="{:U('Maintain/details',array('pid'=>$list['id']))}">
+                    <div class="shantu"><img src="{$list.picture1}" width="100%"></div>
+                    <div class="shanwen">{$list.name}</div>
+                    <div class="shanjia">￥{$list.price}</div>
+                </a>
+            </div>
+        </case>
+
+        <case value="3">
+            <div class="shangpin li2">
+                <a href="{:U('Maintain/details',array('pid'=>$list['id']))}">
+                    <div class="shantu"><img src="{$list.picture1}" width="100%"></div>
+                    <div class="shanwen">{$list.name}</div>
+                    <div class="shanjia">￥{$list.price}</div>
+                </a>
+            </div>
+        </case>
+    </switch>
+    </volist>
+    <else/>
+    <div style="text-align:center;font-size:18px;color:#787878;margin-top:30%;">未获取到您的定位或您已不在服务区~</div>
+    <div style="text-align: center;font-size:12px;color:#949494;margin-top: 20px;color: rgba(186, 110, 46, 0.53)">请查看公众号主体信息页面<p>“提供地理位置信息”选项是否为开启状态</p></div>
+</notempty>
+
+<script>
+    $(document).ready(function(){
+        show(0);
+        $(".content ul li").click(function(){
+            console.log($(this).index());
+            $(".content ul li").attr('class','');
+            $(this).attr('class','xuanzhong');
+
+            show($(this).index());
+        });
+    });
+
+    function show(i)
+    {
+        $(".shangpin").hide();
+        $(".li"+i).show();
+    }
+</script>
+</block>

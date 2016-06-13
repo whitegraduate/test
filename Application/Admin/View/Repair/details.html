@@ -1,0 +1,177 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>订单详情</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">订单号</label>
+            <div class="controls">
+            	{$order.transid}
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">订单类型</label>
+            <div class="controls">
+                {$order.order_type|get_repair_type}
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">所属门店</label>
+            <div class="controls">
+                {$order.shopid|get_shop_id}
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">会员</label>
+            <div class="controls">
+                {$order.openid|get_fansname_openid}
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">车辆问题</label>
+            <div class="controls">
+                {$order.problem}
+            </div>
+        </div>
+        <if condition="$order.order_type eq 3">
+		<div class="form-item">
+			<label class="item-label">车辆位置</label>
+			 <div class="controls" id="location">
+                {$order.location}
+            </div>
+		</div>
+		<div class="form-item">
+			<label class="item-label">地图定位</label>
+			<div style="width: 500px; height: 300px;" id="allmap"></div>
+		</div>
+        </if>
+        
+        <div class="form-item">
+            <label class="item-label">费用</label>
+            <div class="controls">
+                <div>配件费：￥{$order.parts_price}</div>
+                <div>工时费：￥{$order.work_price}</div>
+                <div>上门费：￥{$order.ride_price}</div>
+                <div>总计：￥{$order.price}</div>
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">订单状态</label>
+            <div class="controls">
+                {$order.status|get_repairorder_status}
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">更换配件（在保）</label>
+            <div class="controls" id="parts_in">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">更换配件（过保）</label>
+            <div class="controls" id="parts_out">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">其他配件</label>
+            <div class="controls">
+                {$order.parts_other}
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">工时</label>
+            <div class="controls">
+                {$order.work_hour}
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bi6KWlVRxH8q59j9DB18Z1w8"></script>
+    <script type="text/javascript"> 
+        //导航高亮
+        highlight_subnav('{:U('index')}'); 
+        // 百度地图API功能
+        <if condition="$order.longitude neq ''">
+        if('' != '{$order.longitude}')
+        {
+	        var map = new BMap.Map("allmap");
+	        var point = new BMap.Point({$order.longitude},{$order.latitude});
+	        var top_left_navigation = new BMap.NavigationControl();
+	        map.centerAndZoom(point, 14);
+	        map.addControl(top_left_navigation);
+	        map.enableScrollWheelZoom(true);
+	        
+	        var mkicon = new BMap.Icon("{$order.openid|get_fanshead_openid}", new BMap.Size(262/8,262/8));
+			mkicon.setImageSize(new BMap.Size(262/8,262/8));
+	        var mk = new BMap.Marker(point,{icon:mkicon}); 
+	        map.addOverlay(mk);
+	        
+	        var pointShop = new BMap.Point({$shop.longitude},{$shop.latitude});
+
+	        var mkicon = new BMap.Icon("/Public/Wap/images/marker2.png", new BMap.Size(262/8,262/8));
+			mkicon.setImageSize(new BMap.Size(262/8,262/8));
+	        var mkShop = new BMap.Marker(pointShop,{icon:mkicon}); 
+	        map.addOverlay(mkShop);
+	        
+	        $("#location").text($("#location").text() + "(" + (map.getDistance(point,pointShop)).toFixed(2) +" 米)");
+        }
+
+        </if>
+
+        var str_out = '';
+        var str_in = '';
+        if('{$order.parts_out}' != '')
+        {
+	        if('{$order.parts_out}'.indexOf('[') >= 0)
+	        {
+	    		var parts_out = eval('{$order.parts_out}');
+	    		
+	    		for(var i=0;i<parts_out.length;i++)
+	        	{
+	    			str_out += parts_out[i].p + "&nbsp;" + parts_out[i].n + "个<br>";
+	        	}
+	        }
+	        else
+	        	str_out = '{$order.parts_out}';
+        }
+        
+        if('{$order.parts_in}' != '')
+        {
+	        if('{$order.parts_in}'.indexOf('[') >= 0)
+	        {
+	    		var parts_in = eval('{$order.parts_in}');
+	    		
+	    		for(var i=0;i<parts_in.length;i++)
+	        	{
+	    			str_in += parts_in[i].p + "&nbsp;" + parts_in[i].n + "个<br>";
+	        	}
+	        }
+	        else
+	        	str_in = '{$order.parts_in}';
+        }
+
+		
+        $(document).ready(function(){
+        	$("#parts_out").html(str_out);
+        	$("#parts_in").html(str_in);
+        });
+        
+    </script>
+</block>

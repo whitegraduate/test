@@ -1,0 +1,14 @@
+[ 2016-06-13T08:54:34+08:00 ] 60.182.239.134 /admin.php
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T08:54:36+08:00 ] 60.182.239.134 /admin.php?s=/Service/index.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T08:54:39+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/products.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T08:54:51+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/product_edit/id/15.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T08:54:52+08:00 ] 60.182.239.134 /admin.php?s=/Addons/execute/_addons/Ssq/_controller/Ssq/_action/get_area.html&cityid=1
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T08:55:12+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/product_edit.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T08:55:13+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/products.html
+ERR: 创建了Wechat对象admin

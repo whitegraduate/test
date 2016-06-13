@@ -1,0 +1,1670 @@
+[ 2016-06-07T05:27:12+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=5a487abebc6c0ed7758fdfb09d4a417168f13816&timestamp=1465248430&nonce=1632834018&openid=o97bDvr_LFAOWcEyhOYEvesk1FkQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T05:27:12+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=5a487abebc6c0ed7758fdfb09d4a417168f13816&timestamp=1465248430&nonce=1632834018&openid=o97bDvr_LFAOWcEyhOYEvesk1FkQ
+ERR: 用户取消关注：o97bDvr_LFAOWcEyhOYEvesk1FkQ
+[ 2016-06-07T06:47:44+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=d57a46be81455945ce207742bb9da03bd3338282&timestamp=1465253261&nonce=361296990&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 创建了Wechat对象
+[ 2016-06-07T06:47:44+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=d57a46be81455945ce207742bb9da03bd3338282&timestamp=1465253261&nonce=361296990&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 用户关注：o97bDvvgG7U6vncavFKshr3iFL4Q
+[ 2016-06-07T06:47:44+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=d57a46be81455945ce207742bb9da03bd3338282&timestamp=1465253261&nonce=361296990&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: canal：{"id":"7","name":"\u502a\u5fd7\u534e_15958985815_\u6d59G5833D","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQE38ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL1MwWDQtWW5rV2tRanAwaU5aV2t6AAIEiIQbVwMEAAAAAA==","click":"41","status":"0","pid":"0","keyword":"\u502a\u5fd7\u534e"}
+[ 2016-06-07T06:47:50+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=cf74b6670693a79651fd41e663deba63037db6a3&timestamp=1465253267&nonce=697875208&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 创建了Wechat对象
+[ 2016-06-07T06:47:50+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=44f73a2eaac3cc044a667524d590ff69ae59139c&timestamp=1465253268&nonce=861675160&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:05:19+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=7dba5f8eefb2a2ebe5d149f29ff450987c3588ef&timestamp=1465254316&nonce=728711678&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:05:54+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=59def108e001f9593d038ca1df38e5a88caf67f5&timestamp=1465254351&nonce=1176407286&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:05:54+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=59def108e001f9593d038ca1df38e5a88caf67f5&timestamp=1465254351&nonce=1176407286&openid=o97bDvvgG7U6vncavFKshr3iFL4Q
+ERR: 用户取消关注：o97bDvvgG7U6vncavFKshr3iFL4Q
+[ 2016-06-07T07:23:56+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=07f7641d61cc62fb83b2c07df07cbb747d4c9025&timestamp=1465255433&nonce=627218975&openid=o97bDvvsMghx-iMENX8BGy98fYWA
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:23:56+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=07f7641d61cc62fb83b2c07df07cbb747d4c9025&timestamp=1465255433&nonce=627218975&openid=o97bDvvsMghx-iMENX8BGy98fYWA
+ERR: 用户关注：o97bDvvsMghx-iMENX8BGy98fYWA
+[ 2016-06-07T07:23:56+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=07f7641d61cc62fb83b2c07df07cbb747d4c9025&timestamp=1465255433&nonce=627218975&openid=o97bDvvsMghx-iMENX8BGy98fYWA
+ERR: canal：{"id":"1","name":"\u5218\u732e\u534e_13957965288_\u6d59G1821","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGe8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL01rVWdSaFBraUVUeC16RTh2V2t6AAIEwYMbVwMEAAAAAA==","click":"243","status":"0","pid":"0","keyword":"\u5218\u732e\u534e"}
+[ 2016-06-07T07:41:53+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=add0316a46ce32906c88b96ee3d9207c1154acc8&timestamp=1465256511&nonce=1899334324&openid=o97bDvgrCeVFwbUq7vDcpoiGZtZk
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:41:53+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=add0316a46ce32906c88b96ee3d9207c1154acc8&timestamp=1465256511&nonce=1899334324&openid=o97bDvgrCeVFwbUq7vDcpoiGZtZk
+ERR: 用户关注：o97bDvgrCeVFwbUq7vDcpoiGZtZk
+[ 2016-06-07T07:41:54+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=add0316a46ce32906c88b96ee3d9207c1154acc8&timestamp=1465256511&nonce=1899334324&openid=o97bDvgrCeVFwbUq7vDcpoiGZtZk
+ERR: canal：{"id":"3","name":"\u6731\u4f1f\u6c11_13566959620_\u6d59GY790Y","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQFa8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2pVVURNVmJrakVUMWNvNXNubWt6AAIEB4QbVwMEAAAAAA==","click":"103","status":"0","pid":"0","keyword":"\u6731\u4f1f\u6c11"}
+[ 2016-06-07T07:42:00+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=11c25d6e5d4c355461b3959fed341dd7baaf1f36&timestamp=1465256518&nonce=1431137156&openid=o97bDvgrCeVFwbUq7vDcpoiGZtZk
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:42:33+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=1619792c311f25b30b8ac7eb0071de62caff1686&timestamp=1465256551&nonce=1472654297&openid=o97bDvgrCeVFwbUq7vDcpoiGZtZk
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:42:33+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+ERR: empty openid
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+ERR: 网页基础授权 OpenId===o97bDvgrCeVFwbUq7vDcpoiGZtZk; UnionId===
+[ 2016-06-07T07:42:34+08:00 ] 112.17.242.196 /wap.php?s=mall/index.html&code=021XbcGd2QzTjQ0EJlJd2L09Gd2XbcGY&state=base
+ERR: result
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T07:42:36+08:00 ] 112.17.242.196 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T07:53:51+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=b3f2c85bf386f60d0783a96e60f130f42fb48794&timestamp=1465257229&nonce=107185701&openid=o97bDvuyYKQL1GTGPqTspCyLRHAQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+ERR: empty openid
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+ERR: 网页基础授权 OpenId===o97bDvuyYKQL1GTGPqTspCyLRHAQ; UnionId===
+[ 2016-06-07T07:53:54+08:00 ] 101.226.68.141 /wap.php/Shop/index.html?code=0218D24I110zCb0whi2I1TuY3I18D24S&state=base
+ERR: result
+[ 2016-06-07T07:54:00+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=bfa195fce1f0959ce4dcda645579655098957706&timestamp=1465257237&nonce=179681293&openid=o97bDvuyYKQL1GTGPqTspCyLRHAQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:54:00+08:00 ] 101.226.68.141 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T07:54:00+08:00 ] 101.226.68.141 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T07:54:00+08:00 ] 101.226.68.141 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T07:54:00+08:00 ] 101.226.68.141 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T08:18:54+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=4f55289aeb107040f50052584b23366df9042e2d&timestamp=1465258731&nonce=470893404&openid=o97bDvuTpMU-ftsUp3vVSFwp4Fqs
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:19:49+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=d5cfacad6732b2f17a04bbc9581a42565bbc0b0a&timestamp=1465258786&nonce=1784660884&openid=o97bDvuTpMU-ftsUp3vVSFwp4Fqs
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:33:59+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=360312bdc72d1b2a5f6df702d800e1b8a94a7bb1&timestamp=1465259637&nonce=1894388714&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:33:59+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=360312bdc72d1b2a5f6df702d800e1b8a94a7bb1&timestamp=1465259637&nonce=1894388714&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 用户关注：o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+[ 2016-06-07T08:33:59+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=360312bdc72d1b2a5f6df702d800e1b8a94a7bb1&timestamp=1465259637&nonce=1894388714&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"244","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:34:04+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=918720a84ba54da84556f0733c046a540bdcd115&timestamp=1465259642&nonce=198211516&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:34:59+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=825b2a4e94b324750a205e58e357bd953441c2a0&timestamp=1465259697&nonce=873314778&openid=o97bDvuxFIQWvVeCOlEobYMWXCh4
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:34:59+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=825b2a4e94b324750a205e58e357bd953441c2a0&timestamp=1465259697&nonce=873314778&openid=o97bDvuxFIQWvVeCOlEobYMWXCh4
+ERR: 用户关注：o97bDvuxFIQWvVeCOlEobYMWXCh4
+[ 2016-06-07T08:35:00+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=825b2a4e94b324750a205e58e357bd953441c2a0&timestamp=1465259697&nonce=873314778&openid=o97bDvuxFIQWvVeCOlEobYMWXCh4
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"245","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:36:03+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=e55978e31b6df3b814c274d9f38e17d1b65a4291&timestamp=1465259761&nonce=1046111451&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:03+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=e55978e31b6df3b814c274d9f38e17d1b65a4291&timestamp=1465259761&nonce=1046111451&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 用户关注：o97bDvtzPwuD555egTyNflH8Ss7c
+[ 2016-06-07T08:36:04+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=e55978e31b6df3b814c274d9f38e17d1b65a4291&timestamp=1465259761&nonce=1046111451&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"246","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:36:07+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=76cfecf6fe988aa159eba35fcf87635de5ee7cd1&timestamp=1465259764&nonce=995993859&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:14+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=4b26a5eaf474656efe115845fc9fa4cf4ce0cb51&timestamp=1465259771&nonce=1076608738&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T08:36:15+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:16+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:16+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+[ 2016-06-07T08:36:16+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+ERR: empty openid
+[ 2016-06-07T08:36:16+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+ERR: 网页基础授权 OpenId===o97bDvtzPwuD555egTyNflH8Ss7c; UnionId===
+[ 2016-06-07T08:36:16+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html?code=041dcf8z0eFUCl1cJU9z03F98z0dcf8f&state=base
+ERR: result
+[ 2016-06-07T08:36:20+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=be5587ba4ceb2c16a7fb551ccf0e8f699b7980b7&timestamp=1465259778&nonce=409303929&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:23+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=95b6ced010dbc999a5098a5f9376b68afadf8a31&timestamp=1465259781&nonce=377909139&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:24+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:24+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:24+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T08:36:24+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T08:36:27+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:27+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:27+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-06-07T08:36:27+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-06-07T08:36:47+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:47+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:47+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/16.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html
+[ 2016-06-07T08:36:47+08:00 ] 180.153.81.159 /wap.php?s=/Maintain/details/pid/16.html
+ERR: not empty openid
+[ 2016-06-07T08:36:49+08:00 ] 101.226.227.96 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:49+08:00 ] 101.226.227.96 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:49+08:00 ] 101.226.227.96 /wap.php?s=/Maintain/details/pid/16.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html
+[ 2016-06-07T08:36:49+08:00 ] 101.226.227.96 /wap.php?s=/Maintain/details/pid/16.html
+ERR: empty openid
+[ 2016-06-07T08:36:49+08:00 ] 101.226.227.96 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T08:36:49+08:00 ] 101.226.227.96 /wap.php?s=/Maintain/details/pid/16.html
+ERR: !result
+[ 2016-06-07T08:36:49+08:00 ] 101.226.65.104 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:49+08:00 ] 101.226.65.104 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:36:49+08:00 ] 101.226.65.104 /wap.php?s=/Maintain/details/pid/16.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html
+[ 2016-06-07T08:36:49+08:00 ] 101.226.65.104 /wap.php?s=/Maintain/details/pid/16.html
+ERR: empty openid
+[ 2016-06-07T08:36:49+08:00 ] 101.226.65.104 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T08:36:49+08:00 ] 101.226.65.104 /wap.php?s=/Maintain/details/pid/16.html
+ERR: !result
+[ 2016-06-07T08:36:54+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=c47229bca479306848dd39d6bda316206700eeaa&timestamp=1465259812&nonce=1751976118&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:36:57+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=bffdcb55d46776d053c8f300ba40c7055a912fc3&timestamp=1465259815&nonce=1748571115&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:01+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=adc559d194b332d87077084ee35358afbf3c0811&timestamp=1465259819&nonce=1265190013&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:04+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=a1ae546db694b19d59ca8a5235395ab766d25500&timestamp=1465259821&nonce=1591523020&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:04+08:00 ] 180.153.81.159 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:04+08:00 ] 180.153.81.159 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:37:04+08:00 ] 180.153.81.159 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T08:37:04+08:00 ] 180.153.81.159 /wap.php/Shop/index.html
+ERR: not empty openid
+[ 2016-06-07T08:37:08+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=61175e10b2bc8c424043e51533b90b8c51219b87&timestamp=1465259826&nonce=78164126&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:09+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=b45a20b50d8138de0544a41bb41ed010f9ad85c0&timestamp=1465259826&nonce=1726807242&openid=o97bDvsrVOk2zXukDNGCfvsoI3lU
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:09+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=b45a20b50d8138de0544a41bb41ed010f9ad85c0&timestamp=1465259826&nonce=1726807242&openid=o97bDvsrVOk2zXukDNGCfvsoI3lU
+ERR: 用户关注：o97bDvsrVOk2zXukDNGCfvsoI3lU
+[ 2016-06-07T08:37:09+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=b45a20b50d8138de0544a41bb41ed010f9ad85c0&timestamp=1465259826&nonce=1726807242&openid=o97bDvsrVOk2zXukDNGCfvsoI3lU
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"247","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:37:17+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=48d6fd62e86ad11973defe62ffbd2e6706c1ece8&timestamp=1465259835&nonce=2077175210&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:20+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=04f1c4174d9bdd27c65e5b881562a119cb5e44c4&timestamp=1465259838&nonce=1645969385&openid=o97bDvtzPwuD555egTyNflH8Ss7c
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:20+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:20+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:37:20+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T08:37:20+08:00 ] 180.153.81.159 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T08:37:31+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=e3d0b9dd986fe13350655eda7c667c1c9c4e7578&timestamp=1465259849&nonce=413513410&openid=o97bDvkVPGXqt4tnURqtomprfSy4
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:37:31+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=e3d0b9dd986fe13350655eda7c667c1c9c4e7578&timestamp=1465259849&nonce=413513410&openid=o97bDvkVPGXqt4tnURqtomprfSy4
+ERR: 用户关注：o97bDvkVPGXqt4tnURqtomprfSy4
+[ 2016-06-07T08:37:31+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=e3d0b9dd986fe13350655eda7c667c1c9c4e7578&timestamp=1465259849&nonce=413513410&openid=o97bDvkVPGXqt4tnURqtomprfSy4
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"248","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:37:41+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=4f74cc5ad4cd46a007e6492f56103c34f473217e&timestamp=1465259858&nonce=865829054&openid=o97bDvkVPGXqt4tnURqtomprfSy4
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:44:05+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:44:05+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:44:05+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html
+[ 2016-06-07T08:44:05+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: empty openid
+[ 2016-06-07T08:44:05+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T08:44:05+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: !result
+[ 2016-06-07T08:44:06+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:44:06+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:44:06+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+[ 2016-06-07T08:44:06+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+ERR: empty openid
+[ 2016-06-07T08:44:06+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+ERR: 网页基础授权 OpenId===o97bDvkVPGXqt4tnURqtomprfSy4; UnionId===
+[ 2016-06-07T08:44:06+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html&code=001sgMpp1xjRpv0hRpmp1IZNpp1sgMpl&state=base
+ERR: result
+[ 2016-06-07T08:44:31+08:00 ] 101.226.125.15 /wxpay/wap.php?s=/Maintain/order/pid/16.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:44:31+08:00 ] 101.226.125.15 /wxpay/wap.php?s=/Maintain/order/pid/16.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:44:31+08:00 ] 101.226.125.15 /wxpay/wap.php?s=/Maintain/order/pid/16.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/16.html
+[ 2016-06-07T08:44:31+08:00 ] 101.226.125.15 /wxpay/wap.php?s=/Maintain/order/pid/16.html
+ERR: not empty openid
+[ 2016-06-07T08:47:01+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:47:01+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:47:01+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html
+[ 2016-06-07T08:47:01+08:00 ] 101.226.125.15 /wap.php?s=/Maintain/details/pid/16.html
+ERR: not empty openid
+[ 2016-06-07T08:55:16+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=81d7838cc14bab6dd64905050cc98ecf6037a5e1&timestamp=1465260913&nonce=452472708&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:18+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=a014a00364b9b7a8b4adb6c33d9b82b72f2aa7e2&timestamp=1465260916&nonce=40711352&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+ERR: empty openid
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+ERR: 网页基础授权 OpenId===o97bDvqpPU-PNcQEayRXtvYe9fJY; UnionId===
+[ 2016-06-07T08:55:19+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html?code=001KvOA02BQiT41t4EB02gfQA02KvOAV&state=base
+ERR: result
+[ 2016-06-07T08:55:25+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=768c28b96845e9cf111e756cadbf2eb35de90fe0&timestamp=1465260922&nonce=1349682124&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=mall/index.html
+ERR: not empty openid
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T08:55:25+08:00 ] 183.146.42.10 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T08:55:35+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=ca5a2b99f6357ffab45bcda204c29a2b98cc2bbd&timestamp=1465260933&nonce=317996435&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:57:35+08:00 ] 140.207.54.76 /wap.php?s=/Weixin/index.html&signature=b755c7c2e991aeb02d6b03204a6272ca66fb6308&timestamp=1465261053&nonce=1731937403&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:57:35+08:00 ] 140.207.54.76 /wap.php?s=/Weixin/index.html&signature=b755c7c2e991aeb02d6b03204a6272ca66fb6308&timestamp=1465261053&nonce=1731937403&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 用户关注：o97bDvoPPWm-kLaqZpaUtNgWjY1A
+[ 2016-06-07T08:57:36+08:00 ] 140.207.54.76 /wap.php?s=/Weixin/index.html&signature=b755c7c2e991aeb02d6b03204a6272ca66fb6308&timestamp=1465261053&nonce=1731937403&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"249","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:57:40+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=0f88d2c67e2fcd39665f9960b4fc8ea0bdbc2530&timestamp=1465261057&nonce=1583613310&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:58:20+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=340ba13148a7f4cc3c192109200e7f7b629ad198&timestamp=1465261097&nonce=125303224&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:58:20+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=340ba13148a7f4cc3c192109200e7f7b629ad198&timestamp=1465261097&nonce=125303224&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 用户关注：o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+[ 2016-06-07T08:58:20+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=340ba13148a7f4cc3c192109200e7f7b629ad198&timestamp=1465261097&nonce=125303224&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"250","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:58:52+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=f758bed2d376575c94134b97d51102aeb3807fbd&timestamp=1465261129&nonce=660570242&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:58:52+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=f758bed2d376575c94134b97d51102aeb3807fbd&timestamp=1465261129&nonce=660570242&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"251","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T08:59:23+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=2613d0783d28374f9ed87ceb8af59fef8bc01e13&timestamp=1465261161&nonce=1333214439&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:59:44+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=9b7a302c3f7c27f98ec5ba6920e94dbf40cacd97&timestamp=1465261181&nonce=278245399&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:59:49+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T08:59:49+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T08:59:49+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T08:59:49+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T08:59:49+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T08:59:49+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T09:00:06+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:00:06+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:00:06+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+[ 2016-06-07T09:00:06+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+ERR: empty openid
+[ 2016-06-07T09:00:07+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+ERR: 网页基础授权 OpenId===o97bDvl6zJ7dkEVwh9F4F0dP7uP0; UnionId===
+[ 2016-06-07T09:00:07+08:00 ] 112.17.243.169 /wap.php/Maintain/index.html?code=031gHCU80jP9tt1EWxV80DFEU80gHCUD&state=base
+ERR: result
+[ 2016-06-07T09:00:19+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=7a26f20df76eb417b272d947bcf9184c883965ff&timestamp=1465261216&nonce=1599657308&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:00:48+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=a6cff3f73475bf43efb0578abca9754e720613ac&timestamp=1465261245&nonce=333652761&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:00:56+08:00 ] 140.207.54.76 /wap.php?s=/Weixin/index.html&signature=8e03606ee640f87883c6817aea01574a50c12b2f&timestamp=1465261254&nonce=834666351&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+ERR: empty openid
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+ERR: 网页基础授权 OpenId===o97bDvoPPWm-kLaqZpaUtNgWjY1A; UnionId===
+[ 2016-06-07T09:00:57+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=031p1HIY1VEZh51YD8KY19XHIY1p1HIP&state=base
+ERR: result
+[ 2016-06-07T09:01:07+08:00 ] 140.207.54.78 /wap.php?s=/Weixin/index.html&signature=914d2b606e98a35c0524c86bc73517251f91adbf&timestamp=1465261264&nonce=1331968931&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:01:09+08:00 ] 140.207.54.78 /wap.php?s=/Weixin/index.html&signature=8fbb016cb59879d50ce2bb4caf104fd3eb43acb1&timestamp=1465261267&nonce=12587020&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: not empty openid
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T09:01:10+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:01:11+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:01:11+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T09:01:11+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T09:01:41+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=8450e9c19933ad62c22633c2e0a579e7cc7694a3&timestamp=1465261299&nonce=575222983&openid=o97bDvoPPWm-kLaqZpaUtNgWjY1A
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:08:24+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=dbec194494015f900143d29f31c0fc559eec4481&timestamp=1465261701&nonce=1455311548&openid=o97bDvvWIfM2UgckdefQwTFHUHYU
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:08:24+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=dbec194494015f900143d29f31c0fc559eec4481&timestamp=1465261701&nonce=1455311548&openid=o97bDvvWIfM2UgckdefQwTFHUHYU
+ERR: 用户关注：o97bDvvWIfM2UgckdefQwTFHUHYU
+[ 2016-06-07T09:08:24+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=dbec194494015f900143d29f31c0fc559eec4481&timestamp=1465261701&nonce=1455311548&openid=o97bDvvWIfM2UgckdefQwTFHUHYU
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"251","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T09:08:36+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=2590e4ddab787eefc50ca8161497bde2c6a4fd79&timestamp=1465261714&nonce=1606876674&openid=o97bDvvWIfM2UgckdefQwTFHUHYU
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:08:38+08:00 ] 140.207.63.103 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:08:38+08:00 ] 140.207.63.103 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:08:38+08:00 ] 140.207.63.103 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T09:08:38+08:00 ] 140.207.63.103 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T09:08:38+08:00 ] 140.207.63.103 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T09:08:38+08:00 ] 140.207.63.103 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T09:08:39+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:08:39+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:08:39+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+[ 2016-06-07T09:08:39+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+ERR: empty openid
+[ 2016-06-07T09:08:39+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+ERR: 网页基础授权 OpenId===o97bDvvWIfM2UgckdefQwTFHUHYU; UnionId===
+[ 2016-06-07T09:08:39+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=041b8Icb0rQHkJ18xK9b0HtCcb0b8Icy&state=base
+ERR: result
+[ 2016-06-07T09:16:47+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=f8524625bfbadfcca22e1cb53550f3f00d9b25f8&timestamp=1465262204&nonce=1979420419&openid=o97bDvugjPzj_QyXKCt7Py9p_3nw
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+[ 2016-06-07T09:16:47+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+ERR: empty openid
+[ 2016-06-07T09:16:48+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+ERR: 网页基础授权 OpenId===o97bDvugjPzj_QyXKCt7Py9p_3nw; UnionId===
+[ 2016-06-07T09:16:48+08:00 ] 112.17.238.17 /wap.php/Maintain/index.html?code=031D81IK0ig9Aj2qk9HK07i1IK0D81IC&state=base
+ERR: result
+[ 2016-06-07T09:16:54+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=fa0ae6d4b26d71066f7447c353e3e28ba046e485&timestamp=1465262212&nonce=458774353&openid=o97bDvugjPzj_QyXKCt7Py9p_3nw
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:16:54+08:00 ] 112.17.238.17 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:16:54+08:00 ] 112.17.238.17 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:16:54+08:00 ] 112.17.238.17 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T09:16:54+08:00 ] 112.17.238.17 /wap.php/Shop/index.html
+ERR: not empty openid
+[ 2016-06-07T09:17:00+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=ec392bfe7095f311a6c6f7bc7c39238c045baaff&timestamp=1465262217&nonce=491085743&openid=o97bDvugjPzj_QyXKCt7Py9p_3nw
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=mall/index.html
+ERR: not empty openid
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T09:17:00+08:00 ] 112.17.238.17 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T09:20:30+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=330b854671c2311e86b5a2ef5cd2440edb1aea37&timestamp=1465262428&nonce=2168974&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:32+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=030d845835cd4d6706c8f98908cae28e03390d25&timestamp=1465262429&nonce=1216760939&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:32+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:32+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:20:32+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T09:20:32+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T09:20:36+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:36+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:20:36+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/1.html
+[ 2016-06-07T09:20:36+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T09:20:42+08:00 ] 183.146.42.10 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:42+08:00 ] 183.146.42.10 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:20:42+08:00 ] 183.146.42.10 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/1.html
+[ 2016-06-07T09:20:42+08:00 ] 183.146.42.10 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T09:20:56+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:56+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:20:56+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/1.html
+[ 2016-06-07T09:20:56+08:00 ] 183.146.42.10 /wap.php?s=/Maintain/details/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T09:20:57+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:20:57+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:20:57+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T09:20:57+08:00 ] 183.146.42.10 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T09:21:13+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=9e06f5195b909cee4eeb40efc172f865312dbc0a&timestamp=1465262470&nonce=671216121&openid=o97bDvmduPp7Il6CDRm9hYg61HFc
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:13+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=9e06f5195b909cee4eeb40efc172f865312dbc0a&timestamp=1465262470&nonce=671216121&openid=o97bDvmduPp7Il6CDRm9hYg61HFc
+ERR: 用户关注：o97bDvmduPp7Il6CDRm9hYg61HFc
+[ 2016-06-07T09:21:13+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=9e06f5195b909cee4eeb40efc172f865312dbc0a&timestamp=1465262470&nonce=671216121&openid=o97bDvmduPp7Il6CDRm9hYg61HFc
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"252","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T09:21:34+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=c267644b3cbe964140f72ef79122ba0594a27768&timestamp=1465262492&nonce=1655710839&openid=o97bDvmduPp7Il6CDRm9hYg61HFc
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:40+08:00 ] 58.247.206.146 /wap.php?s=/Weixin/index.html&signature=3a86f768346e60f90bc20c55fc286444b48b86d8&timestamp=1465262498&nonce=1302034478&openid=o97bDvmduPp7Il6CDRm9hYg61HFc
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+ERR: empty openid
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+ERR: 网页基础授权 OpenId===o97bDvmduPp7Il6CDRm9hYg61HFc; UnionId===
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=021N7wtc0O7LlI129guc01brtc0N7wty&state=base
+ERR: result
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=0315QfaA0m8Zmk1qmsbA01jkaA05Qfam&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=0315QfaA0m8Zmk1qmsbA01jkaA05Qfam&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:21:41+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=0315QfaA0m8Zmk1qmsbA01jkaA05Qfam&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=0315QfaA0m8Zmk1qmsbA01jkaA05Qfam&state=base
+[ 2016-06-07T09:21:42+08:00 ] 112.17.244.211 /wap.php/Shop/index.html?code=0315QfaA0m8Zmk1qmsbA01jkaA05Qfam&state=base
+ERR: not empty openid
+[ 2016-06-07T09:21:52+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=d794718861ce6476b43a55a609f3a6788c679cf8&timestamp=1465262509&nonce=1831650003&openid=o97bDvuN0FcnD3RxbGUY1DkCiohM
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:56+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=fdac1cb114a0b7a7e8c7dada024801853248f74c&timestamp=1465262513&nonce=1795081520&openid=o97bDvuN0FcnD3RxbGUY1DkCiohM
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:21:56+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=fdac1cb114a0b7a7e8c7dada024801853248f74c&timestamp=1465262513&nonce=1795081520&openid=o97bDvuN0FcnD3RxbGUY1DkCiohM
+ERR: 用户取消关注：o97bDvuN0FcnD3RxbGUY1DkCiohM
+[ 2016-06-07T09:22:07+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=08241d46e159b444abde506ab0ae80f76ad37d44&timestamp=1465262524&nonce=563485927&openid=o97bDvmduPp7Il6CDRm9hYg61HFc
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:25:16+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=60d6e835293dabc6eddcb9dcfd4f998906db0f6f&timestamp=1465262713&nonce=458997871&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:25:18+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=ab405d0d51cbc593edd4127f569feed689ed9786&timestamp=1465262715&nonce=1704924568&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:25:18+08:00 ] 183.146.42.10 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:25:18+08:00 ] 183.146.42.10 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T09:25:18+08:00 ] 183.146.42.10 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T09:25:18+08:00 ] 183.146.42.10 /wap.php/Shop/index.html
+ERR: not empty openid
+[ 2016-06-07T09:27:36+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=856d2fc5b35cae233f498351e86efe2784c50e03&timestamp=1465262854&nonce=799593647&openid=o97bDvrJSICkCY_WW4r8GgxjT7wg
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:27:36+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=856d2fc5b35cae233f498351e86efe2784c50e03&timestamp=1465262854&nonce=799593647&openid=o97bDvrJSICkCY_WW4r8GgxjT7wg
+ERR: 用户关注：o97bDvrJSICkCY_WW4r8GgxjT7wg
+[ 2016-06-07T09:27:36+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=856d2fc5b35cae233f498351e86efe2784c50e03&timestamp=1465262854&nonce=799593647&openid=o97bDvrJSICkCY_WW4r8GgxjT7wg
+ERR: canal：{"id":"13","name":"\u5434\u7acb\u660e \u6d59G5S102 15058516175","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGi7zoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2cwVm1jVFhreWtTelg0QVBfMmt6AAIE4U5NVwMEAAAAAA==","click":"32","status":"0","pid":"0","keyword":"\u5434\u7acb\u660e"}
+[ 2016-06-07T09:28:04+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=a0be78c657cebad63fa38cc99dc4ba6ebfa7f7be&timestamp=1465262882&nonce=1285750038&openid=o97bDvpOvaI5TwWgWwUa0UpUSSbY
+ERR: 创建了Wechat对象
+[ 2016-06-07T09:28:04+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=a0be78c657cebad63fa38cc99dc4ba6ebfa7f7be&timestamp=1465262882&nonce=1285750038&openid=o97bDvpOvaI5TwWgWwUa0UpUSSbY
+ERR: 用户关注：o97bDvpOvaI5TwWgWwUa0UpUSSbY
+[ 2016-06-07T09:28:04+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=a0be78c657cebad63fa38cc99dc4ba6ebfa7f7be&timestamp=1465262882&nonce=1285750038&openid=o97bDvpOvaI5TwWgWwUa0UpUSSbY
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"253","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:07:16+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=ab6f61bf435c46866cc9759c2c56a561d34fbc1d&timestamp=1465265234&nonce=203346665&openid=o97bDvvVe297WcxqzoAiFLvyxbHk
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:07:16+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=ab6f61bf435c46866cc9759c2c56a561d34fbc1d&timestamp=1465265234&nonce=203346665&openid=o97bDvvVe297WcxqzoAiFLvyxbHk
+ERR: 用户关注：o97bDvvVe297WcxqzoAiFLvyxbHk
+[ 2016-06-07T10:07:16+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=ab6f61bf435c46866cc9759c2c56a561d34fbc1d&timestamp=1465265234&nonce=203346665&openid=o97bDvvVe297WcxqzoAiFLvyxbHk
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"254","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:09:06+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=fa5ab964711ab5e860150487789d792f73c1519c&timestamp=1465265343&nonce=1375634484&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:09:06+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=fa5ab964711ab5e860150487789d792f73c1519c&timestamp=1465265343&nonce=1375634484&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 用户关注：o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+[ 2016-06-07T10:09:06+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=fa5ab964711ab5e860150487789d792f73c1519c&timestamp=1465265343&nonce=1375634484&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"255","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:09:15+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=a069370bdb2e797737ffbe6fb3190c8bc939a900&timestamp=1465265353&nonce=1096208371&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:19+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=cad9dedc6cebb27be8dc195f0174cefc155d0bbf&timestamp=1465265476&nonce=873857348&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:22+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=95f6d4ef7e289258df05924c3125a8841b324754&timestamp=1465265479&nonce=33442200&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:41+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=8c237f6eadb619ea825894ea3a8cef59f03e1767&timestamp=1465265498&nonce=1745856907&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:42+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=8e657255a30096c3e8938a9f631ebf87a77de414&timestamp=1465265500&nonce=960868584&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:43+08:00 ] 140.207.185.125 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:43+08:00 ] 140.207.185.125 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:11:43+08:00 ] 140.207.185.125 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T10:11:43+08:00 ] 140.207.185.125 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T10:11:43+08:00 ] 140.207.185.125 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:11:43+08:00 ] 140.207.185.125 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T10:11:43+08:00 ] 101.226.125.118 /wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:43+08:00 ] 101.226.125.118 /wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:11:43+08:00 ] 101.226.125.118 /wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+[ 2016-06-07T10:11:43+08:00 ] 101.226.125.118 /wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+ERR: empty openid
+[ 2016-06-07T10:11:43+08:00 ] 101.226.125.118 /wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+ERR: 网页基础授权 OpenId===o97bDvvYJ1t2nzfwf8LLus6f8QEQ; UnionId===
+[ 2016-06-07T10:11:43+08:00 ] 101.226.125.118 /wap.php?s=mall/index.html&code=011GsJU309lhxx1wq2V30O4OU30GsJUM&state=base
+ERR: result
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T10:11:45+08:00 ] 101.226.125.118 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T10:11:48+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=afbe540a05f5f6404df6dbf152e3db9bec59f8f9&timestamp=1465265506&nonce=2039250426&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:50+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=0119a2dd33b555c4023bbcadc6ad2be3ccdd971b&timestamp=1465265508&nonce=812513695&openid=o97bDvvYJ1t2nzfwf8LLus6f8QEQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:50+08:00 ] 101.226.125.118 /wap.php/Fans/myorders.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:11:50+08:00 ] 101.226.125.118 /wap.php/Fans/myorders.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:11:50+08:00 ] 101.226.125.118 /wap.php/Fans/myorders.html
+ERR: callback=http://d.7744go.com/wap.php/Fans/myorders.html
+[ 2016-06-07T10:11:50+08:00 ] 101.226.125.118 /wap.php/Fans/myorders.html
+ERR: not empty openid
+[ 2016-06-07T10:17:07+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=11dfb60d1980d98e039ae56f0100e1e25a9395fe&timestamp=1465265824&nonce=1699953525&openid=o97bDvkwe-LoRqILspvl21Gh0SKA
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:17:07+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=11dfb60d1980d98e039ae56f0100e1e25a9395fe&timestamp=1465265824&nonce=1699953525&openid=o97bDvkwe-LoRqILspvl21Gh0SKA
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:19:11+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=f6a98989d009ccc2e522b5e080652f1ad6c2bde2&timestamp=1465265949&nonce=1464556575&openid=o97bDvn31llx4oS4-0kFMtuvUP-M
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:19:11+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=f6a98989d009ccc2e522b5e080652f1ad6c2bde2&timestamp=1465265949&nonce=1464556575&openid=o97bDvn31llx4oS4-0kFMtuvUP-M
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:21:50+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=7d2809aabab8910b678ebe16cdd8e8b867477e6d&timestamp=1465266108&nonce=18042147&openid=o97bDvlCTtTd0wQNRqUVCuarufQ0
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:21:50+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=7d2809aabab8910b678ebe16cdd8e8b867477e6d&timestamp=1465266108&nonce=18042147&openid=o97bDvlCTtTd0wQNRqUVCuarufQ0
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:22:04+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=122dc7ccd2d872435aec80a7fbd9ae9810510e90&timestamp=1465266122&nonce=1741945506&openid=o97bDvqlqaAxck8o8ixQKufoyraI
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:22:04+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=122dc7ccd2d872435aec80a7fbd9ae9810510e90&timestamp=1465266122&nonce=1741945506&openid=o97bDvqlqaAxck8o8ixQKufoyraI
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:23:32+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=0c26f4aeb96f82bf643c1806f3dd12077b3d4a33&timestamp=1465266210&nonce=310120340&openid=o97bDvrRJ7GCnGQymmJ6O2o15ALE
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:23:32+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=0c26f4aeb96f82bf643c1806f3dd12077b3d4a33&timestamp=1465266210&nonce=310120340&openid=o97bDvrRJ7GCnGQymmJ6O2o15ALE
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:27:38+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=20b845bb81e1a8e9662119a46077b0ac503b8498&timestamp=1465266456&nonce=1782028419&openid=o97bDvikRQl3GJU1KUD1rW_8kdlA
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:27:38+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=20b845bb81e1a8e9662119a46077b0ac503b8498&timestamp=1465266456&nonce=1782028419&openid=o97bDvikRQl3GJU1KUD1rW_8kdlA
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:33:27+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=37b6e46e434d03d569d7eccb57b0956b1fea6173&timestamp=1465266805&nonce=376614610&openid=o97bDvp_s39sTSUyQgIstQVZ7ALc
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:33:27+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=37b6e46e434d03d569d7eccb57b0956b1fea6173&timestamp=1465266805&nonce=376614610&openid=o97bDvp_s39sTSUyQgIstQVZ7ALc
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:34:36+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=c729227c1cc11b98d5c7d152e9d7367cf807f4ec&timestamp=1465266874&nonce=1656526661&openid=o97bDvvDgmH_sct2F7xws6ZcFQRE
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:34:36+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=c729227c1cc11b98d5c7d152e9d7367cf807f4ec&timestamp=1465266874&nonce=1656526661&openid=o97bDvvDgmH_sct2F7xws6ZcFQRE
+ERR: 用户关注：o97bDvvDgmH_sct2F7xws6ZcFQRE
+[ 2016-06-07T10:34:37+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=c729227c1cc11b98d5c7d152e9d7367cf807f4ec&timestamp=1465266874&nonce=1656526661&openid=o97bDvvDgmH_sct2F7xws6ZcFQRE
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"256","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:34:40+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=400793571f282c6c22bf73904591232edbe0f91e&timestamp=1465266878&nonce=710126322&openid=o97bDvvDgmH_sct2F7xws6ZcFQRE
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:06+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=874dfeaf51f0c2373bba13e0ab60f830778baec5&timestamp=1465266963&nonce=677164061&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:06+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=874dfeaf51f0c2373bba13e0ab60f830778baec5&timestamp=1465266963&nonce=677164061&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 用户关注：o97bDvs26eNy4cQBIPYQyzhlcLDM
+[ 2016-06-07T10:36:06+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=874dfeaf51f0c2373bba13e0ab60f830778baec5&timestamp=1465266963&nonce=677164061&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"257","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:36:09+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=4e60abf3440022bfac5af650c5a615220628ef18&timestamp=1465266967&nonce=60884079&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:27+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=b784e608f920366c852d71def8bbcbb096c6ae7c&timestamp=1465266984&nonce=1433222063&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:28+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=a08d8ed4cc846e44fa77d035c37d991b596e1be2&timestamp=1465266985&nonce=1236739172&openid=o97bDvv6q_nT2DU_xfc6Oz3wqOQw
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:28+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=a08d8ed4cc846e44fa77d035c37d991b596e1be2&timestamp=1465266985&nonce=1236739172&openid=o97bDvv6q_nT2DU_xfc6Oz3wqOQw
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"258","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:36:34+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=28b074c2fe70daa91b428787c01c8caa4024b6d2&timestamp=1465266992&nonce=1049870194&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:35+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:35+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:36:35+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T10:36:35+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T10:36:35+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:36:35+08:00 ] 101.226.125.19 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T10:36:36+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:36+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:36:36+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+[ 2016-06-07T10:36:36+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: empty openid
+[ 2016-06-07T10:36:36+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 网页基础授权 OpenId===o97bDvs26eNy4cQBIPYQyzhlcLDM; UnionId===
+[ 2016-06-07T10:36:36+08:00 ] 101.226.125.19 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: result
+[ 2016-06-07T10:36:50+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=ff99c9bd588a1c45d7caa7942948c30c4759fea1&timestamp=1465267007&nonce=1681274712&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:53+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=bb520a4aca562b0d5da7ac0c0c5b5184f73dc87c&timestamp=1465267010&nonce=1646573726&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:53+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:53+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:36:53+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T10:36:53+08:00 ] 101.226.125.19 /wap.php?s=mall/index.html
+ERR: not empty openid
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T10:36:54+08:00 ] 101.226.125.19 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T10:37:02+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=831b4df02ac98c03746f08a8ed085638653cd401&timestamp=1465267020&nonce=1063841024&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:38:55+08:00 ] 220.181.132.219 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:38:55+08:00 ] 220.181.132.219 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:38:55+08:00 ] 220.181.132.219 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+[ 2016-06-07T10:38:55+08:00 ] 220.181.132.219 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: empty openid
+[ 2016-06-07T10:38:55+08:00 ] 220.181.132.219 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 网页基础授权 JSON为空
+[ 2016-06-07T10:38:55+08:00 ] 220.181.132.219 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: !result
+[ 2016-06-07T10:39:03+08:00 ] 220.181.132.219 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:39:03+08:00 ] 220.181.132.219 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:39:03+08:00 ] 220.181.132.219 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T10:39:03+08:00 ] 220.181.132.219 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T10:39:03+08:00 ] 220.181.132.219 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:39:03+08:00 ] 220.181.132.219 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T10:39:21+08:00 ] 220.181.132.199 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:39:21+08:00 ] 220.181.132.199 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:39:21+08:00 ] 220.181.132.199 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T10:39:21+08:00 ] 220.181.132.199 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T10:39:21+08:00 ] 220.181.132.199 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:39:21+08:00 ] 220.181.132.199 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T10:39:25+08:00 ] 220.181.132.219 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:39:25+08:00 ] 220.181.132.219 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:39:25+08:00 ] 220.181.132.219 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T10:39:25+08:00 ] 220.181.132.219 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T10:39:25+08:00 ] 220.181.132.219 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:39:25+08:00 ] 220.181.132.219 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T10:39:28+08:00 ] 220.181.132.196 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:39:28+08:00 ] 220.181.132.196 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:39:28+08:00 ] 220.181.132.196 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+[ 2016-06-07T10:39:28+08:00 ] 220.181.132.196 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: empty openid
+[ 2016-06-07T10:39:29+08:00 ] 220.181.132.196 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: 网页基础授权 JSON为空
+[ 2016-06-07T10:39:29+08:00 ] 220.181.132.196 /wap.php/Shop/index.html?code=001soS8u15Sxj70bkn7u1d1O8u1soS8P&state=base
+ERR: !result
+[ 2016-06-07T10:39:44+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=33acbee106a6851cbc3f2c156dd9d15e0ddcff55&timestamp=1465267181&nonce=1473151751&openid=o97bDvpaZ8Wz_HVlG9FmbtTXo4J4
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:39:44+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=33acbee106a6851cbc3f2c156dd9d15e0ddcff55&timestamp=1465267181&nonce=1473151751&openid=o97bDvpaZ8Wz_HVlG9FmbtTXo4J4
+ERR: 用户关注：o97bDvpaZ8Wz_HVlG9FmbtTXo4J4
+[ 2016-06-07T10:39:44+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=33acbee106a6851cbc3f2c156dd9d15e0ddcff55&timestamp=1465267181&nonce=1473151751&openid=o97bDvpaZ8Wz_HVlG9FmbtTXo4J4
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"258","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:39:51+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=d9a62148c48df48ca86fa52f6a98c19ad4138185&timestamp=1465267189&nonce=739329819&openid=o97bDvr6t6APU0mmcw2vsdftWx4o
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:39:51+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=d9a62148c48df48ca86fa52f6a98c19ad4138185&timestamp=1465267189&nonce=739329819&openid=o97bDvr6t6APU0mmcw2vsdftWx4o
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"259","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:40:17+08:00 ] 182.140.230.16 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:40:17+08:00 ] 182.140.230.16 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:40:17+08:00 ] 182.140.230.16 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T10:40:17+08:00 ] 182.140.230.16 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T10:40:17+08:00 ] 182.140.230.16 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:40:17+08:00 ] 182.140.230.16 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T10:41:52+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=16b9b6881aeac46fc2c9e6f4b4c8cf86abf54258&timestamp=1465267310&nonce=315094440&openid=o97bDvvDgmH_sct2F7xws6ZcFQRE
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:42:05+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=64935248ad14be0edb548e82c5e85d9f46ca9fed&timestamp=1465267323&nonce=256928749&openid=o97bDvnOog3p5u4ylYEel4sj87oc
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:42:05+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=64935248ad14be0edb548e82c5e85d9f46ca9fed&timestamp=1465267323&nonce=256928749&openid=o97bDvnOog3p5u4ylYEel4sj87oc
+ERR: 用户关注：o97bDvnOog3p5u4ylYEel4sj87oc
+[ 2016-06-07T10:42:05+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=64935248ad14be0edb548e82c5e85d9f46ca9fed&timestamp=1465267323&nonce=256928749&openid=o97bDvnOog3p5u4ylYEel4sj87oc
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"259","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:42:14+08:00 ] 58.247.206.142 /wap.php?s=/Weixin/index.html&signature=796da1ca5cd9e26040de419a5ffb1f7ad87dbde2&timestamp=1465267332&nonce=2035730336&openid=o97bDvj2ox2kq3oLetlkP6N4yNCQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:42:15+08:00 ] 58.247.206.142 /wap.php?s=/Weixin/index.html&signature=796da1ca5cd9e26040de419a5ffb1f7ad87dbde2&timestamp=1465267332&nonce=2035730336&openid=o97bDvj2ox2kq3oLetlkP6N4yNCQ
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"260","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:49:52+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=84a8084c51b716b7143dced690a4d3536ef2e205&timestamp=1465267789&nonce=2100236592&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:54+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=4ed61da97a55f62b06de6749abece8f265001b6e&timestamp=1465267791&nonce=1451903966&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+ERR: empty openid
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+ERR: 网页基础授权 OpenId===o97bDvqpPU-PNcQEayRXtvYe9fJY; UnionId===
+[ 2016-06-07T10:49:54+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html?code=001w9hAB1amx0104I4AB10MhAB1w9hAD&state=base
+ERR: result
+[ 2016-06-07T10:49:56+08:00 ] 101.226.33.216 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:56+08:00 ] 101.226.227.143 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:56+08:00 ] 101.226.33.216 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:49:56+08:00 ] 101.226.33.216 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T10:49:56+08:00 ] 101.226.33.216 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T10:49:56+08:00 ] 101.226.33.216 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:49:56+08:00 ] 101.226.33.216 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T10:49:56+08:00 ] 101.226.227.143 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:49:56+08:00 ] 101.226.227.143 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T10:49:56+08:00 ] 101.226.227.143 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T10:49:56+08:00 ] 101.226.227.143 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T10:49:56+08:00 ] 101.226.227.143 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T10:49:57+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:49:57+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:49:57+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/1.html
+[ 2016-06-07T10:49:57+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T10:50:00+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:50:00+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:50:00+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/1.html
+[ 2016-06-07T10:50:00+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T10:50:19+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=fc22819f3ad031b86ef5f10e6000a87313c0c3cd&timestamp=1465267816&nonce=1424752310&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:50:20+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=f43a7acc16bf183db90407f02f6f21af94a7b849&timestamp=1465267818&nonce=718012617&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:50:20+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:50:20+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T10:50:20+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T10:50:20+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T10:56:01+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=23934e463140f552afbdb2cce289b2eddd89da96&timestamp=1465268158&nonce=1681319571&openid=o97bDvrqeYEMirLhStlO3ayOjCHY
+ERR: 创建了Wechat对象
+[ 2016-06-07T10:56:01+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=23934e463140f552afbdb2cce289b2eddd89da96&timestamp=1465268158&nonce=1681319571&openid=o97bDvrqeYEMirLhStlO3ayOjCHY
+ERR: 用户关注：o97bDvrqeYEMirLhStlO3ayOjCHY
+[ 2016-06-07T10:56:01+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=23934e463140f552afbdb2cce289b2eddd89da96&timestamp=1465268158&nonce=1681319571&openid=o97bDvrqeYEMirLhStlO3ayOjCHY
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"260","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T10:56:05+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=62af145909057874c0de9008ca121f7295ba6ab6&timestamp=1465268162&nonce=1580696660&openid=o97bDvrqeYEMirLhStlO3ayOjCHY
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:04:18+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=d819ab6cfb88ee99fa84f5e8a3d8e295da9f9a59&timestamp=1465268655&nonce=1017367045&openid=o97bDvt3v6nVwQHwSrFgHrDQhdxY
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:04:18+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=d819ab6cfb88ee99fa84f5e8a3d8e295da9f9a59&timestamp=1465268655&nonce=1017367045&openid=o97bDvt3v6nVwQHwSrFgHrDQhdxY
+ERR: 用户关注：o97bDvt3v6nVwQHwSrFgHrDQhdxY
+[ 2016-06-07T11:04:18+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=d819ab6cfb88ee99fa84f5e8a3d8e295da9f9a59&timestamp=1465268655&nonce=1017367045&openid=o97bDvt3v6nVwQHwSrFgHrDQhdxY
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"261","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T11:04:25+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=e5d90c12f9f54ea8547fbb121ae352710d2152b2&timestamp=1465268663&nonce=1858187911&openid=o97bDvt3v6nVwQHwSrFgHrDQhdxY
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:25:06+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=1fd4dae22434ab3963c7179e7e6eaa6721bb25c8&timestamp=1465269903&nonce=524278403&openid=o97bDvuAM4zJjksrU50-5ONVyan4
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:25:06+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=1fd4dae22434ab3963c7179e7e6eaa6721bb25c8&timestamp=1465269903&nonce=524278403&openid=o97bDvuAM4zJjksrU50-5ONVyan4
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"262","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T11:25:32+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=5f72556e2f2b275e8a7bbe6c7cad8beb6798dfe5&timestamp=1465269930&nonce=718985292&openid=o97bDvuAM4zJjksrU50-5ONVyan4
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:26:00+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=6cc88edde5620b7992840419f0c4ca4d493e092c&timestamp=1465269957&nonce=457143626&openid=o97bDvuAM4zJjksrU50-5ONVyan4
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:35:28+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=f84983557ce858d506d822cc5f18f20a4b395ebb&timestamp=1465270526&nonce=1775819288&openid=o97bDvvr5nifISH8l7HibB--c7XM
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:35:28+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=f84983557ce858d506d822cc5f18f20a4b395ebb&timestamp=1465270526&nonce=1775819288&openid=o97bDvvr5nifISH8l7HibB--c7XM
+ERR: 用户关注：o97bDvvr5nifISH8l7HibB--c7XM
+[ 2016-06-07T11:35:29+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=f84983557ce858d506d822cc5f18f20a4b395ebb&timestamp=1465270526&nonce=1775819288&openid=o97bDvvr5nifISH8l7HibB--c7XM
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"262","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T11:35:32+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=fc0430f21863e1eb684c198a42bb54f26cf7af83&timestamp=1465270529&nonce=517251247&openid=o97bDvvr5nifISH8l7HibB--c7XM
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:36:43+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=f6dc5476ab1435b8ef27b835472486f35528d5a2&timestamp=1465270601&nonce=1605288139&openid=o97bDvvsMghx-iMENX8BGy98fYWA
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:36:43+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=f6dc5476ab1435b8ef27b835472486f35528d5a2&timestamp=1465270601&nonce=1605288139&openid=o97bDvvsMghx-iMENX8BGy98fYWA
+ERR: 用户取消关注：o97bDvvsMghx-iMENX8BGy98fYWA
+[ 2016-06-07T11:43:44+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=797faabfdb0e85a5e5d8a82342951a77bad16971&timestamp=1465271021&nonce=1209398717&openid=o97bDvg-yaGD9uNc87FtaTLgGyKg
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:43:44+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=797faabfdb0e85a5e5d8a82342951a77bad16971&timestamp=1465271021&nonce=1209398717&openid=o97bDvg-yaGD9uNc87FtaTLgGyKg
+ERR: canal：{"id":"2","name":"\u6797\u738b\u5174_13957961589_\u6d59G8M908","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQHu8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2UwVXlQUS1ramtUMzBYaFRyMmt6AAIE5YMbVwMEAAAAAA==","click":"57","status":"0","pid":"0","keyword":"\u6797\u738b\u5174"}
+[ 2016-06-07T11:52:28+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=a74026e77fc934be83cc8786355295151757953e&timestamp=1465271546&nonce=1706748327&openid=o97bDvmCkgANWs7CvhEZ0vC4M_LE
+ERR: 创建了Wechat对象
+[ 2016-06-07T11:52:28+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=a74026e77fc934be83cc8786355295151757953e&timestamp=1465271546&nonce=1706748327&openid=o97bDvmCkgANWs7CvhEZ0vC4M_LE
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"263","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T11:59:29+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=b88e56b6a461756fdfb5b6858a3fa1fc7f52f5a6&timestamp=1465271967&nonce=706434032&openid=o97bDvrqeYEMirLhStlO3ayOjCHY
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:07:20+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=504819ca170f1d85945cd3c2a75e840549299b2d&timestamp=1465272437&nonce=480855231&openid=o97bDvrqeYEMirLhStlO3ayOjCHY
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:09:46+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=97f28ec25b9f2d881543ff7b9f1452fe12c5352e&timestamp=1465272583&nonce=516764570&openid=o97bDviGFgW4Shwf_4llHwtGaj7g
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:09:46+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=97f28ec25b9f2d881543ff7b9f1452fe12c5352e&timestamp=1465272583&nonce=516764570&openid=o97bDviGFgW4Shwf_4llHwtGaj7g
+ERR: 用户关注：o97bDviGFgW4Shwf_4llHwtGaj7g
+[ 2016-06-07T12:09:46+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=97f28ec25b9f2d881543ff7b9f1452fe12c5352e&timestamp=1465272583&nonce=516764570&openid=o97bDviGFgW4Shwf_4llHwtGaj7g
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"263","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T12:19:02+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=52e52a5049dd67a9c87e1510b74e324599ed1db0&timestamp=1465273140&nonce=1667634770&openid=o97bDvtj7sG3Tk2l15MBX0FUEt8M
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:19:02+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=52e52a5049dd67a9c87e1510b74e324599ed1db0&timestamp=1465273140&nonce=1667634770&openid=o97bDvtj7sG3Tk2l15MBX0FUEt8M
+ERR: 用户关注：o97bDvtj7sG3Tk2l15MBX0FUEt8M
+[ 2016-06-07T12:19:02+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=52e52a5049dd67a9c87e1510b74e324599ed1db0&timestamp=1465273140&nonce=1667634770&openid=o97bDvtj7sG3Tk2l15MBX0FUEt8M
+ERR: canal：{"id":"1","name":"\u5218\u732e\u534e_13957965288_\u6d59G1821","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGe8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL01rVWdSaFBraUVUeC16RTh2V2t6AAIEwYMbVwMEAAAAAA==","click":"244","status":"0","pid":"0","keyword":"\u5218\u732e\u534e"}
+[ 2016-06-07T12:19:06+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=393400ed475d0798fb26851b8728d5ef8f242e34&timestamp=1465273143&nonce=321985859&openid=o97bDvtj7sG3Tk2l15MBX0FUEt8M
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:19:10+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=51ba5b28d34b42e43c1bd011bf6a6d7a539d4343&timestamp=1465273148&nonce=2073913346&openid=o97bDvtj7sG3Tk2l15MBX0FUEt8M
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:26:54+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=570643c1ba890a45723241497600b81aeecd9964&timestamp=1465273611&nonce=848492589&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:27:07+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=31a3f8f3d4b8fba54c41549ba3fbb2bb036398eb&timestamp=1465273624&nonce=897451514&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:31:55+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=af80793a655c9cb0f0509a7c3376e8dc08ddbdd6&timestamp=1465273913&nonce=1328135094&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:31:55+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=af80793a655c9cb0f0509a7c3376e8dc08ddbdd6&timestamp=1465273913&nonce=1328135094&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: 用户关注：o97bDvgVFaTTyvaWAhOGAcUQkFEc
+[ 2016-06-07T12:31:56+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=af80793a655c9cb0f0509a7c3376e8dc08ddbdd6&timestamp=1465273913&nonce=1328135094&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: canal：{"id":"1","name":"\u5218\u732e\u534e_13957965288_\u6d59G1821","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGe8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL01rVWdSaFBraUVUeC16RTh2V2t6AAIEwYMbVwMEAAAAAA==","click":"245","status":"0","pid":"0","keyword":"\u5218\u732e\u534e"}
+[ 2016-06-07T12:31:59+08:00 ] 140.207.54.77 /wap.php?s=/Weixin/index.html&signature=9d4b0045f1f542cf8ce088494c73e719d0bb3c77&timestamp=1465273917&nonce=1982989104&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:33:04+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=909d6cffb0f39a70b680c932e24b5cbfd9ad134e&timestamp=1465273981&nonce=1397691525&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:33:07+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=5ec32ed03f2db55760b53a12ff7a257a5a0b75d0&timestamp=1465273985&nonce=894172797&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: 创建了Wechat对象
+[ 2016-06-07T12:33:07+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=5ec32ed03f2db55760b53a12ff7a257a5a0b75d0&timestamp=1465273985&nonce=894172797&openid=o97bDvgVFaTTyvaWAhOGAcUQkFEc
+ERR: 用户取消关注：o97bDvgVFaTTyvaWAhOGAcUQkFEc
+[ 2016-06-07T13:35:22+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=ec94aba63634dcaff6d1db010c5975eef33bd5e0&timestamp=1465277720&nonce=1486008280&openid=o97bDvse2OpGaMtgUZa7mvDT6P9g
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:35:22+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=ec94aba63634dcaff6d1db010c5975eef33bd5e0&timestamp=1465277720&nonce=1486008280&openid=o97bDvse2OpGaMtgUZa7mvDT6P9g
+ERR: 用户关注：o97bDvse2OpGaMtgUZa7mvDT6P9g
+[ 2016-06-07T13:35:23+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=ec94aba63634dcaff6d1db010c5975eef33bd5e0&timestamp=1465277720&nonce=1486008280&openid=o97bDvse2OpGaMtgUZa7mvDT6P9g
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"264","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T13:36:19+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=f08372e81f9232b81b37e8a053cadf52093670cb&timestamp=1465277776&nonce=273281227&openid=o97bDvse2OpGaMtgUZa7mvDT6P9g
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:36:19+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=f08372e81f9232b81b37e8a053cadf52093670cb&timestamp=1465277776&nonce=273281227&openid=o97bDvse2OpGaMtgUZa7mvDT6P9g
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T13:36:25+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=cf80ed5630a6c9e55e3d162e56464dfab363e806&timestamp=1465277783&nonce=393765697&openid=o97bDvse2OpGaMtgUZa7mvDT6P9g
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:41:05+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=ca8681d6ad66d6be8def2ec76cfc69655e7d84be&timestamp=1465278063&nonce=74590576&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:41:07+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=2acbc81e3d62fe542f30b75aee55ce918200c191&timestamp=1465278065&nonce=799118742&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+ERR: empty openid
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+ERR: 网页基础授权 OpenId===o97bDvqpPU-PNcQEayRXtvYe9fJY; UnionId===
+[ 2016-06-07T13:41:08+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=041muIAa0V3QJI1eirCa03LLAa0muIAS&state=base
+ERR: result
+[ 2016-06-07T13:44:37+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=07e2a3bfa612898427fb4331ee1f287b5cd8006f&timestamp=1465278275&nonce=564515996&openid=o97bDvtMZhsN-XELvh4DSoLKjGII
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:44:37+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=07e2a3bfa612898427fb4331ee1f287b5cd8006f&timestamp=1465278275&nonce=564515996&openid=o97bDvtMZhsN-XELvh4DSoLKjGII
+ERR: 用户关注：o97bDvtMZhsN-XELvh4DSoLKjGII
+[ 2016-06-07T13:44:38+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=07e2a3bfa612898427fb4331ee1f287b5cd8006f&timestamp=1465278275&nonce=564515996&openid=o97bDvtMZhsN-XELvh4DSoLKjGII
+ERR: canal：{"id":"5","name":"\u6c88\u5fb7\u7533_13555796177_\u6d59AZ262M","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQFI8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL0RVWFdVWFBrWkVRZHR3NHhTMmt6AAIESoQbVwMEAAAAAA==","click":"39","status":"0","pid":"0","keyword":"\u6c88\u5fb7\u7533"}
+[ 2016-06-07T13:48:12+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=39af69a48ab22227c4f0689a6b466ebbeff8aa53&timestamp=1465278490&nonce=589397368&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=dcedc7b870e048fd31c37fe8d74dfb457c2acb70&timestamp=1465278490&nonce=388030368&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: not empty openid
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T13:48:13+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T13:48:15+08:00 ] 125.113.107.152 /index.php?s=/Wap/Mall/detail_accessory/id/4.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:15+08:00 ] 125.113.107.152 /index.php?s=/Wap/Mall/detail_accessory/id/4.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:15+08:00 ] 125.113.107.152 /index.php?s=/Wap/Mall/detail_accessory/id/4.html
+ERR: callback=http://d.7744go.com/index.php?s=/Wap/Mall/detail_accessory/id/4.html
+[ 2016-06-07T13:48:15+08:00 ] 125.113.107.152 /index.php?s=/Wap/Mall/detail_accessory/id/4.html
+ERR: not empty openid
+[ 2016-06-07T13:48:17+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:17+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:17+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/order/id/4/cl/.html
+[ 2016-06-07T13:48:17+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: not empty openid
+[ 2016-06-07T13:48:19+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:19+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:19+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/order/id/4/cl/.html
+[ 2016-06-07T13:48:19+08:00 ] 125.113.107.152 /wap.php?s=/Mall/order/id/4/cl/.html
+ERR: not empty openid
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=mall/index.html
+ERR: not empty openid
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T13:48:29+08:00 ] 125.113.107.152 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T13:51:18+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=c076b25bde9e974193a9198f6d7d905a2183d918&timestamp=1465278676&nonce=247879243&openid=o97bDvtMZhsN-XELvh4DSoLKjGII
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:52:23+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=2ce46068567b7345c6c84d21f4b4989574914c61&timestamp=1465278741&nonce=2015528760&openid=o97bDvkIvM0mbVITwgZv0_it6-TE
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:52:23+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=2ce46068567b7345c6c84d21f4b4989574914c61&timestamp=1465278741&nonce=2015528760&openid=o97bDvkIvM0mbVITwgZv0_it6-TE
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T13:53:54+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=3d53e1c6a17852442fefbc2417e72360e1dde5bd&timestamp=1465278831&nonce=1793684441&openid=o97bDvsBakBGoEJoPDmarCofLrJw
+ERR: 创建了Wechat对象
+[ 2016-06-07T13:53:54+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=3d53e1c6a17852442fefbc2417e72360e1dde5bd&timestamp=1465278831&nonce=1793684441&openid=o97bDvsBakBGoEJoPDmarCofLrJw
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T14:34:34+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=75c05f293effa0fd01315169df3eee3b646f0380&timestamp=1465281271&nonce=397122203&openid=o97bDvreTZoKy5vkkwKH4xyItzdI
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:34:34+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=75c05f293effa0fd01315169df3eee3b646f0380&timestamp=1465281271&nonce=397122203&openid=o97bDvreTZoKy5vkkwKH4xyItzdI
+ERR: 用户关注：o97bDvreTZoKy5vkkwKH4xyItzdI
+[ 2016-06-07T14:34:34+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=75c05f293effa0fd01315169df3eee3b646f0380&timestamp=1465281271&nonce=397122203&openid=o97bDvreTZoKy5vkkwKH4xyItzdI
+ERR: canal：{"id":"1","name":"\u5218\u732e\u534e_13957965288_\u6d59G1821","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGe8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL01rVWdSaFBraUVUeC16RTh2V2t6AAIEwYMbVwMEAAAAAA==","click":"246","status":"0","pid":"0","keyword":"\u5218\u732e\u534e"}
+[ 2016-06-07T14:54:09+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=2b613b64045e4b8b1972185c3d8edbd4ae4d7081&timestamp=1465282446&nonce=201616090&openid=o97bDvpz7Zn4pMaL23FJ8xvN_VHM
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+[ 2016-06-07T14:54:09+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+ERR: empty openid
+[ 2016-06-07T14:54:10+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+ERR: 网页基础授权 OpenId===o97bDvpz7Zn4pMaL23FJ8xvN_VHM; UnionId===
+[ 2016-06-07T14:54:10+08:00 ] 125.113.107.152 /wap.php/Shop/index.html?code=031uVuR315Dj802r7QS31UTwR31uVuR5&state=base
+ERR: result
+[ 2016-06-07T14:54:16+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=20ec9e193411199f3f619b4e2b37b58d5ca1fe03&timestamp=1465282453&nonce=1194303241&openid=o97bDvpz7Zn4pMaL23FJ8xvN_VHM
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:16+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:16+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T14:54:16+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T14:54:16+08:00 ] 125.113.107.152 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T14:54:18+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:18+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T14:54:18+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/1.html
+[ 2016-06-07T14:54:18+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T14:54:25+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:25+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T14:54:25+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/1.html
+[ 2016-06-07T14:54:25+08:00 ] 125.113.107.152 /wxpay/wap.php?s=/Maintain/order/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T14:54:31+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T14:54:31+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T14:54:31+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/1.html
+[ 2016-06-07T14:54:31+08:00 ] 125.113.107.152 /wap.php?s=/Maintain/details/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T15:25:16+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=42e224ff340f7a3a891a6e097359bb6e97496fb7&timestamp=1465284314&nonce=228787873&openid=o97bDvsBakBGoEJoPDmarCofLrJw
+ERR: 创建了Wechat对象
+[ 2016-06-07T15:25:16+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=42e224ff340f7a3a891a6e097359bb6e97496fb7&timestamp=1465284314&nonce=228787873&openid=o97bDvsBakBGoEJoPDmarCofLrJw
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T16:18:10+08:00 ] 58.247.206.151 /wap.php?s=/Weixin/index.html&signature=2087602500a71968196c15b19eed5bbb87718544&timestamp=1465287487&nonce=1959703588&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:18:16+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=59288f03a7355dfae419e91d3b0d5647e8ab9c10&timestamp=1465287493&nonce=1038942298&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:18:17+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:18:17+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T16:18:17+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T16:18:17+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-06-07T16:18:17+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T16:18:17+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-06-07T16:18:18+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:18:18+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T16:18:18+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+[ 2016-06-07T16:18:18+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+ERR: empty openid
+[ 2016-06-07T16:18:18+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+ERR: 网页基础授权 OpenId===o97bDvmMi5P6w7Hk1bpDqD_iUXFQ; UnionId===
+[ 2016-06-07T16:18:18+08:00 ] 101.226.125.117 /wap.php/Maintain/index.html?code=041IuIeo0bA10d1SPQdo0JkGeo0IuIe0&state=base
+ERR: result
+[ 2016-06-07T16:18:57+08:00 ] 101.226.125.117 /wap.php?s=/Maintain/details/pid/8.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:18:57+08:00 ] 101.226.125.117 /wap.php?s=/Maintain/details/pid/8.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T16:18:57+08:00 ] 101.226.125.117 /wap.php?s=/Maintain/details/pid/8.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/8.html
+[ 2016-06-07T16:18:57+08:00 ] 101.226.125.117 /wap.php?s=/Maintain/details/pid/8.html
+ERR: not empty openid
+[ 2016-06-07T16:19:13+08:00 ] 101.226.125.117 /wxpay/wap.php?s=/Maintain/order/pid/8.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:19:13+08:00 ] 101.226.125.117 /wxpay/wap.php?s=/Maintain/order/pid/8.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T16:19:13+08:00 ] 101.226.125.117 /wxpay/wap.php?s=/Maintain/order/pid/8.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/8.html
+[ 2016-06-07T16:19:13+08:00 ] 101.226.125.117 /wxpay/wap.php?s=/Maintain/order/pid/8.html
+ERR: not empty openid
+[ 2016-06-07T16:19:28+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=021a44c3506b4f68be9cb40cff63ea5ce56c22c7&timestamp=1465287565&nonce=656058735&openid=o97bDvmMi5P6w7Hk1bpDqD_iUXFQ
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:25:21+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=33072cc247328e26af2df88f1e92e80cac8dcf4e&timestamp=1465287919&nonce=2079090668&openid=o97bDvqpPU-PNcQEayRXtvYe9fJY
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:25:22+08:00 ] 124.160.213.229 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:25:22+08:00 ] 124.160.213.229 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T16:25:22+08:00 ] 124.160.213.229 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T16:25:22+08:00 ] 124.160.213.229 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T16:26:41+08:00 ] 124.160.213.229 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:26:41+08:00 ] 124.160.213.229 /wap.php?s=/Maintain/details/pid/1.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T16:26:41+08:00 ] 124.160.213.229 /wap.php?s=/Maintain/details/pid/1.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/1.html
+[ 2016-06-07T16:26:41+08:00 ] 124.160.213.229 /wap.php?s=/Maintain/details/pid/1.html
+ERR: not empty openid
+[ 2016-06-07T16:52:10+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=196e47eee2ac5983ddc2c5b2dbe93df893f137d3&timestamp=1465289528&nonce=426463421&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 创建了Wechat对象
+[ 2016-06-07T16:52:35+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=46ab57ba573db48c7d9ae1ed0c0fe5fbf9fa3237&timestamp=1465289553&nonce=169096430&openid=o97bDvl6zJ7dkEVwh9F4F0dP7uP0
+ERR: 创建了Wechat对象
+[ 2016-06-07T17:05:25+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=4d50d2ecd4c49a8b1103f239f7943840e3fba2ea&timestamp=1465290323&nonce=178649789&openid=o97bDvs26eNy4cQBIPYQyzhlcLDM
+ERR: 创建了Wechat对象
+[ 2016-06-07T17:30:33+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=acec7303b11a5551331bf4395cf2e9dc2d757fea&timestamp=1465291831&nonce=876312133&openid=o97bDvixoXy9M95AvYjNfYRZqSQE
+ERR: 创建了Wechat对象
+[ 2016-06-07T17:30:33+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=acec7303b11a5551331bf4395cf2e9dc2d757fea&timestamp=1465291831&nonce=876312133&openid=o97bDvixoXy9M95AvYjNfYRZqSQE
+ERR: 用户关注：o97bDvixoXy9M95AvYjNfYRZqSQE
+[ 2016-06-07T17:30:34+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=acec7303b11a5551331bf4395cf2e9dc2d757fea&timestamp=1465291831&nonce=876312133&openid=o97bDvixoXy9M95AvYjNfYRZqSQE
+ERR: canal：{"id":"1","name":"\u5218\u732e\u534e_13957965288_\u6d59G1821","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGe8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL01rVWdSaFBraUVUeC16RTh2V2t6AAIEwYMbVwMEAAAAAA==","click":"247","status":"0","pid":"0","keyword":"\u5218\u732e\u534e"}
+[ 2016-06-07T17:30:40+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=44bf420a397204e9b42957dd452b77604f8142d0&timestamp=1465291838&nonce=204684845&openid=o97bDvixoXy9M95AvYjNfYRZqSQE
+ERR: 创建了Wechat对象
+[ 2016-06-07T18:24:43+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=5a6930b45b559dd7d121eb69fd30359ad301c4be&timestamp=1465295081&nonce=866563067&openid=o97bDvjNEju3P5Xdr6wouXchsCts
+ERR: 创建了Wechat对象
+[ 2016-06-07T18:24:43+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=5a6930b45b559dd7d121eb69fd30359ad301c4be&timestamp=1465295081&nonce=866563067&openid=o97bDvjNEju3P5Xdr6wouXchsCts
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T18:24:53+08:00 ] 58.247.206.152 /wap.php?s=/Weixin/index.html&signature=459ab562bd012ff04d496943cba301209575b542&timestamp=1465295091&nonce=530788079&openid=o97bDvjNEju3P5Xdr6wouXchsCts
+ERR: 创建了Wechat对象
+[ 2016-06-07T18:25:07+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=363607086706d9def54cc5e98c2d8236a03fd10d&timestamp=1465295105&nonce=308351809&openid=o97bDvjNEju3P5Xdr6wouXchsCts
+ERR: 创建了Wechat对象
+[ 2016-06-07T18:25:07+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=363607086706d9def54cc5e98c2d8236a03fd10d&timestamp=1465295105&nonce=308351809&openid=o97bDvjNEju3P5Xdr6wouXchsCts
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T18:25:09+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=d4088f05d68fae8f8a7198c32ade1458de5ca046&timestamp=1465295107&nonce=249116634&openid=o97bDvjNEju3P5Xdr6wouXchsCts
+ERR: 创建了Wechat对象
+[ 2016-06-07T18:47:32+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=0ecfe87f8005f8d78414c00ad019782b52108f0f&timestamp=1465296450&nonce=558601894&openid=o97bDvkbWyrWCbxxkPExpTDW4AYc
+ERR: 创建了Wechat对象
+[ 2016-06-07T18:47:32+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=0ecfe87f8005f8d78414c00ad019782b52108f0f&timestamp=1465296450&nonce=558601894&openid=o97bDvkbWyrWCbxxkPExpTDW4AYc
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T19:18:22+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=1dc58db5590ee8834ce68142ec1e252976c7d739&timestamp=1465298300&nonce=733738718&openid=o97bDvvWIfM2UgckdefQwTFHUHYU
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+ERR: empty openid
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+ERR: 网页基础授权 OpenId===o97bDvvWIfM2UgckdefQwTFHUHYU; UnionId===
+[ 2016-06-07T19:18:23+08:00 ] 101.226.61.184 /wap.php?s=mall/index.html&code=0119WPAn0heuIe1VmkBn0tHMAn09WPAY&state=base
+ERR: result
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T19:18:25+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T19:18:38+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=create_time+desc&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:38+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=create_time+desc&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:38+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=create_time+desc&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=create_time+desc&type=2
+[ 2016-06-07T19:18:38+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=create_time+desc&type=2
+ERR: not empty openid
+[ 2016-06-07T19:18:40+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=sales+desc&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:40+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=sales+desc&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:40+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=sales+desc&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=sales+desc&type=2
+[ 2016-06-07T19:18:40+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=sales+desc&type=2
+ERR: not empty openid
+[ 2016-06-07T19:18:42+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=member_price+desc&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T19:18:42+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=member_price+desc&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T19:18:42+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=member_price+desc&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=member_price+desc&type=2
+[ 2016-06-07T19:18:42+08:00 ] 101.226.61.184 /wap.php?s=/Mall/accessory_list.html&order=member_price+desc&type=2
+ERR: not empty openid
+[ 2016-06-07T20:03:57+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=1b71d5c66c7b48167668fef1ed46fae41b7f6510&timestamp=1465301035&nonce=1082602695&openid=o97bDvtKfp1nO9GFlFG37RoUr4xs
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:03:57+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=1b71d5c66c7b48167668fef1ed46fae41b7f6510&timestamp=1465301035&nonce=1082602695&openid=o97bDvtKfp1nO9GFlFG37RoUr4xs
+ERR: 用户关注：o97bDvtKfp1nO9GFlFG37RoUr4xs
+[ 2016-06-07T20:03:58+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=1b71d5c66c7b48167668fef1ed46fae41b7f6510&timestamp=1465301035&nonce=1082602695&openid=o97bDvtKfp1nO9GFlFG37RoUr4xs
+ERR: canal：{"id":"7","name":"\u502a\u5fd7\u534e_15958985815_\u6d59G5833D","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQE38ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL1MwWDQtWW5rV2tRanAwaU5aV2t6AAIEiIQbVwMEAAAAAA==","click":"42","status":"0","pid":"0","keyword":"\u502a\u5fd7\u534e"}
+[ 2016-06-07T20:04:02+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=720623c1dd499f78a163ccb2e1c46eb9c8ea0a13&timestamp=1465301039&nonce=1104277638&openid=o97bDvtKfp1nO9GFlFG37RoUr4xs
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:04:13+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=75009b4f8ab6f6bc91a9dcef24534bc0dba60508&timestamp=1465301050&nonce=288176644&openid=o97bDvtKfp1nO9GFlFG37RoUr4xs
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:04:16+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:04:16+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T20:04:16+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T20:04:16+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T20:04:16+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T20:04:16+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T20:04:17+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:04:17+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T20:04:17+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+[ 2016-06-07T20:04:17+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+ERR: empty openid
+[ 2016-06-07T20:04:17+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+ERR: 网页基础授权 OpenId===o97bDvtKfp1nO9GFlFG37RoUr4xs; UnionId===
+[ 2016-06-07T20:04:17+08:00 ] 101.226.61.190 /wap.php?s=mall/index.html&code=0314Rokz1qbgk30YWglz190tkz14RokM&state=base
+ERR: result
+[ 2016-06-07T20:04:18+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=f10eed27bd47c8714851bc0de9a89d3074b5dac0&timestamp=1465301055&nonce=662811388&openid=o97bDvtKfp1nO9GFlFG37RoUr4xs
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:08:42+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=8e4873ea05333bfbb94f74a7b72109d8254325df&timestamp=1465301319&nonce=261663435&openid=o97bDvjgy2vQ6gSu2CG0ClsWU9Kk
+ERR: 创建了Wechat对象
+[ 2016-06-07T20:08:42+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=8e4873ea05333bfbb94f74a7b72109d8254325df&timestamp=1465301319&nonce=261663435&openid=o97bDvjgy2vQ6gSu2CG0ClsWU9Kk
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T20:08:53+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=ca0a95805aeb07dd9448848535438bc4376a1ec8&timestamp=1465301331&nonce=796228134&openid=o97bDvjgy2vQ6gSu2CG0ClsWU9Kk
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:42+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=953013c33a65834b8434743edf7be10cef42b60d&timestamp=1465306900&nonce=492054724&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:42+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=953013c33a65834b8434743edf7be10cef42b60d&timestamp=1465306900&nonce=492054724&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 用户关注：o97bDvvWDVmEEf39dD5CZvjOfkf4
+[ 2016-06-07T21:41:43+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=953013c33a65834b8434743edf7be10cef42b60d&timestamp=1465306900&nonce=492054724&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: canal：{"id":"13","name":"\u5434\u7acb\u660e \u6d59G5S102 15058516175","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGi7zoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2cwVm1jVFhreWtTelg0QVBfMmt6AAIE4U5NVwMEAAAAAA==","click":"33","status":"0","pid":"0","keyword":"\u5434\u7acb\u660e"}
+[ 2016-06-07T21:41:46+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=03fd3d0e9314b8c107443ef8b2625f4cfa05cc67&timestamp=1465306903&nonce=1008945127&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:52+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=dc8645e812e33e6787b69b385b49841c08c791a9&timestamp=1465306910&nonce=1192815631&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:52+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:52+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T21:41:52+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T21:41:52+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T21:41:52+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T21:41:52+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T21:41:53+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:53+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T21:41:53+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+[ 2016-06-07T21:41:53+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+ERR: empty openid
+[ 2016-06-07T21:41:53+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+ERR: 网页基础授权 OpenId===o97bDvvWDVmEEf39dD5CZvjOfkf4; UnionId===
+[ 2016-06-07T21:41:53+08:00 ] 112.17.235.143 /wap.php?s=mall/index.html&code=001Ld3qR13s9QV0NTYnR1214qR1Ld3qh&state=base
+ERR: result
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T21:41:54+08:00 ] 112.17.235.143 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T21:42:06+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=23003d4ea8881cac3a6f78ce3c1dbb37ff31b320&timestamp=1465306924&nonce=582993144&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:58:32+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=a4a57b2518626850983534a589f76f9a3b49cf80&timestamp=1465307910&nonce=1100000771&openid=o97bDvsZipZBTHhEli-C3C7sKhxg
+ERR: 创建了Wechat对象
+[ 2016-06-07T21:58:32+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=a4a57b2518626850983534a589f76f9a3b49cf80&timestamp=1465307910&nonce=1100000771&openid=o97bDvsZipZBTHhEli-C3C7sKhxg
+ERR: 用户关注：o97bDvsZipZBTHhEli-C3C7sKhxg
+[ 2016-06-07T21:58:32+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=a4a57b2518626850983534a589f76f9a3b49cf80&timestamp=1465307910&nonce=1100000771&openid=o97bDvsZipZBTHhEli-C3C7sKhxg
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"265","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T22:23:36+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=efca2dec0c47e66bbc3ed2180b853a4bc8f15482&timestamp=1465309414&nonce=648652639&openid=o97bDvsJk6mUbo5W7iwmQwGjLJYc
+ERR: 创建了Wechat对象
+[ 2016-06-07T22:23:36+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=efca2dec0c47e66bbc3ed2180b853a4bc8f15482&timestamp=1465309414&nonce=648652639&openid=o97bDvsJk6mUbo5W7iwmQwGjLJYc
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"266","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-06-07T22:48:48+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=d1066f2d8e1359e5079c3f565f600255093c1650&timestamp=1465310926&nonce=2079382487&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 创建了Wechat对象
+[ 2016-06-07T22:48:54+08:00 ] 58.247.206.157 /wap.php?s=/Weixin/index.html&signature=b496bf4852ccddeb4324d27c55d1be622e11ad93&timestamp=1465310932&nonce=1495097693&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 创建了Wechat对象
+[ 2016-06-07T22:48:54+08:00 ] 58.247.206.157 /wap.php?s=/Weixin/index.html&signature=b496bf4852ccddeb4324d27c55d1be622e11ad93&timestamp=1465310932&nonce=1495097693&openid=o97bDvvWDVmEEf39dD5CZvjOfkf4
+ERR: 用户取消关注：o97bDvvWDVmEEf39dD5CZvjOfkf4
+[ 2016-06-07T22:50:35+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=59d95477efb768ea295aa27b72052486c5a4bee0&timestamp=1465311033&nonce=1483362464&openid=o97bDvpktc6ZqjjpqS4MeWvgEnZI
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:29:26+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=c894293922bb332dc9c0f8518a539df318de28fd&timestamp=1465313363&nonce=124957391&openid=o97bDvg_DMYxuRwoHKKmpu0WBne0
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:29:26+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=c894293922bb332dc9c0f8518a539df318de28fd&timestamp=1465313363&nonce=124957391&openid=o97bDvg_DMYxuRwoHKKmpu0WBne0
+ERR: 用户关注：o97bDvg_DMYxuRwoHKKmpu0WBne0
+[ 2016-06-07T23:29:26+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=c894293922bb332dc9c0f8518a539df318de28fd&timestamp=1465313363&nonce=124957391&openid=o97bDvg_DMYxuRwoHKKmpu0WBne0
+ERR: canal：{"id":"13","name":"\u5434\u7acb\u660e \u6d59G5S102 15058516175","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGi7zoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2cwVm1jVFhreWtTelg0QVBfMmt6AAIE4U5NVwMEAAAAAA==","click":"34","status":"0","pid":"0","keyword":"\u5434\u7acb\u660e"}
+[ 2016-06-07T23:37:38+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=bfaee6f7edc1a3704759ba1570003275a9dfd873&timestamp=1465313855&nonce=2050972539&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:37:38+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=bfaee6f7edc1a3704759ba1570003275a9dfd873&timestamp=1465313855&nonce=2050972539&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 用户关注：o97bDvs33Fm3hh9ALUQS0pNgShac
+[ 2016-06-07T23:37:38+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=bfaee6f7edc1a3704759ba1570003275a9dfd873&timestamp=1465313855&nonce=2050972539&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: canal：{"id":"13","name":"\u5434\u7acb\u660e \u6d59G5S102 15058516175","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGi7zoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL2cwVm1jVFhreWtTelg0QVBfMmt6AAIE4U5NVwMEAAAAAA==","click":"35","status":"0","pid":"0","keyword":"\u5434\u7acb\u660e"}
+[ 2016-06-07T23:38:55+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=9367b4f45bfaf1dab9baf4ab58ac5e24ba5cdc97&timestamp=1465313932&nonce=895887530&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:20+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=b9b2d70e4021b0e9cd36bf69ea7a46936b835367&timestamp=1465313958&nonce=51765697&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:20+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:20+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:39:20+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html
+[ 2016-06-07T23:39:20+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html
+ERR: empty openid
+[ 2016-06-07T23:39:20+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-06-07T23:39:20+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html
+ERR: !result
+[ 2016-06-07T23:39:21+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:21+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:39:21+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+ERR: callback=http://d.7744go.com/wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+[ 2016-06-07T23:39:21+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+ERR: empty openid
+[ 2016-06-07T23:39:21+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+ERR: 网页基础授权 OpenId===o97bDvs33Fm3hh9ALUQS0pNgShac; UnionId===
+[ 2016-06-07T23:39:21+08:00 ] 112.17.244.250 /wap.php?s=mall/index.html&code=041ZDwgK0Z8nel2ikaeK0EeAgK0ZDwg-&state=base
+ERR: result
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=1
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=1
+ERR: not empty openid
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: callback=http://d.7744go.com/wap.php?s=/Mall/accessory_list.html&order=&type=2
+[ 2016-06-07T23:39:22+08:00 ] 112.17.244.250 /wap.php?s=/Mall/accessory_list.html&order=&type=2
+ERR: not empty openid
+[ 2016-06-07T23:39:28+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=6939a6cdf990cf5db7ea6c30deecbed66fa4eee0&timestamp=1465313966&nonce=1505136587&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:29+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:39:29+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:39:29+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T23:39:29+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-06-07T23:40:39+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=6d6c5f86b46caae873d652ab7e95c2db732c7aa0&timestamp=1465314036&nonce=1430021634&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:40:39+08:00 ] 112.17.244.250 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:40:39+08:00 ] 112.17.244.250 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:40:39+08:00 ] 112.17.244.250 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-06-07T23:40:39+08:00 ] 112.17.244.250 /wap.php/Shop/index.html
+ERR: not empty openid
+[ 2016-06-07T23:40:48+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=4a9f9fbb7d857c8ac6efff81f6e954df723c4261&timestamp=1465314046&nonce=6842617&openid=o97bDvs33Fm3hh9ALUQS0pNgShac
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:40:48+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-06-07T23:40:48+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-06-07T23:40:48+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-06-07T23:40:48+08:00 ] 112.17.244.250 /wap.php/Maintain/index.html
+ERR: not empty openid

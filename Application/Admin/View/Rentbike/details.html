@@ -1,0 +1,109 @@
+<extend name="Public/base" />
+
+<block name="body">
+<div class="main-title">
+	<h2>订单详情</h2>
+</div>
+<form action="{:U()}" method="post" class="form-horizontal">
+	<div class="form-item">
+		<label class="item-label with80">订单号</label>
+		<div class="controls">{$order.transid}</div>
+	</div>
+
+	<div class="form-item">
+		<label class="item-label with80">所属门店</label>
+		<div class="controls">{$order.shopid|get_shop_id}</div>
+	</div>
+
+	<div class="form-item">
+		<label class="item-label with80">会员昵称</label>
+		<div class="controls"><a href="{:U('Fans/index',array('openid'=>$fans['openid']))}">{$fans.nickname}</a></div>
+	</div>
+	<div class="form-item">
+		<label class="item-label with80">会员姓名</label>
+		<div class="controls">{$fans.realname}&nbsp;</div>
+	</div>
+	<div class="form-item">
+		<label class="item-label with80">联系电话</label>
+		<div class="controls">{$order.tel}</div>
+	</div>
+    <if condition="$order['tel'] neq $fans['mobile']">
+        <div class="form-item">
+            <label class="item-label with80">认证电话</label>
+            <div class="controls">{$fans.mobile}</div>
+        </div>
+    </if>
+	<div class="form-item">
+		<label class="item-label with80">起租时间</label>
+		<div class="controls">{$order.start_time|date='Y-m-d H:i',###}</div>
+	</div>
+
+	<if condition="($order.status eq 2) or ($order.status eq 4)">
+	<div class="form-item">
+		<label class="item-label with80">还车时间</label>
+		<div class="controls">{$order.end_time|date='Y-m-d H:i',###}</div>
+	</div>
+
+	<div class="form-item">
+		<label class="item-label with80">费用</label>
+		<div class="controls">{$order.price}</div>
+	</div>
+	</if>
+
+	<div class="form-item">
+		<label class="item-label with80">订单状态</label>
+		<div class="controls">{$order.status|get_rentorder_status}</div>
+	</div>
+
+	<div class="form-item">
+		<label class="item-label with80">车辆定位</label>
+		<div style="width: 500px; height: 300px;" id="allmap"></div>
+	</div>
+
+	<div class="form-item">
+		<input type="hidden" name="id" value="{$info.id|default=''}">
+		<button class="btn btn-return"
+			onclick="javascript:history.back(-1);return false;">返 回</button>
+	</div>
+</form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bi6KWlVRxH8q59j9DB18Z1w8"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/changeMore.js"></script>
+<script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+</script>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point({$lng},{$lat});
+        var top_left_navigation = new BMap.NavigationControl();
+        map.centerAndZoom(point, 12);
+        map.addControl(top_left_navigation);
+        map.enableScrollWheelZoom(true);
+        var i;
+        var markers = [];
+        var points = [
+                <volist name="gps" id="vo">
+        new BMap.Point({$vo.lo}, {$vo.la}),
+        </volist>
+        ];
+        function callback(xyResults){
+            var xyResult = null;
+            var kk =  Array();
+            for(var index in xyResults){
+                xyResult = xyResults[index];
+                var point = new BMap.Point(xyResult.x, xyResult.y);
+                kk.push(point);
+            }
+            var polyline = new BMap.Polyline(kk,{strokeColor:"red", strokeWeight:4, strokeOpacity:1,enableEditing:"true"});
+            map.addOverlay(polyline);
+        }
+
+        BMap.Convertor.transMore(points,0,callback);        //一秒之后开始进行坐标转换。参数2，表示是从GCJ-02坐标到百度坐标。参数0，表示是从GPS到百度坐标
+    </script>
+</block>

@@ -1,0 +1,110 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>优惠券策略管理 </h2>
+    </div>
+
+    <div class="cf">
+        <a class="btn" href="{:U('config_add')}">新 增 策 略</a>
+        <button class="btn ajax-post confirm" url="{:U('batch_give_temp')}" target-form="ids">批量补发</button>
+        <button class="btn ajax-post confirm" url="{:U('del')}" target-form="ids">删 除</button>
+        <!-- 高级搜索 -->
+         <div class="search-form fr cf">
+            <div class="sleft">
+                <input type="text" name="code" class="search-input" value="{:I('code')}" placeholder="请输入卡券号">
+                <a class="sch-btn" href="javascript:;" id="search" url="__SELF__"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th>ID</th>
+                        <th>优惠券</th>
+                        <th>动作</th>
+                        <th>张数</th>
+                        <th>可用</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="menu">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$menu.id}"></td>
+                        <td>{$menu.id}</td>
+                        <td>{$menu.couponid|get_coupon_id}</td>
+                        <td>{$menu.actions|get_coupon_action_type}</td>
+                        <td>{$menu.num}</td>
+                        <td>{$menu.status|get_yesorno}</td>
+                        <td> 
+                            <a title="编辑" href="{:U('config_edit?id='.$menu['id'])}">编辑</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('config_del?id='.$menu['id'])}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="10" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            //搜索功能
+            $("#search").click(function() {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function(e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //导航高亮
+            highlight_subnav('{:U('config')}');
+            //点击排序
+        	$('.list_sort').click(function(){
+        		var url = $(this).attr('url');
+        		var ids = $('.ids:checked');
+        		var param = '';
+        		if(ids.length > 0){
+        			var str = new Array();
+        			ids.each(function(){
+        				str.push($(this).val());
+        			});
+        			param = str.join(',');
+        		}
+
+        		if(url != undefined && url != ''){
+        			window.location.href = url + '/ids/' + param;
+        		}
+        	});
+        });
+    </script>
+</block>

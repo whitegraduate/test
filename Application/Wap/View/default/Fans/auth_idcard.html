@@ -1,0 +1,144 @@
+
+<extend name="Base/common" />
+<block name="header"> 
+    <script src="__JS__/date/mobiscroll_002.js" type="text/javascript"></script>
+	<script src="__JS__/date/mobiscroll_004.js" type="text/javascript"></script>
+	<link href="__CSS__/date/mobiscroll_002.css" rel="stylesheet" type="text/css">
+	<link href="__CSS__/date/mobiscroll.css" rel="stylesheet" type="text/css">
+	<script src="__JS__/date/mobiscroll.js" type="text/javascript"></script>
+	<script src="__JS__/date/mobiscroll_003.js" type="text/javascript"></script>
+	<script src="__JS__/date/mobiscroll_005.js" type="text/javascript"></script>
+	<link href="__CSS__/date/mobiscroll_003.css" rel="stylesheet" type="text/css">
+    <script src="__JS__/layer.m/layer.m.js" type="text/javascript"></script>
+</block>
+
+<block name="body">
+    <form id="form1" name="form1" action="__SELF__" method="post">
+        <div class="cont">
+            <div class="list">
+                <div class="timo">认证状态：</div>
+                <input type="text"  class="input_box select2" name="idcard_status_desc" value="{$fans.idcard_status|get_dic_desc='AUTH_STATUS',###}" readonly>
+            </div>
+            <div class="list">
+                <div class="timo">真实姓名：</div>
+                <input type="text" id="realname"  class="input_box select2" name="realname" value="{$fans.realname}" <if condition="$fans.idcard_status eq 2">readonly</if>>
+            </div>
+            <div class="list">
+                <div class="timo">身份证号：</div>
+                <input type="text" name="idcard" id="idcard" class="input_box select2" value="{$fans.idcard}" <if condition="$fans.idcard_status eq 2">readonly</if>>
+            </div>
+            <div class="list3" <if condition="$fans.idcard_status eq 2">readonly</if>>
+                <div class="timo">上传图片：</div>
+                <div class="tup" onclick="chooseImage()">
+                    <input type="hidden" id="media_id" name="media_id" />
+                    <img id="upload_img" src="{$fans.idcard_img}" width="100%" />
+                </div>
+            </div>
+            <div style="clear: both"></div>
+            <if condition="$fans.idcard_status neq 2">
+            <input type="hidden" name="idcard_status" value="1">
+            <div id="ann" class="ann">提交</div>
+            </if>
+            </body>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        wx.config({
+            appId: '{$jsapi_sign_package.appId}',
+            timestamp: '{$jsapi_sign_package.timestamp}',
+            nonceStr: '{$jsapi_sign_package.nonceStr}',
+            signature: '{$jsapi_sign_package.signature}',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'hideOptionMenu',
+                'showOptionMenu',
+                'chooseImage',
+                'previewImage',
+                'uploadImage'
+                // 所有要调用的 API 都要加到这个列表中
+            ]
+        });
+
+        var images = {
+            localId: [],
+            serverId: []
+        };
+
+        //选择照片
+        function chooseImage(){
+            var isflag = true;
+            wx.checkJsApi({
+                jsApiList: ['chooseImage'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+                success: function(res) {
+                    isflag = res['checkResult']['chooseImage'];
+                }
+            });
+            if(isflag){
+                wx.chooseImage({
+                    success: function (res) {
+                        images.localId = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
+                        if (images.localId.length > 0) {
+                            $('#upload_img').attr('src', images.localId[0]);
+                        }
+                    }
+                });
+            }
+            else{
+                layer.open({
+                    content: '请将微信升级到最新版本！',
+                    time: 2
+                });
+            }
+        }
+
+        $('#ann').click(function(){
+
+            if($("#realname").val() == ''){
+                layer.open({
+                    content: '真实姓名不能为空',
+                    time: 2
+                });
+                return false;
+            }
+
+            if($("#idcard").val() == ''){
+                layer.open({
+                    content: '请填写正确的身份证号',
+                    time: 2
+                });
+                return false;
+            }
+            // if ('{$fans.idcard_status}' == '0' && images.localId.length == 0) {
+            if (0) {
+                layer.open({
+                    content: '请先选择身份证照片',
+                    time: 2
+                });
+                return false;
+            }
+
+            wx.uploadImage({
+                localId: images.localId[0], // 需要上传的图片的本地ID，由chooseImage接口获得
+                isShowProgressTips: 1, // 默认为1，显示进度提示
+                success: function (res) {
+                    images.serverId = [];
+                    images.serverId.push(res.serverId); // 返回图片的服务器端ID
+                    if (images.serverId.length == 0) {
+                        showTip('照片上传失败');
+                        return false;
+                    }
+                    $('#media_id').val(images.serverId[0]);
+                    form1.submit();
+                    return true;
+                }
+            });
+        });
+    </script>
+</block>

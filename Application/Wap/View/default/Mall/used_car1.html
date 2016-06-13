@@ -1,0 +1,104 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta  charset="UTF-8">
+<meta  name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<title>滴啊滴+服务</title>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
+	$(".select").each(function(){
+		var s=$(this);
+		var z=parseInt(s.css("z-index"));
+		var dt=$(this).children("dt");
+		var dd=$(this).children("dd");
+		var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+		var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+		dt.click(function(){dd.is(":hidden")?_show():_hide();});
+		dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+		$("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
+	})
+})
+</script>
+</head>
+
+<body style=" background:#f7f7f7;">
+<div class="header">
+  <div class="topnav"></div>
+  <div class="logo">滴啊滴+服务</div>
+  <span>更换门店</span> </div>
+<div class="cont">
+    <div class="hunt">
+        <div class="list list1">
+            <dl class="select">
+                <dt class="dtt">年限</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">1年</a></li>
+                        <li><a href="#">2年</a></li>
+                        <li><a href="#">3年</a></li>
+                        <li><a href="#">5年以上</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="list list1">
+            <dl class="select">
+                <dt class="dtt">期望价格</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">1万~3万</a></li>
+                        <li><a href="#">3万~5万</a></li>
+                        <li><a href="#">5万~10万</a></li>
+                        <li><a href="#">10万以上</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="pirce">价格排序</div>
+    </div>
+    <ul class="listing">
+        <li>
+            <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+            <div class="wz">
+                <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+                <h3><em>￥2956</em>/辆</h3>
+        <span>
+        <div class="tb1"></div>
+        1252</span> </div>
+        </li>
+        <li>
+            <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+            <div class="wz">
+                <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+                <h3><em>￥2956</em>/辆</h3>
+        <span>
+        <div class="tb1"></div>
+        1252</span> </div>
+        </li>
+        <li>
+            <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+            <div class="wz">
+                <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+                <h3><em>￥2956</em>/辆</h3>
+        <span>
+        <div class="tb1"></div>
+        1252</span> </div>
+        </li>
+        <li>
+            <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+            <div class="wz">
+                <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+                <h3><em>￥2956</em>/辆</h3>
+        <span>
+        <div class="tb1"></div>
+        1252</span> </div>
+        </li>
+    </ul>
+    <div class="more">+ 关注店铺  获取更多门店相关信息 +</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<extend name="Base/common" />
+<block name="header">
+ 
+</block>
+
+<block name="body">
+<div class="cont">
+     <div class="jump">
+        <div class="tup">
+        </div>
+        <p><?php echo($message); ?></p>
+    	<p><a id="href" id="btn-now" href="<?php echo($jumpUrl); ?>">立即跳转</a></p> 
+        <p><b id="wait"><?php echo($waitSecond); ?></b> 秒后页面将自动跳转</p>
+
+     </div>
+     <div class="kuajian">
+     	 <if condition="$stop eq true">
+	     <input id="view" type="button" value="查看订单" class="anjian">
+	     </if>
+     </div>
+</div>
+</block>
+
+<block name="side"></block>
+<block name="script">
+<script type="text/javascript">
+(function(){
+		 var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+		 var interval = setInterval(function(){
+		     	var time = --wait.innerHTML;
+		     	if(time <= 0) {
+		     		location.href = href;
+		     		clearInterval(interval);
+		     	};
+		     }, 1000);
+		  window.stop = function (){ 
+		            clearInterval(interval);
+		 }
+ })();
+ 
+ $(document).ready(function(){
+	 $('#view').click(function(){
+		 top.location.href='<?php echo($jumpUrl); ?>';
+	 });
+ });
+</script>
+</block>

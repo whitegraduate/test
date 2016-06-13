@@ -1,0 +1,56 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <script type="text/javascript" src="__JS__/chart/highcharts.js"></script>
+    <script type="text/javascript" src="__JS__/chart/exporting.js"></script>
+
+    <div class="main-title">
+        <h2>用户统计</h2>
+    </div>
+    <div class="tab-wrap">
+        <div class="tab-content">
+            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto;width:800px;"></div>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function () {
+            // Build the chart
+            $('#container').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: '{:$dataTitle}'
+                },
+                tooltip: {
+                    pointFormat: '（{point.y}）{series.name}: <b>{point.percentage:.3f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: '占比',
+                    data: [
+                        {:$data}
+                    ]
+                }]
+            });
+        });
+
+    </script>
+
+
+</block>

@@ -1,0 +1,53 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}保养部件品牌配置</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">品牌</label>
+            <div class="controls">
+                <select name="brandid" class="menu_type">
+                         <volist id="list" name="lstBrand">
+                        <option value="{$list.id}">{$list.name}</option>
+                     </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">部件</label>
+            <div class="controls">
+                <select name="partid" class="menu_type">
+                	 <volist id="list" name="lstParts">
+                        <option value="{$list.id}">{$list.name}</option>
+                     </volist>
+                </select>
+            </div>
+        </div>    
+        
+        <div class="form-item">
+            <label class="item-label">保修时长</label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="remind_month" value="{$info.remind_month|default=0}">个月
+            </div>
+        </div>
+   
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+         
+    </script>
+</block>

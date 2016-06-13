@@ -1,0 +1,137 @@
+
+<extend name="Base/common_my" />
+<block name="header">
+</block>
+
+<block name="body">
+<div class="geren">
+  <if condition="$order.status eq 2">
+      <div class="chong"><img src="/Public/Wap/images/chong_finish.jpg" width="100"  /></div>
+      <else/>
+      <div class="chong"><img src="/Public/Wap/images/chong.gif" width="100"  /></div>
+  </if>
+
+  <div class="p_details1 bjsu">
+       <span>充电详情</span>
+       <p>充电桩位置：{$charger.location}<span class="tb"></span></p>
+       <p>充电口：{$outlet.name}号充电口</p>
+       <if condition="($order.status eq 1) or ($order.status eq 2)">
+       <p class="time">充电时间：2015-06-15（10：00-13:00）</p>
+       <else/>
+       </if>
+       <p>状态：{$order.status|get_chargeorder_status}</p>
+    </div>
+    <div class="andji">
+    	<if condition="$order.status eq 0">
+    		<!-- <input type="button" value="支付" class="chongdian" onclick="top.window.location='/wxpay/wap.php?s=/Charge/order/oid/{$order['id']}'" /> -->
+    	<elseif condition="$order.status eq 1" />
+    		<input type="button" value="结束充电" class="chongdian" id="endfans"/>
+    	<else />
+    	</if>
+    </div>
+</div>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script type="text/javascript">
+$(document).ready(function(){
+	startTime();
+	
+	$(".topleft").click(function(){
+		top.window.location = "{:U('Fans/order_charge')}";
+	});
+    $("#endfans").click(function(){
+    	
+        $.post("#",{"end":"yes"},function(data){
+        	galert_url(data.info,"{:U('Fans/remark',array('flag'=>'CD','oid'=>$order['id']))}");
+        },"json");
+    	
+    });
+    
+    $(".tb").click(function(){
+		top.window.location = "{:U('Index/route',array('code'=>'CD','id'=>$charger['id']))}";
+    });
+});
+
+
+function MillisecondToDate(msd) {
+
+    var time = parseFloat(msd) /1000;
+
+    if (null!= time &&""!= time && 0 < time) {
+
+        if (time >60&& time <60*60) {
+
+            time = parseInt(time /60.0) +"分钟"+ parseInt((parseFloat(time /60.0) -
+
+                    parseInt(time /60.0)) *60) +"秒";
+
+        }else if (time >=60*60&& time <60*60*24) {
+
+            time = parseInt(time /3600.0) +"小时"+ parseInt((parseFloat(time /3600.0) -
+
+                    parseInt(time /3600.0)) *60) +"分钟"+
+
+                    parseInt((parseFloat((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60) -
+
+                            parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60)) *60) +"秒";
+
+        }else if (time >=60*60*24&& time <60*60*24*30) {
+
+            time = parseInt(time /3600.0/24.0) +"天"+
+
+                    parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *24) +"小时"+
+
+                    parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60) +"分钟"+
+
+                    parseInt((parseFloat((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60) -
+
+                            parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60)) *60) +"秒";
+
+        }else {
+
+            time = parseInt(time) +"秒";
+
+        }
+
+    }else{
+        time = "0 时 0 分0 秒";
+
+    }
+
+    return time;
+
+}
+
+function startTime()
+{
+    <if condition="$order.status eq 2">
+        var timestamp1 = {$order.end_time};
+    <else/>
+        var timestamp1 = Date.parse(new Date())/1000;
+    </if>
+	var msecs = (timestamp1  - {$order.pay_time}) * 1000;
+	var str = MillisecondToDate(msecs);
+	console.log(str);
+    var today=new Date()
+    var h=today.getHours()
+    var m=today.getMinutes()
+    var s=today.getSeconds()
+// add a zero in front of numbers<10
+    m=checkTime(m)
+    s=checkTime(s)
+    $('.time').html("<string>已充电：</string>"+str);
+    t=setTimeout('startTime()',1000)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+
+</block>

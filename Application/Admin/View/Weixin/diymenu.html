@@ -1,0 +1,143 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2><present name="data">[ {$data.title} ] 子</present>自定义菜单管理 </h2>
+    </div>
+
+    <div class="cf">
+        <a class="btn" href="{:U('diymenu_add',array('pid'=>I('get.pid',0)))}">新 增</a>
+        <button class="btn ajax-post confirm" url="{:U('diymenu_del')}" target-form="ids">删 除</button>
+        <button class="btn ajax-post confirm" url="{:U('generate_menu')}" target-form="ids">生成自定义菜单</button>
+       
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft" style="display:none;">
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入菜单名称">
+                <a class="sch-btn" href="javascript:;" id="search" url="__SELF__"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>菜单类型</th>
+                        <th>URL</th>
+                        <th>关键词</th>
+                        <th>排序</th>
+                        <th>隐藏</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="menu">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$menu.id}"></td>
+                        <td>{$menu.id}</td>
+                        <td>{$menu.title}</td>
+                        <td>
+                            <if condition="$menu.menutype eq 1">
+				        		关键词回复菜单
+				        	<elseif condition="$menu.menutype eq 2"/>
+				        		url外链菜单
+				        	<elseif condition="$menu.menutype eq 3"/>
+				        		微信扩展菜单
+				        	<else/>
+				        		顶级菜单
+				        	</if>
+                        </td>
+                        <td>{$menu.url}</td>
+                        <td>{$menu.keyword}</td>
+                        <td>{$menu.sort}</td>
+                        <td>
+                            <a href="{:U('toogleHide',array('id'=>$menu['id'],'value'=>abs($menu['hide']-1)))}" class="ajax-get">
+                            {$menu.hide_text}
+                            </a>
+                        </td>
+                        <td>
+                            <a title="编辑" href="{:U('diymenu_edit?id='.$menu['id'])}">编辑</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('diymenu_del?id='.$menu['id'])}">删除</a>
+                        </td>
+                    </tr>
+                   <volist id="child" name="menu['class']">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$child.id}"></td>
+                        <td>{$child.id}</td>
+                        <td>|--{$child.title}</td>
+                        <td>
+                             <if condition="$child.menutype eq 1">
+				        		关键词回复菜单
+				        	<elseif condition="$child.menutype eq 2"/>
+				        		url外链菜单
+				        	<elseif condition="$child.menutype eq 3"/>
+				        		微信扩展菜单
+				        	<else/>
+				        		顶级菜单
+				        	</if>
+                        </td>
+                        <td>{$child.url}</td>
+                        <td>{$child.keyword}</td>
+                        <td>{$child.sort}</td>
+                        <td>
+                            <a href="{:U('toogleHide',array('id'=>$child['id'],'value'=>abs($child['hide']-1)))}" class="ajax-get">
+                            {$menu.hide_text}
+                            </a>
+                        </td>
+                        <td>
+                            <a title="编辑" href="{:U('diymenu_edit?id='.$child['id'])}">编辑</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('diymenu_del?id='.$child['id'])}">删除</a>
+                        </td>
+                    </tr>
+                   </volist>
+                </volist>
+				<else/>
+				<td colspan="10" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function() {
+            //搜索功能
+            $("#search").click(function() {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function(e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //导航高亮
+            highlight_subnav('{:U('diymenu')}');
+             
+        });
+    </script>
+</block>

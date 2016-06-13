@@ -1,0 +1,82 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+ 
+ <form id="form1" method="post">
+   
+<div class="cont">
+  <div class="list">
+    <div class="tb6"></div>
+     <div class="upload">订单号：{:$_GET['transid']}</span></div>
+  </div>
+  
+    
+ 
+  <input type="hidden" name="transid" value="{:$_GET['transid']}" />
+  <present name="complain">
+  
+  <div class="list">
+      <div class="timo">手机号：{$complain.mobile}</div>
+  </div>
+  
+  <div class="list">
+      <div class="timo">投诉内容：{$complain.memo}</div>
+  </div>
+    
+  <div class="list">
+      <div class="timo">投诉状态：{$complain.status|get_complain_status}</div>
+  </div>
+  <div class="list">
+      <div class="timo">投诉时间：{$complain.create_time|date='Y-m-d H:i',###}</div>
+  </div>
+  <else/>
+  
+  <div class="list">
+      <div class="tb4"></div>
+      <div class="timo">手机号：</div>
+      <input type="tel" id="mobile" name="mobile" class="input_box" value="{$fans.mobile}">
+  </div>
+  <div class="list">
+      <div class="timo">投诉内容：</div>
+      <input type="text" id="memo" name="memo"  class="input_box select2" value="">
+  </div>
+  <div class="ann">提交投诉</div>
+  </present> 
+</div>
+ 
+</form>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script src="__JS__/layer.m/layer.m.js" type="text/javascript"></script>
+<script language="javascript">
+var isWxPay = true;
+  $(document).ready(function(){
+      if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
+
+	  
+  	$(".ann").click(function(event){
+  		if('' == $("#memo").val())
+		{
+			galert('请描述您要投诉的内容');
+			return;
+		}
+  		
+  		if('' == $("#memo").val())
+		{
+			galert('请描述您要投诉的内容');
+			return;
+		}
+  		$(this).text('正在提交...');
+  		$(this).unbind( event );
+  		$("#form1").submit();
+  	});
+  	
+	  
+  }); 
+  
+  </script>
+</block>

@@ -1,0 +1,80 @@
+ 
+  
+
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+<form id="form1" method="post">
+<div class="cont">
+    <div class="personal">
+       <div class="tup"><img src="{$fans.headimgurl}" width="100%"></div>
+       <div class="wz">
+          <span>{$fans.nickname}【皇冠会员】</span>
+          <p>绿源D001 2010年</p>
+          <p>积分：100</p>
+       </div>
+       <div class="gd">
+          <span id="my">个人信息</span>
+          <span id="score" style="color:#00b189">我的积分</span>
+          <span id="myorder">我的订单</span>
+       </div>
+    </div>
+    <div class="sort">
+       <p style="color:#00b189">获取积分</p>
+       <p id="score_use">消耗积分</p>
+    </div>
+    <div class="xian1"></div>
+    <ul class="points">
+       <li>
+          <div class="tb1"></div>
+          <p>全部记录<span>1</span></p>
+       </li>
+        <li class="p_up">
+          <div class="tb2"></div>
+          <p>首次注册</p>
+       </li>
+        <li>
+          <div class="tb3"></div>
+          <p>分享给好友</p>
+       </li>
+        <li>
+          <div class="tb4"></div>
+          <p>消费</p>
+       </li>
+        <li>
+          <div class="tb5"></div>
+          <p>评价</p>
+       </li>
+        <li style="display:none;">
+          <div class="tb6"></div>
+          <p>活跃行为</p>
+       </li>
+    </ul>   
+</div>
+</form>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".ann").click(function(){
+			$('#form1').submit();
+		});
+		
+		$("#score_use").click(function(){
+			top.location.href = "{:U('Fans/score_use')}";
+		});
+		
+		$("#my").click(function(){
+			top.location.href = "{:U('Fans/my')}";
+		});
+		
+		$("#myorder").click(function(){
+			top.location.href = "{:U('Fans/index')}";
+		});
+	});
+	</script>
+</block>

@@ -1,0 +1,232 @@
+
+<extend name="Base/common_my" />
+<block name="header">
+
+<link rel="stylesheet" type="text/css" href="__CSS__/style.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/ll.css" />
+</block>
+
+<block name="body"> 
+<if condition="$order.status eq 4"> <!-- 抢单 -->
+<form id="form1" method="post">
+	<div class="make_time">
+		<div class="time">
+			<p>今天</p>
+			<p>{$order.create_time|date="H:i",###}</p>
+		</div>
+		<div class="address">
+			<p><if condition="$order.location eq ''">未知位置<else/>{$order.location}</if></p>
+		</div>
+	</div>
+	<if condition="$order.remind_minutes gt 0">
+	<div class="make">
+		<div class="make_tup">
+			<img src="__IMG__/djs.gif" width="100%">
+			<div class="make_wz">
+				<p>发送求助时间</p>
+				<string>{$order.past_minutes}</string>
+
+				<span>分钟</span>
+			</div>
+		</div>
+		<div class="wz">
+			<p>
+				已经通知<span>5</span>家门店
+			</p>
+			<p>门店平均15分钟接单，接单后微信消息通知您</p>
+		</div>
+	</div>
+	<else />
+	<div class="make">
+		<div class="wz">
+			<p style="margin-bottom: 70px;">
+				超过30分钟未抢单，您可以联系八一南街社区店：<a href="tel:82395656">82395656</a>
+			</p>
+		</div>
+	</div>
+	</if>
+	<div id="btn_cancel" class="ann">取消订单</div>
+	<input type="hidden" name="oid" id="oid" value="{:$_GET['oid']}" />
+</form>
+<else /> <!-- 非抢单 -->
+ 
+<div class="geren" style="margin-top: 0;">
+	<div id="myTabContent" class="tab-content">
+		<ul role="tabpanel" class="tab-pane active order" id="home">
+			<li style="border: 0;">
+				<div class="biaotid">
+					<p>
+						订单号：{$order.transid} <span>{$order.status|get_repairorder_astatus}</span>
+					</p>
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="dingaw">
+					<div class="neirong">车辆状况：{$order.problem}</div>
+					<div class="neirong">
+						<if condition="$order.apoint_time eq 0">
+						下单时间：{$order.create_time|date='Y-m-d H:i',###}
+						<else/>
+						预约时间：{$order.create_time|date='Y-m-d H:i',###}<span style="display:none;"><a href="#myModa2" role="button"
+							data-toggle="modal">修改</a></span>
+						</if>
+					</div>
+					<div class="neirong">
+						联系电话：{$order.mobile} <span style="display:none;"><a href="#myModal" role="button"
+							data-toggle="modal">修改</a></span>
+					</div>
+					<div class="neirong">维修地址：滴啊滴-{$order.shopid|get_shop_id}</div>
+                    <div class="neirong">配件信息</div>
+                    <div class="biaotid">
+                        <table border="1" style="text-align:left;text-align: center;width: 100%">
+                            <tr>
+                                <td style="width: 60%">名称</td><td style="width: 20%">价格</td><td style="width: 20%">数量</td>
+                            </tr>
+                            <volist name="parts_in" id="vo">
+                                <tr>
+                                    <td>{$vo['name']}</td><td>{$vo['price']}</td><td>{$vo['n']}</td>
+                                </tr>
+                            </volist>
+                            <volist name="parts_out" id="vo">
+                                <tr>
+                                    <td>{$vo['name']}</td><td>{$vo['price']}</td><td>{$vo['n']}</td>
+                                </tr>
+                            </volist>
+                        </table>
+                    </div>
+					<div class="neirong">配件费：{:round($order['parts_price'],2)}</div>
+					<div class="neirong">工时费：{:round($order['work_price'],2)}</div>
+					<div class="neirong">上门费：{:round($order['ride_price'],2)}</div>
+
+                    <neq name="order['dragcar_price']" value="0">
+                        <div class="neirong">拖车费：{:round($order['dragcar_price'],2)}</div>
+                    </neq>
+                    <neq name="order['sendcar_price']" value="0">
+                        <div class="neirong">送车费：{:round($order['sendcar_price'],2)}</div>
+                    </neq>
+					<div class="neirong">总费用：{$order.pay_price}</div>
+
+
+					<div class="clearfix"></div>
+				</div>
+
+
+			</li>
+
+		</ul>
+
+	</div>
+</div>
+<div class="clearfix"></div>
+<if condition="$order.status eq 1">
+<!-- 待支付 -->
+<div id="btn_pay" class="ann">立即支付</div>
+<elseif condition="$order.status eq 0" />
+<!-- 待检查 -->
+<form id="form2" method="post">
+<div id="btn_cancel2" class="ann">取消订单</div>
+<input type="hidden" name="oid" id="oid" value="{:$_GET['oid']}" />
+</form>
+</if>
+<div id="myModal" class="modal modal2" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<button type="button" class="close" data-dismiss="modal"
+		aria-hidden="true">×</button>
+	<div class="title">联系电话</div>
+	<div class="xuan">
+		<div class="xian"></div>
+		<input type="text" class="input_box" placeholder="">
+		<div class="ann">保存</div>
+	</div>
+</div>
+<div id="myModa2" class="modal modal2" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<button type="button" class="close" data-dismiss="modal"
+		aria-hidden="true">×</button>
+	<div class="title">预约时间</div>
+	<div class="xuan">
+		<div class="xian"></div>
+		<input type="text" class="input_box" placeholder="">
+		<div class="ann">保存</div>
+	</div>
+</div>
+<div class="sh_foot" style="display:none;">
+	<if condition="$order.status eq 0">
+		<div class="price2">取消订单</div>
+	</if>
+	<if condition="$order.order_type eq 1">
+	<div class="price1">到店维修</div>
+	</if>
+</div>
+
+
+<div class="geren" style="display:none;">
+	<div class="p_details2"></div>
+	<div class="p_details1">
+		<span>订单详情</span>
+		<p>问题： </p>
+		<p>
+			费用：
+			<if condition="$order.price eq '0.00'">等待计算<else />{$order.price}元</if>
+		</p>
+		<p>下单时间：</p>
+		<if condition="$order.shop neq ''">
+		<p>
+			门店：{$order.shop}<span class="tb"></span>
+		</p>
+		</if> 
+	</div>
+
+	<if condition="($order.status neq 0) and ($order.status neq 4)">
+	<div class="p_details1">
+		<span>维修方案</span>
+		<p>部件更换（在保）：{$order.parts_in}</p>
+		<p>部件更换（过保）：{$order.parts_out}</p>
+		<p>工时：{$order.work_hour}</p>
+	</div>
+	</if>
+</div>
+</if> </block>
+
+<block name="side"> </block>
+<block name="script"> <script>
+    var nowStatus = "{$order.status}";
+$(document).ready(function(){
+    refresh();
+
+	$(".topleft").click(function(){
+		top.window.location = "{:U('Fans/order_repair')}";
+	});
+
+	$("#btn_cancel").click(function(){
+		
+		gconfirm_submit('是否确定取消订单？','form1');
+	});
+
+	$("#btn_cancel2").click(function(){
+		gconfirm_submit('是否确定取消订单？','form2');
+	});
+	
+	$("#btn_pay").click(function(){
+		top.location.href = "/wxpay/wap.php?s=/Repair/pay/oid/{$order['id']}.html";
+	});
+	<if condition="$order.status neq 4"> 
+	$("body").attr('style','background:#f1f1ef;');
+	</if>
+});
+
+    function refresh() {
+        $.ajax({
+            type:"GET",
+            url:"{:U('Fans/order_repair_check?from=x')}",
+            data: "oid={$order.id}",
+            success: function(data) {
+                if(data.status != nowStatus ) {
+                    window.location.reload();
+                }
+            }
+        });
+        t=setTimeout('refresh()',1000*15)
+
+    }
+</script> </block>

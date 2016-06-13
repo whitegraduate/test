@@ -1,0 +1,140 @@
+<extend name="Base/common"/>
+<block name="header">
+    <link href="/Public/Wap/css/style.css" rel="stylesheet">
+</block>
+
+<block name="body">
+    <form action="" method="post">
+        <div class="cont">
+            <div class="xian1"></div>
+            <div style="clear: both;"></div>
+            <div id="myTabContent" class="tab-content">
+                <ul role="tabpanel" class="tab-pane listing" id="home">
+                     <div class="screen">
+                        <a class="a_up order-new" href="#" data-value="id">默认</a>
+
+                        <div class="xian"></div>
+                        <a href="#" class="order-new" data-value="create_time desc">最新</a>
+
+                        <div class="xian"></div>
+                        <a href="#" class="order-new" data-value="sales desc">销量</a>
+
+                        <div class="xian"></div>
+                        <a href="#" class="order-new" data-value="member_price desc">价格</a>
+                    </div>
+                    <div id="divlist">
+
+                    </div>
+
+
+                </ul>
+                <ul role="tabpanel" class="tab-pane active listing" id="profile">
+                    <div class="screen">
+                        <a class="a_up order" href="#" data-value="id">默认</a>
+
+                        <div class="xian"></div>
+                        <a href="#" class="order" data-value="create_time desc">最新</a>
+
+                        <div class="xian"></div>
+                        <a href="#" class="order" data-value="sales desc">销量</a>
+
+                        <div class="xian"></div>
+                        <a href="#" class="order" data-value="member_price desc">价格</a>
+                    </div>
+                    <div id="div_accessory">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="more" style="display:none;">+ 关注店铺 获取更多门店相关信息 +</div>
+                </ul>
+
+            </div>
+        </div>
+        <script>
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+        </script>
+    </form>
+    <a href="{:U('Mall/shopping_cart')}" ><img src="__IMG__/shopping-cart.png" class="shopping_cart_pic"></a>
+</block>
+
+<block name="side"></block>
+<block name="script">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            load_accessory_list(2,"","");
+            load_accessory_list(1,"","newCar");
+            $('.order').click(function(){
+                $('.order').removeClass('a_up');
+                $(this).addClass('a_up');
+                var orderstr = $(this).attr('data-value');
+                load_accessory_list(2,orderstr,"");
+            });
+            $('.order-new').click(function(){
+                $('.order-new').removeClass('a_up');
+                $(this).addClass('a_up');
+                var orderstr = $(this).attr('data-value');
+                load_accessory_list(1,orderstr,"newCar");
+            });
+        });
+        function load_accessory_list(type,strorder,cla)
+        {
+            $.ajax({
+                type: "GET",
+                url: "{:U('Mall/accessory_list')}",
+                data: {order:strorder,type:type},
+                success: function(data){
+                    if (data != null) {
+                        var html = "";
+                        for (var i = 0; i < data.length; i++) {
+                            var url = "/index.php?s=/Wap/Mall/detail_accessory/id/" + data[i].id + ".html";
+                            html += "<li><div class='tup'><a href='" + url + "'><img src='" + data[i].pic + "' width='100%'></a></div><div class='wz'><p><a href='" + url + "'>"+data[i].title+"_"+data[i].subtitle+"</a></p><h3><em>￥" + data[i].member_price + "</em>/份<br/><strong>   数量:  "+data[i].quantity+"</strong></h3></div></li>";
+                        }
+                        if(cla=="newCar"){
+                            $("#divlist").html(html);
+                        }else{
+                            $("#div_accessory").html(html);
+                        }
+                    }
+                    else {
+                        if(cla=="newCar"){
+
+                        $("#divlist").html("");
+                        }else{
+                            
+                        $("#div_accessory").html("");
+                        }
+                    }
+                }
+            });
+        }
+
+        function fsubmit() {
+            document.forms[0].submit();
+        }
+
+        function search() {
+            var a = $(".wenza:eq(0)").find("input:checked").val();
+            var b = $(".wenza:eq(1)").find("input:checked").val();
+            var c = $(".wenza:eq(2)").find("input:checked").val();
+            $.get("{:U('Mall/indexlist')}",{type: "GET", data: "aa=" + a + "&bb=" + b + "&cc=" + c,
+                url: "{:U('Mall/indexlist')}"
+            },function(data){
+                if (data != null) {
+                    var html = "";
+                    for (var i = 0; i < data.length; i++) {
+                        //document.write(data[i].brand+",");
+                        var url = "/index.php?s=/Wap/Mall/detail/id/" + data[i].id + ".html";
+                        html += "<li><div class='tup'><a href='" + url + "'><img src='" + data[i].pic + "' width='100%'></a></div><div class='wz'><p><a href='" + url + "'>"+data[i].title+"_"+data[i].subtitle+"</a></p><h3><em>￥" + data[i].member_price + "</em>/份<br/><strong>   数量:  "+data[i].quantity+"</strong></h3></div></li>";
+                    }
+                    $("#divlist").html(html);
+                }
+                else {
+                    $("#divlist").html("");
+                }
+            },"json");
+
+        }
+    </script>
+</block>

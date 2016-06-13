@@ -1,0 +1,123 @@
+<extend name="Base/common"/>
+<block name="header">
+    <link href="/Public/Wap/css/style.css" rel="stylesheet">
+</block>
+<block name="body">
+<div id="shopping-cart">
+<volist name="shopping_cart" id="vo">
+<div class="shopping-cart-cont" name="{$vo.title}">
+	<div class="shopping">
+		<div class="nr" >
+			<input type="checkbox" name="checkbox" class="shopping-cart-checkbox" product-id="{$vo.id}" <if condition="$vo.checked eq 1">checked</if> >
+			<div class="tup">
+				<img src="{$vo.pic}" ></div>
+			<div class="wz">
+				<p>
+					{$vo.title}
+					<a href="#" class="deleteDiv" name="{$vo.title}" product-id="{$vo.id}">删除</a>
+				</p>
+				<span>颜色：{$vo.color|get_color_id}</span>
+				<string >￥<lebel class="shopping-cart-price">{$vo.member_price}</lebel>
+					
+					<div class="sjia">
+						<input class="min" type="button" product-id="{$vo.id}"  value="-">
+						<input class="text_box quantity-{$vo.id}" type="text" value="{$vo.quantity}">
+						<input class="aded"  type="button"  product-id="{$vo.id}" value="+"></div>
+				</string>
+			</div>
+		</div>
+	</div>
+</div>
+</volist>
+</div>
+<div class="sh_foot">
+	<!-- <input type="checkbox" id="select-all"> -->
+   <div class="wz"> <p>合计：￥<span id="total_price" >0</span></p></div>
+   <button class="price1">结算</button>
+</div>
+	</block>
+	<block name="side"></block>
+<block name="script">
+<script>
+	$(function(){	
+		calculatePrice();
+		$(".min").click(function(){
+			var id=$(this).attr('product-id');
+			if($(".quantity-"+id).val()==1){
+				return false;
+			}
+			$.post("/wap.php?s=/Mall/shopping_cart/from/x",{id:id,quantity:-1},function(result){
+				$(".quantity-"+id).val(result[id]['quantity']);
+				calculatePrice();
+			});
+
+		});
+		$(".aded").click(function(){
+			var id=$(this).attr('product-id');
+			$.post("/wap.php?s=/Mall/shopping_cart/from/x",{id:id,quantity:1},function(result){
+				$(".quantity-"+id).val(result[id]['quantity']);
+				calculatePrice();
+			});
+		});
+		$(".deleteDiv").click(function(){
+			var element=$(this).attr("name");
+			var id=$(this).attr('product-id');
+			$.post("/wap.php?s=/Mall/shopping_product_delete/from/x",{id:id,checked:0},function(result){
+				$("#shopping-cart>div[name="+element+"]").remove();
+				calculatePrice();
+			});
+		});
+		$(".nr .shopping-cart-checkbox").click(function(){
+			var id=$(this).attr("product-id");
+			if(true==$(this).prop("checked")){
+				var checked=1;
+			}else{
+				var checked=0;
+			}
+			calculatePrice();
+			$.post("/wap.php?s=/Mall/shopping_cart/from/x",{id:id,checked:checked},function(result){
+
+			});
+		});
+		$(".price1").click(function(){
+			var flag=0;
+			$("input[name='checkbox']").each(function(){
+				if(true==$(this).prop("checked"))
+				flag=1;
+			});
+			
+			if (flag==0){
+				alert("您还没有勾选产品哦~");
+				return false;
+			} 
+			top.window.location = "/wap.php?s=/Mall/shopping_cart_order";
+		});
+		
+		// $("#select-all").click(function(){
+		// 	$("input[name='checkbox']").prop("checked",$("#select-all").prop("checked"));
+		// });
+
+		function calculatePrice(){
+			var p = new Array();
+			var q = new Array();
+			var total_price=0;
+			$(".shopping-cart-price").each(function(i){
+				if($("parent"))
+				p[i]=$(this).text();
+				i++;
+			});
+			$(".text_box").each(function(i){
+				q[i]=$(this).val();
+				i++;
+			});
+			$(":checked").each(function(){
+				var key=$(".shopping-cart-checkbox").index($(this));
+				total_price+=q[key]*p[key];
+			});
+			$("#total_price").html(total_price);
+		}
+
+	});
+
+</script>
+	</block>

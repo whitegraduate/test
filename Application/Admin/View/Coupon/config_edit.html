@@ -1,0 +1,126 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}优惠券策略</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+		
+		 <div class="form-item">
+            <label class="item-label">发放动作<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="actions" class="coupon_type" >
+                     <volist name="Think.config.COUPON_ACTION" id="type">
+						<option value="{$key}">{$type}</option>
+			         </volist>
+                </select>
+            </div>
+        </div>
+		
+		<div class="form-item">
+            <label class="item-label">优惠券<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="couponid" class="coupon_type" >
+                     <volist name="lstCoupon" id="list">
+						<option value="{$list.id}">{$list.name}({$list.face}元)</option>
+			         </volist>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">张数</label>
+            <div class="controls">
+                <input type="text" class="text input-small" id="num" name="num" value="{$info.num|default='1'}">
+            </div>
+        </div>
+        
+        <div class="form-item" style="display:none;">
+            <label class="item-label">发放渠道<span class="check-tips"></span></label>
+            <div class="controls">
+              <select id="sel_canal" name="canalsss" class="parts_type">
+                <option value="0">全部</option>
+                <volist id="canal" name="lstCanal">
+                     <option value="{$canal.id}">{$canal.name}</option>
+                </volist>
+				</select>
+               
+                <a class="btn" id="btn_canal_add">添加</a>
+            </div>
+            <div class="controls" id="selectedCanal">
+            
+            </div>
+        </div>
+
+	<div class="form-item">
+		<label class="item-label">发放渠道</label>
+		<div class="controls">
+			<volist id="canal" name="lstCanal">
+				<label class="checkbox"> <input type="checkbox" name="canals[]"
+					value="{$canal.id}">{$canal.name}
+				</label>
+			</volist>
+		</div>
+	</div>
+
+	<div class="form-item">
+            <label class="item-label">状态<span class="check-tips"></span></label>
+            <div class="controls">
+                <label class="radio"><input type="radio" name="status" value="1">可用</label>
+                <label class="radio"><input type="radio" name="status" value="0">禁用</label>
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script"> 
+    <script type="text/javascript">
+    Think.setValue("action", {$info.action|default = 1});
+    Think.setValue("couponid", {$info.couponid|default = 1});
+    Think.setValue("status", {$info.status|default = 1});
+        //导航高亮
+        highlight_subnav('{:U('Coupon/config')}');
+
+    	var arr_json = new Array();
+        $(document).ready(function(){
+        	
+        	var a = "{$info.canals}";
+        	var arr_canal = a.split(',');
+        	for(i=0;i<arr_canal.length;i++)
+        	{
+        		$("input:checkbox[value='"+arr_canal[i]+"']").attr('checked','true');
+        	}
+        	
+        	$("#btn_canal_add").click(function(){
+        		if($("#sel_canal").val() == '0' || $("#sel_canal").val() == null)
+        		{
+        			alert("请选择");
+        			return false;
+        		}
+        		
+        		var json = new Object;
+                var pid = 0;
+        		json.p = $("#sel_canal").find("option:selected").text();
+        		//json.n = $("#sel_num").val();
+        		json.id = pid;
+        		arr_json.push(json);
+        		
+        		var json_str = JSON.stringify(arr_json);
+        		$("#parts_in").val(json_str);
+        		
+        		$("#selectedCanal").html($("#selectedCanal").html() + "<div class=\"parts_"+pid+"\">" + 
+        				$("#sel_canal").find("option:selected").text() + "&nbsp;" + 
+        				$("#sel_num").find("option:selected").text() + 
+        				" <a class='del' onclick='del("+pid+")'>删除</a></div>");
+        		pid++;
+        	});
+        });
+    
+    </script>
+</block>

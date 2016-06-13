@@ -1,0 +1,43 @@
+
+<extend name="Base/common_my" />
+<block name="header">
+</block>
+
+<block name="body">
+
+<div class="xinyong">
+       <div class="xinquan">
+          <div class="xinji">总计消费</div>
+          <div class="xinshu">{$sum_consume}</div>
+       </div>
+       <div class="xinan">
+            <!--<div class="anxin"><a href="#">积分商城</a></div>
+            <div class="anxin"><a href="#">兑换记录</a></div>-->
+            <div class="clearflx"></div>
+       </div>
+
+       <div class="xinxian"><div class="mingxi">消费明细</div></div>
+       <volist name="list" id="vo">
+       <div class="yongtu">
+           <div class="yongkuan">
+               {$vo.order_type_desc}<p>{$vo.pay_time|date="Y-m-d H:i:s",###}</p>
+           </div>
+           <div class="yongfen">{$vo.price}</div>
+           <div class="clearflx"></div>
+       </div>
+       </volist> 
+</div>
+
+ 
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".topleft").click(function(){
+			top.window.location = "{:U('Fans/info')}";
+		});
+	})
+	</script>
+</block>

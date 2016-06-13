@@ -1,0 +1,64 @@
+<extend name="Base/common_my" />
+<block name="header">
+<link rel="stylesheet" href="/Public/Wap/css/style.css" type="text/css">
+</block>
+
+<block name="body">
+<div class="intergral">
+  <div class="points">当前积分：{$fans.score}</div>
+  <div class="tup"><img src="{$gift.img}" ></div>
+  <div class="title">{$gift.name}</div>
+  <div class="time"><if condition="$gift.gifttype eq 2">使用期限：{$gift.days}天</if></div>
+  <div class="gift">
+    <div class="xtb">值</div>
+    <div class="wz">价值{$gift.face}元</div>
+    <div class="xtb">类</div>
+    <div class="wz"><if condition="$gift.gifttype eq 1">实物<else/>优惠券</if></div>
+    <div class="xtb">兑</div>
+    <div class="wz">{$gift.score}积分</div>
+  </div>
+  <div class="tit">优惠详情</div>
+  <div class="nr">{$gift.intro} </div>
+</div>
+<div class="pj_foot"> 
+<input type="hidden" id="gid" value="{$gift.id}" />
+<input type="hidden" id="gift_score" value="{$gift.score}" />
+<input type="hidden" id="my_score" value="{$fans.score}" />
+<a href="#">
+  <div class="pj_ann">立即领取</div>
+  </a> </div>
+</body>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".pj_ann").click(function(){
+		var g_score = parseFloat($("#gift_score").val());
+		var m_score = parseFloat($("#my_score").val());
+		if(m_score >= g_score)
+		{
+			gloading('正在处理...');
+			
+			 $.ajax({
+                 type: "GET",
+                 url: "{:U('Fans/gift_get')}",
+                 data: {gid:$("#gid").val(),
+                         from:"x"},
+                 dataType: "json",
+                 success: function(data){
+                	 layer.closeAll();
+                     if(data.flag == '1')
+                    	 galert_url("领取成功!","{:U('Fans/coupons')}");
+                     else
+                         alert(data.msg);
+                 }
+             });
+		}
+		else
+			galert('积分不足');
+	});
+});
+</script>
+</block>

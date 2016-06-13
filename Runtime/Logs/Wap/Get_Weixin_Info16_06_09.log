@@ -1,0 +1,14 @@
+ERR: Add Fans success!--o97bDvj8J9mu5jNePKbzXiknK2J4
+ERR: Add Fans success!--o97bDvocoM3Sz7mS_e2hgs43X8vg
+ERR: Add Fans success!--o97bDvkmGxPUAIU-ghCddaY1g1BE
+ERR: Add Fans success!--o97bDvru1nLCjWJTiOvqz1g_aKKo
+ERR: Add Fans success!--o97bDvhEe42tFRxYeYf5HQ-U9Pgo
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-09 14:16:57 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=0Jk1ZLgvsqjIPl05rCaOntaI004fzRpiwhsZ-TMNFL-xT_OBRrhHESbkBuTPlom3OIABacs1PPK824uZIWtKeSzKLynCay8rJ17VxetAXYQ949CjhKCPfaUwUqJ9y-HmLXLdAGAFRF
+ERR: 获取业务失败:  Errcode{"errcode":40037,"errmsg":"invalid template_id hint: [3Q0iUA0016age3]"} TIME：2016-06-09 14:16:57 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=cHh1eFmBFzaxxJvzxSKxWjTyi26Xu67DaYOlFu7aJpIyuhrQ4jlBc8OaNFEYwemiH3J3wLl82zZtu25UqIpCKdu4pYI1Tx5QR8VofA__3X8fXjCigQYJ5govFUUkmUAXEMZdADAAIV
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-09 15:35:17 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=cHh1eFmBFzaxxJvzxSKxWjTyi26Xu67DaYOlFu7aJpIyuhrQ4jlBc8OaNFEYwemiH3J3wLl82zZtu25UqIpCKdu4pYI1Tx5QR8VofA__3X8fXjCigQYJ5govFUUkmUAXEMZdADAAIV
+ERR: 获取业务失败:  Errcode{"errcode":40037,"errmsg":"invalid template_id hint: [Tk3o30715ge10]"} TIME：2016-06-09 15:35:17 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=9v9_O9CokOUO9J7LAGOkNPbrBcYXquJRR0438ep6xc0UJIxMg31C3onlMgJqJ8wgvLmRRHXzE5QuFVBD45oj_i77hvFK1MjwXiPaLQ8UyoclqeGq0yAmQfh1VhbvPCSkXBDdADAJNP
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-09 15:35:17 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=9v9_O9CokOUO9J7LAGOkNPbrBcYXquJRR0438ep6xc0UJIxMg31C3onlMgJqJ8wgvLmRRHXzE5QuFVBD45oj_i77hvFK1MjwXiPaLQ8UyoclqeGq0yAmQfh1VhbvPCSkXBDdADAJNP
+ERR: 获取业务失败:  Errcode{"errcode":40003,"errmsg":"invalid openid hint: [vVNQTa0716ge10]"} TIME：2016-06-09 15:35:17 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=9v9_O9CokOUO9J7LAGOkNPbrBcYXquJRR0438ep6xc2XO1A9H4NBJCchJS12z0lWqU2dwKgwtM-7sfhnD16Qh5bPp8c2aYvTGQprtdOm1Atpus7nZvk_G6H__KjIvB_kKNIdADAGJE
+ERR: Add Fans success!--o97bDvk-_NVuM0Sd-TsFBFFuPpiw
+ERR: Add Fans success!--o97bDvrXvicbA058WBR8--mV02hU
+ERR: Add Fans success!--o97bDvvm8MGYZQVfrc0swOiRVTNA

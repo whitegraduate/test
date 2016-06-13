@@ -1,0 +1,66 @@
+<extend name="Base/common"/>
+<block name="header">
+<link rel="stylesheet" href="/Public/Wap/css/ll.css" type="text/css">
+</block>
+
+<block name="body">
+<form id="form1" name="form1" action="__SELF__" method="post">
+<div class="cont">
+ 
+<div class="xian1"></div>
+<div id="myTabContent" class="tab-content"> 
+<ul role="tabpanel" class="tab-pane active listing" id="profile">
+
+    <div class="clearflx"></div>
+   <present name="list">
+    <div id="divlist">
+        <volist name="list" id="vo"> 
+            <li class="list2">
+                <div class="tup"><a href="{:U('Sechand/detail',array('id'=>$vo['id']))}"><img src="{$vo.pic}" width="100%"></a>
+                </div>
+                <div class="wz">
+                    <p><a href="{:U('Sechand/detail',array('id'=>$vo['id']))}">{$vo.brand}&nbsp;&nbsp;{$vo.appearance}</a>
+                    </p>
+                     <div class="gd">{$vo.status|get_sechand_status}</div>
+                    <p>评估价:{$vo['price_ssessment']?$vo['price_ssessment']:"暂无"}
+                    </p>
+                    <!--<p>{$vo.factory}</p>-->
+                    <h3><em>￥{$vo.price_customer}</em>/辆</h3>
+   					<span></span>
+                    <if condition="$vo.status eq 2">
+                    <input type="button" class="sjiads" value="下架" onclick="sechand_off({$vo.id})">
+                    </if>
+                </div>
+            </li>
+        </volist>
+    </div>
+    <div class="noorder"> 
+		<a href="{:U('Sechand/index/act/s')}">发布二手车</a>
+	</div>
+    <else/>
+    <div class="noorder"> 
+		<p>您还没有发布二手车</p>
+		<a href="{:U('Sechand/index/act/s')}">去发布</a>
+	</div>
+	</present>
+    <div class="clearfix"></div>
+    
+</ul>
+
+</div>
+</div> 
+</form>
+</block>
+
+<block name="side"></block>
+<block name="script">
+<script type="text/javascript">
+$(document).ready(function () { 
+}); 
+
+function sechand_off(id)
+{
+	gconfirm_ajax('是否下架该车，下架后将不能再次上架','/wap.php?s=/Fans/sechand_off/from/x/id/'+id+'.html');
+}
+</script> 
+</block>

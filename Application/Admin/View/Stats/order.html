@@ -1,0 +1,111 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <script type="text/javascript" src="__JS__/chart/highcharts.js"></script>
+    <script type="text/javascript" src="__JS__/chart/exporting.js"></script>
+
+    <div class="main-title">
+        <h2>订单统计</h2>
+    </div>
+    <div class="search-form cf">
+        <div style="margin-top: 10px; float: left;">
+            下单时间：
+            <input type="text" name="start_date" class="text input-small time" value="{$start_date}" placeholder="请选择日期" />
+            至
+            <input type="text" name="end_date" class="text input-small time" value="{$end_date}" placeholder="请选择日期" />
+            订单类型：
+            <select id="type" style="width:100px;">
+                <option value="2">保养</option>
+                <option value="5">商城</option>
+                <option value="4">租车</option>
+                <option value="1">维修</option>
+                <option value="3">充电</option>
+            </select>
+        </div>
+
+        <a id="search" style="margin-left: 20px; margin-top: 10px;" class="btn" href="javascript:;" url="{:U('order')}">查 询</a>
+    </div>
+
+    <div class="tab-wrap">
+        <div class="tab-content">
+            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto;width:800px;"></div>
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+    <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            // Build the chart
+            $('#container').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: '{:$dataTitle}'
+                },
+                tooltip: {
+                    pointFormat: '（{point.y}）{series.name}: <b>{point.percentage:.3f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: '占比',
+                    data: [
+                        {:$data}
+                    ]
+                }]
+            });
+        });
+
+
+        $("#search").click(function(){
+            var url = $(this).attr('url');
+            var type = $("#type").val();
+            if (type == '') {
+                alert('请选择订单类型');
+                return;
+            }
+            var query  = $('.search-form').find('input').serialize();
+            query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+            query = query.replace(/^&/g,'');
+            if(type != '0'){
+                query = 'type=' + type + "&" + query;
+            }
+            if( url.indexOf('?')>0 ){
+                url += '&' + query;
+            }else{
+                url += '?' + query;
+            }
+            window.location.href = url;
+        });
+
+        $(document).ready(function(){
+            $('#type').val("{:I('type', '2')}");
+        });
+    </script>
+
+
+</block>

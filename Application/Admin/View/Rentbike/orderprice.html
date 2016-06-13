@@ -1,0 +1,172 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>租车报价结算</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        
+        <div class="form-item">
+            <label class="item-label">开始时间</label>
+            <div class="controls">
+                	{$order.start_time|date="Y-m-d H:i",###}	 
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">还车时间</label>
+            <div class="controls">
+                	{$order.return_time|date="Y-m-d H:i",###}	 
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">租车时长</label>
+            <div class="controls">
+                	{$order.showtimespan}分钟
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">租车费</label>
+            <div class="controls">
+                	{$order.rent_price}元	 
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">车损费</label>
+            <div class="controls">
+                <input type="text" class="text input-small" id="damage_price" name="damage_price" value="{$info.damage_price|default=0}"> 元
+            </div>
+        </div>
+
+        <if condition="$alert_price eq 1">
+        <div class="form-item">
+            <label class="item-label">优惠价格<span class="check-tips">(仅超级管理员可见)</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" id="alert_price" name="alert_price" value="0"> 元
+            </div>
+        </div>
+        </if>
+
+        <div class="form-item">
+            <label class="item-label">优惠券<span class="check-tips">（现金优惠券）</span></label>
+            <div class="controls">
+                <select id="selCoupon" name="couponid">
+                    <option value="0" face="0">不使用优惠券</option>
+                    <volist id="cp" name="coupons">
+                        <option value="{$cp.id}" face="{$cp.face}" data-arrive_face="{$cp.arrive_face}" data-reduce_face="{$cp.reduce_face}">{$cp.cname}（{$cp.face}元
+                            <if condition="$cp['arrive_face'] gt 0 ">满{$cp.arrive_face}</if>
+                            <if condition="$cp['reduce_face'] gt 0 ">减免{$cp.reduce_face}</if>
+                            ）</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">过夜费</label>
+            <div class="controls">
+                <input type="text" class="text input-small" id="night_price" name="night_price" data-count="{$day}" data-min="{$day*5}" data-max="{$day*30}" value="{$day*30}">元&nbsp;&nbsp;(已过夜{$day}天，费用范围{$day*5}元~{$day*30}元)
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">总计</label>
+            <div id="total" class="controls">
+                		 
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">应付</label>
+            <div id="pay" class="controls">
+                		 
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="oid" value="{$order.id|default=''}">
+            <input type="hidden" name="rent_price" value="{$order.rent_price}">
+            <input type="hidden" id="coupon_price" name="coupon_price" value="0">
+            <button class="btn submit-btn ajax-post confirm" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+		var rent_price = {$order.rent_price};
+        var damage_price = 0;
+		var alert_price = 0;
+		var coupon_price = 0;
+        var arrive_face = 0;
+        var reduce_face = 0;
+        $(document).ready(function(){
+        	get_total();
+
+        	$("#damage_price").bind('keyup',function(){
+				damage_price = parseFloat($(this).val());
+                if(isNaN(damage_price)){
+                    damage_price=0;
+                }
+				get_total();
+        	});
+            <if condition="$alert_price eq 1">
+            $("#alert_price").bind('keyup',function(){
+                alert_price = parseFloat($(this).val());
+                if(isNaN(alert_price)){
+                    alert_price=0;
+                }
+                get_total();
+            });
+            </if>
+        	$("#selCoupon").change(function(){
+        		coupon_price = parseFloat($(this).children('option:selected').attr('face'));
+                arrive_face = parseFloat($(this).children('option:selected').data('arrive_face'));
+                reduce_face = parseFloat($(this).children('option:selected').data('reduce_face'));
+                arrive_face = isNaN(arrive_face)?0:arrive_face;
+                reduce_face = isNaN(reduce_face)?0:reduce_face;
+				get_total();
+        	});
+        });
+        
+        function get_total()
+        {
+            var nightprice = parseFloat($("#night_price").val());
+        	var total = rent_price + damage_price+nightprice-alert_price;
+        	var pay = total;
+
+            //满多少减免多少
+            var totalreduce=0;
+            if(arrive_face!=0)
+            {
+                var bei = total/arrive_face;
+                totalreduce = bei*reduce_face;
+                if(totalreduce>coupon_price)
+                {
+                    totalreduce = coupon_price;
+                }
+            }
+            else{
+                //抵金券
+                totalreduce =coupon_price;
+            }
+
+        	if(total >= totalreduce)
+        		pay = total - totalreduce;
+        	else
+        		pay = 0;
+
+        	$("#coupon_price").val(coupon_price);
+			$("#total").html(total+' 元');
+			$("#pay").html(pay+' 元');
+			$("#hdnTotal").val(total);
+        }
+    </script>
+</block>

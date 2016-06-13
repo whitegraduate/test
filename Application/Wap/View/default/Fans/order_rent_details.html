@@ -1,0 +1,270 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+
+<div id="allmap" style="width:100%;height:200px;"></div>
+   <div class="zuche">
+  <div class="biaotia">租车详情</div>
+  <div class="zuju">订单号：{$order.transid}</div>
+  <div class="zuju">下单时间：{$order.create_time|date='Y-m-d H:i',###}</div>
+    <div class="zuju">租车门店：{$order.shopid|get_shop_id}<span class="tb"></span></div>
+    <div class="zuju">租车车辆：{$order.bike}</div>
+    <if condition="$order.status eq 2">
+    <div class="zuju">行驶时间：{$order.timespan}分钟</div>
+    <elseif condition="$order.status eq 0" />
+    
+    <else/>
+    <div class="time zuju">行驶时间：{$order.timespan}分钟</div>
+    
+    </if>
+    <div class="zuju">租车费：<if condition="$order.rent_price eq '0.00'">等待计算<else/>￥{$order.rent_price}</if></div>
+    <div class="zuju">车损费：￥{$order.damage_price}</div>
+    <div class="zuju">总价：<if condition="$order.price eq '0.00'">等待计算<else/>￥{$order.price}</if></div>
+    <div class="zuju">状态：{$order.statusname}</div>
+</div>
+<if condition="$order.status eq 2">
+<div class="ann" onclick="top.window.location='/wxpay/wap.php?s=/Rent/pay/oid/{$order['id']}'">支付</div>
+<elseif condition="$order.status eq 1" />
+<div id="return_bike" class="ann">还车</div>
+</if> 
+ 
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script type="text/javascript">
+$(document).ready(function(){
+	startTime();
+	
+	$(".topnav").click(function(){
+		top.window.location = "{:U('Fans/order_rent')}";
+	});
+	
+	$(".tb").click(function(){
+		top.window.location = "{:U('Index/route',array('code'=>'MD','id'=>$order['shopid']))}";
+	});
+	
+	$("#return_bike").click(function(){
+		$.ajax({
+            type: 'GET',
+            dataType: 'json',
+            async: false,
+            url: "{:U('Rent/return_bike')}",
+            data: {
+                oid: "{:$_GET['oid']}",
+            },
+            success: function(data){ 
+                 galert(data);
+                 $("#return_bike").hide();
+                 $(".time").removeClass('time');
+            },
+            error: function(){ 
+                alert('系统繁忙！');
+            }
+        });
+	});
+});
+
+
+function MillisecondToDate(msd) {
+
+    var time = parseFloat(msd) /1000;
+
+    if (null!= time &&""!= time) {
+
+        if (time >60&& time <60*60) {
+
+            time = parseInt(time /60.0) +"分钟"+ parseInt((parseFloat(time /60.0) -
+
+                    parseInt(time /60.0)) *60) +"秒";
+
+        }else if (time >=60*60&& time <60*60*24) {
+
+            time = parseInt(time /3600.0) +"小时"+ parseInt((parseFloat(time /3600.0) -
+
+                    parseInt(time /3600.0)) *60) +"分钟"+
+
+                    parseInt((parseFloat((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60) -
+
+                            parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60)) *60) +"秒";
+
+        }else if (time >=60*60*24&& time <60*60*24*30) {
+
+            time = parseInt(time /3600.0/24.0) +"天"+
+
+                    parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *24) +"小时"+
+
+                    parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60) +"分钟"+
+
+                    parseInt((parseFloat((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60) -
+
+                            parseInt((parseFloat(time /3600.0) - parseInt(time /3600.0)) *60)) *60) +"秒";
+
+        }else {
+			time = parseInt(time);
+			if(time > 0)
+            	time = parseInt(time) +"秒";
+			else
+				time = '0秒';
+        }
+
+    }else{
+        time = "0 时 0 分0 秒";
+    }
+
+    return time;
+}
+
+function startTime() {
+
+    if(1=={$order.status}||5=={$order.status}){
+        var timestamp1 = Date.parse(new Date());
+        var msecs = timestamp1 - {$order.start_time} * 1000;
+        var str = MillisecondToDate(msecs);
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        // add a zero in front of numbers<10
+        m=checkTime(m);
+        s=checkTime(s);
+        $('.time').html("<string>已用车：</string><span>"+str + "</span>");
+        t=setTimeout('startTime()',1000)
+    }
+    else{
+        var timestamp1 = Date.parse(new Date());
+        var msecs = ({$order.end_time} - {$order.start_time})*1000 ;
+        var str = MillisecondToDate(msecs);
+        $('.time').html("<string>使用时长：</string><span>"+str + "</span>");
+    }
+
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+<script type="text/javascript">
+
+    var map;
+    //$(document).ready(function() {
+        map = new BMap.Map("allmap");
+        var geolocation = new BMap.Geolocation();
+        var point = new BMap.Point(119.661223,29.089421);
+        map.centerAndZoom(point, 13);
+    //画轨迹线
+    var points = [<volist name="gps" id="vo"> new BMap.Point({$vo.lo}, {$vo.la}),</volist>];
+    BMap.Convertor.transMore(points,0,callback);
+        geolocation.getCurrentPosition(function(r){
+            if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                showPosition(r.point);
+            }
+            else {
+                alert('failed'+this.getStatus());
+            }
+        },{enableHighAccuracy: true});
+
+
+
+        //}) ;
+    function callback(xyResults){
+        var xyResult = null;
+        var kk =  Array();
+        for(var index in xyResults){
+            xyResult = xyResults[index];
+            var point = new BMap.Point(xyResult.x, xyResult.y);
+            kk.push(point);
+        }
+        var polyline = new BMap.Polyline(kk,{strokeColor:"red", strokeWeight:4, strokeOpacity:1,enableEditing:"true"});
+        map.addOverlay(polyline);
+    }
+
+        //异常处理
+        function showError(error)
+        {
+            switch(error.code)
+            {
+                case error.PERMISSION_DENIED:
+                    alert("用户不允许地理定位");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("无法获取当前位置");
+                    break;
+                case error.TIMEOUT:
+                    alert("操作超时");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("无法获取当前位置");
+                    break;
+            }
+        }
+
+        //显示地图
+        function showPosition(point)
+        {
+            // 百度地图API功能
+            var point = new BMap.Point(point.lng,point.lat);
+			map.panTo(point);
+            
+            var myIcon = new BMap.Icon("__IMG__/marker3.png", new BMap.Size(262/7,262/7));
+            myIcon.setImageSize(new BMap.Size(262/7,262/7));
+            var marker = new BMap.Marker(point,{icon:myIcon});  // 创建标注
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+			
+            //var data = '{$lstShop|json_encode}';
+            //var arr = eval(data);
+            //addMarker(arr);
+        }
+
+        //将充电桩以标注样式加入到地图中
+        function addMarker(arr) {
+            var myIcon = new BMap.Icon("__IMG__/marker2.png", new BMap.Size(262/7,262/7));
+            myIcon.setImageSize(new BMap.Size(262/7,262/7));
+            //myIcon.setAnchor(new BMap.Size(40,20));
+            for(var i =0 ; i < arr.length; i ++) {
+                var point = new BMap.Point(arr[i].longitude,arr[i].latitude);
+                var marker = new BMap.Marker(point,{icon:myIcon});  // 创建标注
+                map.addOverlay(marker);
+                marker.id = arr[i].id;
+                marker.title = arr[i].name;
+                marker.point = point;
+                if('' == arr[i].mobile)
+                    marker.mobile = arr[i].tel;
+                else
+                	marker.mobile = arr[i].mobile;
+                marker.address = arr[i].address;
+                var tel = arr[i].tel;
+                marker.addEventListener("click", function(){
+                    var opts = {
+                        width : 200,     // 信息窗口宽度
+                        height: 150,     // 信息窗口高度
+                        title : this.title, // 信息窗口标题
+                        enableMessage:true,//设置允许信息窗发送短息
+                        message:" "
+                    }
+                    var url = "{:U('Wap/Shop/shop','','')}/sid/" + this.id;
+                    var info = "<div style=\"font-size:12px; margin:10px 10px 0 10px;\">"
+					     +"<div style=\"float:left;\">星级：★</div>"
+					     +"<div style=\"float:right;\">订单数：0</div>"
+					     +"<div style=\"clear:both;\"></div>"
+					     +"</div>"
+					     +"<div style=\"font-size:12px; margin:10px 10px 0 10px;\">地址："+this.address+"</div>"
+					     +"<div style=\"font-size:12px; margin:10px 10px 0 10px;\">电话："+this.mobile+"</div>"
+					     +"<div style=\"width:80%; margin:0 auto; height:30px; background:#00af89; font-size:12px; line-height:30px; text-align:center; margin-top:15px;\">"
+					     +"<a href=\""+url+"\" style=\"color:#fff; text-decoration:none;\">点击查看门店详情信息</a></div>";
+					
+                    infoWindow = new BMap.InfoWindow(info, opts);  // 创建信息窗口对象
+                    map.openInfoWindow(infoWindow,this.point); //开启信息窗口
+                });
+            }
+        }
+
+    </script>
+
+</block>

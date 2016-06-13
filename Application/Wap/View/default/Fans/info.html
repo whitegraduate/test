@@ -1,0 +1,111 @@
+
+<extend name="Base/common_my" />
+<block name="header"> </block>
+
+<block name="body">
+
+    <div class="geren">
+        <div class="touxiang"><img src="{$fans.headimgurl}" width="100%" /></div>
+        <div class="touming">{$fans.nickname}</div>
+        <div class="toubang"><a href="#">手机绑定</a></div>
+    </div>
+    <div class="kuan">
+        <ul>
+            <li id="li_order">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao1.png" width="100%" /></div>
+                    <div class="kuanzi">我的订单</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+            <li id="li_account">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao2.png" width="100%" /></div>
+                    <div class="kuanzi">我的账户</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+            <li style="display:none;">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao3.png" width="100%" /></div>
+                    <div class="kuanzi">我的优惠券</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="kuan">
+        <ul>
+            <li style="display:none;">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao4.png" width="100%" /></div>
+                    <div class="kuanzi">积分商城</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+            <li style="display:none;">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao5.png" width="100%" /></div>
+                    <div class="kuanzi">我的积分</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="kuan">
+        <ul>
+            <li id="li_auth_mobile">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao6.png" width="100%" /></div>
+                    <div class="kuanzi">手机认证</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+            <li id="li_auth_mobile">
+                <a href="#">
+                    <div class="kuantu"><img src="__IMG__/tubiao7.png" width="100%" /></div>
+                    <div class="kuanzi">身份认证</div>
+                    <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+                    <div class="clearflx"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+ <script type="text/javascript">
+	$(document).ready(function(){
+		$(".ann").click(function(){
+			$('#form1').submit();
+		});
+		
+		var event = 'click';
+
+		$(".touxiang").on(event,function(){
+			//top.window.location = "{:U('my')}";
+		});
+		
+		$("#li_order").on(event,function(){
+			top.window.location = "{:U('myorders')}";
+		});
+		
+		$("#li_auth_mobile").on(event,function(){
+			//top.window.location = "{:U('auth_mobile')}";
+		}); 
+		
+		$("#li_auth_idcard").on(event,function(){
+			//top.window.location = "{:U('auth_idcard')}";
+		});
+		
+		$('body').attr('style','background:#efefef;');
+	});
+	</script> 
+</block>

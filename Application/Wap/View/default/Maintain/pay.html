@@ -1,0 +1,105 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+
+    <form id="form1" method="post">
+        <div class="content">
+            <div class="xiaokuan">
+                <div class="xiaozi">门店</div>
+                <div class="xiaojian changui">
+                    {$order.shop}</div>
+                <div class="clearflx"></div>
+            </div>
+            <div class="xiaokuan">
+                <div class="xiaozi">服务</div>
+                <div class="xiaojian changui">{$order.product}</div>
+                <div class="clearflx"></div>
+            </div>
+            <div class="xiaokuan">
+                <div class="xiaozi">费用</div>
+                <div class="xiaojian feiyong">￥{$order.price}</div>
+                <div class="clearflx"></div>
+            </div>
+            <div class="xiaokuan">
+                <div class="xiaozi">实际应付</div>
+                <div class="xiaojian feiyong">￥{$order.pay_price}</div>
+                <div class="clearflx"></div>
+            </div>
+            <div class="anniu">确认支付</div>
+        </div>
+    </form>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
+	$('.anniu').click(function(){
+		doPay();
+	});
+}); 
+
+wx.config({
+    appId: '{$jsapi_sign_package.appId}',
+    timestamp: '{$jsapi_sign_package.timestamp}',
+    nonceStr: '{$jsapi_sign_package.nonceStr}',
+    signature: '{$jsapi_sign_package.signature}',
+    jsApiList: [
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQQ',
+                    'onMenuShareWeibo',
+                    'hideOptionMenu',
+                    'showOptionMenu',
+                    'chooseWXPay'
+                    // 所有要调用的 API 都要加到这个列表中
+                ]
+});
+
+//支付
+function doPay() {
+    $.post("/wap.php/Maintain/prepay", {
+                rsid: "{$rid}",
+                oprice:"{$order.pay_price}"},
+            function(data){
+                //updateBtnPay(0);
+                if (data) {
+                    layer.closeAll();
+                    if (data.code == 1) {
+                        // 微信统一支付成功
+                        wx.chooseWXPay({
+                            timestamp: data.timeStamp, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+                            nonceStr: data.nonceStr, // 支付签名随机串，不长于 32 位
+                            package: data.package, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+                            signType: data.signType, // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+                            paySign: data.paySign, // 支付签名
+                            success: function (res) {
+                                var last=JSON.stringify(res);
+                                //alert(last);
+                                // 支付成功后的回调函数
+                                if(res.errMsg == "chooseWXPay:ok" ) {
+                                    afterPay();
+                                }
+                                else
+                                    alert('errpay');
+                            }
+                        });
+                    } else { alert(data.msg);
+
+                    }
+                }
+            },"json");
+}
+
+//支付成功
+function afterPay() {
+	top.window.location = "{:U('Fans/myorders')}";
+}
+</script>
+</block>

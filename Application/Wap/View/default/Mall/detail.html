@@ -1,0 +1,151 @@
+<extend name="Base/common_min"/>
+<block name="header">
+</block>
+
+<block name="body">
+    <form action="{:U('Mall/order')}" method="post">
+        <div class="header">
+            <a href=""><div class="topnav"></div></a>
+            <div class="logo">{$wap_title}</div>
+        </div>
+
+        <input type="hidden" name="id" value="{$info['id']}">
+        <img src="{$info['pic']}" width="100%">
+        <div class="cont">
+            <div class="cp_title">{$info['title']}</div>
+            <div class="price">
+                ￥
+                <span>{$info['member_price']}</span>
+                <em>会员价</em>
+            </div>
+            <ul class="pattern">
+                <!--<li>-->
+                    <!--<div class="wz">款式：</div>-->
+                    <!--<div class="manner">-->
+                        <!--&lt;!&ndash;class="up"&ndash;&gt;-->
+                        <!--<span data-value="1" class="spanclass">经典</span>-->
+                        <!--<span data-value="2" class="spanclass">时尚</span>-->
+
+                        <!--<input type="hidden" id="hdks" name="hdks" value="">-->
+                    <!--</div>-->
+                <!--</li>-->
+<div style="clear: both;"></div>
+                <li>
+                    <div class="wz">颜色:</div>
+                    <div class="manner">
+                        <volist name="colorlist" id="vo">
+                            <span data-value="{$vo.id}" class="spanclass">{$vo.color_name}</span>
+                        </volist>
+
+                        <input type="hidden" id="hdcolor" name="hdcolor" value="">
+                    </div>
+                </li>
+            </ul>
+            <div class="suggest">
+                <div class="sug">
+                    <div class="tb"></div>
+                    <span>卖家承诺25小时内发货</span>
+                </div>
+                <div class="sug">
+                    <div class="tb"></div>
+                    <span>信用卡支付</span>
+                </div>
+                <div class="sug">
+                    <div class="tb"></div>
+                    <span>如实描述</span>
+                </div>
+            </div>
+            <div class="xian1"></div>
+            <div class="details">
+                <div class="title">
+                    <a href="#">图文详情</a>
+                    <div class="xian2"></div>
+                    <a class="a_up" href="#">产品参数</a>
+                </div>
+                <!---图文详情----->
+                <!--  <div class="tup">
+                        <img  src="images/tp1.jpg"  width="100%">
+                        <p>图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情图片详情</p>
+                     </div>-->
+                <!---产品参数----->
+                <div class="wz">
+                    <!--<p>上市时间: 2011年冬季</p>-->
+                    <!--<p>品牌: 绿源</p>-->
+                    <!--<p>是否商场同款: 是</p>-->
+                    <!--<p>颜色分类: 豪迈红 宝石蓝 银白</p>-->
+                    <!--<p>配置等级: 其他</p>-->
+                    {$info['content']}
+                </div>
+            </div>
+
+        </div>
+        <!--<input type="submit" value="购买" name="buy">-->
+        <div class="ann1">立即购买</div>
+    </form>
+</block>
+
+<block name="side"></block>
+<block name="script">
+<script src="__JS__/layer.m/layer.m.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
+            $(".select").each(function () {
+                var s = $(this);
+                var z = parseInt(s.css("z-index"));
+                var dt = $(this).children("dt");
+                var dd = $(this).children("dd");
+                var _show = function () {
+                    dd.slideDown(200);
+                    dt.addClass("cur");
+                    s.css("z-index", z + 1);
+                };   //展开效果
+                var _hide = function () {
+                    dd.slideUp(200);
+                    dt.removeClass("cur");
+                    s.css("z-index", z);
+                };    //关闭效果
+                dt.click(function () {
+                    dd.is(":hidden") ? _show() : _hide();
+                });
+                dd.find("a").click(function () {
+                    dt.html($(this).html());
+                    _hide();
+                });     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+                $("body").click(function (i) {
+                    !$(i.target).parents(".select").first().is(s) ? _hide() : "";
+                });
+            })
+
+            $('label').click(function () {
+                var radioId = $(this).attr('name');
+                $('label').removeAttr('class') && $(this).attr('class', 'checked');
+                $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+            });
+
+            $('.spanclass').click(function(){
+                var sval = $(this).attr('data-value');
+                $(this).closest('div.manner').find('input').val(sval);
+                $(this).closest('div.manner').find('span').removeClass('up');
+                $(this).addClass('up');
+            });
+            
+            $(".ann1").click(function(){
+            	if('' == $("#hdcolor").val())
+            	{
+            		galert('请选择颜色');
+            		return false;
+            	}
+            	
+            	top.window.location = "/wap.php?s=/Mall/order/id/{:$_GET['id']}/cl/"+$("#hdcolor").val()+".html";
+            	//document.forms[0].submit();
+            });
+
+            $("div.wz").find("img").attr("width","100%");
+        });
+
+        function fsubmit() {
+            document.forms[0].submit();
+        }
+    </script>
+</block>

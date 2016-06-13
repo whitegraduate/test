@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta  charset="UTF-8">
+<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/Public/Wap/css/bootstrap.min.css" type="text/css" />
+<link href="/Public/Wap/css/style2.css" rel="stylesheet">
+<script type='text/javascript' src='/Public/Wap/js/jquery-2.0.3.min.js'></script>
+<script>
+    $(document).ready(function(){
+        $(".topleft").click(function(){
+            history.go(-1);
+        });
+        $(".topright").click(function(){
+            location.href = "{:U('Fans/info')}";
+        });
+    });
+</script>
+<title>{:C('WEB_SITE_TITLE')}</title>

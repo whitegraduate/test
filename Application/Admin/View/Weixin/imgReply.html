@@ -1,0 +1,85 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}图文回复</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">关键词<span class="check-tips">（触发关键词）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="keyword" value="{$info.keyword|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">匹配模式<span class="check-tips">（关键词触发回复的匹配模式）</span></label>
+            <div class="controls">
+                <select name="match_type" class="input input-medium">
+                    <option value="1">全字匹配</option>
+                    <option value="2">模糊匹配</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">标题<span class="check-tips">（图文标题）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">简介<span class="check-tips">（图文简介）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="info" value="{$info.info|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">图文封面</label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'cover_img','value'=>$info['cover_img']))}
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">图文外链地址<span class="check-tips">（如果有外链，则忽略图文详细内容）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="link_url" value="{$info.link_url|default=''}">
+            </div>
+        </div>
+         <div class="form-item">
+            <label class="item-label">图文详细内容<span class="check-tips">（图文详细内容）</span></label>
+            <div class="controls">
+                <textarea name="content">{$info['content']}</textarea>
+                {:hook('adminArticleEdit', array('name'=>'content','value'=>$info['content']))}
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">排序<span class="check-tips">（排序越大优先级越高）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort" value="{$info.sort|default='0'}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">状态</label>
+            <div class="controls">
+                <select name="status" class="input input-medium">
+                    <option value="1">开启</option>
+                    <option value="0">禁用</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("match_type", '{$info.match_type|default = 1}');
+        Think.setValue("status", '{$info.status|default = 1}');
+        //导航高亮
+        highlight_subnav("{:U('indexReply')}");
+    </script>
+</block>

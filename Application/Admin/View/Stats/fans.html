@@ -1,0 +1,49 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>会员统计</h2>
+    </div>
+    <div class="container-span top-columns cf">
+        <dl class="show-num-mod">
+            <dt><i class="count-icon user-count-icon"></i></dt>
+            <dd>
+                <strong>{$info.total}</strong>
+                <span>总会员数</span>
+            </dd>
+        </dl>
+
+        <dl class="show-num-mod">
+            <dt><i class="count-icon user-count-icon"></i></dt>
+            <dd>
+                <strong>{$info.today}</strong>
+                <span>今日新增</span>
+            </dd>
+        </dl>
+
+        <dl class="show-num-mod">
+            <dt><i class="count-icon user-count-icon"></i></dt>
+            <dd>
+                <strong>{$info.yesterday}</strong>
+                <span>昨日新增</span>
+            </dd>
+        </dl>
+
+        <dl class="show-num-mod">
+            <dt><i class="count-icon user-count-icon"></i></dt>
+            <dd>
+                <strong>{$info.lastweek}</strong>
+                <span>最近7天</span>
+            </dd>
+        </dl>
+
+        <dl class="show-num-mod">
+            <dt><i class="count-icon user-count-icon"></i></dt>
+            <dd>
+                <strong>{$info.lastmonth}</strong>
+                <span>最近一个月</span>
+            </dd>
+        </dl>
+    </div>
+
+</block>

@@ -1,0 +1,130 @@
+<extend name="Base/common_my" />
+<block name="header">
+</block>
+
+<block name="body">
+<form id="form1" method="post">
+
+    <div class="geren" style="margin-top:0px;">
+        <div class="kuai" style="margin-top:0px;">
+            <div class="kas"> <a href="#">
+                <div class="kabiao">昵称</div>
+                <div class="kago">{$fans.nickname}</div>
+            </a>
+                <div class="clearflx"></div>
+            </div>
+            <div class="kas"> <a href="#myModa2" role="button" data-toggle="modal">
+                <div class="kabiao">头像</div>
+                <div class="tp"></div>
+            </a>
+                <div class="clearflx"></div>
+            </div>
+            <a href="#myModal" role="button" data-toggle="modal">
+                <div class="kas">
+                    <div class="kabiao">性别</div>
+                    <div class="kajian"></div>
+                    <div id="div_sex" class="kago"><eq name="fans.sex" value="1">男<else/>女</eq></div>
+                    <input type="hidden" id="sex" name="sex" value="{$fans.sex}">
+                    <div class="clearflx"></div>
+                </div>
+            </a>
+            <a href="#myModal3" role="button" data-toggle="modal">
+                <div class="kas">
+                    <div class="kabiao">年龄</div>
+                    <div class="kajian"></div>
+                    <div id="div_age" class="kago"><if condition="$fans.age eq 0">待完善<else/>{$fans.age}</if></div>
+                    <div class="clearflx"></div>
+                </div>
+            </a>
+            <div class="kas"> <a href="{:U('Fans/member')}">
+                <div class="kabiao">等级</div>
+                <div class="kajian"></div>
+                <div class="kago">{$fans.grade|get_gradename_id}</div>
+            </a>
+                <div class="clearflx"></div>
+
+            </div>
+            <a href="#myModal2" role="button" data-toggle="modal">
+                <div class="kas">
+                    <div class="kabiao">职业</div>
+                    <div class="kajian"></div>
+                    <div id="div_job" class="kago"><if condition="$fans.job eq ''">待完善<else/>{$fans.job}</if></div>
+                    <input type="hidden" id="job" name="job" value="{$fans.job}">
+                    <div class="clearflx"></div>
+                </div>
+            </a>
+            <a href="{:U('Fans/fans_address')}">
+                <div class="kas">
+                    <div class="kabiao">我的收货地址</div>
+                    <div class="kajian"></div>
+                    <div class="clearflx"></div>
+                </div>
+            </a>
+
+        </div>
+        <div class="ann" onclick="form1.submit()" style="background: #00af89;color: #FFFFFF;width: 90%;text-align: center;">保 存</div>
+    </div>
+    <div id="myModal" class="modal modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="title">性别</div>
+        <div class="xuan">
+            <div class="wz" onclick="setSex(1)">男</div>
+            <div class="wz" onclick="setSex(2)">女</div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="height: 250px">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="title">职业</div>
+        <div class="xuan">
+            <div class="wz" onclick="setJob(this)">白领</div>
+            <div class="wz" onclick="setJob(this)">工人</div>
+            <div class="wz" onclick="setJob(this)">农民</div>
+            <div class="wz" onclick="setJob(this)">学生</div>
+            <div class="wz" onclick="setJob(this)">其他</div>
+        </div>
+    </div>
+    <div id="myModal3" class="modal modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="title">年龄</div>
+        <div class="xuan">
+            <div class="xian"></div>
+            <input name="age" id="age" type="tel" class="input_box" value="{$fans.age}">
+            <div class="ann" onclick="setAge()" style="background: #00af89;">确定</div>
+        </div>
+    </div>
+
+</form>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $("body").attr('style','background:#f1f1ef;');
+        });
+
+        function setSex(value) {
+            if (value == 1) {
+                $('#div_sex').html('男');
+                $('#sex').val('1');
+            } else if (value == 2) {
+                $('#div_sex').html('女');
+                $('#sex').val('2');
+            }
+            $('#myModal').modal('hide');
+        }
+
+        function setAge() {
+            var age = $('#age').val();
+            $('#div_age').html(age);
+            $('#myModal3').modal('hide');
+        }
+
+        function setJob(obj) {
+            var job = $(obj).html();
+            $('#div_job').html(job);
+            $('#job').val(job);
+            $('#myModal2').modal('hide');
+        }
+	</script>
+</block>

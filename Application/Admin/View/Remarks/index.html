@@ -1,0 +1,35 @@
+﻿<style>
+    .re-main{margin: 10px; min-height: 200px; width: 350px;}
+    .re-list{line-height: 20px;}
+    .re-list li{ margin-bottom: 10px;}
+    .re-input{margin-top: 25px;}
+    .re-text{ width: 300px; height: 100px;}
+</style>
+<div class="re-main">
+    <ul class="re-list">
+        <volist name="list" id="vo">
+            <li><strong>{:date('Y-m-d H:i:s',$vo['create_time'])}   {$vo.nickname|default="Admin"}：</strong>{$vo.memo}</li>
+        </volist>
+    </ul>
+    <div class="re-input">
+        <form >
+        <textarea class="re-text"></textarea>
+            <input type="button" class="btn" value="提交" id="re-submit">
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("#re-submit").click(function(){
+            $.post("/admin.php?s=/Remarks/repost/type/{$type}/oid/{$oid}/uid/{$uid}.html",{"cont":$(".re-text").val()},function(msn){
+                if(msn.status==1){
+                    layer.msg("备注成功",{time:1000});
+                    layer.closeAll('page');
+                }
+                else{
+                    layer.msg("备注失败",{time:1000});
+                }
+            },"json");
+        });
+    })
+</script>

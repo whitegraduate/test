@@ -1,0 +1,116 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}自定义菜单</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">标题<span class="check-tips">（菜单名称）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">菜单类型<span class="check-tips">（菜单类型）</span></label>
+            <div class="controls">
+                <select name="menutype" class="menu_type" >
+                        <option value="1">关键词回复菜单</option>
+                        <option value="2">url外链菜单</option>
+                        <option value="3">微信扩展菜单</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item" id="dKeyword">
+            <label class="item-label">关键词<span class="check-tips">（触发关键词）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="keyword" value="{$info.keyword|default=''}">
+            </div>
+        </div>
+        <div class="form-item" id="dUrl">
+            <label class="item-label">链接<span class="check-tips">（U函数解析的URL或者外链）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="url" value="{$info.url|default=''}">
+            </div>
+        </div>
+        <div class="form-item" id="dSys">
+            <label class="item-label">微信扩展<span class="check-tips">（微信扩展菜单）</span></label>
+            <div class="controls">
+                  <select name="sys">
+						<option value="">请选择..</option>
+						<option value="扫码带提示">扫码带提示</option>
+						<option value="扫码推事件">扫码推事件</option>
+						<option value="系统拍照发图">系统拍照发图</option>
+						<option value="拍照或者相册发图">拍照或者相册发图</option>
+						<option value="微信相册发图">微信相册发图</option>
+						<option value="发送位置" >发送位置</option>
+				  </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">上级菜单<span class="check-tips">（所属的上级菜单）</span></label>
+            <div class="controls">
+                <select name="pid">
+                    <volist name="Menus" id="menu">
+                        <option value="{$menu.id}">{$menu.title}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort" value="{$info.sort|default=0}">
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <label class="item-label">是否显示<span class="check-tips"></span></label>
+            <div class="controls">
+                <label class="radio"><input type="radio" name="is_show" value="1">是</label>
+                <label class="radio"><input type="radio" name="is_show" value="0">否</label>
+            </div>
+        </div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        Think.setValue("sys", "{$info.sys}");
+        Think.setValue("is_show", {$info.is_show|default = 1});
+        Think.setValue("menutype", {$info.menutype|default = 1});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        $(document).ready(function(){
+            console.log('2,');
+            /*
+        	$('.menu_type').change(function(){
+                console.log('3,');
+        		var val 	= $(this).val();
+        		if(val == 1){
+        			$('#dKeyword').css('display','');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','none');
+        		}else if(val == 2){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','');		
+        			$('#dSys').css('display','none');
+        		}else if(val == 3){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','');
+        		}
+        	});
+            */
+
+        });
+    </script>
+</block>

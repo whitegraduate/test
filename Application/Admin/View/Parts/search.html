@@ -1,0 +1,117 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="cont">
+        <div class="list">
+            <div class="tb1"></div>
+            <dl class="select">
+                <dt>风格</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">风格1</a></li>
+                        <li><a href="#">风格2</a></li>
+                        <li><a href="#">风格3</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="list">
+            <div class="tb6"></div>
+            <dl class="select">
+                <dt>用途</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">用途1</a></li>
+                        <li><a href="#">用途2</a></li>
+                        <li><a href="#">用途3</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="list">
+            <div class="tb7"></div>
+            <dl class="select">
+                <dt>价位</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">风格1</a></li>
+                        <li><a href="#">风格2</a></li>
+                        <li><a href="#">风格3</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="list">
+            <div class="tb8"></div>
+            <dl class="select">
+                <dt>颜色</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">白色</a></li>
+                        <li><a href="#">蓝色</a></li>
+                        <li><a href="#">红色</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="list">
+            <div class="tb9"></div>
+            <dl class="select">
+                <dt>样式</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">样式1</a></li>
+                        <li><a href="#">样式2</a></li>
+                        <li><a href="#">样式3</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+    <div class="ann">提交</div>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        $(function(){
+            //搜索功能
+            $("#search").click(function(){
+                var url = $(this).attr('url');
+                var query  = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g,'');
+                query = query.replace(/^&/g,'');
+                if( url.indexOf('?')>0 ){
+                    url += '&' + query;
+                }else{
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function(e){
+                if(e.keyCode === 13){
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //点击排序
+            $('.list_sort').click(function(){
+                var url = $(this).attr('url');
+                var ids = $('.ids:checked');
+                var param = '';
+                if(ids.length > 0){
+                    var str = new Array();
+                    ids.each(function(){
+                        str.push($(this).val());
+                    });
+                    param = str.join(',');
+                }
+
+                if(url != undefined && url != ''){
+                    window.location.href = url + '/ids/' + param;
+                }
+            });
+        });
+    </script>
+</block>

@@ -1,0 +1,203 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title" >
+        <h2><present name="data">[ {$data.title} ] 子</present>出租车辆管理</h2>
+    </div>
+    <div class="cf" style="margin-bottom:20px;">
+        <a class="btn" href="{:U('add')}">新 增</a>
+        <button class="btn ajax-post confirm" url="{:U('outlet_del')}" target-form="ids">删 除</button>
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf" style="display:none">
+            <div class="sleft">
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入ID号">
+                <a class="sch-btn" href="javascript:;" id="search" url="__SELF__"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+    <if condition="$user eq 0">
+    <div class="search-form cf" style="line-height:35px;">
+        车辆状态：&nbsp;&nbsp;
+        <if condition="$used_status eq null">
+        <a href="{:U('Rentbike/index/used_status/0/shopid/'.$present)}">在店</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{:U('Rentbike/index/used_status/1/shopid/'.$present)}">使用中</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        全部
+        <elseif condition="$used_status eq 1" />
+        <a href="{:U('Rentbike/index/used_status/0/shopid/'.$present)}">在店</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        使用中&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{:U('Rentbike/index/used_status/all/shopid/'.$present)}">全部</a>
+        <elseif condition="$used_status eq all"/>
+        <a href="{:U('Rentbike/index/used_status/0/shopid/'.$present)}">在店</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{:U('Rentbike/index/used_status/1/shopid/'.$present)}">使用中</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        全部
+        <else/>
+        在店&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{:U('Rentbike/index/used_status/1/shopid/'.$present)}">使用中</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{:U('Rentbike/index/used_status/all/shopid/'.$present)}">全部</a>
+        </if>
+    </div>
+    <div class="search-form cf" style="line-height:35px;">
+        门店筛选：&nbsp;&nbsp;
+        <volist name="shop" id="vo">
+            <if condition="$present eq $vo['id']">
+                {$vo.name}&nbsp;&nbsp;&nbsp;&nbsp;
+            <else/>
+                <a href="{:U('Rentbike/index/shopid/'.$vo['id'].'/used_status/'.$used_status)}">{$vo.name}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </if>
+    </volist>
+    <a href="{:U('Rentbike/index/shopid/blank')}">未分配</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <if condition="$shopid eq null">
+    全部<else/>
+    <a href="{:U('Rentbike/index/shopid/all')}">全部</a>
+    </if>
+    </div>
+    </if>
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>设备号</th>
+                        <th>所属门店</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="bike">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$bike.id}"></td>
+                        <td>{$bike.id}</td>
+                        <td><a href="{:U('Rentbike/orders/status/-1/bikeid/'.$bike['id'])}">{$bike.name}</a></td>
+                        <td><a href="javascript:" onclick="ask_status({$bike.code})">{$bike.code}&nbsp;&nbsp;</a><a href="##" class="mos_log_details" mos="{$bike.code}" title="{$bike.code}">（MOS日志）</a></td>
+                        <td>{$bike.shop}</td>
+                        <td>{$bike.status}</td>
+                        <td>
+                            <if condition="$bike.qimg eq ''">
+        					<button class="btn ajax-post confirm" url="{:U('generate_qrcode',array('bikeid'=>$bike['id']))}" target-form="ids">生成二维码</button>
+                            		<else/><a href="{$bike['qimg']}" target="_blank">查看二维码</a></if>
+                            		
+                            <button class="btn ajax-post confirm" url="{:U('bike_open',array('bikeid'=>$bike['id']))}" target-form="ids">开启</button>
+                            <button class="btn ajax-post confirm" url="{:U('bike_close',array('bikeid'=>$bike['id']))}" target-form="ids">关闭</button>
+                            		
+                            <a title="编辑" href="{:U('edit?id='.$bike['id'])}">编辑</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('del?id='.$bike['id'])}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="10" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+
+        </div>
+    </div>
+</block>
+
+<block name="script">
+<link href="/Public/Admin/js/layer.m/skin/layer.css" rel="stylesheet">
+<script src="__JS__/layer.m/layer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            //搜索功能
+            $("#search").click(function() {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function(e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //导航高亮
+            highlight_subnav('{:U('index')}');
+            //点击排序
+        	$('.list_sort').click(function(){
+        		var url = $(this).attr('url');
+        		var ids = $('.ids:checked');
+        		var param = '';
+        		if(ids.length > 0){
+        			var str = new Array();
+        			ids.each(function(){
+        				str.push($(this).val());
+        			});
+        			param = str.join(',');
+        		}
+
+        		if(url != undefined && url != ''){
+        			window.location.href = url + '/ids/' + param;
+        		}
+        	});
+
+            $('.mos_log_details').click(function(){
+                var title="GPS:"+$(this).attr('title')+"车辆信息";
+                var bike_info="<table class='table table-striped' style='text-align:center; width:100%;'><tr><th>ID</th><th>事件</th><th>事件ID</th><th>操作后状态</th><th>操作是否成功</th><th>执行时间</th></tr>";
+                $.get(
+                    '/admin.php?s=/Rentbike/get_mos_log',{"bikecode":$(this).attr('mos')},function(data){
+                if(!data){
+                    alert('没有数据');
+                }
+                $.each(data,function(idx,itme){
+                   var unixTimestamp = new Date(itme.ex_time * 1000);
+                   commonTime = unixTimestamp.toLocaleString();
+                    if(itme.switch_status==1){
+                        switch_status="开启";
+                    }else{
+                        switch_status="关闭";
+                    }
+                    if(itme.success==0){
+                        success="失败";
+                    }else{
+                        success="成功";
+                    }
+                    if(itme.eventid==1){
+                        eventid="租车业务";
+                    }else{
+                        eventid="调试";
+                    }
+                    
+                    bike_info+="<tr style='line-height:35px;'><td>"+itme.id+"</td><td>"+eventid+"</td><td>"+itme.event+"</td><td>"+switch_status+"</td><td>"+success+"</td><td>"+commonTime+"</td></tr>";
+                   });
+                bike_info+="</table></tr>";
+
+                layer.open({
+                    title:title,
+                    type: 1,
+                    skin: 'layui-layer-demo', //样式类名
+                    closeBtn: false, //不显示关闭按钮
+                    shift: 2,
+                    shadeClose: true, //开启遮罩关闭
+                    content: bike_info,
+                    area:"750px",
+                });
+                });
+            });
+        });
+        function ask_status(id){
+            $.get("{:U('get_gps_status')}",{'id':id}, function(result){
+                str = "设备"+id+"5分钟内有"+result.info+"条数据";
+                alert(str);
+            },'json');
+        }
+    </script>
+</block>

@@ -1,0 +1,9 @@
+ERR: Add Fans success!--o97bDvtVRGbjWowD3u3baEDQT9pE
+ERR: Add Fans success!--o97bDvsHZe7mTbqgzaByXohFLFH8
+ERR: Add Fans success!--o97bDvozE6UaUowiuUClCWBrstYw
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-05-31 16:38:19 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=Dcn25J7jhklYfyqinJMitBw8pjVrPSYUzfWGhkOXLpMpth6nl2RMVqNpk5MUzdfYUzAb-olS6jWB1WJZgQtRWJikvcysgbtiomxm-PFZnIsLQJjAAAFKD
+ERR: 获取业务失败:  Errcode{"errcode":40037,"errmsg":"invalid template_id hint: [QGUAlA0898age9]"} TIME：2016-05-31 16:38:19 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=RAHXNQxYI-LISLWN4BN_Lu1z8uJkJ-aq5eWTjVG6wPQiWNo8EtHCf1n74_CDhbCDItE8AQdltpGbuHOU94_Uo6gZaoH29zuX7CtQNwKeHFgRuG9IfKjcYPJw-ldYLt99CVZeAJARKO
+ERR: Save Fans success!--o97bDvhiHNagjpQl6yGxNLz3JFXk
+ERR: Add Fans success!--o97bDvnLO7bFHVaMLbniPTS0904w
+ERR: Add Fans success!--o97bDvkg7q2cW3reehNjaFpkR-Gw
+ERR: Add Fans success!--o97bDvvLXq1oD8tnf8NlW2LgR3mI

@@ -1,0 +1,74 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>优惠券发放</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">发放会员</label>
+            <div class="controls">
+                {$fans.nickname}
+            </div>
+        </div>
+         <div class="form-item">
+            <label class="item-label">优惠券<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="cid" class="menu_type" >
+                	 <volist id="list" name="lstCoupon">
+                        <option value="{$list.id}">{$list.name}</option>
+                     </volist>
+                </select>
+                <select name="num" class="menu_type" >
+                        <option value="0">全部</option>
+                        <option value="1" selected="selected" >1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                </select>
+            </div>
+        </div> 
+   
+        <div class="form-item">
+            <input type="hidden" name="uid" value="{:$_GET['uid']}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //Think.setValue("cid", {$info.cid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('add_fans_coupon')}');
+
+        $(document).ready(function(){
+            console.log('2,');
+        	$('.menu_type').change(function(){
+                console.log('3,');
+        		var val 	= $(this).val();
+        		if(val == 1){
+        			$('#dKeyword').css('display','');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','none');
+        		}else if(val == 2){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','');		
+        			$('#dSys').css('display','none');
+        		}else if(val == 3){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','');
+        		}
+        	});
+
+        });
+    </script>
+</block>

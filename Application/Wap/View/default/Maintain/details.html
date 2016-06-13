@@ -1,0 +1,96 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+    <div class="changpin">
+        <img src="{$product.picture1}" width="100%" />
+        <div class="biaoti">{$product.name}--{$product.slogan}</div>
+    </div>
+    <div class="baikuan">
+        <div class="baifen">
+            <div class="huiyuan">会员价</div>
+            <div class="xianjia">{$product.price}</div>
+            <div class="yuanjia">原价：{$product.oprice}</div>
+            <div class="clearflx"></div>
+        </div>
+        <div class="baifen" style="display:none;">
+            <div class="baixiao">销量：10件</div>
+            <div class="baixiao">收藏：30人</div>
+            <div class="clearflx"></div>
+        </div>
+        <div class="weiquan">
+            <ul>
+                <li>
+                    <div class="weitu"><img src="__IMG__/tu1.jpg" width="15"/></div>
+                    <div class="weizi">正品保证</div>
+                </li>
+                <li>
+                    <div class="weitu"><img src="__IMG__/tu1.jpg" width="15"/></div>
+                    <div class="weizi">维修保养</div>
+                </li>
+                <li>
+                    <div class="weitu"><img src="__IMG__/tu1.jpg" width="15"/></div>
+                    <div class="weizi">权威鉴定</div>
+                </li>
+
+                <div class="clearflx"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="baikuan" style="display:none;">
+        <div class="kuan biankuan">
+            <div class="kuanzi">颜色</div>
+            <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+            <div class="clearflx"></div>
+        </div>
+        <div class="yanse">
+            <ul>
+                <li>红色</li>
+                <li>黑色</li>
+                <li>蓝色</li>
+                <div class="clearflx"></div>
+            </ul>
+        </div>
+        <div class="kuan biankuan juli">
+            <div class="kuanzi">尺码</div>
+            <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+            <div class="clearflx"></div>
+        </div>
+        <div class="yanse">
+            <ul>
+                <li>XL</li>
+                <li>L</li>
+                <li>M</li>
+                <div class="clearflx"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="baikuan">
+        <div class="kuan biankuan">
+            <div class="kuanzi">商品详情</div>
+            <div class="kuanjian"><img src="__IMG__/jian.png" width="100%" /></div>
+            <div class="clearflx"></div>
+        </div>
+        <div class="content">
+            {$product.content}
+        </div>
+    </div>
+<div class="ann1">立即下单</div>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+<script language="javascript">
+  $(document).ready(function(){
+  	$(".ann1").click(function(){
+  		location.href = "/wxpay/wap.php?s=/Maintain/order/pid/{$product.id}.html";
+  	});
+
+      $('body').attr("style","background:#efefef;");
+
+
+  });
+  </script>
+</block>

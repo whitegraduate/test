@@ -1,0 +1,59 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}配件类型</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div> 
+        
+        <div class="form-item">
+            <label class="item-label">配件类型</label>
+           <div class="controls">
+				<select name="pid">
+					<volist name="Think.config.PARTS_TYPE" id="type">
+						<option value="{$key}">{$type}</option>
+					</volist>
+				</select>
+			</div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">排序</label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort" value="{$info.sort|default='1'}">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">可用<span class="check-tips"></span></label>
+            <div class="controls">
+                <label class="radio"><input type="radio" name="status" value="1">是</label>
+                <label class="radio"><input type="radio" name="status" value="0">否</label>
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="chargerid" value="{:$_GET['chargerid']}">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+	    Think.setValue("pid", {$info.pid|default = 1});
+	    Think.setValue("status", {$info.status|default = 1});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        
+    </script>
+</block>

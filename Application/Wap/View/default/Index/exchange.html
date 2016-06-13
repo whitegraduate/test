@@ -1,0 +1,35 @@
+
+<extend name="Base/common" />
+<block name="header">
+ <script src="__JS__/date/mobiscroll_002.js" type="text/javascript"></script>
+	<script src="__JS__/date/mobiscroll_004.js" type="text/javascript"></script>
+	<link href="__CSS__/date/mobiscroll_002.css" rel="stylesheet" type="text/css">
+	<link href="__CSS__/date/mobiscroll.css" rel="stylesheet" type="text/css">
+	<script src="__JS__/date/mobiscroll.js" type="text/javascript"></script>
+	<script src="__JS__/date/mobiscroll_003.js" type="text/javascript"></script>
+	<script src="__JS__/date/mobiscroll_005.js" type="text/javascript"></script>
+	<link href="__CSS__/date/mobiscroll_003.css" rel="stylesheet" type="text/css">
+</block>
+
+<block name="body">
+<div class="cont">
+   <div id="myTabContent" class="tab-content">
+    <ul role="tabpanel"  class="tab-pane active listing"  id="home">
+        <volist id="gf" name="gifts">
+        <li>
+          <div class="tup"><a href="{:U('Fans/gift_details',array('gid'=>$gf['id']))}"><img src="{$gf.img}" width="100%"></a></div>
+          <div class="wz">
+             <p>{$gf.name}</p>
+             <h3><em>{$gf.score}</em>积分</h3>
+             <span style="display:none;"><div class="tb1"></div></span>
+          </div>
+       </li>
+       </volist>
+    </ul>
+    </div>
+</div>
+</block>
+
+<block name="side"> </block> 
+<block name="script">
+</block>

@@ -1,0 +1,64 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+<div class="binding">
+     <div class="user_left">
+         <div class="tup"><img src="{$wechat.headimgurl}" width="100%"></div>
+     </div>
+     <div class="center">
+         <div class="tup"><img src="__IMG__/shou.jpg" width="100%"></div>
+     </div>
+     <div class="user_right">
+         <div class="tup"><img src="__IMG__/logo.png" width="100%"/></div>
+     </div>
+</div>
+<div class="information">
+     <div class="title">您的微信账号<span>{$wechat.nickname}</span>，绑定后可实时接收订单通知!</div>
+     <div class="content">
+       <form method="post" name="form1" id="form1">
+          <div class="name">
+             <span>门店：</span> 
+             {$shop.name}
+          </div>
+          <div class="name">
+             <span>当前绑定：</span> 
+             <if condition="$shop.wechatname eq ''">未绑定<else/>{$shop.wechatname}</if>
+          </div>
+          <div class="name">
+             <span>密    码：</span> 
+             <input name="password" type="password" class="kuang" id="pass" placeholder="如：352655" />
+             <input type="hidden" name="sid" value="{:$_GET['sid']}" />
+          </div>
+       </form>
+     </div>
+
+     <div class="ann">绑    定</div>
+
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".ann").click(function(){
+			if($('#pass').val() == '')
+			{
+				galert('请输入门店密码');
+				return false;
+			}
+			$("#form1").submit();
+		});
+	});
+	/*	
+	$(function(){
+			var verifyimg = $(".verifyimg").attr("src");
+            $(".reloadverify").click(function(){
+                if( verifyimg.indexOf('?')>0){
+                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
+                }else{
+                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                }
+            });
+		});
+	*/
+	</script>
+</block>

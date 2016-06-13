@@ -1,0 +1,147 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>投诉管理 </h2>
+    </div>
+    
+ <div class="search-form cf">
+        <div style="margin-top: 10px; float: left;">
+            下单时间：
+            <input type="text" name="start_date" class="text input-small time" value="{$start_date}" placeholder="请选择日期">
+            至
+            <input type="text" name="end_date" class="text input-small time" value="{$end_date}" placeholder="请选择日期">
+        </div>
+        <a id="search" style="margin-left: 20px; margin-top: 10px;" class="btn" href="javascript:;" url="/admin.php?s=/Index/complain.html">查 询</a>
+        <input type="hidden" id="status" name="status" value="{:I('status', -1)}">
+    </div>
+<div style="height:20px;"></div>
+<ul class="tab-nav nav">
+	<li <if condition="$status eq -1"> class="current"</if>><a href="{:U('Index/complain',array('status'=>-1))}">全部</a></li>
+	
+	<volist name="Think.config.COMPLAIN_STATUS" id="type">
+		<li <if condition="$status eq $key"> class="current"</if>><a href="{:U('Index/complain',array('status'=>$key))}">{$type}</a></li>
+	</volist>
+
+
+ <div class="cf"> 
+        <!-- 高级搜索 -->
+        <div class="search-form fr cf">
+            <div class="sleft" style="display:none;">
+                <input type="text" name="title" class="search-input" value="{:I('title')}" placeholder="请输入产品名称">
+                <a class="sch-btn" href="javascript:;" id="search" url="__SELF__"><i class="btn-search"></i></a>
+            </div>
+        </div>
+    </div>
+</ul>
+   
+
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th>id</th>
+                        <th>订单号</th>
+                        <th>投诉内容</th>
+                        <th>用户</th>
+                        <th>所属门店</th>
+                        <th>状态</th>
+                        <th>投诉时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="order">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$order.id}"></td>
+                        <td>{$order.id}</td>
+                        <td>{$order.transid}</td>
+                        <td>{$order.memo}</td>
+                        <td>{$order.openid|get_fansname_openid}</td>
+                        <td>{$order.shopid|get_shop_id}</td>
+                        <td>{$order.status|get_complain_status}</td>
+                        <td>{$order.create_time|date='Y-m-d H:i',###}</td>
+                        <td>
+                        <if condition="$order.status eq 1">
+                            <a href="#" class="btn" id="remark" cid="{$order.id}">处理</a>
+                            <else/>
+                            <a href="#" id="remark" cid="{$order.id}">详情</a>
+                            </if>
+                        </td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="10" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+	        {$_page}
+        </div>
+    </div>
+</block>
+
+<block name="script">
+    <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+    <php>if(C('COLOR_STYLE')=='blue_color') echo '<link href="__STATIC__/datetimepicker/css/datetimepicker_blue.css" rel="stylesheet" type="text/css">';</php>
+    <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="__JS__/layer.m/layer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var uid = {$user_id|default="0"};
+            $(document).on("click","#remark",function(){
+                //订单类型  1:维修 2:保养 3:充电 4:租车 5:购车
+                $.get('/admin.php?s=/Remarks/complain.html', {"cid":$(this).attr('cid')}, function(str){
+                    layer.open({
+                        type: 1,
+                        title:"投诉备注",
+                        shade: 0.1,
+                        shadeClose:true,
+                        skin: 'layui-layer-rim', //加上边框
+                        content: str
+                    });
+                });
+
+            });
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            //搜索功能
+            $("#search,#export").click(function() {
+                var url = $(this).attr('url');
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+            //回车搜索
+            $(".search-input").keyup(function(e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            //导航高亮
+            highlight_subnav('{:U('complain')}');
+
+        });
+    </script>
+
+</block>

@@ -1,0 +1,117 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$meta_title}</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        {:hook('province_city_area',array('cityid'=>$info["cityid"],'areaid'=>$info["areaid"]))}
+        <div class="form-item">
+            <label class="item-label">类型<span class="check-tips"></span></label>
+            <div class="controls">
+                <select id="parts_type" name="bigtype" class="parts_type" >
+                    <option value="-1">请选择</option>
+                    <volist name="Think.config.PARTS_TYPE" id="type">
+                        <option value="{$key}">{$type}</option>
+                    </volist>
+                </select>
+
+                <select id="repair_parts_type" name="type" class="parts_type" >
+
+                </select>
+
+                <select id="partid" name="partid" class="parts_type" >
+
+                </select>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">配件价格</label>
+            <div class="controls">
+                <input type="text" class="text input-small" name="price" value="{$info.price|default=0}">元
+            </div>
+        </div>
+
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id}"/>
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //Think.setValue("shopid", {$info.shopid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        $(document).ready(function(){
+
+            $("#parts_type").bind('change',function(){
+                ajax_types($(this).val(),'repair_parts_type');
+                $("#repair_parts_type").change();
+            });
+
+            $("#repair_parts_type").bind('change',function(){
+                ajax_partid($(this).val(),'partid');
+            });
+
+            $("#parts_type").val("{$info['bigtype']}").change();
+        });
+
+        function ajax_types(type,id)
+        {
+            $.ajax({
+                type: "POST",
+                url: "{:U('Basic/get_repair_parts_types_by_parent')}",
+                dataType: 'json',
+                async: false,
+                data: {type:type},
+                success: function(data){
+                    $("#"+id).empty();
+                    for(var i=0;i<data.length;i++)
+                    {
+                        var option = $("<option>").val(data[i].id).text(data[i].name);
+
+                        $("#"+id).append(option);
+
+                    }
+                    $("#"+id).val("{$info['type']}");
+                    if(data.status){
+
+                    }else{
+
+                    }
+                }
+            });
+        }
+
+        function ajax_partid(type,id)
+        {
+            $.ajax({
+                type: "POST",
+                url: "{:U('Basic/getpart_by_typed')}",
+                dataType: 'json',
+                async: false,
+                data: {type:type},
+                success: function(data){
+                    $("#"+id).empty();
+                    for(var i=0;i<data.length;i++)
+                    {
+                        var option = $("<option>").val(data[i].id).text(data[i].name);
+
+                        $("#"+id).append(option);
+                    }
+                    $("#"+id).val("{$info['partid']}");
+                    if(data.status){
+
+                    }else{
+
+                    }
+                }
+            });
+        }
+    </script>
+</block>

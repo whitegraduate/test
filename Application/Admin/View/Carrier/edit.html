@@ -1,0 +1,107 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}运营商</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">所属地区<span class="check-tips">（运营商）</span></label>
+            <div class="controls">
+                <!--<select name="province" class="rights_type" >-->
+					<!--<volist name="Think.config.GRADE_RIGHT_LIST" id="type">-->
+						<!--<option value="浙江省">浙江省</option>-->
+					<!--</volist>-->
+                <!--</select>-->
+                <!---->
+                <!--<select name="city" class="rights_type" >-->
+						<!--<option value="金华市">金华市</option>-->
+					<!---->
+                <!--</select>-->
+                <!---->
+                <!--<select name="county" class="rights_type" >-->
+						<!--<option value="金华市">金华市</option>-->
+					<!---->
+                <!--</select>-->
+                <select name="cityid" id="cityid">
+                    <volist name="citylist" id="vo">
+                        <option value="{$vo.id}">{$vo.province}-{$vo.city}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+      
+        <div class="form-item">
+            <label class="item-label">地址</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="address" value="{$info.address|default=''}">
+            </div>
+        </div>
+      
+        <div class="form-item">
+            <label class="item-label">联系人</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="linkman" value="{$info.linkman|default=''}">
+            </div>
+        </div>
+      
+        <div class="form-item">
+            <label class="item-label">固话</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="tel" value="{$info.tel|default=''}">
+            </div>
+        </div>
+   
+      
+        <div class="form-item">
+            <label class="item-label">手机号</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="mobile" value="{$info.mobile|default=''}">
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("rights_type", {$info.rights_type|default = 1});
+        Think.setValue("cityid", {$info.cityid|default = 1});
+
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        $(document).ready(function(){
+            console.log('2,');
+        	$('.menu_type').change(function(){
+                console.log('3,');
+        		var val 	= $(this).val();
+        		if(val == 1){
+        			$('#dKeyword').css('display','');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','none');
+        		}else if(val == 2){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','');		
+        			$('#dSys').css('display','none');
+        		}else if(val == 3){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','');
+        		}
+        	});
+        });
+    </script>
+</block>

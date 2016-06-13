@@ -1,0 +1,78 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}充电桩</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        {:hook('province_city_area',array('cityid'=>$info["cityid"],'areaid'=>$info["areaid"]))}
+        <div class="form-item" id="dKeyword">
+            <label class="item-label">设备id<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="deviceid" value="{$info.deviceid|default=''}">
+            </div>
+        </div>
+        <div class="form-item" id="dUrl">
+            <label class="item-label">所在位置<span class="check-tips">（所在位置，如：保集半岛）</span>
+            </label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="location" value="{$info.location|default=''}">
+            </div>
+        </div>
+        
+        
+        <div class="form-item">
+             <div style="width:500px;height:300px;" id="allmap"></div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">经度</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="longitude" name="longitude" value="{$info.longitude|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">纬度</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="latitude" name="latitude" value="{$info.latitude|default=''}">
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bi6KWlVRxH8q59j9DB18Z1w8"></script>
+    <script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+     // 百度地图API功能
+    	var map = new BMap.Map("allmap");
+    	map.centerAndZoom(new BMap.Point(119.654889, 29.08597), 11);
+    	
+    	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    	map.addControl(top_left_control);        
+		map.addControl(top_left_navigation);   
+		
+    	function showInfo(e){
+    		//alert(e.point.lng + ", " + e.point.lat);
+    		$('#latitude').val(e.point.lat);
+    		$('#longitude').val(e.point.lng);
+    	} 
+    	map.addEventListener("click", showInfo);
+    </script>
+</block>

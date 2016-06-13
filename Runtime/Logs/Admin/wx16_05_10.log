@@ -1,0 +1,6 @@
+[ 2016-05-10T01:31:29+08:00 ] 39.183.133.152 /admin.php?s=/Index/index.html
+ERR: 创建了Wechat对象admin
+[ 2016-05-10T01:31:31+08:00 ] 39.183.133.152 /admin.php?s=/Shop/index.html
+ERR: 创建了Wechat对象admin
+[ 2016-05-10T01:31:37+08:00 ] 39.183.133.152 /admin.php?s=/Canal/index.html
+ERR: 创建了Wechat对象admin

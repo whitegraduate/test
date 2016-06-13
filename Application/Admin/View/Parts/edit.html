@@ -1,0 +1,225 @@
+<extend name="Public/base"/>
+<block name="body">
+    <div class="main-title">
+        <h2>{$meta_title}</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">产品</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">货物名称</label>
+
+            <div class="controls">
+                <input type="text" class="text input-large" name="subtitle" value="{$info.subtitle|default=''}">
+            </div>
+        </div>
+        {:hook('province_city_area',array('cityid'=>$info["cityid"],'areaid'=>$info["areaid"]))}
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label with80">原价:</label>
+                <input type="text" class="text input-small" name="original_price" value="{$info.original_price|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label with80">会员价</label>
+                <input type="text" class="text input-small" name="member_price" value="{$info.member_price|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label with80">规格型号</label>
+                <input type="text" class="text input-small" name="specification" value="{$info.specification}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label with80">选择默认门店</label>
+                <select name="default_shopid" >
+                    <option value="0">所有门店</option>
+                    <option value="3">道院塘社区店</option>
+                    <option value="4">南苑社区店</option>
+                    <option value="5">八一南街社区店</option>
+                    <option value="6">解放西路社区店</option>
+                    <option value="7">骆家塘社区店</option>
+                    <option value="8">大学城租车</option>
+                    <option value="11">上海财大租车店</option>
+                    <option value="12">田畈社区店</option>
+                    <option value="13">充电桩门店</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label  with80">单位</label>
+                <input type="text" class="text input-small" name="unit" value="{$info.unit}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label  with80">数量</label>
+                <input type="text" class="text input-small" name="quantity" value="{$info.quantity}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label  with80">包装</label>
+                <input type="text" class="text input-small" name="pack" value="{$info.pack}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label  with80">厂家</label>
+                <input type="text" class="text input-4x" name="factory" value="{$info.factory}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label with80">尺寸</label>
+                <input type="text" class="text input-small" name="size" value="{$info.size}">
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="item-label with80">购买后动作</label>
+                <input type="text" class="text input-large" name="doaction" value="{$info.doaction}" placeholder="非开发者请勿配置">
+            </div>
+        </div>
+        <div class="form-item attr">
+            <label class="item-label">附加属性</label>
+            <volist name="attr" id="vo">
+                    <div class="controls">
+                        <input type="text" class="text input-small" value="{$vo.attrname}" disabled>
+                        <input type="text" class="text input-large" value="{$vo.attrinfo}" disabled>
+                        &nbsp;&nbsp;<a href="#" data-id="{$vo.id}" id="del_attr">删除</a>
+                    </div>
+            </volist>
+            <div class="controls">
+                <input type="text" class="text input-small attrname"  placeholder="附加属性名">
+                <input type="text" class="text input-large attrval"   placeholder="附加属值，用小逗号隔开">
+                &nbsp;&nbsp;<a href="#" id="add_attr">添加</a>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">颜色{$info['color']}</label>
+
+            <div class="controls">
+                <volist name="colorlist" id="vo">
+                    <input type="checkbox" value="{$vo.id}" name="color[]"
+                    <in name="vo['id']" value="$info['color']">checked</in>
+                    >{$vo.color_name}|
+                </volist>
+            </div>
+        </div>
+        <div>
+            <label class="textarea">
+                <textarea name="content">{$info['content']}</textarea> {:hook('adminArticleEdit', array('name'=>'content','value'=>'content'))}
+            </label>
+        </div>
+        <div class="controls">
+            <div class="upload">
+                上传照片 <input type="file" id="upload_picture">
+                <input type="hidden" name="icon" id="icon" value="{$info['pic']|default=''}"/>
+
+                <div class="upload-img-box">
+                    <div class="upload-pre-item"><img src="{$info.pic}"/></div>
+                </div>
+                <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+                <script type="text/javascript">
+                    //上传图片
+                    /* 初始化上传插件 */
+                    $("#upload_picture").uploadify({
+                        "height": 30,
+                        "swf": "__STATIC__/uploadify/uploadify.swf",
+                        "fileObjName": "download",
+                        "buttonText": "上传图片",
+                        "uploader": "{:U('Admin/File/uploadPicture',array('session_id'=>session_id()))}",
+                        "width": 120,
+                        'removeTimeout': 1,
+                        'fileTypeExts': '*.jpg; *.png; *.gif;',
+                        "onUploadSuccess": uploadPicture,
+                        'onFallback': function () {
+                            //alert('未检测到兼容版本的Flash.');
+                        }
+                    });
+                    function uploadPicture(file, data) {
+                        var data = $.parseJSON(data);
+                        var src = '';
+                        if (data.status) {
+                            $("#icon").val(data.path);
+                            src = data.url || '__ROOT__' + data.path;
+                            $("#icon").parent().find('.upload-img-box').html(
+                                    '<div class="upload-pre-item"><img src=./' + src + ' width="100px" height="100px"></div>'
+                            );
+                        } else {
+                            updateAlert(data.info);
+                            setTimeout(function () {
+                                $('#top-alert').find('button').click();
+                                $(that).removeClass('disabled').prop('disabled', false);
+                            }, 1500);
+                        }
+                    }
+                    $(function(){
+                        $("#add_attr").click(function(){
+                            if($(".attrname").val()==""){alert("请输入属性名称！");return false;}
+                            if($(".attrval").val()==""){alert("请输入至少一个属性值！");return false;}
+                            $.post("",{"an":$(".attrname").val(),"av":$(".attrval").val(),"act":"attr"},function(data){
+                                if(data.status==1){
+                                    alert("属性添加成功！");
+                                    location.reload(true);
+                                }
+                                else{
+                                    alert("属性添加失败！");
+                                }
+                            },"json");
+                        });
+                        $(".attr").on("click","#del_attr",function(){
+                            $.post("",{"act":"del","did":$(this).attr("data-id")},function(data){
+                                if(data.status==1){
+                                    alert("删除成功！");
+                                    location.reload(true);
+                                }
+                                else{
+                                    alert("删除失败！");
+                                }
+                            },"json")
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+         <div class="form-item">
+            <label class="item-label">商品排序<span class="check-tips">（值越大越靠前）</span></label>
+
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort"
+                       value="{$info.sort|default=1}">
+            </div>
+        </div>
+         <div class="form-item">
+			<label class="item-label">商品状态</label>
+			<div class="controls">
+				<volist name="Think.config.MALL_STATUS" id="status">
+					<label class="inline radio"><input type="radio" name="status" value="{$key}">{$status}</label>
+				</volist>
+			</div>
+		</div>
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("color", "{$info.color}");
+        Think.setValue("status", {$info.status|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('Config / index')}');
+    </script>
+</block>

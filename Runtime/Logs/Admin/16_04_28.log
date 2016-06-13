@@ -1,0 +1,1106 @@
+[ 2016-04-28T22:25:12+08:00 ] 111.2.98.240 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-04-28T22:25:12+08:00 ] 111.2.98.240 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-04-28T22:25:12+08:00 ] 111.2.98.240 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001729s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-04-28T22:25:12+08:00 ] 101.226.33.218 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-04-28T22:25:12+08:00 ] 180.153.161.217 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001463s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2016-04-28T22:25:12+08:00 ] 180.153.214.192 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+
+[ 2016-04-28T22:25:12+08:00 ] 180.153.214.192 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-04-28T22:25:16+08:00 ] 111.2.98.240 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined index: lite /var/www/didi/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `fg_member` [ RunTime:0.0025s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`group_id` FROM `fg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_action` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `fg_action_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `fg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','1862427376','member','1','1461853516','admin在2016-04-28 22:25登录了后台') [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 1 /var/www/didi/Application/Common/Common/function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /var/www/didi/Application/Common/Common/function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1461767116 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `fg_member` SET `login`=`login`+1,`last_login_time`='1461853516',`last_login_ip`='1862427376' WHERE `uid` = 1 [ RunTime:0.0025s ]
+
+[ 2016-04-28T22:25:16+08:00 ] 111.2.98.240 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `fg_addons` [ RunTime:0.0023s ]
+SQL: SELECT `config` FROM `fg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `fg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_member` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_action_log` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_action_log` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_document` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_document` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `fg_category` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_category` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_model` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_model` LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.030533s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.029623s ]
+SQL: SELECT `config` FROM `fg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.219959s ]
+SQL: select version() as v; [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004417s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.187107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.191437s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.191461s ]
+SQL: SELECT `config` FROM `fg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.225998s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001236s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.193945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.195054s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.003593s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.224753s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001398s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.193945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.195211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-04-28T22:25:17+08:00 ] 101.226.33.223 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+
+[ 2016-04-28T22:25:17+08:00 ] 101.226.33.223 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-04-28T22:25:22+08:00 ] 111.2.98.240 /admin.php?s=/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Service/index%' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 124 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '保养' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '维修' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '租车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '充电' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '销售' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '二手车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title` FROM `fg_menu`  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`pid`,`sort`,`url`,`hide`,`tip`,`group`,`is_dev`,`status` FROM `fg_menu` WHERE `pid` = 0 ORDER BY sort asc,id asc  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-04-28T22:25:23+08:00 ] 112.65.193.16 /admin.php?s=/Service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-04-28T22:25:23+08:00 ] 112.65.193.16 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001742s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005559s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000445s ]
+
+[ 2016-04-28T22:25:23+08:00 ] 111.2.98.240 /admin.php?s=/Maintain/orders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Maintain/orders%' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 124 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '保养' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '维修' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '租车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '充电' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '销售' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '二手车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: create_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 788 行.
+NOTIC: [8] Undefined index: create_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 792 行.
+NOTIC: [8] Undefined index: pay_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 796 行.
+NOTIC: [8] Undefined index: pay_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 800 行.
+NOTIC: [8] Undefined variable: where /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 804 行.
+NOTIC: [8] Undefined index: create_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 805 行.
+NOTIC: [8] Undefined index: pay_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 806 行.
+NOTIC: [8] Undefined index: create_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 807 行.
+NOTIC: [8] Undefined index: pay_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 808 行.
+NOTIC: [8] Undefined variable: create_time_status /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 809 行.
+NOTIC: [8] Undefined variable: pay_time_status /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 810 行.
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fg_maintain_order a Left join fg_fans b on a.openid = b.openid Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=2) c on a.id=c.oid  WHERE `order_type` = 1 ORDER BY a.id desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.*,b.id as uid,c.* FROM fg_maintain_order a Left join fg_fans b on a.openid = b.openid Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=2) c on a.id=c.oid  WHERE `order_type` = 1 ORDER BY a.id desc LIMIT 0,20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvugjPzj_QyXKCt7Py9p_3nw' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_order_log` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 42 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvlalQ-ooD_bUwRaccFwgtwk' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 41 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvrrWNkWALL5YqYFngef0J2Q' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 40 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvpvvGzt2g4GdGx3yQsK2vl0' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 39 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvtCkRAIncb5rTbgCSGMNF4Q' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 38 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvrlwog0V4LIHYO-6RuzcLHU' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 37 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvofPWsr3rgtGuA1Nh0FRoHs' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 36 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 35 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 34 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvjNjP4t28lMQh9p4rB22vaQ' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 33 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvinHRDOG61zlZgIoOKzIdlM' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 32 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvtXB9DMzoeOSKm9KzAuHKXg' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 31 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvg-kLLc4NkJutYqs9zrAkhg' LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [2] unlink(./Runtime/Temp/e5f46372e78a090b217dc18dff658906.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvg-kLLc4NkJutYqs9zrAkhg' LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [2] unlink(./Runtime/Temp/e5f46372e78a090b217dc18dff658906.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 30 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 29 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 28 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 27 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 26 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 25 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 24 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 23 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: page /var/www/didi/Runtime/Cache/Admin/ff4f7353cc1c1ca6b225cb5c4b8d28b4.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-04-28T22:25:25+08:00 ] 101.226.102.97 /admin.php?s=/Maintain/orders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-04-28T22:25:25+08:00 ] 101.226.102.97 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-04-28T22:25:57+08:00 ] 111.2.98.240 /admin.php?s=/Maintain/orders/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Maintain/orders%' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 124 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '保养' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '维修' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '租车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '充电' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '销售' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '二手车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: create_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 788 行.
+NOTIC: [8] Undefined index: create_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 792 行.
+NOTIC: [8] Undefined index: pay_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 796 行.
+NOTIC: [8] Undefined index: pay_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 800 行.
+NOTIC: [8] Undefined variable: where /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 804 行.
+NOTIC: [8] Undefined index: create_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 805 行.
+NOTIC: [8] Undefined index: pay_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 806 行.
+NOTIC: [8] Undefined index: create_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 807 行.
+NOTIC: [8] Undefined index: pay_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 808 行.
+NOTIC: [8] Undefined variable: create_time_status /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 809 行.
+NOTIC: [8] Undefined variable: pay_time_status /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 810 行.
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fg_maintain_order a Left join fg_fans b on a.openid = b.openid Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=2) c on a.id=c.oid  WHERE `order_type` = 1 ORDER BY a.id desc LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT a.*,b.id as uid,c.* FROM fg_maintain_order a Left join fg_fans b on a.openid = b.openid Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=2) c on a.id=c.oid  WHERE `order_type` = 1 ORDER BY a.id desc LIMIT 20,20   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvqpPU-PNcQEayRXtvYe9fJY' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fg_order_log` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 22 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 21 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 20 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 19 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 18 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvmuQ6dfrSE1zcEREUlc0BoQ' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] unlink(./Runtime/Temp/bd108b18e1d7cd6741352b8c0c6b674e.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvmuQ6dfrSE1zcEREUlc0BoQ' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] unlink(./Runtime/Temp/bd108b18e1d7cd6741352b8c0c6b674e.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 17 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 16 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 15 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 14 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 13 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_shop` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 12 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 11 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 10 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 9 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 8 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 7 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 6 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 5 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 4 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 3 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: page /var/www/didi/Runtime/Cache/Admin/ff4f7353cc1c1ca6b225cb5c4b8d28b4.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2016-04-28T22:26:15+08:00 ] 111.2.98.240 /admin.php?s=/Maintain/orders/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Maintain/orders%' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 124 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '保养' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '维修' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '租车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '充电' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '销售' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '二手车' AND `pid` = 124 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: create_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 788 行.
+NOTIC: [8] Undefined index: create_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 792 行.
+NOTIC: [8] Undefined index: pay_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 796 行.
+NOTIC: [8] Undefined index: pay_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 800 行.
+NOTIC: [8] Undefined variable: where /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 804 行.
+NOTIC: [8] Undefined index: create_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 805 行.
+NOTIC: [8] Undefined index: pay_time_end /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 806 行.
+NOTIC: [8] Undefined index: create_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 807 行.
+NOTIC: [8] Undefined index: pay_time_start /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 808 行.
+NOTIC: [8] Undefined variable: create_time_status /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 809 行.
+NOTIC: [8] Undefined variable: pay_time_status /var/www/didi/Application/Admin/Controller/AdminController.class.php 第 810 行.
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM fg_maintain_order a Left join fg_fans b on a.openid = b.openid Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=2) c on a.id=c.oid  WHERE `order_type` = 1 ORDER BY a.id desc LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT a.*,b.id as uid,c.* FROM fg_maintain_order a Left join fg_fans b on a.openid = b.openid Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=2) c on a.id=c.oid  WHERE `order_type` = 1 ORDER BY a.id desc LIMIT 40,20   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `fg_order_log` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 2 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o3g0Gs5Ueri5czuTHNceerHcNr_o' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [2] unlink(./Runtime/Temp/a0652d9bcda0ea5010669295997dbd0f.php): No such file or directory /var/www/didi/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_order_log` WHERE `orderid` = 1 AND `order_type` = 2 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: page /var/www/didi/Runtime/Cache/Admin/ff4f7353cc1c1ca6b225cb5c4b8d28b4.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2016-04-28T22:26:17+08:00 ] 180.153.206.29 /admin.php?s=/Maintain/orders/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-04-28T22:26:17+08:00 ] 180.153.206.29 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2016-04-28T22:31:16+08:00 ] 101.226.66.178 /admin.php?s=/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001556s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-04-28T22:31:16+08:00 ] 101.226.66.178 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2016-04-28T22:31:16+08:00 ] 111.2.98.240 /admin.php?s=/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Shop/index%' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 137  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 137 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '门店' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '运营商' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '微信管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0037s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '权限' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '优惠券管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '渠道管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '投诉管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '区域' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '红包管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`uid`,`carrierid`,`name`,`cityid`,`areaid`,`picture1`,`picture2`,`picture3`,`latitude`,`longitude`,`tel`,`mobile`,`address`,`intro`,`shopno`,`orders`,`star`,`status`,`openid`,`wechatname`,`shop_type`,`s_rent`,`s_maintain`,`s_repair`,`s_mall` FROM `fg_shop` WHERE `shop_type` = 1 ORDER BY id asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_city_area` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = -1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = -1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_city_area` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-04-28T22:31:18+08:00 ] 119.147.146.189 /admin.php?s=/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-04-28T22:31:18+08:00 ] 119.147.146.189 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-04-28T22:31:18+08:00 ] 119.147.146.189 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-04-28T22:31:25+08:00 ] 101.226.66.172 /admin.php?s=/Canal/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001595s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-04-28T22:31:25+08:00 ] 111.2.98.240 /admin.php?s=/Canal/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Canal/index%' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 137  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 137 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0021s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '门店' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '运营商' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '微信管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '权限' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '优惠券管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '渠道管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '投诉管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '区域' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '红包管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`name`,`code`,`qimg`,`click`,`status`,`pid`,`keyword` FROM `fg_canal` WHERE `code` = 'YX' ORDER BY id asc  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-04-28T22:31:25+08:00 ] 101.226.66.172 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001337s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2016-04-28T22:31:33+08:00 ] 180.153.206.29 /admin.php?s=/Canal/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+
+[ 2016-04-28T22:31:33+08:00 ] 180.153.206.29 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2016-04-28T22:31:33+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001858s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Canal/add%' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 137  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 137 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '门店' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '运营商' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '微信管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '权限' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '优惠券管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0038s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '渠道管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '投诉管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '区域' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '红包管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create1,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create2,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create3,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create4,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create5,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create6,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: autoValidation1,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: autoValidation4,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create7,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create8,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create9,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+ERR: create10,
+[ 2016-04-28T22:31:55+08:00 ] 111.2.98.240 /admin.php?s=/Canal/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Canal/add%' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 137  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 137 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '门店' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '运营商' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '微信管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '权限' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '优惠券管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '渠道管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '投诉管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '区域' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '红包管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0023s ]
+SQL: INSERT INTO `fg_canal` (`name`,`keyword`,`id`,`code`) VALUES ('王建成_13957997676','王建成','0','YX') [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+SQL: UPDATE `fg_canal` SET `qimg`='https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQFI8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL1QwWHE0dVhrWFVRazBFeUhkMmt6AAIE2x4iVwMEAAAAAA==' WHERE `id` = 8 [ RunTime:0.0026s ]
+
+[ 2016-04-28T22:31:58+08:00 ] 111.2.98.240 /admin.php?s=/Canal/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Canal/index%' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 137  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 137 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '门店' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '运营商' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '微信管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '权限' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '优惠券管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '渠道管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '投诉管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '区域' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '红包管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`name`,`code`,`qimg`,`click`,`status`,`pid`,`keyword` FROM `fg_canal` WHERE `code` = 'YX' ORDER BY id asc  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-04-28T22:32:51+08:00 ] 111.2.98.240 /admin.php?s=/Canal/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fg_shop` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_menu` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`url` FROM `fg_menu` WHERE `pid` = 0 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SELECT `pid` FROM `fg_menu` WHERE ( pid !=0 AND url like '%Canal/index%' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_menu` WHERE `id` = 137 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT DISTINCT  `group` FROM `fg_menu` WHERE `group` <> '' AND `pid` = 137  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`url` FROM `fg_menu` WHERE `pid` = 137 AND `hide` = 0 AND `is_dev` = 0  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '门店' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '运营商' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '微信管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '权限' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '优惠券管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '渠道管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '投诉管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '区域' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `fg_menu` WHERE `group` = '红包管理' AND `pid` = 137 AND `hide` = 0 AND `is_dev` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`code`,`qimg`,`click`,`status`,`pid`,`keyword` FROM `fg_canal` WHERE `code` = 'YX' ORDER BY id asc  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+

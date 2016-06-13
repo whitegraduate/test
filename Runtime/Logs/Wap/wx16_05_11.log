@@ -1,0 +1,398 @@
+[ 2016-05-11T06:01:25+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=e590a39d4e6ce18349fdae1597d1ee7de0c4f041&timestamp=1462917685&nonce=881239894
+ERR: 创建了Wechat对象
+[ 2016-05-11T06:01:25+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=e590a39d4e6ce18349fdae1597d1ee7de0c4f041&timestamp=1462917685&nonce=881239894
+ERR: 用户关注：o97bDvjqJDr-al3Y7uDuhfl8uiRk
+[ 2016-05-11T08:39:22+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=73567b01e5381835c9e145696883e38872f0460d&timestamp=1462927162&nonce=1790078240
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:39:54+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=0fa6a2519908ea94ec9da626aa0fc2ac59e406ef&timestamp=1462927194&nonce=1912536844
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html
+ERR: empty openid
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html
+ERR: !result
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+[ 2016-05-11T08:39:55+08:00 ] 101.226.61.189 /wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+ERR: empty openid
+[ 2016-05-11T08:39:56+08:00 ] 101.226.61.189 /wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+ERR: 网页基础授权 OpenId===o97bDvm8wdw2z8i7PkS023tkCOx8; UnionId===
+[ 2016-05-11T08:39:56+08:00 ] 101.226.61.189 /wap.php/Shop/index.html?code=001CSGbM1CNvAZ0yBw8M1luKbM1CSGbK&state=base
+ERR: result
+[ 2016-05-11T08:40:02+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:02+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:02+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T08:40:02+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T08:40:27+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=651c502f7f927cdceb9175740b858832a18804b8&timestamp=1462927226&nonce=1754200683
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:27+08:00 ] 101.226.61.189 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:27+08:00 ] 101.226.61.189 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:27+08:00 ] 101.226.61.189 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-05-11T08:40:27+08:00 ] 101.226.61.189 /wap.php/Maintain/index.html
+ERR: not empty openid
+[ 2016-05-11T08:40:28+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:28+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:28+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T08:40:28+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T08:40:33+08:00 ] 101.226.61.189 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:33+08:00 ] 101.226.61.189 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:33+08:00 ] 101.226.61.189 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-05-11T08:40:33+08:00 ] 101.226.61.189 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T08:40:34+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:34+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:34+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T08:40:34+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T08:40:40+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:40+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:40+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/2.html
+[ 2016-05-11T08:40:40+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T08:40:42+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:40:42+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:40:42+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T08:40:42+08:00 ] 101.226.61.189 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T08:41:03+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:41:03+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:41:03+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T08:41:03+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T08:41:04+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T08:41:04+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T08:41:04+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T08:41:04+08:00 ] 101.226.61.189 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T09:20:10+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=3e21d11a40dc8cdb9ebd6aa3271bc3a22d72c8e8&timestamp=1462929609&nonce=1602214820
+ERR: 创建了Wechat对象
+[ 2016-05-11T09:20:10+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=3e21d11a40dc8cdb9ebd6aa3271bc3a22d72c8e8&timestamp=1462929609&nonce=1602214820
+ERR: 用户关注：o97bDvkbWyrWCbxxkPExpTDW4AYc
+[ 2016-05-11T09:20:10+08:00 ] 140.207.54.73 /wap.php?s=/Weixin/index.html&signature=3e21d11a40dc8cdb9ebd6aa3271bc3a22d72c8e8&timestamp=1462929609&nonce=1602214820
+ERR: canal：{"id":"4","name":"\u5b8b\u519b\u8fbe_13588650229_\u6d59G69E67","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQEl8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL3hVWDRnUmJrVkVRdHlzYi1aV2t6AAIEIoQbVwMEAAAAAA==","click":"162","status":"0","pid":"0","keyword":"\u5b8b\u519b\u8fbe"}
+[ 2016-05-11T13:36:16+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=031e338470ac0e8f5a5da04cbb2dc54d722e2473&timestamp=1462944975&nonce=480545495
+ERR: 创建了Wechat对象
+[ 2016-05-11T13:36:16+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=031e338470ac0e8f5a5da04cbb2dc54d722e2473&timestamp=1462944975&nonce=480545495
+ERR: 用户关注：o97bDvjqvvvR1zUIASXiUKonEIRE
+[ 2016-05-11T13:36:17+08:00 ] 58.247.206.143 /wap.php?s=/Weixin/index.html&signature=031e338470ac0e8f5a5da04cbb2dc54d722e2473&timestamp=1462944975&nonce=480545495
+ERR: canal：{"id":"7","name":"\u502a\u5fd7\u534e_15958985815_\u6d59G5833D","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQE38ToAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL1MwWDQtWW5rV2tRanAwaU5aV2t6AAIEiIQbVwMEAAAAAA==","click":"7","status":"0","pid":"0","keyword":"\u502a\u5fd7\u534e"}
+[ 2016-05-11T13:36:26+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=2b4788bc5b56e08fadc0f7d969ec3c54e5741bca&timestamp=1462944985&nonce=2029878723
+ERR: 创建了Wechat对象
+[ 2016-05-11T14:27:25+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=e8a5916e57bbecd7b506b568256e402b28951b86&timestamp=1462948044&nonce=110585177
+ERR: 创建了Wechat对象
+[ 2016-05-11T14:56:21+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=a6ff4c36afc9d74e528f6a130fd7f9ccdacec2ba&timestamp=1462949780&nonce=779272918
+ERR: 创建了Wechat对象
+[ 2016-05-11T14:56:21+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=a6ff4c36afc9d74e528f6a130fd7f9ccdacec2ba&timestamp=1462949780&nonce=779272918
+ERR: 用户关注：o97bDvuHHIvxeyLCgC6H0U7xMmmY
+[ 2016-05-11T14:56:22+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=a6ff4c36afc9d74e528f6a130fd7f9ccdacec2ba&timestamp=1462949780&nonce=779272918
+ERR: canal：{"id":"1","name":"\u5218\u732e\u534e_13957965288_\u6d59G1821","code":"YX","qimg":"https:\/\/mp.weixin.qq.com\/cgi-bin\/showqrcode?ticket=gQGe8DoAAAAAAAAAASxodHRwOi8vd2VpeGluLnFxLmNvbS9xL01rVWdSaFBraUVUeC16RTh2V2t6AAIEwYMbVwMEAAAAAA==","click":"166","status":"0","pid":"0","keyword":"\u5218\u732e\u534e"}
+[ 2016-05-11T14:57:03+08:00 ] 140.207.54.79 /wap.php?s=/Weixin/index.html&signature=b17ca21e840ba6d11f86434861d72fd4d4afff62&timestamp=1462949822&nonce=91882673
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:49:55+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=fcace137e9f7ff9106a292578dcbee01640e2bf3&timestamp=1462956594&nonce=923781451
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:49:55+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=fcace137e9f7ff9106a292578dcbee01640e2bf3&timestamp=1462956594&nonce=923781451
+ERR: 用户关注：o97bDvuxtv9_TRBfLvbIhkVMebPk
+[ 2016-05-11T16:50:21+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=3e40e837e816809df5743c0d85c911f8f21dca7c&timestamp=1462956620&nonce=1773229164
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+[ 2016-05-11T16:50:21+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: empty openid
+[ 2016-05-11T16:50:22+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: 网页基础授权 OpenId===o97bDvuxtv9_TRBfLvbIhkVMebPk; UnionId===
+[ 2016-05-11T16:50:22+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: result
+[ 2016-05-11T16:50:23+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=098fb43641fbbf0a6fbe8e2f71e50697a85f862a&timestamp=1462956622&nonce=425847959
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:23+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:23+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:23+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:50:23+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: empty openid
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: 网页基础授权 OpenId===o97bDvugjPzj_QyXKCt7Py9p_3nw; UnionId===
+[ 2016-05-11T16:50:24+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: result
+[ 2016-05-11T16:50:26+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:26+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:26+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:50:26+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:50:33+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:50:36+08:00 ] 112.17.239.17 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:36+08:00 ] 112.17.239.17 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:36+08:00 ] 112.17.239.17 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-05-11T16:50:36+08:00 ] 112.17.239.17 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:50:37+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:37+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:37+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:50:37+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:50:38+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:38+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:38+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+[ 2016-05-11T16:50:38+08:00 ] 112.17.239.17 /wap.php/Maintain/index.html?code=011vteg80ieBlt1uTHe80o8eg80vtegN&state=base
+ERR: not empty openid
+[ 2016-05-11T16:50:39+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:39+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:39+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:50:39+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:50:44+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=ce77040e6336b93b1f6c79b558786a5c3f0572b6&timestamp=1462956644&nonce=2051733185
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:44+08:00 ] 112.17.239.17 /wap.php/Shop/index.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php/Shop/index.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php/Shop/index.html
+ERR: callback=http://d.7744go.com/wap.php/Shop/index.html
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php/Shop/index.html
+ERR: not empty openid
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:50:45+08:00 ] 112.17.239.17 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:51:11+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:51:11+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:51:11+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/2.html
+[ 2016-05-11T16:51:11+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:51:12+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:51:12+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:51:12+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:51:12+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:52:05+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:52:08+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:08+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:08+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+[ 2016-05-11T16:52:08+08:00 ] 60.191.228.30 /wap.php/Maintain/index.html?code=021qnDa620sfGG0EZ6c62DeGa62qnDaE&state=base
+ERR: not empty openid
+[ 2016-05-11T16:52:08+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:09+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:09+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:52:09+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:52:13+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:52:14+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Maintain/order/pid/2.html
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Maintain/order/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wxpay/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:52:24+08:00 ] 60.191.228.30 /wxpay/wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Maintain/details/pid/2.html
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Maintain/details/pid/2.html
+ERR: not empty openid
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T16:58:39+08:00 ] 60.191.228.30 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid
+[ 2016-05-11T17:37:37+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=c5b69b7a4e9423a6b3eb79d821ab9ba5de7cd6a0&timestamp=1462959456&nonce=1959655992
+ERR: 创建了Wechat对象
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html
+ERR: empty openid
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html
+ERR: 网页基础授权 code为空，转重定向
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html
+ERR: !result
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+ERR: 创建了Wechat对象
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+ERR: 复制了Wechat对象
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+ERR: callback=http://d.7744go.com/wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+[ 2016-05-11T17:37:39+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+ERR: empty openid
+[ 2016-05-11T17:37:40+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+ERR: 网页基础授权 OpenId===o97bDvlalQ-ooD_bUwRaccFwgtwk; UnionId===
+[ 2016-05-11T17:37:40+08:00 ] 124.160.213.201 /wap.php/Maintain/index.html?code=0112Wt0q0ubiKc1Ykn1q0Fjp0q02Wt0t&state=base
+ERR: result
+[ 2016-05-11T17:37:41+08:00 ] 124.160.213.201 /wap.php?s=/Location/getmycity.html
+ERR: 创建了Wechat对象
+[ 2016-05-11T17:37:41+08:00 ] 124.160.213.201 /wap.php?s=/Location/getmycity.html
+ERR: 复制了Wechat对象
+[ 2016-05-11T17:37:41+08:00 ] 124.160.213.201 /wap.php?s=/Location/getmycity.html
+ERR: callback=http://d.7744go.com/wap.php?s=/Location/getmycity.html
+[ 2016-05-11T17:37:41+08:00 ] 124.160.213.201 /wap.php?s=/Location/getmycity.html
+ERR: not empty openid

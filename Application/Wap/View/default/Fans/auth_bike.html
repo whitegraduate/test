@@ -1,0 +1,64 @@
+
+<extend name="Base/common" />
+<block name="header">
+    <style type="text/css">
+        .list .span1 {
+            margin-left: 13%;
+            float: none;
+            color: #999
+        }
+    </style>
+</block>
+
+<block name="body">
+
+    <div class="cont">
+        <ul>
+            <volist name="lstBike" id="list">
+                <li class="list" data="{$list.id}">
+                    <div class="tb1"></div>
+                       <div class="upload">车辆信息<span class="span1">{$list.brandid|get_brand_id}{$list.bike}</span><span>已认证</span></div>
+                    <div class="clearflx"></div>
+                </li>
+            </volist>
+        </ul>
+    </div>
+    <div class="pj_foot">
+        <a href="{:U('Fans/auth_bike_edit')}"><div class="pj_ann">新增车辆</div></a>
+    </div>
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+    <script>
+        $(document).ready(function(){
+            $('.shanchu').click(function(){
+                if(confirm('删除后将不可恢复，是否继续?'))
+                {
+                    var id = $(this).attr('data');
+                    $.ajax({
+                        type: "GET",
+                        url: "{:U('Fans/auth_bike_del')}",
+                        data: {bid:id,
+                                from:"x"},
+                        dataType: "json",
+                        success: function(data){
+                            //alert('删除成功!');
+                            if(data.flag == '1')
+                            {
+                                $('#div'+id).slideUp();
+                            }else
+                                alert(data.msg);
+                        }
+                    });
+                }
+            });
+
+            $(".list").click(function(){
+                var id = $(this).attr('data');
+                top.window.location = "{:U('Fans/auth_bike_edit','','')}"+"/bid/"+id;
+            });
+        });
+    </script>
+</block>

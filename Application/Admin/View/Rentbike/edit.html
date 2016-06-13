@@ -1,0 +1,127 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}出租车辆</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+        <div class="form-item" id="dKeyword">
+            <label class="item-label">设备id<span class="check-tips"></span></label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="code" value="{$info.code|default=''}">
+            </div>
+        </div>
+        <div class="form-item" id="dUrl">
+            <label class="item-label">所属门店<span class="check-tips">（所属门店）</span>
+            </label>
+            <div class="controls">
+                 <select name="shopid">
+                    <volist name="shops" id="s">
+                        <option value="{$s.id}">{$s.name}</option>
+                    </volist>
+                    <option value="0">未分配</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">车款
+            </label>
+            <div class="controls">
+                <select name="rentbiketypeid">
+                    <option value="0">未分配</option>
+                </select>
+                <span id="spanbiketype"></span>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">车辆图片一<span class="check-tips">（建议尺寸640*400）</span></label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'picture1','value'=>$info['picture1']))}
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">车辆图片二<span class="check-tips">（建议尺寸640*400）</span></label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'picture2','value'=>$info['picture2']))}
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">车辆图片三<span class="check-tips">（建议尺寸640*400）</span></label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'picture3','value'=>$info['picture3']))}
+            </div>
+        </div>
+       
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("shopid", {$info.shopid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        $(document).ready(function(){
+            console.log('2,');
+        	$('.menu_type').change(function(){
+                console.log('3,');
+        		var val 	= $(this).val();
+        		if(val == 1){
+        			$('#dKeyword').css('display','');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','none');
+        		}else if(val == 2){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','');		
+        			$('#dSys').css('display','none');
+        		}else if(val == 3){
+        			$('#dKeyword').css('display','none');
+        			$('#dUrl').css('display','none');
+        			$('#dSys').css('display','');
+        		}
+        	});
+
+            $("select[name='shopid']").change(function(){
+                $val = $(this).val();
+                console.log($val);
+                $.get("{:U('getrentbiketype')}", { shopid: $val },
+                        function(data){
+                            if(data!=null)
+                            {
+                                var str='';
+                                for(var i=0;i<data.length;i++)
+                                {
+                                    str+='<option value="'+data[i]["id"]+'">'+data[i]["typename"]+'</option>';
+                                }
+                                str+='<option value="0">未分配</option>';
+                                $("select[name='rentbiketypeid']").html(str);
+                                $("select[name='rentbiketypeid']").val("{$info['rentbiketypeid']}");
+                                $("#spanbiketype").html("");
+                            }
+                            else
+                            {
+                                str='<option value="0">未分配</option>';
+                                $("select[name='rentbiketypeid']").html(str);
+                                $("#spanbiketype").html("（该区域暂未配置车款，请在区域车款中配置）");
+                            }
+                        });
+            });
+            $("select[name='shopid']").change();
+
+
+            //$("select[name='rentbiketypeid']").val("{$info['rentbiketypeid']}");
+        });
+    </script>
+</block>

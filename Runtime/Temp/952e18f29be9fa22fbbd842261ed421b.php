@@ -1,0 +1,3 @@
+<?php
+//000000000300a:26:{s:2:"id";s:2:"26";s:3:"uid";s:2:"28";s:9:"carrierid";s:1:"1";s:4:"name";s:21:"纺织西路华茂店";s:6:"cityid";s:1:"4";s:6:"areaid";s:2:"-1";s:8:"picture1";s:0:"";s:8:"picture2";s:0:"";s:8:"picture3";s:0:"";s:8:"latitude";s:9:"30.524628";s:9:"longitude";s:10:"117.055795";s:3:"tel";s:0:"";s:6:"mobile";s:11:"17705566667";s:7:"address";s:56:"安徽省安庆市纺织西路华茂1958C区四栋166号";s:5:"intro";s:0:"";s:6:"shopno";s:5:"00021";s:6:"orders";s:1:"0";s:4:"star";s:1:"1";s:6:"status";s:1:"0";s:6:"openid";N;s:10:"wechatname";N;s:9:"shop_type";s:1:"1";s:6:"s_rent";s:1:"0";s:10:"s_maintain";s:1:"1";s:8:"s_repair";s:1:"1";s:6:"s_mall";s:1:"1";}
+?>

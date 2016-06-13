@@ -1,0 +1,97 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <div class="main-title">
+        <h2>门店打款</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">打款门店<span class="check-tips"></span></label>
+            <div class="controls">
+                <select id="shopid" name="shopid">
+                	<option value="">请选择门店</option>
+					<volist name="lstShop" id="shop">
+						<option value="{$shop.id}" openid="{$shop.openid}">{$shop.name}<if condition="$shop.wechatname neq ''">-{$shop.wechatname}<else/>（未绑定微信号）</if></option>
+					</volist>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">现金金额</label>
+            <div class="controls">
+                <input type="text" id="money_cash" class="text input-small" name="money_cash" value="0">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">优惠券折算金额</label>
+            <div class="controls">
+                <input type="text" id="money_coupon" class="text input-small" name="money_coupon" value="0">
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <label class="item-label">结算总金额</label>
+            <div class="controls" id="total">
+                 0.00 元
+            </div>
+        </div>
+        
+        <div class="form-item">
+			<label class="item-label">备注<span class="check-tips"></span> </label>
+			<div class="controls">
+			<label class="textarea input-large">
+				<textarea name="memo">{$info.memo}</textarea>
+			</label>
+			</div>
+		</div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <input type="hidden" id="openid" name="openid" value="">
+            <input type="hidden" id="money_total" name="money_total" value="">
+            <input type="hidden" name="op_user" value="{:session('user_auth.username')}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script"> 
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav('{:U('settle')}');
+
+		var cash = 0;
+		var coupon = 0;
+    	$(document).ready(function(){
+			 $("#submit").click(function(){
+				 return false;
+			 });
+			 
+			 $("#shopid").change(function(){
+				 var openid = $("#shopid").find("option:selected").attr("openid");
+				 $("#openid").val(openid);
+			 });
+			 
+			 $("#money_cash").bind('keyup',function(){
+				 cash = parseFloat($(this).val());
+				 get_total();
+	         });
+			 
+			 $("#money_coupon").bind('keyup',function(){
+				 coupon = parseFloat($(this).val());
+				 get_total();
+	         });
+    	});
+    	
+    	function get_total()
+    	{
+    		var total = cash + coupon;
+    		$("#total").text(total + '元');
+    		$("#money_total").val(total);
+    	}
+    </script>
+</block>

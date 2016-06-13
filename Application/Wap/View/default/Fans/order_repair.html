@@ -1,0 +1,162 @@
+<extend name="Base/common_my" />
+<block name="header">
+</block>
+<block name="body">
+
+<div class="geren" style="margin-top:0;">
+ <ul class="list1" id="myTab" role="tabpanel" style="margin-top:0;">
+       <li class="dropdown  li_li">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">维修订单<b class="caret"></b></a>
+          <ul class="dropdown-menu menu">
+              <li><a class="menu_li" href="#home" data-toggle="tab">维修订单</a></li>
+              <li><a class="menu_li" href="{:U('Fans/order_maintain')}">保养订单</a></li>
+              <li><a class="menu_li" href="{:U('Fans/order_charge')}">充电订单</a></li>
+              <li><a class="menu_li" href="{:U('Fans/order_rent')}">租车订单</a></li>
+              <li><a class="menu_li" href="{:U('Fans/order_mall')}">精品订单</a></li>
+           </ul>
+        </li>
+        
+        <volist name="Think.config.ORDER_STATUS_REPAIR" id="type">
+		<li class="li_li <if condition="($_GET['s'] neq '') and ($_GET['s'] eq $key)"> active</if>"><a href="{:U('Fans/order_repair',array('s'=>$key))}" data-toggle="tabpanel">{$type}</a></li>
+		</volist>
+         
+  </ul>
+  <div  id="myTabContent" class="tab-content">
+   <ul role="tabpanel"  class="tab-pane active order" id="home" >
+   <present name="lstOrder"> 
+    <volist id="list" name="lstOrder">
+       <if condition="$list.status eq 1">
+       <!-- 等待支付 -->
+       
+        <li><a href="#" style="color:#333; text-decoration:none;">
+       <div class="biaotid">
+       <p>订单号：{$list.transid} <span>{$list.status|get_repairorder_astatus}</span></p>
+       <div class="clearfix"></div>
+       </div>
+       
+          <div id="parts_info_{$list.id}" class="dingaw">
+              <div class="yikuai">滴啊滴-{$list.shopid|get_shop_id}</div>
+              	<div id="parts_in_{$list.id}"></div>
+              	
+              
+          </div>
+          <script>
+          		if('{$list.parts_in}' != '')
+          		{
+	          		if('{$list.parts_in}'.indexOf('[') >= 0)
+	              	{
+		          		var parts_in = eval('{$list.parts_in}');
+		              	for(var i=0;i<parts_in.length;i++)
+		              	{
+		              		$("#parts_info_{$list.id}").append("<div class='neirong'><div class='shangrong'>"+parts_in[i]['p']+"</div>" + 
+		              				"<div class='shangmig'></div>" + "<div class='shuzhi'>数量："+parts_in[i]['n']+"</div>" + 
+		              				"<div class='shujia'></div></div>");
+		              	}
+		              	
+	              	}
+          		}
+          		
+          		if('{$list.parts_out}' != '')
+          		{
+          			if('{$list.parts_out}'.indexOf('[') >= 0)
+	              	{
+		              	var parts_out = eval('{$list.parts_out}');
+		              	for(var i=0;i<parts_out.length;i++)
+		              	{
+		              		$("#parts_info_{$list.id}").append("<div class='neirong'><div class='shangrong'>"+parts_out[i]['p']+"</div>" + 
+		              				"<div class='shangmig'></div>" + "<div class='shuzhi'>数量："+parts_out[i]['n']+"</div>" + 
+		              				"<div class='shujia'></div></div>");
+		              	}
+	              	}
+          		}
+
+              	$("#parts_info_{$list.id}").append("<div class='clearfix'></div>");
+          </script>
+          <div class="anjia">工时费：￥{$list.work_price}    合计：￥{$list.price}</div>
+          </a>
+          <div class="ann">
+            <a href="{:U('Fans/order_repair_details',array('oid'=>$list['id']))}"> <div class="sc_ann">详情</div></a>
+            <a href="/wxpay/wap.php?s=/Repair/pay/oid/{$list['id']}"><div class="pj_ann">支付</div></a>
+          </div>
+       </li>
+        <else/> 
+       <!-- 等待检查 -->
+			<li><a href="#" style="color: #333; text-decoration: none;">
+					<div class="biaotid">
+						<p>
+							订单号：{$list.transid} <span>{$list.status|get_repairorder_astatus}</span>
+						</p>
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="dingaw">
+						<div class="yikuai">维修地址：滴啊滴-{$list.shopid|get_shop_id}</div>
+						<div class="neirong">车辆状况：{$list.problem}</div>
+						<div class="neirong">下单时间：{$list.create_time|date="Y年m月d日H时i分",###}</div>
+						<div class="neirong">联系电话：{$list.mobile}</div>
+						<div class="clearfix"></div>
+					</div>
+			    </a>
+				<div class="ann">
+            		<a href="{:U('Fans/order_repair_details',array('oid'=>$list['id']))}"> <div class="sc_ann">详情</div></a>
+            		
+		             <if condition="($list.status eq 2)">
+		            	<if condition="$list.isremark eq 0">
+		            	<a href="#"><div class="pj_ann pingjia" id="{$list.id}">评价</div></a>
+		            	</if>
+            	
+		            	<a href="{:U('Fans/complain',array('transid'=>$list['transid']))}"><div class="pj_ann">投诉</div></a>
+		            	
+		            </if>
+				</div></li>
+		
+		</if>
+       </volist>
+       <else/>
+       <div class="noorder">
+          <div class="tb"></div>
+          <p>您还没有相关订单</p>
+          <span>去看看您需要什么</span>
+          <a href="{:U('Repair/index')}">去看看</a>
+      </div>
+      </present>
+    </ul> 
+     
+   </div>
+</div> 
+
+
+ 
+ 
+</block>
+
+<block name="side"> </block>
+
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("body").attr('style','background:#f1f1ef;');
+		
+		$(".ann").click(function(){
+			$("#form1").submit();
+		});
+		
+		$("#my").click(function(){
+			top.location.href = "{:U('Fans/my')}";
+		});
+		
+		$("#score").click(function(){
+			top.location.href = "{:U('Fans/score_get')}";
+		});
+		
+		$("#myorder").click(function(){
+			top.location.href = "{:U('Fans/index')}";
+		});
+		
+		$(".pingjia").click(function(){
+			var oid = $(this).attr('id');
+			top.location.href = "/wap.php/Fans/remark/flag/WX/oid/"+oid+'.html';
+		});
+	});
+	</script>
+</block>

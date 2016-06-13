@@ -1,0 +1,213 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}门店</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">门店编号</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="shopno" value="{$info.shopno|default=''}">
+            </div>
+        </div> 
+        
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+
+        <div class="form-item">
+			<label class="item-label">
+				维修业务<span class="check-tips">（是否支持维修业务）</span>
+			</label>
+			<div class="controls">
+				<label class="inline radio"><input type="radio" name="s_repair" value="0"  checked>不支持</label>
+				<label class="inline radio"><input type="radio" name="s_repair" value="1" >支持</label>
+			</div>
+	    </div>
+        
+        <div class="form-item">
+			<label class="item-label">
+				租车业务<span class="check-tips">（是否支持租车业务）</span>
+			</label>
+			<div class="controls">
+				<label class="inline radio"><input type="radio" name="s_rent" value="0" checked>不支持</label>
+				<label class="inline radio"><input type="radio" name="s_rent" value="1">支持</label>
+			</div>
+	    </div>
+        
+        <div class="form-item">
+			<label class="item-label">
+				保养业务<span class="check-tips">（是否支持保养业务）</span>
+			</label>
+			<div class="controls">
+				<label class="inline radio"><input type="radio" name="s_maintain" value="0" checked>不支持</label>
+				<label class="inline radio"><input type="radio" name="s_maintain" value="1">支持</label>
+			</div>
+	    </div>
+        
+        <div class="form-item">
+			<label class="item-label">
+				门店显示<span class="check-tips">（是否在前台页面显示）</span>
+			</label>
+			<div class="controls">
+				<label class="inline radio"><input type="radio" name="status" value="0" >不显示</label>
+				<label class="inline radio"><input type="radio" name="status" value="1" checked>显示</label>
+			</div>
+	    </div>
+
+        <div class="form-item">
+            <label class="item-label">
+                精品业务<span class="check-tips">（是否支持精品业务）</span>
+            </label>
+            <div class="controls">
+                <label class="inline radio"><input type="radio" name="s_mall" value="0" checked>不支持</label>
+                <label class="inline radio"><input type="radio" name="s_mall" value="1">支持</label>
+            </div>
+        </div>
+
+
+        <div class="form-item">
+            <label class="item-label">所属运营商<span class="check-tips">（运营商）</span></label>
+            <div class="controls">
+                <select name="carrierid" class="carrierid" >
+					<volist name="lstCarrier" id="carrier">
+						<option value="{$carrier.id}">{$carrier.name}</option>
+					</volist>
+                </select>
+            </div>
+        </div>
+        {:hook('province_city_area',array('cityid'=>$info["cityid"],'areaid'=>$info["areaid"]))}
+        <div class="form-item">
+            <label class="item-label">门店图片一<span class="check-tips">（建议尺寸640*400）</span></label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'picture1','value'=>$info['picture1']))}
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">门店图片二<span class="check-tips">（建议尺寸640*400）</span></label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'picture2','value'=>$info['picture2']))}
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">门店图片三<span class="check-tips">（建议尺寸640*400）</span></label>
+            <div class="controls">
+                {:hook('adminPictureUpload', array('name'=>'picture3','value'=>$info['picture3']))}
+            </div>
+        </div>
+        
+         <div class="form-item">
+            <label class="item-label">地址</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="address" name="address" value="{$info.address|default=''}">
+            </div>
+        </div>
+        
+        <div class="form-item">
+             <div style="width:500px;height:300px;" id="allmap"></div>
+        </div>
+      
+        <div class="form-item">
+            <label class="item-label">经度</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="longitude" name="longitude" value="{$info.longitude|default=''}">
+            </div>
+        </div>
+      
+        <div class="form-item">
+            <label class="item-label">纬度</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="latitude" name="latitude" value="{$info.latitude|default=''}">
+            </div>
+        </div>
+   
+      
+        <div class="form-item">
+            <label class="item-label">固话</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="tel" value="{$info.tel|default=''}">
+            </div>
+        </div>
+   
+      
+        <div class="form-item">
+            <label class="item-label">手机号</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="mobile" value="{$info.mobile|default=''}">
+            </div>
+        </div>
+        
+        <div class="form-item">
+			<label class="item-label">门店介绍<span class="check-tips">（门店基本介绍）</span> </label>
+			<div class="controls">
+			<label class="textarea input-large">
+				<textarea name="intro">{$info.intro}</textarea>
+			</label>				
+			</div>
+		</div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <input type="hidden" name="shop_type" value="1">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bi6KWlVRxH8q59j9DB18Z1w8"></script>
+    <script type="text/javascript">
+        Think.setValue("lstCarrier", {$info.lstCarrier|default = 1});
+		Think.setValue("s_repair", {$info.s_repair|default=0});
+		Think.setValue("s_rent", {$info.s_rent|default=0});
+		Think.setValue("s_maintain", {$info.s_maintain|default=0});
+        Think.setValue("s_mall", {$info.s_mall|default=0});
+		Think.setValue("status", {$info.status|default=1});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        // 百度地图API功能
+    	var map = new BMap.Map("allmap");
+    	map.centerAndZoom(new BMap.Point(119.654889, 29.08597), 11);
+    	
+    	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    	map.addControl(top_left_control);        
+		map.addControl(top_left_navigation); 
+		
+    	function showInfo(e){
+    		//alert(e.point.lng + ", " + e.point.lat);
+    		$('#latitude').val(e.point.lat);
+    		$('#longitude').val(e.point.lng);
+    	} 
+    	map.addEventListener("click", showInfo);
+    	
+    	function address2point(addr)
+    	{
+    		var myGeo = new BMap.Geocoder();
+    		myGeo.getPoint(addr, function(point){
+    			if (point) {
+    				map.centerAndZoom(point, 16);
+    				map.addOverlay(new BMap.Marker(point));
+    				$('#latitude').val(point.lat);
+    	    		$('#longitude').val(point.lng);
+    				
+    			}else{
+    				alert("您选择地址没有解析到结果!");
+    			}
+    		}, "金华市");
+    	}
+    	
+    	$(document).ready(function(){
+			$("#address").blur(function(){
+				address2point($(this).val());
+			});
+    	});
+    </script>
+</block>

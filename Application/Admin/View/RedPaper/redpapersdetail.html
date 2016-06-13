@@ -1,0 +1,76 @@
+
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2><present name="data">[ {$data.title} ] 子</present>查看领取明细 </h2>
+    </div>
+
+
+<div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th>ID</th>
+                        <th>领取用户名</th>
+                        <th>券号</th>
+                        <th>优惠券</th>
+                        <th>领取时间</th>
+                        <th>使用时间</th>
+                        <th>到期时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="redpapersdetail">
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$redpapersdetail.idr}"></td>
+                        <td>{$redpapersdetail.idr}</td>
+                        <td>{$redpapersdetail.nickname}</td>
+                        <td>{$redpapersdetail.code}</td>
+                        <td>{$redpapersdetail.couponid|get_coupon_id}</td>
+                        <td>{$redpapersdetail.create_time|date="Y-m-d",###}</td>
+                        <td>
+                        <!-- eq 1 表示已经未使用 eq 2 表示已经使用 -->
+                        <if condition="$menu.status eq 2">
+                            <if condition="$menu.used_time eq 0">
+                                无使用
+                            <else/> {$redpapersdetail.used_time|date="Y-m-d",###}
+                            </if>
+                        <else />
+                            未使用
+                        </if>
+                        </td>
+                        <td>{$redpapersdetail.end_time|date="Y-m-d",###}</td>
+                        <td>
+                        </td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="10" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+    
+    </block>
+
+
+<block name="script">
+    <script type="text/javascript" charset="utf-8">
+        
+        //导航高亮
+        highlight_subnav('{:U('redpapersdetail')}');
+      
+    </script>
+</block>

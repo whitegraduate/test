@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; font-family:"微软雅黑"; font-size:14px;}
+ul,li{margin:0; padding:0; list-style-type:none;}
+a{text-decoration:none;}
+.top{width:100%; height:45px; background:#ff4f51;}
+.top .topleft,.top .topright,.top .topmid,.shangpin,.kuan .kuantu,.kuan .kuanzi{float:left;}
+.top .topleft,.top .topright{width:15%; height:45px;}
+.top .topmid{width:70%; height:45px; line-height:45px; text-align:center; font-size:16px; color:#fff;}
+.topleft .topfan{width:25px; height:25px; margin:0 auto; background:url(../images/fan.png) 0 0 no-repeat; background-size:16px; margin-top:10px;}
+.topright .topren{width:30px; height:30px; margin:0 auto; background:url(../images/ren.png) 0 0 no-repeat; background-size:21px; margin-top:10px;}
+.clearflx{clear:both;}
+.content{margin:10px 10px;}
+.content ul{width:100%; height:32px; margin:0 auto; border-radius:30px; overflow:hidden; border-right:1px solid #ff4f51;}
+.content ul li{float:left; width:33%; height:30px; line-height:30px; border:1px solid #ff4f51; text-align:center; color:#ff4f51; margin-left:-1px; border-right:0;}
+.xuanzhong{background:#ff4f51; color:#fff !important;}
+.shangpin{width:45%; border:1px solid #d6d6d6; background:#fff; margin-left:3%; margin-top:10px;}
+.shangpin .shantu{margin:5px 5px;}
+.shangpin .shanwen{width:100%; height:20px; overflow:hidden;color:#333;}
+.shangpin .shanjia{color:#ff4f51; font-weight:bold;}
+.geren{padding:20px 20px; background:#ff4f51;}
+.geren .touxiang{ width:70px; height:70px; margin:5px auto; border-radius:70px; overflow:hidden;}
+.geren .touming{width:100%; text-align:center; color:#fff;}
+.geren .toubang{width:100px; height:25px; margin:0 auto; margin-top:5px; line-height:25px; font-size:12px; background:#fd2c2e; border-radius:25px; overflow:hidden; text-align:center;}
+.geren .toubang a{color:#fff;}
+.kuan{margin-top:10px;}
+.kuan ul li{padding:10px 10px; background:#fff; border-top:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; margin-top:-1px;}
+.kuan .kuantu{width:8%;}
+.kuan .kuanzi{color:#333; margin-left:10px;}
+.kuan .kuanjian,.xiaojian{float:right; width:3%; margin-top:5px;}
+.kuan .kuanjian2,.xiaojian2{float:right; width:80%; margin-top:5px;}
+.xiaokuan{ line-height:35px; padding:10px 10px;}
+.xiaozi{float:left; color:#333;}
+.xiaojian{margin-top:8px; color:#999999;}
+.changui,.feiyong{width:50%; text-align:right; margin-top:0;}
+.feiyong{color:#ff4f51;}
+.anniu{width:100%; height:40px; line-height:40px; background:#ff4f51; color:#fff; text-align:center; margin-top:50px;}
+.changpin{width:100%; height:auto; position:relative;}
+.changpin .biaoti{position:absolute; bottom:0; width:100%; height:30px; line-height:30px; overflow:hidden; background:rgba(0,0,0,0.5); color:#fff;}
+.baikuan{ background:#fff; padding:10px 10px; margin-bottom:10px;}
+.baifen{width:100%; height:auto;}
+.baifen .huiyuan{float:left; padding:0 10px; background:#ff4f51; color:#fff;}
+.baifen .xianjia{float:left; color:#ff4f51; font-size:18px;  margin-left:10px;}
+.baifen .yuanjia{float:left; color:#999; margin-left:20px; font-size:12px; text-decoration:line-through; margin-top:5px;}
+.baixiao{float:left; width:33%; text-align:left; color:#999; font-size:12px; margin-top:5px;}
+.weiquan{border-top:1px solid #d6d6d6; padding:5px 0; margin-top:5px;}
+.weiquan ul li{float:left; margin-right:7px;}
+.weiquan .weitu,.weiquan .weizi{float:left;}
+.weiquan .weitu{margin-top:1px;}
+.weiquan .weizi{color:#333; margin-left:5px; font-size:12px;}
+.biankuan{border-bottom:1px solid #d6d6d6; margin-top:0; padding-bottom:10px;}
+.yanse ul li{float:left; padding:5px 20px; color:#999; border:1px solid #d6d6d6; background:#fff; margin-right:10px; margin-top:10px;}
+.juli{margin-top:15px;}
+
+.ann1{position: fixed;z-index: 20;bottom: 0;width: 100%;height: 40px;text-align: center;line-height: 40px;background: #ff4f51;color: #fff;font-size: 14px;}

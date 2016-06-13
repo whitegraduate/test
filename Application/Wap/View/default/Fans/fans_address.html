@@ -1,0 +1,61 @@
+
+<extend name="Base/common" />
+<block name="header">  
+</block>
+
+<block name="body"> 
+ 
+<div class="cont">
+<volist id="list" name="lstAddr">
+  <div class="add" id="div{$list.id}" data="{$list.id}">
+    <div class="wz"> 
+      <span>收货人：{$list.realname}</span> <span>{$list.mobile}</span>
+      <p>{$list.address}</p>
+      <em>（收货不方便时，可以发货至滴啊滴社区店）</em>
+      <span class="moren">设为默认</span>
+      <span class="shanchu" data="{$list.id}">删除地址</span>
+    </div>
+    <div class="kajian"></div>
+  </div>
+  </volist>
+</div>
+<div class="pj_foot">
+  <a href="{:U('Fans/fans_address_add')}"><div class="pj_ann">新增收货地址</div></a>
+</div> 
+
+</block>
+
+<block name="side"> </block>
+<block name="script"> 
+<script>
+$(document).ready(function(){
+	$('.shanchu').click(function(){
+		if(confirm('删除后将不可恢复，是否继续?'))
+		{
+			var id = $(this).attr('data');
+			
+			$.ajax({
+	             type: "GET",
+	             url: "{:U('Fans/fans_address_del')}",
+	             data: {aid:id},
+	             dataType: "json",
+	             success: function(data){
+	                          //alert('删除成功!');
+	                          if(data.flag == '1')
+	                          {
+	                          	$('#div'+id).slideUp();
+	                          }else
+	                        	  alert(data.msg);
+	             			}
+	         });
+		}
+	});
+	
+	$(".add").click(function(){
+		
+		var id = $(this).attr('data');
+		top.window.location = "/wap.php?s=/Fans/fans_address_edit/aid/" + id + ".html";
+	});
+});
+</script>
+</block>

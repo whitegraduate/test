@@ -1,0 +1,61 @@
+<extend name="Base/common" />
+<block name="header">
+</block>
+
+<block name="body">
+<div class="binding">
+     <div class="user_left">
+         <div class="tup"><img src="{$wechat.headimgurl}" width="100%"></div>
+     </div>
+     <div class="center">
+         <div class="tup"><img src="__IMG__/shou.jpg" width="100%"></div>
+     </div>
+     <div class="user_right">
+         <div class="tup"><img src="__IMG__/logo.png" width="100%"/></div>
+     </div>
+</div>
+<div class="information">
+     <div class="title">您的微信账号<span>{$wechat.nickname}</span>，绑定后获得更好的服务!</div>
+     <div class="content">
+       <form action="" method="post" name="form1" class="topnav" id="form1">
+          <div class="name">
+             <span>你的姓名：</span> 
+             <input name="realname" type="text" class="kuang" id="realname" placeholder="如：张三" />
+          </div>
+          <div class="name">
+             <span>手机号码：</span> 
+             <input name="mobile" type="text" class="kuang" id="mobile" placeholder="如：15485653585" />
+          </div>
+          <div class="name" style="display:none;">
+             <span>密    码：</span> 
+             <input name="textfield" type="text" class="kuang" id="textfield" placeholder="如：352655" />
+          </div>
+       </form>
+     </div>
+     <div class="ann">绑    定</div>
+</div>
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".ann").click(function(){
+			$("#form1").submit();
+		});
+		
+	});
+	/*	
+	$(function(){
+			var verifyimg = $(".verifyimg").attr("src");
+            $(".reloadverify").click(function(){
+                if( verifyimg.indexOf('?')>0){
+                    $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
+                }else{
+                    $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
+                }
+            });
+		});
+	*/
+	</script>
+</block>

@@ -1,0 +1,89 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{:isset($info['id'])?'编辑':'新增'}优惠券</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">名称</label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="name" value="{$info.name|default=''}">
+            </div>
+        </div>
+		
+		 <div class="form-item">
+            <label class="item-label">优惠券类型<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="coupon_type" class="coupon_type" >
+                     <volist name="Think.config.COUPON_TYPE" id="type">
+						<option value="{$key}">{$type}</option>
+			         </volist>
+                </select>
+            </div>
+        </div>
+		
+		 <div class="form-item">
+            <label class="item-label">服务类型<span class="check-tips"></span></label>
+            <div class="controls">
+                <select name="service_type" class="coupon_type" >
+                     <volist name="Think.config.ORDER_TYPE" id="type">
+						<option value="{$key}">{$type}</option>
+			         </volist>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-item" id="dUrl">
+            <label class="item-label">有效期<span class="check-tips">（单位：天）</span>
+            </label>
+            <div class="controls">
+                <input type="text" class="text input-large" name="days" value="{$info.days|default=''}">
+            </div>
+        </div>
+        
+         
+        
+        <div class="form-item">
+            <label class="item-label">次数</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="times" name="times" value="{$info.times|default=''}">
+            </div>
+        </div>
+        
+         <div class="form-item">
+            <label class="item-label">面值</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="face" name="face" value="{$info.face|default=''}">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">满</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="arrive_face" name="arrive_face" value="{$info.arrive_face|default=''}">
+            </div>
+            <label class="item-label">减免</label>
+            <div class="controls">
+                <input type="text" class="text input-large" id="reduce_face" name="reduce_face" value="{$info.reduce_face|default=''}">
+            </div>
+        </div>
+   
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script"> 
+    <script type="text/javascript">
+    Think.setValue("coupon_type", {$info.coupon_type|default = 1});
+    Think.setValue("service_type", {$info.service_type|default = 1});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+    
+    </script>
+</block>

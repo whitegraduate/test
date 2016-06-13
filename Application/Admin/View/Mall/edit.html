@@ -1,0 +1,187 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>{$info['id']?'编辑':'新增'}商品</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">商品标题</label>
+
+            <div class="controls">
+                <input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+            </div>
+        </div>
+        {:hook('province_city_area',array('cityid'=>$info["cityid"],'areaid'=>$info["areaid"]))}
+        <div class="form-item">
+            <label class="item-label">原价</label>
+
+            <div class="controls">
+                <input type="text" class="text input-small" name="original_price"
+                       value="{$info.original_price|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">会员价</label>
+
+            <div class="controls">
+                <input type="text" class="text input-small" name="member_price" value="{$info.member_price|default=0}">
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">里程</label>
+
+            <div class="controls">
+                <label class="radio"><input type="radio" name="endurance" value="0">50公里以下</label>
+                <label class="radio"><input type="radio" name="endurance" value="1">50公里以上</label>
+                <label class="radio"><input type="radio" name="endurance" value="2">两者都有</label>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">款式</label>
+
+            <div class="controls">
+                <label class="radio"><input type="radio" name="fashiion" value="0">经典</label>
+                <label class="radio"><input type="radio" name="fashiion" value="1">时尚</label>
+                <label class="radio"><input type="radio" name="fashiion" value="2">两者都有</label>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">颜色{$info['color']}</label>
+
+            <div class="controls">
+                <volist name="colorlist" id="vo">
+                    <input type="checkbox" value="{$vo.id}" name="color[]" <in name="vo['id']" value="$info['color']">checked</in> >{$vo.color_name}|
+                </volist>
+            </div>
+        </div>
+
+        <div>
+            <label class="textarea">
+                <textarea name="content">{$info['content']}</textarea>
+                {:hook('adminArticleEdit', array('name'=>'content','value'=>'content'))}
+            </label>
+        </div>
+        <div class="controls">
+            <div class="upload">
+                上传照片
+                <input type="file" id="upload_picture">
+                <input type="hidden" name="icon" id="icon" value="{$info['pic']|default=''}"/>
+                <div class="upload-img-box">
+                    <div class="upload-pre-item"><img src="{$info.pic}"/></div>
+                </div>
+                <script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+                <script type="text/javascript">
+                    //上传图片
+                    /* 初始化上传插件 */
+                    $("#upload_picture").uploadify({
+                        "height"          : 30,
+                        "swf"             : "__STATIC__/uploadify/uploadify.swf",
+                        "fileObjName"     : "download",
+                        "buttonText"      : "上传图片",
+                        "uploader"        : "{:U('Admin/File/uploadPicture',array('session_id'=>session_id()))}",
+                        "width"           : 120,
+                        'removeTimeout'	  : 1,
+                        'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
+                        "onUploadSuccess" : uploadPicture,
+                        'onFallback' : function() {
+                            //alert('未检测到兼容版本的Flash.');
+                        }
+                    });
+                    function uploadPicture(file, data){
+                        var data = $.parseJSON(data);
+                        var src = '';
+                        if(data.status){
+                            $("#icon").val(data.path);
+                            src = data.url || '__ROOT__' + data.path;
+                            $("#icon").parent().find('.upload-img-box').html(
+                                    '<div class="upload-pre-item"><img src=./' + src + ' width="100px" height="100px"></div>'
+                            );
+                        } else {
+                            updateAlert(data.info);
+                            setTimeout(function(){
+                                $('#top-alert').find('button').click();
+                                $(that).removeClass('disabled').prop('disabled',false);
+                            },1500);
+                        }
+                    }
+
+
+                </script>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //上传图片
+            /* 初始化上传插件 */
+            $("#upload_file_{$field.name}").uploadify({
+                "height"          : 30,
+                "swf"             : "__STATIC__/uploadify/uploadify.swf",
+                "fileObjName"     : "download",
+                "buttonText"      : "上传附件",
+                "uploader"        : "{:U('File/upload',array('session_id'=>session_id()))}",
+                "width"           : 120,
+                'removeTimeout'	  : 1,
+                "onUploadSuccess" : uploadFile{$field.name},
+            'onFallback' : function() {
+                alert('未检测到兼容版本的Flash.');
+            }
+            });
+            function uploadFile{$field.name}(file, data){
+                var data = $.parseJSON(data);
+                if(data.status){
+                    var name = "{$field.name}";
+                    $("input[name="+name+"]").val(data.data);
+                    $("input[name="+name+"]").parent().find('.upload-img-box').html(
+                            "<div class=\"upload-pre-file\"><span class=\"upload_icon_all\"></span>" + data.info + "</div>"
+                    );
+                } else {
+                    updateAlert(data.info);
+                    setTimeout(function(){
+                        $('#top-alert').find('button').click();
+                        $(that).removeClass('disabled').prop('disabled',false);
+                    },1500);
+                }
+            }
+        </script>
+         <div class="form-item">
+            <label class="item-label">商品排序<span class="check-tips">（值越大越靠前）</span></label>
+
+            <div class="controls">
+                <input type="text" class="text input-small" name="sort"
+                       value="{$info.sort|default=1}">
+            </div>
+        </div>
+        
+        <div class="form-item">
+			<label class="item-label">商品状态</label>
+			<div class="controls">
+				<volist name="Think.config.MALL_STATUS" id="status">
+					<label class="inline radio"><input type="radio" name="status" value="{$key}">{$status}</label>
+				</volist>
+			</div>
+		</div>
+		
+        <div class="form-item">
+            <input type="hidden" name="id" value="{$info.id|default=''}">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定
+            </button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("endurance", {$info.endurance|default = 0});
+        Think.setValue("fashiion", {$info.fashiion|default = 0});
+        Think.setValue("status", {$info.status|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('
+        Config / index
+        ')}'
+        )
+        ;
+    </script>
+</block>

@@ -1,0 +1,183 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>会员管理 </h2>
+    </div>
+
+    <div class="search-form cf">
+        <div style="margin-top: 10px; float: left;">
+            手机号：
+            <input type="text" name="mobile" class="text input-small" value="{$condition['mobile']}" />
+            昵称:
+            <input type="text" name="nickname" class="text input-small" value="{$condition['nickname']}">
+            实名认证状态：
+            <select id="idcard_status" style="width: 100px">
+                <option value="-1">请选择..</option>
+                <option value="0">未认证</option>
+                <option value="1">认证中</option>
+                <option value="2">已认证</option>
+            </select>
+            关注时间：
+            <input type="text" name="create_time_start" class="text input-small time" value="{$create_time_start}" placeholder="请选择日期">
+            -
+            <input type="text" name="create_time_end" class="text input-small time" value="{$create_time_end}" placeholder="请选择日期">
+        <a id="search" class="btn" href="javascript:;" url="{:U('index')}">查 询</a>
+        <a id="export"  class="btn" href="javascript:;" url="/admin.php?s=/Fans/fans_export.html">导出</a>
+
+        </div>
+        
+        </div>
+
+    <div class="data-table table-striped">
+        <form class="ids">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="row-selected">
+                            <input class="checkbox check-all" type="checkbox">
+                        </th>
+                        <th>ID</th>
+                        <th>昵称</th>
+                        <th>姓名</th>
+                        <th>手机号</th>
+                        <th>所在位置</th>
+                        <th>注册时间</th>
+                        <th>是否绑定微信</th>
+                        <th>车辆数</th>
+                        <th>实名认证</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<notempty name="list">
+                <volist name="list" id="vo">
+
+                    <tr>
+                        <td><input class="ids row-selected" type="checkbox" name="id[]" value="{$vo.id}"></td>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.nickname}</td>
+                        <td>{$vo.realname}</td>
+                        <td>{$vo.mobile}</td>
+                        <td>{$vo.address}</td>
+                        <td>{$vo.subscribe_time|date="Y-m-d",###}</td>
+                        <td>{$vo.wechat_binded|get_bool_desc}</td>
+                        <td>
+                           <if condition="$vo.auth_bike eq 1" >
+                               <a href="##" id="bike-info" uid="{$vo.id}"> {$vo.bikecount}辆</a>
+                            <else/>无车辆 
+                            </if>
+                        </td>
+                        <td>
+                            <eq name="vo.idcard_status" value="0">未认证</eq>
+                            <eq name="vo.idcard_status" value="1">
+                                <a href="{$vo.idcard_img}" target="_blank">认证中</a> &nbsp; | &nbsp;
+                                <a class="confirm ajax-get" title="通过" href="{:U('authIdCard?id='.$vo['id'].'&status=2')}">通过</a>&nbsp; | &nbsp;
+                                <a class="confirm ajax-get" title="驳回" href="{:U('authIdCard?id='.$vo['id'].'&status=0')}">驳回</a>
+                            </eq>
+                            <eq name="vo.idcard_status" value="2">
+                                <a href="{$vo.idcard_img}" target="_blank">已认证</a>
+                            </eq>
+                        </td>
+                        <td>{$vo.status|get_status_desc}</td>
+                        <td>
+                            <a title="订单" href="{:U('orders?uid='.$vo['id'])}">订单</a>
+                            <a title="积分" href="{:U('scores?uid='.$vo['id'])}">积分</a>
+                            <a title="优惠券" href="{:U('coupons?uid='.$vo['id'])}">优惠券</a>
+                            <a class="confirm ajax-get" title="删除" href="{:U('delFans?uid='.$vo['id'])}">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+				<else/>
+				<td colspan="10" class="text-center"> aOh! 暂时还没有内容! </td>
+				</notempty>
+                </tbody>
+            </table>
+        </form>
+        <!-- 分页 -->
+        <div class="page">
+            {$_page}
+        </div>
+    </div>
+</block>
+<block name="script">
+<link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+<link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <link href="/Public/Admin/js/layer.m/skin/layer.css" rel="stylesheet">
+    <script type="text/javascript" src="/Public/Admin/js/layer.m/layer.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $(function() {
+            //搜索功能
+            $("#search,#export").click(function() {
+                var url = $(this).attr('url');
+                var status = $('#idcard_status').val();
+                var query = $('.search-form').find('input').serialize();
+                query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+                query = query.replace(/^&/g, '');
+                if(status != '-1'){
+                    query = 'idcard_status=' + status + "&" + query;
+                }
+                if (url.indexOf('?') > 0) {
+                    url += '&' + query;
+                } else {
+                    url += '?' + query;
+                }
+                window.location.href = url;
+            });
+         
+            //回车搜索
+            $(".search-input").keyup(function(e) {
+                if (e.keyCode === 13) {
+                    $("#search").click();
+                    return false;
+                }
+            });
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            });
+            $('.time').datetimepicker({
+                format: 'yyyy-mm-dd',
+                language:"zh-CN",
+                minView:2,
+                autoclose:true
+            }); 
+            //导航高亮
+            highlight_subnav('{:U('index')}');
+            $('#idcard_status').val('{$condition.idcard_status}');
+            //车辆信息
+            $(document).on("click","#bike-info",function(){
+                var bike_info="<table class='table table-striped' style='text-align:center; width:100%;'><tr><th>车辆品牌</th><th>车辆型号</th><th>认证时间</th></tr>";
+                 $.get('/admin.php?s=/Fans/FansIndexPost.html',{"uid":$(this).attr('uid')},function(bikeinfo){
+                   $.each(bikeinfo,function(idx,itme){
+                       var unixTimestamp = new Date(itme.buytime * 1000);
+                       commonTime = unixTimestamp.toLocaleString();
+                        bike_info+="<tr style='line-height:35px;'><td>"+itme.bikename+"</td><td>"+itme.biketype+"</td><td>"+commonTime+"</td></tr>";
+                   });
+                bike_info+="</table></tr>";
+                $(function() {
+                    $("table tr:nth-child(odd)").addClass("striped");
+                    $("table tr:nth-child(even)").addClass("striped1");
+                });
+                layer.open({
+                    title:"车辆信息",
+                    type: 1,
+                    skin: 'layui-layer-demo', //样式类名
+                    closeBtn: false, //不显示关闭按钮
+                    shift: 2,
+                    shadeClose: true, //开启遮罩关闭
+                    content: bike_info,
+                    area:"400px",
+                });  
+                 });
+            
+            });
+            
+        });
+    </script>
+</block>

@@ -1,0 +1,1189 @@
+[ 2016-05-10T04:02:07+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=7a574c26d24044df927bc194868fea55dbfecdd4&timestamp=1462824126&nonce=1378777133
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '刘献华' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` LIKE '%刘献华%' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-05-10T04:02:25+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=ca08db92641292cdefe12c964612f97d31ff17a2&timestamp=1462824144&nonce=645155736
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-05-10T06:13:29+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=bc032b136c500800b724343cf09ec8b6c0006152&timestamp=1462832008&nonce=1918603237
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 883 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvl9O9d9vUOYBZvPIKvCiK_A' LIMIT 1   [ RunTime:0.0018s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`,`canalid`,`intro`) VALUES ('o97bDvl9O9d9vUOYBZvPIKvCiK_A','叶琳儿','http://wx.qlogo.cn/mmopen/icFTnRoibgibp9TevdAaxicibtBeqUXicwApo8hpvg7RtAUy5UBfArzDHY6h9aAmMlWB9g4cugaO54wNf8P77n5txU3w/0','2','1','1462832007','中国甘肃白银','1462832008','4','通过场景id=4关注') [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 708 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `fg_canal` SET `click`=click+1 WHERE `id` = 4 [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-05-10T06:13:31+08:00 ] 101.226.66.172 /wap.php?s=/Weixin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+
+[ 2016-05-10T06:42:25+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=d9a0260e75c73cc227860f9cbf48f8e177a1bd8a&timestamp=1462833744&nonce=825423127
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '刘献华' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` LIKE '%刘献华%' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-05-10T09:12:08+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=98c48279cf39e8c7948c085fa2962acf9efd9129&timestamp=1462842727&nonce=2018801917
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 883 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvjFcDKiXvxlBcecO7XNRbF0' LIMIT 1   [ RunTime:0.0019s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`,`canalid`,`intro`) VALUES ('o97bDvjFcDKiXvxlBcecO7XNRbF0','A罗先生   私家卤味','http://wx.qlogo.cn/mmopen/8984aO4eojcJiaGQXiadmEibbPSfQLge2K4FOqLRu65w2hJlNB48YCedy2IHGRyHmiaZuRxdicN9WTyv1TlBGOvic1KxJuiaAzfH4In/0','1','1','1462842727','基里巴斯','1462842728','6','通过场景id=6关注') [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 709 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `fg_canal` SET `click`=click+1 WHERE `id` = 6 [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-05-10T09:12:32+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=a1630e5ff9d4412c0ce3c68294294403c37d6a56&timestamp=1462842751&nonce=654124292
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001212s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-05-10T09:18:22+08:00 ] 58.247.206.157 /wap.php?s=/Weixin/index.html&signature=0d207438607f0f90d016954b8c6f03e71d355a3e&timestamp=1462843102&nonce=531137975
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-05-10T09:22:54+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=ed4514be01f15d310e9adb42a0fa0b953d7da0cf&timestamp=1462843373&nonce=703779005
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 1 /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 309 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvnSkHVokTepyrMv5JLyd0Bo' LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`) VALUES ('o97bDvnSkHVokTepyrMv5JLyd0Bo','侠客行 @ 盛则美品牌汽车坐垫。','http://wx.qlogo.cn/mmopen/SQvTibVcCuJMreUBMOPSEPGlY28BV2zvU9kRAajp3APwHJtdTp7AgFEAJtznURJcLqicgFLIS7HMR8u96ySDEmEyldjBBTFY16/0','1','1','1462843372','中国浙江金华','1462843373') [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 710 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2016-05-10T09:40:19+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=4f3f5cdfb3e97faebcdc1b4b9e5f543c02880051&timestamp=1462844418&nonce=1064203118
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvmMOUShWTJV8rHFN70Vwoig' LIMIT 1   [ RunTime:0.0018s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`,`canalid`,`intro`) VALUES ('o97bDvmMOUShWTJV8rHFN70Vwoig','金','http://wx.qlogo.cn/mmopen/UDq4iaM7Rhuj4X9GZL8zz4pp5gUay4R5RsFv9ZRia4lTkEltlibhVtNh2gIvjgHC30FEvuvGdiaXUz6bzl6xP4RmFMAPAfBBCTYL/0','1','1','1462844417','中国甘肃兰州市','1462844418','4','通过场景id=4关注') [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 711 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `fg_canal` SET `click`=click+1 WHERE `id` = 4 [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-05-10T10:11:30+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=811941c50d0eb2e35267ab848c7ddcff94e08f4b&timestamp=1462846290&nonce=949128726
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001595s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-05-10T10:11:31+08:00 ] 112.17.238.109 /wap.php/Maintain/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-05-10T10:11:32+08:00 ] 112.17.238.109 /wap.php/Maintain/index.html?code=041aEo8b1Q8rvq0jI37b1SBq8b1aEo8Y&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0020s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WapController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 1 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 2 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 3 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 42 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-05-10T10:11:33+08:00 ] 112.17.238.109 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0033s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2016-05-10T10:11:46+08:00 ] 112.17.238.109 /wap.php?s=/Maintain/details/pid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0020s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_remark` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_remark` WHERE `pid` = 10 ORDER BY id desc LIMIT 10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-05-10T10:11:47+08:00 ] 112.17.238.109 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0020s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-05-10T10:12:07+08:00 ] 112.17.238.109 /wap.php/Maintain/index.html?code=041aEo8b1Q8rvq0jI37b1SBq8b1aEo8Y&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0018s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 1 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 2 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 3 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 42 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-05-10T10:12:10+08:00 ] 112.17.238.109 /wap.php?s=/Maintain/details/pid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001497s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0023s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_remark` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_remark` WHERE `pid` = 10 ORDER BY id desc LIMIT 10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-05-10T10:12:11+08:00 ] 112.17.238.109 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0019s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2016-05-10T10:12:13+08:00 ] 112.17.238.109 /wap.php/Maintain/index.html?code=041aEo8b1Q8rvq0jI37b1SBq8b1aEo8Y&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001262s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0020s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvpz7Zn4pMaL23FJ8xvN_VHM' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 1 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 2 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 3 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 42 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2016-05-10T11:00:31+08:00 ] 140.207.54.77 /wap.php?s=/Weixin/index.html&signature=2f774c39daf93ea89c7ed579423c939da6a8e416&timestamp=1462849230&nonce=1191688108
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-05-10T11:00:55+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=a2e029a5ab4cf08432e27ef4d6e26cd559255225&timestamp=1462849254&nonce=2045229113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001906s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-05-10T11:00:56+08:00 ] 36.16.1.231 /wap.php/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0020s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2016-05-10T11:00:57+08:00 ] 36.16.1.231 /wap.php/Shop/index.html?code=011W9b0G1zEYme0XoTYF1To40G1W9b0W&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0022s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WapController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvlzGtd7HNUYNkpza703Ic7g' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_shop` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fg_shop` WHERE `status` = 1 AND `shop_type` = 1  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-05-10T11:09:32+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=7522f1df614e1bc411fe12c5755a42686e48a35a&timestamp=1462849771&nonce=16856699
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 309 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvk8PJWnW3_B9uJjihxDBzEM' LIMIT 1   [ RunTime:0.0019s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`) VALUES ('o97bDvk8PJWnW3_B9uJjihxDBzEM','闹闹爸💳⌚️金东表商⌚️','http://wx.qlogo.cn/mmopen/ajNVdqHZLLCFL7FVhg5CRIg4EyuasIzIWrlqd5hicIYqLtOSkTNibheZSic7oibsMdaEwgSFu8UUteric8YugAW2nJg/0','1','1','1462849771','中国浙江金华','1462849772') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 712 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-05-10T13:11:19+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=456059fa0efcaf267f25d6d1c680bcd600e8972a&timestamp=1462857078&nonce=639577227
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 883 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' LIMIT 1   [ RunTime:0.0021s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`,`canalid`,`intro`) VALUES ('o97bDvrvfE-tssRmg6hnmEBQg9h0','Caesar','http://wx.qlogo.cn/mmopen/Q3auHgzwzM5LQaPmnnMAyp9aBGWLlJP5MbH8C5icOV5Ihyvia7nrKlLmOYSVfrnEiaSAr7ps3Ptzsbrl4eh0xIXzuia2pUhic9r8hRicDZ8JDyGuM/0','1','1','1462857078','中国浙江金华','1462857079','6','通过场景id=6关注') [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 713 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `fg_canal` SET `click`=click+1 WHERE `id` = 6 [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-05-10T13:11:37+08:00 ] 58.247.206.140 /wap.php?s=/Weixin/index.html&signature=93ba10b088ee8bd5ac1b1cb8bc6ac4902ae725f1&timestamp=1462857096&nonce=1255066787
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001761s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2016-05-10T13:12:45+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=f1ece2ff777fb5fa08c0844c7b910856de5e350d&timestamp=1462857164&nonce=1216144803
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001428s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_canal` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `fg_canal` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '朱伟民' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` LIKE '%朱伟民%' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-05-10T13:13:47+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=5338a5dba2ad69468842026b760b938650363bfd&timestamp=1462857226&nonce=162350371
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001159s ]
+
+[ 2016-05-10T13:13:51+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=9f467e39f997a61b7aa7e3d2a994019449fb3d97&timestamp=1462857231&nonce=1051085384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2016-05-10T13:14:31+08:00 ] 58.247.206.144 /wap.php?s=/Weixin/index.html&signature=36761aff14f86953c82e7cfbdbd67446b16d270b&timestamp=1462857270&nonce=852893356
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-05-10T13:14:31+08:00 ] 122.226.224.254 /wap.php/Fans/myorders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001386s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2016-05-10T13:14:32+08:00 ] 122.226.224.254 /wap.php/Fans/myorders.html?code=031JCGUa0aGWuJ1hIUUa0mFFUa0JCGUV&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WapController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_maintain_order` WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' ORDER BY id desc  [ RunTime:0.0018s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/didi/Application/Wap/Controller/FansController.class.php 第 483 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-05-10T13:14:34+08:00 ] 122.226.224.254 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0020s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2016-05-10T13:23:07+08:00 ] 58.247.206.139 /wap.php?s=/Weixin/index.html&signature=f6768283ed49ff8e6312953c1da1e8bfbe1a4a0b&timestamp=1462857786&nonce=710693909
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-05-10T13:40:16+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=2abd8d4f6bc5b1eea47330aed3a72953d31eb776&timestamp=1462858816&nonce=1962827562
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0026s ]
+SQL: UPDATE `fg_fans` SET `subscribe`='0' WHERE `openid` = 'o97bDvrvfE-tssRmg6hnmEBQg9h0' [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2016-05-10T15:40:48+08:00 ] 58.247.206.151 /wap.php?s=/Weixin/index.html&signature=26aa62ce9d0cee632cda1ff2ae6c1436dc48cbf1&timestamp=1462866047&nonce=230138795
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001569s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0030s ]
+SQL: UPDATE `fg_fans` SET `subscribe`='0' WHERE `openid` = 'o97bDvlbWHDIpvjULCH5980rtnxk' [ RunTime:0.0084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-05-10T16:29:02+08:00 ] 58.247.206.149 /wap.php?s=/Weixin/index.html&signature=f658985724761dee3606266913cca821a733569b&timestamp=1462868941&nonce=1388696449
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-05-10T16:29:04+08:00 ] 101.226.125.109 /wap.php/Fans/myorders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0023s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-05-10T16:29:05+08:00 ] 101.226.125.109 /wap.php/Fans/myorders.html?code=031FBZ5t0jCZcr1TYv6t05M06t0FBZ5w&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0025s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WapController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvnIVlItOErcQmczpLsPV5dk' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvnIVlItOErcQmczpLsPV5dk' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fg_maintain_order` WHERE `openid` = 'o97bDvnIVlItOErcQmczpLsPV5dk' ORDER BY id desc  [ RunTime:0.0027s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/didi/Application/Wap/Controller/FansController.class.php 第 483 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-05-10T16:29:07+08:00 ] 101.226.125.109 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0022s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvnIVlItOErcQmczpLsPV5dk' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvnIVlItOErcQmczpLsPV5dk' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2016-05-10T17:04:26+08:00 ] 58.247.206.153 /wap.php?s=/Weixin/index.html&signature=063abfd82df34acb4f077510be3595ae8868b97c&timestamp=1462871064&nonce=354352716
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 1 /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 309 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 883 行.
+NOTIC: [8] Undefined index: errcode /var/www/didi/ThinkPHP/Library/OT/Wechat/Wechat.class.php 第 919 行.
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WeixinController.class.php 第 266 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' LIMIT 1   [ RunTime:0.0018s ]
+SQL: INSERT INTO `fg_fans` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`subscribe_time`,`address`,`create_time`) VALUES ('o97bDvhqLnEiSEWtl5LogNWbjIZ8','明.com','http://wx.qlogo.cn/mmopen/icFTnRoibgibp8KYECyg0qqc1sxu8TwQrdsd9ia9iaPIjwUR6nIhGkTicmU5k9v6yl6sLVToI2jNIgkErsDm9t1VaDAQ/0','1','1','1462871064','中国浙江金华','1462871065') [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `fg_coupon_config` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_coupon_config` WHERE `actions` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `fg_fans` WHERE `id` = 714 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_reply` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `fg_reply` WHERE `status` = 1 AND `keyword` = '关注时回复' ORDER BY reply_type desc,sort desc,create_time desc LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-05-10T17:04:48+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=68f94cd57be3ed4b8c2c52d56940e240db200ffb&timestamp=1462871087&nonce=1331832231
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001553s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-05-10T17:05:43+08:00 ] 58.247.206.148 /wap.php?s=/Weixin/index.html&signature=e3a40114b4b245f4a88d284ae605a58c1ac5e717&timestamp=1462871142&nonce=1121900123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2016-05-10T17:05:43+08:00 ] 112.17.237.40 /wap.php/Fans/myorders.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0022s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-05-10T17:05:44+08:00 ] 112.17.237.40 /wap.php/Fans/myorders.html?code=0214We1x0Ffxbm12xSZw01E81x04We1m&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WapController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fg_maintain_order` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' ORDER BY id desc  [ RunTime:0.0018s ]
+NOTIC: [2] Invalid argument supplied for foreach() /var/www/didi/Application/Wap/Controller/FansController.class.php 第 483 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000567s ]
+
+[ 2016-05-10T17:05:46+08:00 ] 58.247.206.158 /wap.php?s=/Weixin/index.html&signature=f83f3c732f8ac2472455b3a19963f63ae9ae6f7d&timestamp=1462871146&nonce=294076064
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001155s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-05-10T17:06:06+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=2cb0b07eadde4b27f30210540c42cfa333b8e57c&timestamp=1462871165&nonce=176030332
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-05-10T17:06:06+08:00 ] 112.17.237.40 /wap.php/Maintain/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+NOTIC: [2048] Declaration of Wap\Controller\MaintainController::prepay() should be compatible with Wap\Controller\WapController::prepay($body, $transid, $price) /var/www/didi/Application/Wap/Controller/MaintainController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_product` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 1 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 2 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `fg_maintain_product` WHERE `type` = 3 AND `is_show` = 1 AND `cityid` = 1  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 41 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 42 行.
+NOTIC: [8] Undefined index: type /var/www/didi/Runtime/Cache/Wap/be92367b9dfb9fa5a18377565ae95133.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-05-10T17:06:07+08:00 ] 112.17.237.40 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0032s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvhqLnEiSEWtl5LogNWbjIZ8' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-05-10T18:13:07+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=79c495b03fb4defbf67740669cb134f2c9d4d858&timestamp=1462875186&nonce=1826808881
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-05-10T18:13:20+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=190d7b8cf49f19f1469a49d7d79f2bd0eeaa4013&timestamp=1462875199&nonce=2072238924
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-05-10T18:14:23+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=c0823aaf2f79af2660beac4df8cf053a133ff327&timestamp=1462875262&nonce=1308819647
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0028s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-05-10T18:14:23+08:00 ] 39.188.23.78 /wap.php/Fans/info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0029s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0021s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2016-05-10T18:14:24+08:00 ] 39.188.23.78 /wap.php/Fans/info.html?code=031q6jTT0SrDQR1C0bST0G4eTT0q6jTk&state=base
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0023s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = null LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: unionid /var/www/didi/Application/Wap/Controller/WapController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fg_fans` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_maintain_order` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_maintain_order` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' AND `status` <= 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_mall_order` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_mall_order` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' AND `status` = 0 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_rentbike_order` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_rentbike_order` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' AND `status` = 0 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_repair_order` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_repair_order` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' AND `status` <= 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_charge_order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_charge_order` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' AND `status` = 0 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `fg_fans_coupon` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fg_fans_coupon` WHERE `uid` = 681 AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `fg_fans_bike` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `fg_fans_bike` WHERE `uid` = 681 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-05-10T18:14:25+08:00 ] 39.188.23.78 /wap.php?s=/Location/getmycity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0031s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans_city` [ RunTime:0.0025s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `city` FROM `fg_fans_city` WHERE `openid` = 'o97bDvjd-0oLFIWfwI1xbFaa2l1g' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `fg_city` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `fg_city` WHERE `id` = null LIMIT 1   [ RunTime:0.0039s ]
+
+[ 2016-05-10T18:14:26+08:00 ] 140.207.54.75 /wap.php?s=/Weixin/index.html&signature=e95514cc7932e45089039222a50d08460f4bc4c6&timestamp=1462875265&nonce=117305367
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0027s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-05-10T19:02:07+08:00 ] 58.247.206.154 /wap.php?s=/Weixin/index.html&signature=e957116864782f55fa1303176c814b9bcc4a260f&timestamp=1462878126&nonce=1334668667
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001209s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0029s ]
+SQL: UPDATE `fg_fans` SET `subscribe`='0' WHERE `openid` = 'o97bDvq5_h0RZ10ixAGr1b4043Vg' [ RunTime:0.0026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2016-05-10T20:45:16+08:00 ] 140.207.54.80 /wap.php?s=/Weixin/index.html&signature=25823e1ceb25fd2920d386510372be3791441d05&timestamp=1462884315&nonce=818933543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `fg_config` [ RunTime:0.0026s ]
+SQL: SELECT `type`,`name`,`value` FROM `fg_config` WHERE `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `fg_fans` [ RunTime:0.0031s ]
+SQL: UPDATE `fg_fans` SET `subscribe`='0' WHERE `openid` = 'o97bDvhNikablhPzgZO2hM0ODCI4' [ RunTime:0.0077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+

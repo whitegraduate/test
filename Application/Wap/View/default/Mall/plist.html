@@ -1,0 +1,160 @@
+<extend name="Base/common"/>
+<block name="header">
+</block>
+
+<block name="body">
+    <form action="" method="post">
+        <div class="cont">
+            <div class="hunt">
+                <!--<div class="list list1">-->
+                <!--<dl class="select">-->
+                <!--<dt class="dtt">年限</dt>-->
+                <!--<dd>-->
+                <!--<ul>-->
+                <!--<li><a href="#">1年</a></li>-->
+                <!--<li><a href="#">2年</a></li>-->
+                <!--<li><a href="#">3年</a></li>-->
+                <!--<li><a href="#">5年以上</a></li>-->
+                <!--</ul>-->
+                <!--</dd>-->
+                <!--</dl>-->
+                <!--</div>-->
+                <div class="list list1">
+                    <dl class="select">
+                        <input type="hidden" id="price" name="price" value="{$price}">
+                        <dt class="dtt">
+                            <!--期望价格-->
+                            <empty name="price">
+                                期望价格
+                                <else/>
+                                {$price}
+                            </empty>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">2000以下</a></li>
+                                <li><a href="#">2000~3000</a></li>
+                                <li><a href="#">3000~4000</a></li>
+                                <li><a href="#">4000以上</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <input type="hidden" id="order" name="order" value="{$order}">
+                <!--<div class="pirce" onclick="ascdesc();">价格排序</div>-->
+            </div>
+            <ul class="listing">
+                <!--<li>-->
+                <!--<div class="tup"><img src="images/tup1.jpg" width="100%"></div>-->
+                <!--<div class="wz">-->
+                <!--<p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>-->
+                <!--<h3><em>￥2956</em>/辆</h3>-->
+                <!--<span>-->
+                <!--<div class="tb1"></div>-->
+                <!--1252</span> </div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="tup"><img src="images/tup1.jpg" width="100%"></div>-->
+                <!--<div class="wz">-->
+                <!--<p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>-->
+                <!--<h3><em>￥2956</em>/辆</h3>-->
+                <!--<span>-->
+                <!--<div class="tb1"></div>-->
+                <!--1252</span> </div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="tup"><img src="images/tup1.jpg" width="100%"></div>-->
+                <!--<div class="wz">-->
+                <!--<p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>-->
+                <!--<h3><em>￥2956</em>/辆</h3>-->
+                <!--<span>-->
+                <!--<div class="tb1"></div>-->
+                <!--1252</span> </div>-->
+                <!--</li>-->
+
+                <volist name="list" id="vo">
+                    <!--{$vo.id}:{$vo.name}<br/>-->
+                    <li>
+                        <!--{$vo.title}-->
+                        <a href="{:U('detail',array('id'=>$vo['id']))}">
+                            <div class="tup"><img src="{$vo.pic}" width="100%"></div>
+                        </a>
+
+                        <div class="wz">
+                            <p>{$vo.title}</p>
+
+                            <h3><em>￥{$vo.member_price}</em>/辆</h3>
+        <span>
+        <div class="tb1"></div>
+        1252</span></div>
+                    </li>
+
+                </volist>
+
+
+            </ul>
+            <div class="more">+ 关注店铺 获取更多门店相关信息 +</div>
+        </div>
+    </form>
+</block>
+
+<block name="side"></block>
+<block name="script">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
+            $(".select").each(function () {
+                var s = $(this);
+                var z = parseInt(s.css("z-index"));
+                var dt = $(this).children("dt");
+                var dd = $(this).children("dd");
+                var hd = $(this).children("input");
+                var _show = function () {
+                    dd.slideDown(200);
+                    dt.addClass("cur");
+                    s.css("z-index", z + 1);
+                };   //展开效果
+                var _hide = function () {
+                    dd.slideUp(200);
+                    dt.removeClass("cur");
+                    s.css("z-index", z);
+                };    //关闭效果
+                dt.click(function () {
+                    dd.is(":hidden") ? _show() : _hide();
+                });
+                dd.find("a").click(function () {
+                    dt.html($(this).html());
+                    hd.val($(this).html());
+                    goto();
+                    _hide();
+                });     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+                $("body").click(function (i) {
+                    !$(i.target).parents(".select").first().is(s) ? _hide() : "";
+                });
+            })
+
+            $('label').click(function () {
+                var radioId = $(this).attr('name');
+                $('label').removeAttr('class') && $(this).attr('class', 'checked');
+                $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+            });
+
+        });
+
+        function fsubmit() {
+            document.forms[0].submit();
+        }
+
+        function goto() {
+            var price = $("#price").val();
+            var color = $("#color").val();
+            var url = "/index.php?s=/Wap/Mall/plist";
+            url += "/price/" + price + "/color/" + color;
+            window.location.href = url;
+        }
+
+        function ascdesc() {
+
+        }
+    </script>
+</block>

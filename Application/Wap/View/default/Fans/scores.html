@@ -1,0 +1,43 @@
+
+<extend name="Base/common_my" />
+<block name="header">
+</block>
+
+<block name="body">
+
+<div class="xinyong">
+       <div class="xinquan">
+          <div class="xinji">积分</div>
+          <div class="xinshu">{$fans.score}</div>
+       </div>
+       <div class="xinan">
+            <div class="anxin"><a href="{:U('Index/exchange')}">积分商城</a></div>
+            <div class="anxin"><a href="#">兑换记录</a></div>
+            <div class="clearflx"></div>
+       </div>
+
+       <div class="xinxian"><div class="mingxi">积分明细</div></div>
+       <volist id="log" name="logs">
+       <div class="yongtu">
+           <div class="yongkuan">
+               {$log.intro}<p>{$log.createtime|date="Y-m-d H:i:s",###}</p>
+           </div>
+           <div class="yongfen"><if condition="$log['log_type'] eq 1">+<else/>-</if>{$log.score}</div>
+           <div class="clearflx"></div>
+       </div>
+       </volist> 
+</div>
+
+ 
+</block>
+
+<block name="side"> </block>
+<block name="script">
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".topleft").click(function(){
+			top.window.location = "{:U('Fans/info')}";
+		});
+	})
+	</script>
+</block>

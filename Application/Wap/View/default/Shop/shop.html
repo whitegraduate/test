@@ -1,0 +1,232 @@
+
+<extend name="Base/common" />
+<block name="header">
+  
+<link rel="stylesheet" type="text/css" href="__CSS__/ll.css" />
+  
+</block>
+
+<block name="body">
+<div class="dian"><img src="{$shop.picture1}" width="100%" /></div>
+     <div class="jiashao">
+       <div class="taitou">
+            <div class="xingji">星级：<img src="__IMG__/xing{$shop.star}.png" height="16" /></div>
+            <div class="dingdan">订单数：{$shop.orders}单</div>
+            <div class="clearflx"></div>
+         </div>
+         <div class="dianhua">电话：<if condition="$shop.tel neq ''">{$shop.tel}<else/>{$shop.mobile}</if></div>
+         <div class="dizhi">地址：{$shop.address}</div>
+         
+         
+     </div>
+     <div class="anhui" style="display:none;">
+          <ul>
+              <li>
+                 <div class="antu1"></div>
+                 <div class="anzi">我要维修</div>
+              </li>
+              <li>
+                 <div class="antu2"></div>
+                 <div class="anzi">我要保养</div>
+              </li>
+              <li>
+                 <div class="antu3"></div>
+                 <div class="anzi">我要租车</div>
+              </li>
+              <li>
+                 <div class="antu4"></div>
+                 <div class="anzi">精选产品</div>
+              </li>
+          </ul>
+     </div>
+     <if condition="$shop.shop_type eq 1">
+     <div class="module">
+        <ul>
+           <li id="liRepair"><a href="#">
+                 <div class="yuan5">
+                     <div class="yuantu5"></div>
+                 </div>
+                 <div class="yuanzi">维修</div>
+                 </a>
+           </li>
+           <li id="liMaintain"><a href="#">
+                 <div class="yuan3">
+                     <div class="yuantu3"></div>
+                 </div>
+                 <div class="yuanzi">保养</div>
+                 </a>
+           </li>
+           <li id="liRent"><a href="#">
+                 <div class="yuan2">
+                     <div class="yuantu2"></div>
+                 </div>
+                 <div class="yuanzi">租车</div>
+                 </a>
+           </li>
+           
+           <li id="liMall"><a href="#">
+                 <div class="yuan4">
+                     <div class="yuantu4"></div>
+                 </div>
+                 <div class="yuanzi">精品</div>
+                 </a>
+           </li>
+           <div class="clearflx"></div>
+           <div id="divRoute" class="ann">去门店</div>
+        </ul>
+     </div> 
+     <else/>
+      <div class="module">
+        <ul>
+        	<div id="divHelp" class="ann">求助</div>
+        </ul>
+     </div>
+     </if>
+     
+</block>
+
+<block name="side"> </block>
+<block name="script"> 
+     <script>
+     $(document).ready(function(){
+    	 $("#liRepair").click(function(){
+    		 top.location.href = "{:U('Repair/index')}";
+    	 });
+    	 
+    	 $("#liMaintain").click(function(){
+    		 top.location.href = "{:U('Maintain/index')}";
+    	 });
+    	 
+    	 $("#liRent").click(function(){
+    		 top.location.href = "{:U('Rent/show',array('sid'=>$shop['id']))}";
+    	 });
+    	 
+    	 $("#liMall").click(function(){
+    		 top.location.href = "{:U('Mall/index')}";
+    	 });
+    	 
+    	 $("#divRoute").click(function(){
+    		 top.location.href = "{:U('Index/route',array('code'=>'MD','id'=>$shop['id']))}";
+    	 });
+    	 
+    	 $("#divHelp").click(function(){
+    		 layer.open({
+    			 type:1,
+    			 content:
+    			    '<div class="list">'+
+    			      '<div class="tb1"></div>'+
+    			      '<div class="timo">车辆症状：</div>'+
+    			      '<dl id="selProblem"  class="select">'+
+    			        '<dt></dt>'+
+    			        '<dd>'+
+    			          '<ul>'+
+    			            '<li><a href="#">轮胎漏气</a></li>'+
+    			            '<li><a href="#">碰撞损坏</a></li>'+
+    			            '<li><a href="#">刹车故障</a></li>'+
+    			            '<li><a href="#">里程跑不远</a></li>'+
+    			            '<li><a href="#">更换电池</a></li>'+
+    			            '<li><a href="#">车有异响</a></li>'+
+    			            '<li><a href="#">车灯不亮</a></li>'+
+    			            '<li><a href="#">灯亮不走</a></li>'+
+    			            '<li><a href="#">其他故障</a></li>'+
+    			          '</ul>'+
+    			        '</dd>'+
+    			      '</dl>'+
+    			    '</div>'+
+    			    '<div class="list">'+
+    			      '<div class="tb4"></div>'+
+    			      '<div class="timo">手机号码：</div>'+
+    			      '<input type="tel" id="mobile" style="margin:0" name="mobile" class="input_box" placeholder=""/>'+
+    			    '</div>'+
+    			    
+    			    '<div class="ann" id="divSubmit">提交</div>'+
+    			    
+    				'<input type="hidden" name="problem" id="problem" value="" />'+
+    			    '',
+    			 style:'width:100%;height:200px;border:none;',
+    			 success:function(olayer){
+    				 
+    			 }
+    		 });
+    		 
+    		 $("#selProblem").each(function(){
+    		  		var s=$(this);
+    				var z=parseInt(s.css("z-index"));
+    				var dt=$(this).children("dt");
+    				var dd=$(this).children("dd");
+    				var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+    				var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+    				dt.click(function(){dd.is(":hidden")?_show():_hide();});
+    				dd.find("a").click(function(){dt.html($(this).html());$("#problem").val($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+    				$("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
+    			});
+    		 
+    		 $("#divSubmit").click(function(){
+    			 
+    			 if('' == $("#problem").val())
+   				{
+   					galert('请选择车辆症状');
+   					return;
+   				}
+
+   				if('' == $("#mobile").val())
+   				{
+ 					galert('请输入您的手机号码');
+   					return;
+   				}
+   				else if(!validatemobile($("#mobile").val()))
+   				{
+ 					galert('请输入正确的手机号码');
+ 					return;
+   				}
+    			 
+    			 $.ajax({
+     		        type: 'POST',
+     		        dataType: 'json',
+     		        async: false,
+     		        url: "{:C('SITE_URL')}/wap.php/Shop/help/from/x",
+     		        data: {
+     		            sid: "{:$_GET['sid']}",
+     		            problem:$("#problem").val(),
+     		            mobile:$("#mobile").val()
+     		        },
+     		        success: function(data){
+     		            //galert(data);  
+     		        	layer.closeAll();
+     		                if (data.flag == 1) {
+     		                	galert('提交成功,服务商稍候会联系您！');
+     		                }  
+     		                else
+     		                    galert('提交失败');
+     		           
+     		        },
+     		        error: function(){
+     		            galert('系统繁忙！');
+     		        }
+     		    });
+    		 });
+    	 });
+    	 
+    	 localStorage.shopid = "{$shop.id}";
+    	 localStorage.shopname = "{$shop.name}";
+     });
+
+     function validatemobile(mobile)
+     {
+         if(mobile.length!=11)
+         {
+             return false;
+         }
+         
+         var myreg = /^0?1[3|4|5|8][0-9]\d{8}$/;
+          
+         if(!myreg.exec(mobile))
+         {
+             return false;
+         }
+         
+         
+         return true;
+     }
+     </script>
+</block>

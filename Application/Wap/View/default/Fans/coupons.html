@@ -1,0 +1,199 @@
+
+<extend name="Base/common_my" />
+<block name="header">
+</block>
+
+<block name="body"> 
+
+<div class="geren" style="margin-top:0px;">
+  
+  <ul class="list3" id="myTab" role="tabpanel" style="margin-top:0px;">
+    <li <if condition="$_GET['s'] eq ''"> class="active"</if>><a href="{:U('Fans/coupons')}" data-toggle="tabpanel">全部优惠券</a></li>
+    
+        <volist name="Think.config.COUPON_STATUS" id="type">
+        <li <if condition="$_GET['s'] eq $key">class="active"</if>><a href="{:U('Fans/coupons',array('s'=>$key))}" data-toggle="tabpanel">{$type}</a></li>
+		</volist>
+  </ul>
+  <div  id="myTabContent" class="tab-content">
+    <ul role="tabpanel"  class="tab-pane active order" id="profile1">
+      <div class="container-fluid jianju">
+      <volist id="list" name="lstCoupon">
+        <div class="quan">
+          <div class="ceng"> 
+          <if condition="$list.status eq 1">
+          <if condition="$list.service_type eq 1">
+          <img src="__IMG__/bj1.png" width="100%" />
+          <elseif condition="$list.service_type eq 2" />
+          <img src="__IMG__/bj2.png" width="100%" />
+          <elseif condition="$list.service_type eq 3" />
+          <img src="__IMG__/bj3.png" width="100%" />
+          <elseif condition="$list.service_type eq 4" />
+          <img src="__IMG__/bj4.png" width="100%" />
+          <else />
+          <img src="__IMG__/bj3.png" width="100%" />
+          </if>
+          <else/>
+          <img src="__IMG__/bj5.png" width="100%" />
+          </if>
+            <div class="ceng_tu">
+              <div class="tuer">
+              	<if condition="$list.service_type eq 1">
+              	<img src="__IMG__/ico_wx.jpg" width="100%" />
+          		<elseif condition="$list.service_type eq 2" />
+              	<img src="__IMG__/ico_by.jpg" width="100%" />
+          		<elseif condition="$list.service_type eq 3" />
+              	<img src="__IMG__/ico_cd.jpg" width="100%" />
+          		<elseif condition="$list.service_type eq 4" />
+              	<img src="__IMG__/ico_zc.jpg" width="100%" />
+          		<elseif condition="$list.service_type eq 5" />
+              	<img src="__IMG__/ico_xj.jpg" width="100%" />
+              	 <else />
+              	<img src="__IMG__/ico_by.jpg" width="100%" />
+              	 </if>
+              </div>
+              <div class="tuzi">
+                 <p><em>{$list.status|get_coupon_status}</em></p>
+                 <p>{$list.cname}</p>
+                 <p style="font-size:12px;">卡券号：{$list.code}</p>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：{$list.end_time|date="Y-m-d",###}</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        </volist>
+      </div>
+    </ul>
+    <ul role="tabpanel"  class="tab-pane order" id="profile2">
+      <div class="container-fluid jianju">
+        <div class="quan">
+          <div class="ceng"> <img src="__IMG__/bj3.png" width="100%" />
+            <div class="ceng_tu">
+              <div class="tuer"><img src="__IMG__/tou.jpg" width="100%" /></div>
+              <div class="tuzi">
+                 <p><em>已过期</em></p>
+                 <p>北京首星美电影院星美电星美电</p>
+                 <span>卡券号：kfhg5254456654521d</span>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：2015.01.05</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="quan">
+          <div class="ceng"> <img src="__IMG__/bj4.png" width="100%" />
+            <div class="ceng_tu">
+              <div class="tuer"><img src="__IMG__/tou.jpg" width="100%" /></div>
+               <div class="tuzi">
+                 <p><em>已过期</em></p>
+                 <p>北京首星美电影院星美电星美电</p>
+                 <span>卡券号：kfhg5254456654521d</span>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：2015.01.05</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <ul role="tabpanel"  class="tab-pane order" id="profile2">
+      <div class="container-fluid jianju">
+        <div class="quan">
+          <div class="ceng"> <img src="__IMG__/bj5.png" width="100%" />
+            <div class="ceng_tu">
+              <div class="tuer"><img src="__IMG__/tou.jpg" width="100%" /></div>
+              <div class="tuzi">
+                 <p><em>已过期</em></p>
+                 <p>北京首星美电影院星美电星美电</p>
+                 <span>卡券号：kfhg5254456654521d</span>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：2015.01.05</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="quan">
+          <div class="ceng"> <img src="__IMG__/bj5.png" width="100%" />
+            <div class="ceng_tu">
+              <div class="tuer"><img src="__IMG__/tou.jpg" width="100%" /></div>
+               <div class="tuzi">
+                 <p><em>已过期</em></p>
+                 <p>北京首星美电影院星美电星美电</p>
+                 <span>卡券号：kfhg5254456654521d</span>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：2015.01.05</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <ul role="tabpanel"  class="tab-pane order" id="profile3">
+      <div class="container-fluid jianju">
+        <div class="quan">
+          <div class="ceng"> <img src="__IMG__/bj5.png" width="100%" />
+            <div class="ceng_tu">
+              <div class="tuer"><img src="__IMG__/tou.jpg" width="100%" /></div>
+              <div class="tuzi">
+                 <p><em>已过期</em></p>
+                 <p>北京首星美电影院星美电星美电</p>
+                 <span>卡券号：kfhg5254456654521d</span>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：2015.01.05</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="quan">
+          <div class="ceng"> <img src="__IMG__/bj5.png" width="100%" />
+            <div class="ceng_tu">
+              <div class="tuer"><img src="__IMG__/tou.jpg" width="100%" /></div>
+               <div class="tuzi">
+                 <p><em>已过期</em></p>
+                 <p>北京首星美电影院星美电星美电</p>
+                 <span>卡券号：kfhg5254456654521d</span>
+              </div>
+            </div>
+          </div>
+          <div class="cengdi">
+            <div class="ceng_zuo"></div>
+            <div class="ceng_time">有效期至：2015.01.05</div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div> 
+
+</block>
+
+<block name="side"> </block>
+<block name="script">
+ 
+	<script type="text/javascript">
+	$(document).ready(function(){
+		 
+		
+		$("body").attr('style','background:#f1f1ef;');
+	});
+	</script>
+</block>

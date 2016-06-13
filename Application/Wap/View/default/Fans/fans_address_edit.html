@@ -1,0 +1,38 @@
+<extend name="Base/common" />
+<block name="header">  
+</block>
+
+<block name="body"> 
+ <form id="form1" method="post" action="{:U()}">
+<div class="cont">
+   <ul class="add1">
+       <li>
+         <span>收货姓名：</span>
+         <input type="text" name="realname" id="realname" value="{$addr.realname}" class="kuang" placeholder="请输入真实姓名">
+       </li>
+        <li>
+         <span>手机号码：</span>
+         <input type="tel" name="mobile" id="mobile" value="{$addr.mobile}" class="kuang" placeholder="请输入手机号码">
+       </li>
+       <li>
+         <span>收货地址：</span>
+         <input type="text" name="address" id="address" value="{$addr.address}" class="kuang" >
+       </li>
+   </ul>
+</div>
+<div class="pj_foot">
+  <a href="#"><div class="pj_ann">保存</div></a>
+</div>
+</form>
+</block>
+
+<block name="side"> </block>
+<block name="script"> 
+<script>
+$(document).ready(function(){
+	$('.pj_ann').click(function(){
+		$("#form1").submit();
+	});	
+});
+</script>
+</block>

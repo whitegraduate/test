@@ -1,0 +1,651 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <!--绿源软件部插入开始1-->
+    <script src="http://ll-service.luyuan.cn/ajax/USER/getlyuser4js.aspx?openid={$order.openid}" type="text/javascript"></script>
+    <!--绿源软件部插入结束1-->
+    <div class="main-title">
+        <h2>维修方案与报价</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        <div class="form-item">
+            <label class="item-label">订单号</label>
+            <div class="controls">
+                {$order.transid}　　　<span style="font-weight: bold" id="lyfanstps"></span>
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="controls">
+                <label class="radio">
+                    <input type="radio" name="traffic" value="1" checked>到店
+                </label>
+                <label class="radio">
+                    <input type="radio" name="traffic" value="0">上门
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="item-label">车辆问题</label>
+            <div class="controls">
+                {$order.problem}
+                <select id="problem" name="problem">
+                    <option value="轮胎漏气">轮胎漏气</option>
+                    <option value="碰撞损坏">碰撞损坏</option>
+                    <option value="刹车故障">刹车故障</option>
+                    <option value="里程跑不远">里程跑不远</option>
+                    <option value="更换电池">更换电池</option>
+                    <option value="车有异响">车有异响</option>
+                    <option value="车灯不亮">车灯不亮</option>
+                    <option value="灯亮不走">灯亮不走</option>
+                    <option value="其他故障">其他故障</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label class="item-label">是否更换配件</label>
+            <div class="controls">
+                <label class="radio">
+                    <input type="radio" name="parts_change" value="1" checked>是
+                </label>
+                <label class="radio">
+                    <input type="radio" name="parts_change" value="0">否
+                </label>
+            </div>
+        </div>
+        <div class="divpartschange">
+            <div class="form-item">
+
+                <div class="controls">
+                    <span class="item-label" style="display:inline;">需要更换的配件（在保）<span class="check-tips"></span></span>
+                    <select id="parts_type_in" name="type" class="parts_type" >
+                        <option>请选择</option>
+                        <volist name="Think.config.PARTS_TYPE" id="type">
+                            <option value="{$key}">{$type}</option>
+                        </volist>
+                    </select>
+
+
+                    <select id="repair_parts_type_in" name="type" class="parts_type" >
+                        <option>请选择</option>
+                        <volist name="Think.config.REPAIR_PARTS_TYPE" id="type">
+                            <option value="{$key}">{$type}</option>
+                        </volist>
+                    </select>
+
+                    <select id="sel_parts_in" name="type" class="parts_type" >
+                        <option >请选择</option>
+                    </select>
+
+                    <select id="sel_num_in" name="type" class="parts_type" >
+                        <option value="1">1个</option>
+                        <option value="2">2个</option>
+                        <option value="3">3个</option>
+                        <option value="4">4个</option>
+                        <option value="5">5个</option>
+                    </select>
+
+                    <a class="btn" id="btn_in_add">添加</a>
+                </div>
+                <div class="controls" id="selectedPartsIn">
+
+                </div>
+            </div>
+
+            <div class="form-item">
+
+                <div class="controls">
+                    <label class="item-label" style="display: inline;">需要更换的配件（过保）<span class="check-tips"></span></label>
+                    <select id="parts_type_out" name="type" class="parts_type" >
+                        <option>请选择</option>
+                        <volist name="Think.config.PARTS_TYPE" id="type">
+                            <option value="{$key}">{$type}</option>
+                        </volist>
+                    </select>
+
+                    <select id="repair_parts_type_out" name="type" class="parts_type" >
+                        <option>请选择</option>
+                        <volist name="Think.config.REPAIR_PARTS_TYPE" id="type">
+                            <option value="{$key}">{$type}</option>
+                        </volist>
+                    </select>
+
+                    <select id="sel_parts_out" name="type" class="parts_type" >
+                        <option >请选择</option>
+                    </select>
+
+                    <select id="sel_num_out" name="type" class="parts_type" >
+                        <option value="1">1个</option>
+                        <option value="2">2个</option>
+                        <option value="3">3个</option>
+                        <option value="4">4个</option>
+                        <option value="5">5个</option>
+                    </select>
+
+                    <a class="btn" id="btn_out_add">添加</a>
+                </div>
+                <div class="controls" id="selectedPartsOut">
+
+                </div>
+            </div>
+
+            <div class="form-item" style="display:none;">
+                <label class="item-label">需要更换的配件（在保）</label>
+                <div class="controls">
+                    <volist id="list" name="lstParts">
+                        <label class="checkbox">
+                            <input type="checkbox" name="parts_free[]" value="{$list.id}" data="{$list.price}" info="{$list.name}( {$list.price}元 )">{$list.name}( {$list.price}元 )
+                        </label>
+                    </volist>
+                </div>
+            </div>
+            <div class="form-item" style="display:none;">
+                <label class="item-label">需要更换的配件（过保）</label>
+                <div class="controls">
+                    <volist id="list" name="lstParts">
+                        <label class="checkbox">
+                            <input type="checkbox" name="parts[]" value="{$list.id}" data="{$list.price}" info="{$list.name}( {$list.price}元 )">{$list.name}( {$list.price}元 )
+                        </label>
+                    </volist>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label class="item-label">其他配件</label>
+                <div class="controls">
+                    <input type="text" class="text input-large" id="parts_other" name="parts_other" value="{$info.parts_other}">
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="item-label">其他配件价格</label>
+                <div class="controls">
+                    <input type="text" class="text input-small" id="other_price" name="other_price" value="{$info.other_price|default=0}"> 元
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-item">
+            <label class="item-label">工时</label>
+            <div class="controls">
+                <input type="text" disabled class="text input-small" id="work_hour" name="work_hour" value="{$info.price|default=0}"> 工时
+            </div>
+        </div>
+        
+        <if condition="$order.order_type eq 3">
+            <div class="form-item">
+                <!--<label class="item-label">上门费({$order.distance}米)</label>-->
+                <label class="item-label">上门费</label>
+                <div class="controls">
+                    <!--<input type="text" class="text input-small" id="ride_price" name="ride_price" value="{$order.ride_price|default=0}"> 元-->
+                    <input type="text" class="text input-small" id="ride_price" name="ride_price" > 元
+                </div>
+            </div>
+        </if>
+
+        <div class="form-item">
+            <label class="item-label">费用</label>
+            <table class="data-table" style="width: 100%">
+                <thead>
+                <tr>
+                    <th style="width: 40%">类目</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>总价</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                </tbody>
+                <tfoot>
+                <tr></tr>
+                </tfoot>
+            </table>
+
+
+            <div id="d_parts_price" class="controls">
+                配件费：0元
+            </div>
+            <div id="d_other_parts_price" class="controls">
+                其他配件费：0元
+            </div>
+            <div class="form-item">
+                <label class="item-label">工时</label>
+                <div class="controls">
+                    <input type="text" class="text input-small" id="work_hour" name="work_hour" value="{$info.price|default=0}"> 工时
+                </div>
+            </div>
+            <div id="d_work_price" class="controls">
+                工时费：0元
+            </div>
+
+            <div class="visit" style="display: none;">
+                <div id="d_ride_price" class="controls">
+                    上门费：0元
+                </div>
+                <div id="d_dragcar_price" class="controls">
+                    拖车费：<input id="dragcar_price" name="dragcar_price" type="text" value="0"/>元
+                </div>
+                <div id="d_sendcar_price" class="controls">
+                    送车费：<input id="sendcar_price" name="sendcar_price" type="text" value="0"/>元
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label class="item-label">优惠券<span class="check-tips">（现金优惠券）</span></label>
+                <div class="controls">
+                    <select id="selCoupon" name="couponid">
+                        <option value="0" face="0">不使用优惠券</option>
+                        <volist id="cp" name="coupons">
+                            <option value="{$cp.id}" face="{$cp.face}" data-arrive_face="{$cp.arrive_face}" data-reduce_face="{$cp.reduce_face}">{$cp.cname}（{$cp.face}元
+                                <if condition="$cp['arrive_face'] gt 0 ">满{$cp.arrive_face}</if>
+                                <if condition="$cp['reduce_face'] gt 0 ">减免{$cp.reduce_face}</if>
+                                ）</option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div id="total" class="controls">
+                总计：0元
+            </div>
+            <div class="form-item">
+                <label class="item-label">应付</label>
+                <div id="pay" class="controls">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <input type="hidden" name="oid" value="{$order.id|default=''}">
+            <input type="hidden" id="hdnTotal" name="hdnTotal" value="0">
+            <input type="hidden" id="parts_in" name="parts_in" value="">
+            <input type="hidden" id="parts_out" name="parts_out" value="">
+            <input type="hidden" id="work_price" name="work_price" value="0">
+            <input type="hidden" id="parts_price" name="parts_price" value="0">
+            <input type="hidden" id="coupon_price" name="coupon_price" value="0">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        Think.setValue("pid", {$info.pid|default = 0});
+        Think.setValue("problem", "{$order.problem|default = '轮胎漏气'}");
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        var parts_price = 0;
+        var work_price = 0;
+        var other_price = 0;
+        var ride_price = {$order.ride_price};
+        var dragcar_price=0;
+        var sendcar_price=0;
+        var work_hours = 0;
+        var coupon_price = 0;
+        var arrive_face = 0;
+        var reduce_face = 0;
+        var arr_json_out = new Array();
+        var arr_json_in = new Array();
+        $(document).ready(function(){
+            get_total();
+
+            $("#parts_type_in").bind('change',function(){
+                ajax_types($(this).val(),'repair_parts_type_in');
+            });
+
+            $("#parts_type_out").bind('change',function(){
+                ajax_types($(this).val(),'repair_parts_type_out');
+            });
+
+            $("#repair_parts_type_in").bind('change',function(){
+
+                ajax_parts($(this).val(),'sel_parts_in');
+            });
+
+            $("#repair_parts_type_out").bind('change',function(){
+
+                ajax_parts($(this).val(),'sel_parts_out');
+            });
+
+            var pid_out = 0;
+            $("#btn_out_add").click(function(){
+                if($("#sel_parts_out").val() == '请选择' || $("#sel_parts_out").val() == null)
+                {
+                    alert("请选择要更换的部件");
+                    return false;
+                }
+                var json = new Object;
+
+                json.p = $("#sel_parts_out").find("option:selected").text();
+                json.n = $("#sel_num_out").val();
+                json.id = pid_out;
+                json.pid = $("#sel_parts_out").find("option:selected").attr("pid");
+                arr_json_out.push(json);
+
+                var json_str_out = JSON.stringify(arr_json_out);
+
+                $("#parts_out").val(json_str_out);
+                var thisprice = parseFloat($("#sel_parts_out").val()) * parseFloat($("#sel_num_out").val());
+
+                console.log($("#selectedPartsOut").html());
+                console.log($("#sel_parts_out").find("option:selected").text());
+                console.log($("#sel_num_out").find("option:selected").text());
+
+                parts_price += thisprice;
+                get_parts_total();
+                var thishour = parseFloat($("#sel_parts_out").find("option:selected").attr('hour')) * parseFloat($("#sel_num_out").val());
+                work_hours += thishour;
+                get_wh_total();
+                create_order_out("parts_out_"+pid_out,$("#sel_parts_out").find("option:selected").text(),$("#sel_num_out").find("option:selected").text(),$("#sel_parts_out").find("option:selected").val(),pid_out,thisprice,thishour);
+//        		$("#selectedPartsOut").html($("#selectedPartsOut").html() + "<div class=\"parts_out_"+pid_out+"\">" +
+//        				$("#sel_parts_out").find("option:selected").text() + "&nbsp;" +
+//        				$("#sel_num_out").find("option:selected").text() +
+//        				" <a class='del' onclick='del_out("+pid_out+"," + thisprice + ","+thishour+")'>删除</a></div>");
+                pid_out++;
+            });
+
+            var pid_in = 0;
+            $("#btn_in_add").click(function(){
+                if($("#sel_parts_in").val() == '请选择' || $("#sel_parts_in").val() == null)
+                {
+                    alert("请选择要更换的部件");
+                    return false;
+                }
+
+                var json = new Object;
+
+                json.p = $("#sel_parts_in").find("option:selected").text();
+                json.n = $("#sel_num_in").val();
+                json.id = pid_in;
+                json.pid = $("#sel_parts_in").find("option:selected").attr("pid");
+                arr_json_in.push(json);
+                create_order_in("parts_in_"+pid_out,$("#sel_parts_in").find("option:selected").text(),$("#sel_num_in").find("option:selected").text(),$("#sel_parts_in").find("option:selected").val(),pid_in);
+                var json_str_in = JSON.stringify(arr_json_in);
+                $("#parts_in").val(json_str_in);
+
+//        		$("#selectedPartsIn").html($("#selectedPartsIn").html() + "<div class=\"parts_in_"+pid_in+"\">" +
+//        				$("#sel_parts_in").find("option:selected").text() + "&nbsp;" +
+//        				$("#sel_num_in").find("option:selected").text() +
+//        				" <a class='del' onclick='del_in("+pid_in+")'>删除</a></div>");
+                pid_in++;
+            });
+
+            $("#work_hour").bind('keyup',function(){
+                var hour = $(this).val();
+                work_price = 5 * hour;
+                get_total();
+                $("#d_work_price").text("工时费：" +work_price+"元");
+                $("#work_price").val(work_price);
+            });
+
+            $("#ride_price").bind('keyup',function(){
+                ride_price = parseFloat($(this).val());
+                if(isNaN(ride_price))ride_price=0;
+                get_total();
+                $("#d_ride_price").text("上门费：" +ride_price+"元");
+            });
+
+            $("#dragcar_price").bind('keyup',function(){
+                dragcar_price=parseFloat($(this).val());
+                get_total();
+            });
+
+            $("#sendcar_price").on('keyup',function(){
+                sendcar_price=parseFloat($(this).val());
+                get_total();
+            });
+
+            $("#other_price").bind('keyup',function(){
+                if($(this).val() != '' && $(this).val().charAt($(this).val().length - 1) != '.' )
+                {
+                    other_price = parseFloat($(this).val());
+                    //$("#d_other_parts_price").text("其他配件费：" +other_price+"元");
+                    get_parts_total();
+                }
+            });
+
+            $("#selCoupon").change(function(){
+                coupon_price = parseFloat($(this).children('option:selected').attr('face'));
+                arrive_face = parseFloat($(this).children('option:selected').data('arrive_face'));
+                reduce_face = parseFloat($(this).children('option:selected').data('reduce_face'));
+                arrive_face = isNaN(arrive_face)?0:arrive_face;
+                reduce_face = isNaN(reduce_face)?0:reduce_face;
+                get_total();
+            });
+
+            $("input[name='parts[]']").click(function(){
+                var price = 0;
+                var parts_in = '';
+                var parts_out = '';
+                $("input[name='parts[]']").each(function(){
+                    if($(this).prop("checked"))
+                    {
+                        price += parseFloat($(this).attr('data'));
+                        parts_out += $(this).attr('info') + ',';
+                    }
+                });
+
+                $("input[name='parts_free[]']").each(function(){
+                    if($(this).prop("checked"))
+                    {
+                        parts_in += $(this).attr('info') + ',';
+                    }
+                });
+
+                $("#parts_in").val(parts_in);
+                $("#parts_out").val(parts_out);
+
+                parts_price = price;
+                $("#parts_price").val(price);
+                $("#d_parts_price").text("配件费：" +price+"元");
+                get_total();
+            });
+
+            $("input[name='traffic']").change(function(){
+                var t = $(this).val();
+                if(t==1)
+                {
+                    $("div.visit").hide();
+                }
+                else{
+                    $("div.visit").show();
+                }
+
+            });
+
+
+            $("input[name='parts_change']").change(function(){
+                var c = $(this).val();
+                if(c==1)
+                {
+                    $("div.divpartschange").show();
+                }
+                else{
+                    $("div.divpartschange").hide();
+                }
+            });
+
+            if (isweixinuser || productcount > 0){
+                $("#lyfanstps").html("绿源会员");
+            }else{
+                $("option[value='7']").remove();
+            }
+        });
+
+        function create_order_in(id,name,num,price,index)
+        {
+            var rowprice = parseFloat(price)*parseInt(num);
+            var funname = "del_in";
+            var str= '<tr id="'+id+'"><td>'+name+'</td><td>'+price+'</td><td>'+num+'</td><td>'+rowprice+'</td><td><a class="del" onclick="'+funname+'('+index+')">删除</a></td></tr>';
+            $("table.data-table tbody").append(str);
+        }
+
+        function create_order_out(id,name,num,price,index,thisprice,hour)
+        {
+            var rowprice = parseFloat(price)*parseInt(num);
+            var funname = "del_out";
+            var str= '<tr id="'+id+'"><td>'+name+'</td><td>'+price+'</td><td>'+num+'</td><td>'+rowprice+'</td><td><a class="del" onclick="'+funname+'('+index+','+thisprice+','+hour+')">删除</a></td></tr>';
+            $("table.data-table tbody").append(str);
+        }
+
+
+        function ajax_types(type,id)
+        {
+            $.ajax({
+                type: "POST",
+                url: "{:U('Basic/get_repair_parts_types_by_parent')}",
+                dataType: 'json',
+                async: false,
+                data: {type:type},
+                success: function(data){
+                    $("#"+id).empty();
+
+                    $("#"+id).append($("<option>").val(-1).text('请选择'));
+
+                    for(var i=0;i<data.length;i++)
+                    {
+                        var option = $("<option>").val(data[i].id).text(data[i].name);
+
+                        $("#"+id).append(option);
+                    }
+                    if(data.status){
+
+                    }else{
+                    }
+                }
+            });
+        }
+
+        function ajax_parts(type,id)
+        {
+            var shopid = "{$order.shopid|default=0}";
+            $.ajax({
+                type: "POST",
+                url: "{:U('Repair/get_parts_by_repair_type')}",
+                dataType: 'json',
+                async: false,
+                data: {type:type,shopid:shopid},
+                success: function(data){
+                    $("#"+id).empty();
+                    for(var i=0;i<data.length;i++)
+                    {
+                        var option = $("<option>").val(data[i].price).text(data[i].name + "(" + data[i].price + ")").attr('hour',data[i].work_hour).attr('pid',data[i].id);
+
+                        $("#"+id).append(option);
+                    }
+                    if(data.status){
+
+                    }else{
+
+                    }
+                }
+            });
+        }
+
+        function del_out(id,price,hour){
+
+            //$(".parts_out_"+id).slideUp();
+
+            arr_json_out.remove(id);
+            $("#parts_out").val(JSON.stringify(arr_json_out));
+            if(0 < price)
+            {
+                parts_price -= parseFloat(price);
+                get_parts_total();
+            }
+
+            if(0 < hour)
+            {
+                work_hours -= parseFloat(hour);
+                get_wh_total();
+            }
+
+            var trid = "parts_out_"+id;
+            $("table.data-table").find("tr[id='"+trid+"']").remove();
+        }
+
+        function del_in(id){
+
+            //$(".parts_in_"+id).slideUp();
+            arr_json_in.remove(id);
+            $("#parts_in").val(JSON.stringify(arr_json_in));
+
+            var trid = "parts_in_"+id;
+            $("table.data-table").find("tr[id='"+trid+"']").remove();
+        }
+
+        function get_parts_total()
+        {
+            var total = parts_price + other_price;
+
+            $("#parts_price").val(parts_price);
+            $("#other_price").val(other_price);
+            $("#d_parts_price").text("配件费：" +total+"元");
+
+            get_total();
+        }
+
+        function get_wh_total()
+        {
+            $("#work_hour").val(work_hours);
+
+            work_price = 5 * work_hours;
+            get_total();
+            $("#d_work_price").text("工时费：" +work_price+"元");
+            $("#work_price").val(work_price);
+        }
+
+        function get_total()
+        {
+            var total = parts_price + work_price + ride_price + other_price+dragcar_price+sendcar_price;
+            var pay = total;
+
+            //满多少减免多少
+            var totalreduce=0;
+            if(arrive_face!=0)
+            {
+                var bei = total/arrive_face;
+                totalreduce = bei*reduce_face;
+                if(totalreduce>coupon_price)
+                {
+                    totalreduce = coupon_price;
+                }
+            }
+            else{
+                //抵金券
+                totalreduce =coupon_price;
+            }
+
+            if(total >= totalreduce)
+                pay = total - totalreduce;
+            else
+                pay = 0;
+
+            $("#coupon_price").val(totalreduce);
+            $("#total").html("总计：" + total+' 元');
+            $("#pay").html(pay+' 元');
+            $("#hdnTotal").val(total);
+        }
+
+        Array.prototype.remove = function(id) {
+            for(var i=0,n=0;i<this.length;i++)
+            {
+                if(this[i].id != id)
+                {
+                    this[n++] = this[i];
+                }
+            }
+
+            this.length -= 1;
+        };
+    </script>
+</block>

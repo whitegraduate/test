@@ -1,0 +1,147 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta  charset="UTF-8">
+<meta  name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<title>滴啊滴+服务</title>
+</head>
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
+	$(".select").each(function(){
+		var s=$(this);
+		var z=parseInt(s.css("z-index"));
+		var dt=$(this).children("dt");
+		var dd=$(this).children("dd");
+		var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+		var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+		dt.click(function(){dd.is(":hidden")?_show():_hide();});
+		dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+		$("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});
+	})
+})
+$(function() {
+  $('label').click(function(){
+    var radioId = $(this).attr('name');
+    $('label').removeAttr('class') && $(this).attr('class', 'checked');
+    $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+  });
+});
+</script>
+<body>
+<div class="header">
+  <div class="topnav"></div>
+  <div class="logo">精品</div>
+  <a href="#"><div class="per"></div></a>
+</div>
+ 
+<div class="cont">
+    <ul class="filter" id="myTab" role="tabpanel">
+       <li class="active" style="width:46%;"><a href="#home" data-toggle="tabpanel">新车</a></li>
+       <li style="width:46%;"><a href="#profile" data-toggle="tabpanel">附件</a></li>
+    </ul>
+    
+   <div id="myTabContent" class="tab-content">
+    <ul role="tabpanel"  class="tab-pane active listing"  id="home">
+        <div class="huida">
+             <div class="wenda2">以下所有电动车品牌均为一流品牌。</div>
+             <div class="huiwen">你喜欢的款式？</div>
+             
+             <div class="wenda">
+              <div class="wenza">
+             <input type="radio" id="nba" checked="checked" name="wenti" value="nba" class="fudong">
+      <label name="nba" class="fudong checked" for="nba">经典</label>
+      <input type="radio" id="cba" name="wenti" value="cba" class="fudong">
+      <label name="cba" for="cba" class="fudong2">时尚</label>
+      <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+             <div class="huiwen">充满电后，你期望能行驶的距离？</div>
+             <div class="wenda">
+               <div class="wenza">
+             <input type="radio" id="nba" checked="checked" name="sport1" value="nba" class="fudong">
+      <label name="nba" class="fudong checked" for="nba">50公里以下</label>
+      <input type="radio" id="cba" name="sport1" value="cba" class="fudong">
+      <label name="cba" for="cba" class="fudong2">50公里以上</label>
+<div class="clearfix"></div>
+</div>
+ <div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+<div class="huiwen">你期望的购车价格？</div>
+             <div class="wenda">
+               <div class="wenza">
+             <input type="radio" id="nba" checked="checked" name="sport1" value="nba" class="fudong">
+      <label name="nba" class="fudong checked" for="nba">2000-2999元</label>
+      <input type="radio" id="cba" name="sport1" value="cba" class="fudong">
+      <label name="cba" for="cba" class="fudong2">3000-3999元</label>
+<div class="clearfix"></div>
+</div>
+ <div class="clearfix"></div>
+ <div class="andji"><input type="button" value="搜索" class="chongdian"></div>
+</div>
+</div>
+        </div>
+        <li>
+          <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+          <div class="wz">
+             <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+             <h3><em>￥2956</em>/辆</h3>
+             <span><div class="tb1"></div>1252</span>
+          </div>
+       </li>
+        <li>
+          <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+          <div class="wz">
+             <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+             <h3><em>￥2956</em>/辆</h3>
+             <span><div class="tb1"></div>1252</span>
+          </div>
+       </li>
+        
+        
+    </ul>
+    <ul role="tabpanel"  class="tab-pane listing" id="profile">
+    <div class="screen">
+       <a class="a_up" href="#">默认</a>  
+       <div class="xian"></div>               
+       <a href="#">最新</a> 
+       <div class="xian"></div>                  
+       <a href="#">销量</a>
+       <div class="xian"></div>
+       <a href="#">价格</a>
+    </div>
+        <li>
+          <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+          <div class="wz">
+             <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+             <h3><em>￥2956</em>/辆</h3>
+             <span><div class="tb1"></div>1252</span>
+          </div>
+       </li>
+        <li>
+          <div class="tup"><img src="images/tup1.jpg" width="100%"></div>
+          <div class="wz">
+             <p>绿源电动车 踏板车电车 64V14AH电瓶车 超值特价</p>
+             <h3><em>￥2956</em>/辆</h3>
+             <span><div class="tb1"></div>1252</span>
+          </div>
+       </li>
+       <div class="clearfix"></div>
+        <div class="more" style="display:none;">+ 关注店铺  获取更多门店相关信息 +</div>
+    </ul>
+    
+    </div>
+</div>
+<script>
+$('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+</script>
+</body>
+</html>

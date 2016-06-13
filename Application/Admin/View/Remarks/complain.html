@@ -1,0 +1,64 @@
+﻿<style>
+    .re-main{margin: 10px; min-height: 200px; width: 350px;}
+    .re-list{line-height: 20px;}
+    .re-list li{ margin-bottom: 10px;}
+    .re-input{margin-top: 25px;}
+    .re-text{ width: 300px; height: 100px;}
+</style>
+<div class="re-main">
+    <div class="re-input">
+        <form >
+        <div>
+        	<ul>
+        		<li>投诉订单：{$complain.transid}</li>
+        		<li>投诉时间：{$complain.create_time|date='Y-m-d H:i',###}</li>
+        		<li>投诉内容：{$complain.memo}</li>
+        		<li>所属门店：{$complain.shopid|get_shop_id}</li>
+        		<li>投诉人：{$complain.openid|get_fansname_openid}</li>
+        		<li>投诉状态：{$complain.status|get_complain_status}</li>
+        		<li>联系方式：{$complain.mobile}</li>
+        		<if condition="$complain.status eq 1">
+        		<li>处理方式：</li>
+        		<li>
+        			<input type="radio" name="status" value="4" checked="checked" />完成投诉（不改变订单状态）
+        			<input type="radio" name="status" value="2" />取消订单（不退款）
+        			<input type="radio" name="status" value="3" />取消订单（退款）
+        		</li>
+        		<else/>
+        		<li>处理人：{$complain.op_user}</li>
+        		<li>处理时间：{$complain.finish_time|date='Y-m-d H:i',###}</li>
+        		<li>处理备注：{$complain.op_memo}</li>
+        		</if>
+        	</ul>
+        </div>
+        <if condition="$complain.status eq 1">
+        	<textarea class="re-text"></textarea>
+            <input type="button" class="btn" value="提交" id="re-submit">
+        </if>
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("#re-submit").click(function(){
+        	
+        	if('' == $('.re-text').val())
+        	{
+        		layer.msg("请填写处理备注",{time:1000});
+        		return;
+        	}
+
+        	var status = $('input:radio[name=status]:checked').val();
+
+            $.post("/admin.php?s=/Pay/do_complain/id/{$complain.id}.html",{"status":status,"memo":$(".re-text").val()},function(msg){
+                if(msg.status==1){
+                    layer.msg("处理成功",{time:1000});
+                    layer.closeAll('page');
+                }
+                else{
+                    layer.msg("处理失败:"+msg.info,{time:1000});
+                }
+            },"json");
+        });
+    })
+</script>

@@ -1,0 +1,82 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="main-title">
+        <h2>新增车款</h2>
+    </div>
+    <form action="{:U()}" method="post" class="form-horizontal">
+        {:hook('province_city_area')}
+        <div class="form-item">
+            <label class="item-label">类型<span class="check-tips"></span></label>
+            <div class="controls">
+                <select id="parts_type" name="bigtype" class="parts_type" >
+                    <option value="-1">请选择</option>
+                    <volist name="Think.config.PARTS_TYPE" id="type">
+                        <option value="{$key}">{$type}</option>
+                    </volist>
+                </select>
+
+                <select id="repair_parts_type" name="type" class="parts_type" >
+                    <!--<volist name="repair_parts_type" id="type">-->
+                        <!--<option value="{$type.id}">{$type.name}</option>-->
+                    <!--</volist>-->
+                </select>
+
+                <select id="partid" name="partid" class="parts_type" >
+                    <!--<volist name="repair_parts_type" id="type">-->
+                    <!--<option value="{$type.id}">{$type.name}</option>-->
+                    <!--</volist>-->
+                </select>
+
+            </div>
+        </div>
+
+        <div class="form-item">
+            <button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+            <button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+        </div>
+    </form>
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        //Think.setValue("shopid", {$info.shopid|default = 0});
+        //导航高亮
+        highlight_subnav('{:U('index')}');
+
+        $(document).ready(function(){
+            $("#parts_type").bind('change',function(){
+                ajax_types($(this).val(),'repair_parts_type');
+            });
+
+            $("#repair_parts_type").bind('change',function(){
+                ajax_types($(this).val(),'partid');
+            });
+        });
+
+        function ajax_types(type,id)
+        {
+            $.ajax({
+                type: "POST",
+                url: "{:U('Basic/get_repair_parts_types_by_parent')}",
+                dataType: 'json',
+                async: false,
+                data: {type:type},
+                success: function(data){
+                    $("#"+id).empty();
+                    for(var i=0;i<data.length;i++)
+                    {
+                        var option = $("<option>").val(data[i].id).text(data[i].name);
+
+                        $("#"+id).append(option);
+                    }
+                    if(data.status){
+
+                    }else{
+
+                    }
+                }
+            });
+        }
+    </script>
+</block>
