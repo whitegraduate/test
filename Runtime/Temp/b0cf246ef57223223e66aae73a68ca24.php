@@ -1,3 +1,0 @@
-<?php
-//000000000300a:26:{s:2:"id";s:1:"9";s:3:"uid";s:1:"0";s:9:"carrierid";s:1:"1";s:4:"name";s:15:"金大南苑店";s:6:"cityid";N;s:6:"areaid";N;s:8:"picture1";N;s:8:"picture2";N;s:8:"picture3";N;s:8:"latitude";s:9:"29.092369";s:9:"longitude";s:10:"119.666112";s:3:"tel";s:13:"0579-82828282";s:6:"mobile";s:11:"15888888889";s:7:"address";s:15:"宾虹路300号";s:5:"intro";s:18:"范德萨范德萨";s:6:"shopno";s:4:"F001";s:6:"orders";s:3:"133";s:4:"star";s:1:"5";s:6:"status";s:1:"0";s:6:"openid";N;s:10:"wechatname";N;s:9:"shop_type";s:1:"2";s:6:"s_rent";s:1:"0";s:10:"s_maintain";s:1:"0";s:8:"s_repair";s:1:"0";s:6:"s_mall";s:1:"0";}
-?>

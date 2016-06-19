@@ -1,3 +1,0 @@
-<?php
-//000000000060a:13:{s:2:"id";s:2:"20";s:7:"keyword";s:15:"关注时回复";s:10:"match_type";s:1:"1";s:10:"reply_type";s:1:"2";s:7:"content";s:0:"";s:5:"title";s:39:"加盟滴滴司机，专项特权不停";s:4:"info";s:39:"加盟滴滴司机，专项特权不停";s:8:"link_url";s:67:"http://www.udache.com/app/mDriverReg/index?channel=7&channelId=5625";s:9:"cover_img";s:45:"/Uploads/Picture/2016-04-24/571c6e1c18d42.png";s:6:"status";s:1:"1";s:13:"trigger_count";s:1:"0";s:4:"sort";s:1:"0";s:11:"create_time";s:10:"1461480997";}
-?>

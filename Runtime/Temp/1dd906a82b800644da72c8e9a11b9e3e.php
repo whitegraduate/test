@@ -1,3 +1,0 @@
-<?php
-//000000000300a:26:{s:2:"id";s:2:"25";s:3:"uid";s:2:"27";s:9:"carrierid";s:1:"1";s:4:"name";s:27:"蕉城区禾丰商业城店";s:6:"cityid";s:1:"5";s:6:"areaid";s:2:"-1";s:8:"picture1";s:0:"";s:8:"picture2";s:0:"";s:8:"picture3";s:0:"";s:8:"latitude";s:9:"26.667649";s:9:"longitude";s:10:"119.540833";s:3:"tel";s:0:"";s:6:"mobile";s:11:"13950530309";s:7:"address";s:58:"福建省宁德市蕉城区东湖路禾丰商业城130-133";s:5:"intro";s:0:"";s:6:"shopno";s:5:"00020";s:6:"orders";s:1:"0";s:4:"star";s:1:"1";s:6:"status";s:1:"0";s:6:"openid";N;s:10:"wechatname";N;s:9:"shop_type";s:1:"1";s:6:"s_rent";s:1:"0";s:10:"s_maintain";s:1:"1";s:8:"s_repair";s:1:"1";s:6:"s_mall";s:1:"1";}
-?>

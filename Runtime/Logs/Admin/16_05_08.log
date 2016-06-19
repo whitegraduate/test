@@ -1,9 +1,0 @@
-[ 2016-05-08T08:57:15+08:00 ] 121.42.0.35 /admin.php
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
-INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001070s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001593s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
-

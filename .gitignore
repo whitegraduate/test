@@ -1,3 +1,2 @@
 *.jpg
-Runtime/Cache/*.php
-Runtime/Logs/*.log
+Runtime/*

@@ -1,3 +1,0 @@
-<?php
-//000000000300a:26:{s:2:"id";s:2:"29";s:3:"uid";s:2:"29";s:9:"carrierid";s:1:"5";s:4:"name";s:30:"重庆师范涉外商贸学院";s:6:"cityid";s:1:"6";s:6:"areaid";s:1:"4";s:8:"picture1";s:0:"";s:8:"picture2";s:0:"";s:8:"picture3";s:0:"";s:8:"latitude";s:9:"30.004063";s:9:"longitude";s:9:"106.25258";s:3:"tel";s:0:"";s:6:"mobile";s:10:"1502301111";s:7:"address";s:36:"重庆市合川区假日大道126号";s:5:"intro";s:0:"";s:6:"shopno";s:5:"00024";s:6:"orders";s:1:"0";s:4:"star";s:1:"1";s:6:"status";s:1:"0";s:6:"openid";N;s:10:"wechatname";N;s:9:"shop_type";s:1:"1";s:6:"s_rent";s:1:"1";s:10:"s_maintain";s:1:"0";s:8:"s_repair";s:1:"0";s:6:"s_mall";s:1:"0";}
-?>
