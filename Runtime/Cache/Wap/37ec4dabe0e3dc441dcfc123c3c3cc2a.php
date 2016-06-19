@@ -181,22 +181,19 @@ function afterPay() {
 </script>
  <!-- 用于加载js代码 -->
 <script>
-    $(function () {
-        $.get("<?php echo U('Location/getmycity');?>", {},
-            function (data) {
-                if (data != null) {
-                    console.log('1');
-                    $("#spancity").html("(" + data['city'] + ")").show();
-                }
-                else {
-                    console.log('2');
-                    //loc_ser_now();
-                }
-            });
-    });
+    // $(function () {
+    //     $.get("<?php echo U('Location/getmycity');?>", {},
+    //         function (data) {
+    //             if (data != null) {
+    //                 $("#spancity").html("(" + data['city'] + ")").show();
+    //             }
+    //             else {
+    //             }
+    //         });
+    // });
 </script>
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
-<?php echo hook('pageFooter', 'widget');?>
+<!-- <?php echo hook('pageFooter', 'widget');?> -->
 <div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
     
 </div>

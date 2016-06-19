@@ -164,11 +164,11 @@ function newrequestid($type,$openid)
 
 function product_shop($pid){
     $lstShop = explode(',',$pid);
-    $all_shop = M("Shop")->field('uid,name')->select();
+    $all_shop = M("Shop")->field('id,name')->select();
     foreach ($all_shop as $key => $val) {
-    	if(in_array($val['uid'], $lstShop, false)){
+    	if(in_array($val['id'], $lstShop, false)){
     		$shop[$key]['name'] = $val['name'];
-    		$shop[$key]['id'] = $val['uid'];
+    		$shop[$key]['id'] = $val['id'];
     	}
     }
     return $shop;

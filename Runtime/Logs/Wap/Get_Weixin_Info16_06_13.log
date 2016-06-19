@@ -1,3 +1,22 @@
 ERR: Add Fans success!--o97bDvo7d48paFPdeQXDTm3zNDsk
 ERR: Add Fans success!--o97bDviOH4GF94biNeaN_xTbicE0
 ERR: Add Fans success!--o97bDvpEwXbfsbDLxINRLxz_T6dg
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-13 10:37:19 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=ipV69mv-MBHAw1b-8wdIyn-PRX1zBRYnU8d_fZqclKzMFFxqDukleWSLLee7K9SmlOlrWL6ugRf7gHkQwWr6cGrRlS6AHPQ7zRhnKlQfHpfOrEmumrI9vAKtkqLRl1CpOSDeADAUYJ
+ERR: 获取业务失败:  Errcode{"errcode":40037,"errmsg":"invalid template_id hint: [kWvAoA0438ge10]"} TIME：2016-06-13 10:37:19 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=hzYH-HkOMh-uWFZN8yvvqLAlEx03XEVYOjnCr7m2LSzERee7DeBK_1FUEPPMERxA0AtpTwcGvID5qbPv7BbJuxkJS9mirfkDioRX0guUlaB71zTxqrB_cArfT7144_vsCBDbADAHGI
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-13 10:37:19 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=hzYH-HkOMh-uWFZN8yvvqLAlEx03XEVYOjnCr7m2LSzERee7DeBK_1FUEPPMERxA0AtpTwcGvID5qbPv7BbJuxkJS9mirfkDioRX0guUlaB71zTxqrB_cArfT7144_vsCBDbADAHGI
+ERR: 获取业务失败:  Errcode{"errcode":40003,"errmsg":"invalid openid hint: [0438age3]"} TIME：2016-06-13 10:37:19 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=hzYH-HkOMh-uWFZN8yvvqLAlEx03XEVYOjnCr7m2LSxPLSsmG9EbqQwUW0Loqd1L0iEIZKAkMWstfztfDMKFIsj3S_MUMmbqP-VWcAdiDK0Y_kwpolLXk_YSjh2gG1B2FGDbADAXYV
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-13 10:40:14 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=hzYH-HkOMh-uWFZN8yvvqLAlEx03XEVYOjnCr7m2LSxPLSsmG9EbqQwUW0Loqd1L0iEIZKAkMWstfztfDMKFIsj3S_MUMmbqP-VWcAdiDK0Y_kwpolLXk_YSjh2gG1B2FGDbADAXYV
+ERR: 获取业务失败:  Errcode{"errcode":40037,"errmsg":"invalid template_id hint: [8_bXBA0612ge10]"} TIME：2016-06-13 10:40:14 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=z_Vyrocei27Cl3p2YhQZ99jm7-O6tUzgr9Yil9w8WGGrC9SRGJhxQEn5LV5MBTk-POK-dIyf55l_BnvPIDmOFws4vPSmAKKvCSW4LuLvnjcIXWjAFAWLK
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-13 10:40:14 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=z_Vyrocei27Cl3p2YhQZ99jm7-O6tUzgr9Yil9w8WGGrC9SRGJhxQEn5LV5MBTk-POK-dIyf55l_BnvPIDmOFws4vPSmAKKvCSW4LuLvnjcIXWjAFAWLK
+ERR: 获取业务失败:  Errcode{"errcode":40003,"errmsg":"invalid openid hint: [0K0nEa0613ge10]"} TIME：2016-06-13 10:40:14 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=z_Vyrocei27Cl3p2YhQZ99jm7-O6tUzgr9Yil9w8WGHURFgU6K3FCJGEdp2AjMN4sGceIDrZaBGLQfZ0416Xaz3O1jiTBSgJKooOkx73AH0LQSjAFASXZ
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-13 10:48:54 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=z_Vyrocei27Cl3p2YhQZ99jm7-O6tUzgr9Yil9w8WGHURFgU6K3FCJGEdp2AjMN4sGceIDrZaBGLQfZ0416Xaz3O1jiTBSgJKooOkx73AH0LQSjAFASXZ
+ERR: 获取业务失败:  Errcode{"errcode":40037,"errmsg":"invalid template_id hint: [rj_mMA0132ge11]"} TIME：2016-06-13 10:48:54 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=Ei4IW_ca7TrW8fgTC7SN5vsqYf4nV559yo6WA9THQDHAnxTB25WKiFtyhhkKFkP17633mYPF7UvO5jvI39Vbw5PQ_Vkw1M2rEdqkpVtcYKYvDwetovlhfh14mY9qwQ4hKXSdAFANAV
+ERR: 获取业务失败:尝试更换access_token获取  Errcode{ TIME：2016-06-13 10:48:54 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=Ei4IW_ca7TrW8fgTC7SN5vsqYf4nV559yo6WA9THQDHAnxTB25WKiFtyhhkKFkP17633mYPF7UvO5jvI39Vbw5PQ_Vkw1M2rEdqkpVtcYKYvDwetovlhfh14mY9qwQ4hKXSdAFANAV
+ERR: 获取业务失败:  Errcode{"errcode":40003,"errmsg":"invalid openid hint: [K7.u4a0133ge11]"} TIME：2016-06-13 10:48:54 URL:https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=Ei4IW_ca7TrW8fgTC7SN5vsqYf4nV559yo6WA9THQDFJsnx-1YlpxLm6mhnxYFpFEeV9lnEuPy2gx9-xUjlQw5W799FGPhiRcokMQSFfljYZxHTkOlC8QBtcsvkDY-bzEBXdAFAHEA
+ERR: Add Fans success!--o97bDvssikSK9xIudpugSVev0r2w
+ERR: Add Fans success!--o97bDvtiF-2WLRL4VgSDoAdE7Zng
+ERR: Add Fans success!--o97bDvornW1wY_mKRx_MJ6wAAF2E
+ERR: Add Fans success!--o97bDvvx-X_8o2huG9PEUb3rXpfA
+ERR: Add Fans success!--o97bDvnKYR_27Gx5-Ku2Lx6O4VzE
+ERR: Add Fans success!--o97bDvvu37qjpExQBRo8jwDAK61w
+ERR: Add Fans success!--o97bDvsPGxSEy6n_zYUoJmBjyFko

@@ -12,3 +12,21 @@ ERR: 创建了Wechat对象admin
 ERR: 创建了Wechat对象admin
 [ 2016-06-13T08:55:13+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/products.html
 ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:48:17+08:00 ] 60.182.239.134 /admin.php
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:48:19+08:00 ] 60.182.239.134 /admin.php?s=/Service/index.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:48:20+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/products.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:48:23+08:00 ] 60.182.239.134 /admin.php?s=/Maintain/product_edit/id/1.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:48:24+08:00 ] 60.182.239.134 /admin.php?s=/Addons/execute/_addons/Ssq/_controller/Ssq/_action/get_area.html&cityid=1
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:59:23+08:00 ] 60.182.239.134 /admin.php?s=/Fans/index.html
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T10:59:58+08:00 ] 60.182.239.134 /admin.php?s=/Fans/order_confirm
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T11:00:05+08:00 ] 60.182.239.134 /admin.php?s=/Fans/order_comfirm
+ERR: 创建了Wechat对象admin
+[ 2016-06-13T11:00:25+08:00 ] 60.182.239.134 /admin.php?s=/Fans/order_confirm
+ERR: 创建了Wechat对象admin
