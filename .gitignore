@@ -1,3 +1,7 @@
 *.jpg
 Runtime/*
 Uploads/*
+Application/Common/Conf/config.php
+Application/Home/Conf/config.php
+Application/User/Conf/config.php
+Application/Wap/Conf/config.php
