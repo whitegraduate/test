@@ -53,3 +53,27 @@ a{text-decoration:none;}
 .juli{margin-top:15px;}
 
 .ann1{position: fixed;z-index: 20;bottom: 0;width: 100%;height: 40px;text-align: center;line-height: 40px;background: #ff4f51;color: #fff;font-size: 14px;}
+
+/*---------------7.13微信绑定-------------------*/
+.binding{ width:100%;height:auto; background:#fff; float:left;}
+.binding .user_left{ margin:10px 3% 0 5%;  width:22%;height:auto;  overflow:hidden; float:left;}
+.binding .user_left .tup{ padding:2%; width:95%; height:auto; overflow:hidden; border-radius:5px; border:1px solid #dddddd;}
+.binding .user_left .tup img{ width:100%; height:auto; border-radius:5px; overflow:hidden;}
+.binding .center{ margin:10px 10%; width:19%; height:auto; float:left;}
+.binding .center .tup{ width:100%; height:auto;}
+.binding .user_right{ margin:10px 5% 0 3%;  width:22%; float:right;}
+.binding .user_right .tup{ padding:2%; width:95%; height:auto; overflow:hidden; border-radius:5px; border:1px solid #dddddd; float:right;}
+.binding .user_right .tup img{ width:100%; height:auto; border-radius:5px; overflow:hidden;}
+.information{ margin-bottom:20px; width:100%; height:auto; float:left;}
+.information .title{ margin:10px 3%; width:93%; height:auto; line-height:25px; font-size:14px; color:#666; float:left;}
+.information .title span{ color:#ff4f51; font-weight:700;}
+.information .title dl{ color:#000; font-size:18px; font-weight:700;}
+.information .content{ margin:0 3%; width:93.5%; height:auto; line-height:25px; font-size:16px; color:#666; float:left; border:1px solid #dddddd; background:#fff; border-radius:5px;}
+.information .content .user{ margin:10px 5%;width:90%;height:auto; line-height:25px; float:left;}
+.information .content .user p{ font-size:16px; width:100%; height:auto; border:0; color:#666; float:left;}
+.information .content .user span{ margin-right:10px; float:left;}
+.information .content .name{width:100%; height:35px; line-height:35px; overflow:hidden; float:left; border-bottom:1px solid #dddddd;}
+.information .content .name p{ font-size:16px; width:100%; height:35px; border:0; overflow:hidden; color:#ff4f51; text-indent:10px; float:left;}
+.information .content .name span{ width:27%; height:35px; line-height:35px; font-size:12px; text-indent:10px; color:#666; float:left;}
+.information .content .name .kuang{ font-size:12px; width:72%; height:35px; border:0; overflow:hidden; color:#999;  border-radius:5px;}
+.information .ann{ margin:30px 3%; width:93%; height:35px; line-height:35px; font-size:18px; color:#fff; float:left; background:#ff4f51;text-align:center; cursor:pointer; font-size:14px;}

@@ -358,8 +358,9 @@ class MaintainController extends WapController {
                 $shopid = explode(",",$val['shopid']);
                 if(is_array($shopid)){
                     foreach ($shop as $p => $q) {
-                        if(false!==array_search($q['uid'],$shopid,false)){
+                        if(false!==array_search($q['id'],$shopid,false)){
                             $info[$key] = $val;
+                            // $info[$key]['shopid'] = $q['id'];
                             break;
                         }
                     }
