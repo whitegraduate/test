@@ -39,23 +39,21 @@
 var isWxPay = true;
   $(document).ready(function(){
       if($("body").height()<$(window).height()){$("body").height($(window).height());}//用于下拉框全屏可点
-
-	  
   	$(".anniu").click(function(event){
-
-  		if('' == $("#pass").val())
-		{
-			lalert('请输入您的密码');
-			return;
-		}
-        else if('111111' != $("#pass").val())
-        {
-            lalert('密码错误');
+  		if('' == $("#pass").val()){
+  			lalert('请输入您的密码');
+  			return;
+  		}else{
+        var pwd = $('#pass').val();
+        $.post("{:U('check_shop_pwd')}",{pwd:pwd},function(data){
+          if(data=="success"){
+            $("#form1").submit();
+          }else{
+            alert(data);
             return;
-        }
-  		$(this).text('正在提交...');
-  		$(this).unbind( event );
-  		$("#form1").submit();
+          }
+        });
+      }
   	});
   }); 
   

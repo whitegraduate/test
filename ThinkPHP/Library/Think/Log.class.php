@@ -215,4 +215,17 @@ class Log {
             $destination = C('LOG_PATH')."Get_Weixin_Info".date('y_m_d').'.log';
         self::$storage->writeNoTime("{$level}: {$message}", $destination);
     }
+    /**
+     * 创建文件夹的日志
+     * @author Timo  <zhushuliang@seersee.com>
+     */
+    static function my_log($message,$destination='test',$level=self::ERR,$type='') {
+        if(!self::$storage){
+            $type = $type?:C('LOG_TYPE');
+            $class  =   'Think\\Log\\Driver\\'. ucwords($type);
+            self::$storage = new $class();            
+        }
+        $destination = C('LOG_PATH')."/".$destination."/".date('y_m_d').'.log';        
+        self::$storage->write("{$level}: {$message}", $destination);
+    }
 }

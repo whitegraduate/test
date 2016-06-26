@@ -791,6 +791,7 @@ class FansController extends WapController {
 $shop = M('Shop');
 $shop->create();
 $shop->openid = $openid;
+$shop->wechatname = $fans['nickname'];
 $shop->save();
             // 增加积分
             // if (isnew) {
@@ -1380,22 +1381,21 @@ $shop->save();
                 if($order['status'] == 2) {
                     $order['status'] = 4;
                     $money = $order['pay_price'];
-                    log::weixin_info('企业付款准备1,$money='.$money);
                     $money = $money * 0.96;//平台扣点
-                    log::weixin_info('企业付款准备2,$money='.$money);
                     $money = round($money,2);
-                    log::weixin_info('企业付款准备3,$money='.$money);
                     if($money > 0)
                     {
-                        log::weixin_info('开始企业付款');
-                        //结算给商家
-                        //TODO 临时测试openid
-                        //$openid = 'o97bDvrrWNkWALL5YqYFngef0J2Q';//佛
-                        //$openid = 'o97bDvqpPU-PNcQEayRXtvYe9fJY';//猪
-                        $openid = 'o97bDvjEIITkeGk0jSwwTSBCmWt8';//付
+                        Log::my_log("单号:".$_POST['transid']."开始付款");
+                        $shop = M('Shop')->where(array('id'=>$order['shopid']))->find();
+                        if(!$shop['openid']){
+                            $openid = $shop['openid'];
+                        }else{
+                            Log::my_log("订单确认失败，单号：".$_post['transid'],'wx_pay');
+                            $this->error('确认失败');
+                        }
+                        // $openid = 'o97bDvjEIITkeGk0jSwwTSBCmWt8';//付
                         $result = parent::transfer($_POST['transid'],$money * 100,$openid,'结算给商家');
-                        log::weixin_info('企业付款结果');
-                        log::weixin_info(json_encode($result));
+                        log::my_log('付款结果：'.json_encode($result),'wx_pay');
                     }
 
                     M('MaintainOrder')->save($order);
@@ -1468,6 +1468,14 @@ $shop->save();
             $this->wap_title = '订单确认';
             $this->display();
         }
+    }
+    public function check_shop_pwd(){
+      $shop = M('Shop')->where(array('pwd'=>I('post.pwd')))->find();
+      if($shop){
+        $this->ajaxReturn('success');
+      }else{
+        $this->ajaxReturn('密码错误！');
+      }
     }
 
 //todo 函数调用优化
