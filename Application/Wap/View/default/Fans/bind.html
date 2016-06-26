@@ -11,7 +11,7 @@
          <div class="tup"><img src="__IMG__/shou.jpg" width="100%"></div>
      </div>
      <div class="user_right">
-         <div class="tup"><img src="__IMG__/logo.png" width="100%"/></div>
+         <div class="tup"><img src="__IMG__/faigo.png" width="100%"/></div>
      </div>
 </div>
 <div class="information">
@@ -26,9 +26,17 @@
              <span>手机号码：</span> 
              <input name="mobile" type="text" class="kuang" id="mobile" placeholder="如：15485653585" />
           </div>
-          <div class="name" style="display:none;">
-             <span>密    码：</span> 
-             <input name="textfield" type="text" class="kuang" id="textfield" placeholder="如：352655" />
+          <div class="name">
+             <span>门店选选择：</span> 
+             <select name="id" style="width:70%;font-size: 12px;">
+                <volist name="shop" id="vo">
+                 <option value="{$vo.id}">{$vo.name}</option>
+               </volist>
+             </select>
+          </div>
+          <div class="name">
+             <span>交易密码：</span> 
+             <input name="pwd" type="text" class="kuang" id="pwd" placeholder="如：352655" />
           </div>
        </form>
      </div>
@@ -38,16 +46,16 @@
 
 <block name="side"> </block>
 <block name="script">
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$(".ann").click(function(){
-			$("#form1").submit();
-		});
-		
-	});
-	/*	
-	$(function(){
-			var verifyimg = $(".verifyimg").attr("src");
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $(".ann").click(function(){
+      $("#form1").submit();
+    });
+    
+  });
+  /*  
+  $(function(){
+      var verifyimg = $(".verifyimg").attr("src");
             $(".reloadverify").click(function(){
                 if( verifyimg.indexOf('?')>0){
                     $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
@@ -55,7 +63,7 @@
                     $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
                 }
             });
-		});
-	*/
-	</script>
+    });
+  */
+  </script>
 </block>

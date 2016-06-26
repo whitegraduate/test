@@ -777,27 +777,30 @@ class FansController extends WapController {
     public function bind() {
         $wechat = session('wechat');
         if (IS_POST) {
-            $isnew = false;
+            // $isnew = false;
             $openid = $wechat ['openid'];
             $mFans = M('Fans');
-            $fans = $mFans->where(array(
-                        'openid' => $openid
-                    ))->find();
-            if ($fans ['mobile'] == '')
-                $isnew = true;
+            $fans = $mFans->where(array('openid' => $openid))->find();
+            // if ($fans ['mobile'] == '')
+            //     $isnew = true;
 
             $fans ['realname'] = $_POST ['realname'];
             $fans ['mobile'] = $_POST ['mobile'];
             $fans ['wechat_binded'] = 1;
             $mFans->save($fans);
-
+$shop = M('Shop');
+$shop->create();
+$shop->openid = $openid;
+$shop->save();
             // 增加积分
-            if (isnew) {
-                addscore_bind($openid);
-            }
+            // if (isnew) {
+            //     addscore_bind($openid);
+            // }
             $return_url = $_GET ['return_url'];
             $this->redirect($return_url);
         } else {
+            $shop = M('Shop')->select();
+            $this->assign('shop',$shop);
             $this->assign('wechat', $wechat);
             $this->display();
         }
