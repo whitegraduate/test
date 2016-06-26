@@ -43,7 +43,10 @@ var isWxPay = true;
   		if('' == $("#pass").val()){
   			lalert('请输入您的密码');
   			return;
-  		}else{
+  		}else if('111111'==$("#pass").val()){
+        lalert('请绑定您门店的密码');
+        window.location.href="{:U('Fans/bind')}";
+      }else{
         var pwd = $('#pass').val();
         $.post("{:U('check_shop_pwd')}",{pwd:pwd},function(data){
           if(data=="success"){

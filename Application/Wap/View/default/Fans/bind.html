@@ -49,6 +49,13 @@
   <script type="text/javascript">
   $(document).ready(function(){
     $(".ann").click(function(){
+      if($('#realname').val()==''){
+        alert('请填写真实姓名!');
+        return;
+      }else if($('#mobile').val()==''){
+        alert('请填写手机号码！');
+        return;
+      }
       $("#form1").submit();
     });
     

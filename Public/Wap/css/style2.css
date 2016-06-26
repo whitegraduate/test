@@ -77,3 +77,9 @@ a{text-decoration:none;}
 .information .content .name span{ width:27%; height:35px; line-height:35px; font-size:12px; text-indent:10px; color:#666; float:left;}
 .information .content .name .kuang{ font-size:12px; width:72%; height:35px; border:0; overflow:hidden; color:#999;  border-radius:5px;}
 .information .ann{ margin:30px 3%; width:93%; height:35px; line-height:35px; font-size:18px; color:#fff; float:left; background:#ff4f51;text-align:center; cursor:pointer; font-size:14px;}
+
+/*--------跳转--------- */
+.cont{margin-bottom:50px; width:100%; height:auto; float:left;}
+.jump{ padding-top:50px;width:100%; height:auto;}
+.jump .tup { margin:0 auto; width:60px; height:60px; border-radius:60px; }
+.jump p{ padding:20px 10% 10px 10%; line-height:25px; color:#666; font-size:16px; text-align:center;}

@@ -777,28 +777,41 @@ class FansController extends WapController {
     public function bind() {
         $wechat = session('wechat');
         if (IS_POST) {
-            // $isnew = false;
+            //fans bind
             $openid = $wechat ['openid'];
             $mFans = M('Fans');
             $fans = $mFans->where(array('openid' => $openid))->find();
-            // if ($fans ['mobile'] == '')
-            //     $isnew = true;
-
-            $fans ['realname'] = $_POST ['realname'];
-            $fans ['mobile'] = $_POST ['mobile'];
-            $fans ['wechat_binded'] = 1;
-            $mFans->save($fans);
+//shop bind
+$pwd = I('post.pwd');
+if(strlen($pwd)!==6){
+    $this->success('请确认密码长度为6位');
+    exit;
+}
+if(M('Shop')->where(array('pwd'=>$pwd))->find()||$pwd=="111111"){
+    $this->success('该密码已存在');
+    exit;
+}
 $shop = M('Shop');
 $shop->create();
 $shop->openid = $openid;
 $shop->wechatname = $fans['nickname'];
 $shop->save();
+
+            // $isnew = false;
+            // if ($fans ['mobile'] == '')
+            //     $isnew = true;
+            $fans ['realname'] = $_POST ['realname'];
+            $fans ['mobile'] = $_POST ['mobile'];
+            $fans ['wechat_binded'] = 1;
+            $mFans->save($fans);
+
             // 增加积分
             // if (isnew) {
             //     addscore_bind($openid);
             // }
-            $return_url = $_GET ['return_url'];
-            $this->redirect($return_url);
+            // $return_url = $_GET ['return_url'];
+            // $this->redirect($return_url);
+echo '<script type="text/javascript">alert("success!");history.go(-2);</script>';exit;
         } else {
             $shop = M('Shop')->select();
             $this->assign('shop',$shop);
