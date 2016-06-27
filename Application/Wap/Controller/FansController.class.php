@@ -787,6 +787,8 @@ if(strlen($pwd)!==6){
     $this->success('请确认密码长度为6位');
     exit;
 }
+if(M('Shop')->where(array('openid'=>$openid))->find())
+  $this->success("该门店已经被绑定，如需修改请联系管理员");
 if(M('Shop')->where(array('pwd'=>$pwd))->find()||$pwd=="111111"){
     $this->success('该密码已存在');
     exit;
