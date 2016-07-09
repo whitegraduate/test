@@ -538,25 +538,33 @@ class WeixinController extends CommonController {
 
         if($keyword == '关注时回复')
         {
+            //原先的关注回复
+            // $news = array(0=>array(
+            //     'Title' => '司机推荐计划',
+            //     'Description' => '司机推荐计划',
+            //     'PicUrl' => 'http://d.7744go.com/Uploads/Picture/2016-04-24/571c6e1c18d42.png',
+            //     'Url' => 'http://www.baidu.com',
+            // ),
+            //     1=>array(
+            //         'Title' => '优惠券',
+            //         'Description' => '优惠券',
+            //         'PicUrl' => 'http://img.25pp.com/uploadfile/soft/images/2013/0412/20130412104107178.jpg',
+            //         'Url' => 'http://mp.weixin.qq.com/s?__biz=MzIwMDQ5NzM5OQ==&mid=100000003&idx=1&sn=bfd290a2dab7ba665c8a811bff3d06c2#rd',
+            //     ),
+            //     2=>array(
+            //         'Title' => '洗洁一空，洗洗你的空调吧',
+            //         'Description' => '夏天到了，洗洗你的空调吧',
+            //         'PicUrl' => 'http://pic.58pic.com/58pic/13/45/84/77t58PICw7T_1024.jpg',
+            //         'Url' => 'http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html',
+            //     )
+            // );
             $news = array(0=>array(
-                'Title' => '司机推荐计划',
-                'Description' => '司机推荐计划',
-                'PicUrl' => 'http://d.7744go.com/Uploads/Picture/2016-04-24/571c6e1c18d42.png',
-                'Url' => 'http://www.baidu.com',
-            ),
-                1=>array(
-                    'Title' => '优惠券',
-                    'Description' => '优惠券',
-                    'PicUrl' => 'http://img.25pp.com/uploadfile/soft/images/2013/0412/20130412104107178.jpg',
-                    'Url' => 'http://mp.weixin.qq.com/s?__biz=MzIwMDQ5NzM5OQ==&mid=100000003&idx=1&sn=bfd290a2dab7ba665c8a811bff3d06c2#rd',
-                ),
-                2=>array(
-                    'Title' => '洗洁一空，洗洗你的空调吧',
-                    'Description' => '夏天到了，洗洗你的空调吧',
-                    'PicUrl' => 'http://pic.58pic.com/58pic/13/45/84/77t58PICw7T_1024.jpg',
-                    'Url' => 'http://d.7744go.com/wap.php?s=/Maintain/details/pid/16.html',
+                    'Title' => '“险”中求胜',
+                    'Description' => '搜索“凡购”微信公众号参加车辆保险，即可享受多重好礼，让你在车险中脱颖而出！',
+                    'PicUrl' => 'https://mmbiz.qlogo.cn/mmbiz/y6pnAJqEzN4V8rd4IWtMo2YnjZwEKLn9sOiacsZy4y0icUBbAib8aXlNI1FYLJKE1BESYJh5leo1xsS9KQ6mxGic7A/0?wx_fmt=png',
+                    'Url' => 'http://mp.weixin.qq.com/s?__biz=MzIwMDQ5NzM5OQ==&tempkey=D8%2BYYyAhr2hLdW1UaKL%2BxaXF9S%2BUh7RYUyuT3S0Wdwhi3JiClGSZqIQikwMwnl2DLUm6JNa8i8cdz1et9eGSSzsTCuPk88DCUqT2lEV2hKGJYmQNQ%2F%2BkQn3BZMvkgzsPbaf9R6AxH4TRULxCU04OzQ%3D%3D&#rd',
                 )
-            );
+            )
             $this->weObj->news($news)->reply();
         }
     	
