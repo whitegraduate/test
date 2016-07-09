@@ -21,9 +21,10 @@
               <dt></dt>
               <dd>
                   <ul>
-                      <volist id="list" name="lstShop">
-                          <li><a href="#" id="{$list.id}">{$list.name}</a></li>
-                      </volist>
+                          <li><a href="#" id="3">事必达城北车头店(玉壶街118号)</a></li>
+                      <!-- <volist id="list" name="lstShop"> -->
+                          <!-- <li><a href="#" id="{$list.id}">{$list.name}</a></li> -->
+                      <!-- </volist> -->
                   </ul>
               </dd>
           </dl>
@@ -31,8 +32,17 @@
       <else/>
   </if>
   <div class="list">
+  <div class="timo">收货地址：</div>
+      <input type='text' class="input_box" name="addr">
+  </div>
+<div class="list">
+  <div class="timo">手机号码：</div>
+      <input type='text' class="input_box" name="mobile">
+</div>
+  <div class="list">
      <div class="upload">费用<span>{$product.member_price}元</span></div>
   </div>
+
   <input type="hidden" name="shopid" id="shopid" value="{$product.default_shopid}"/>
   <input type="hidden" name="hdcolor" value="{:$_GET['cl']}" />
 <div class="ann">确认下单</div>

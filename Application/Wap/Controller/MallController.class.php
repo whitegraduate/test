@@ -228,7 +228,6 @@ class MallController extends WapController
         foreach($product_attr as $k => $v){
             $productattr[$v['id']]=$v;
             $productattr[$v['id']]['attr'] = explode(",",$v['attrinfo']);
-
         }
         foreach($productattr as $v){
             $attr[$v['id']]['id'] =$_GET['attr_'.$v['id']]-1;
@@ -239,6 +238,8 @@ class MallController extends WapController
             $orderid = neworderid('XC', $this->gOpenId);
             $order['mallid'] = $productid;
             $order['shopid'] = $_POST['shopid'];
+            $order['addr'] = $_POST['addr'];
+            $order['mobile'] = $_POST['mobile'];
             $order['openid'] = $this->gOpenId;
             $order['orderid'] = $orderid;
             $order['is_pay'] = 0;

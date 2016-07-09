@@ -3,7 +3,14 @@
     <link rel="stylesheet" href="/Public/Wap/css/style.css" type="text/css" />
 </block>
 <block name="body">
-
+<div>
+<select id="selector" name="selector" onclick="selector()" value='0'>
+订单类型选择：
+<option value='0'>请选择订单</option>
+  <option value='1'>保养订单</option>
+  <option value='2'>商城订单</option>
+</select>
+</div>
 <div style="margin-top:0;">
   <div  id="myTabContent" class="tab-content">
    <ul role="tabpanel"  class="tab-pane active order" id="home">
@@ -71,6 +78,34 @@
 			var oid = $(this).attr('id');
 			top.location.href = "/wap.php/Fans/remark/flag/BY/oid/"+oid+'.html';
 		});
+    $("#maintain").click(function(){
+      top.location.href='/wap.php?s=/Fans/myorders';
+    });
+    $("#mall").click(function(){
+      top.location.href='/wap.php?s=/Fans/order_mall';
+    });
 	});
+function selector(){
+  var option = $('#selector').val();
+  if(option=='0') return;
+  console.log($('#selector').val());
+  var html='';
+  var time='';
+    $.post('/wap.php?s=/Fans/ajax_order',{option:option},function(data){
+      for (var i = 0; i < data.length; i++) {
+        time = data[i]['create_time'];
+        html +="<li><p>订单号："+data[i]['transid']+"<span>"+data[i]['statusname']+"</span></p><p>下单时间："+data[i]['time1']+"</p><p>门店："+data[i]['shop']+"</p><div class='anniu2'> <a href='/wap.php?Fans/order_maintain_details/id/"+data[i]['id']+"'> <div class='sc_ann'>详情</div></a> ";
+        if(data[i]['status']=='1' || data[i]['status']=='0'){
+          html+="<a href='/wxpay/wap.php?s=/Maintain/pay/oid/"+data[i]['id']+"'><div class='pj_ann'>支付</div></a></li></div>";
+        }else if(data[i]['status']=='2'){
+          html+="<a href='Fans/order_confirm/transid/"+data[i]['transid']+"'><div class='pj_ann'>商家使用</div></a></li></div>";
+        } 
+      }
+      $('#home li').remove();
+      $('#home').append(html);
+      console.log(data);
+    });
+  
+}
 	</script>
 </block>

@@ -61,9 +61,9 @@ class MallController extends AdminController
         
         $this->assign('status',$status);
         //1:维修 2：保养 3：充电 4：租车 5：精品
-        // $list = $this->lists_join('MallOrder',$where,'id desc',true,"left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from gc_remark where service_type=5) as b on a.id=b.oid "); 
-        $join[] = "Left join gc_fans b on a.openid = b.openid";
-        $join[] = "Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from gc_remark where service_type=5) c on a.id=c.oid";
+        // $list = $this->lists_join('MallOrder',$where,'id desc',true,"left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=5) as b on a.id=b.oid "); 
+        $join[] = "Left join fg_fans b on a.openid = b.openid";
+        $join[] = "Left join (select memo,oid,star_total,create_time as memo_time,star_service,star_oper from fg_remark where service_type=5) c on a.id=c.oid";
         $field="a.*,b.id as uid,c.*";
         $list=$this->lists_page("MallOrder",$where,$field,$join,"a.id desc");
         

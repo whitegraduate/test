@@ -97,7 +97,15 @@ class WeixinController extends CommonController {
     			log::weixin_info('订单号为：'.$transid.'支付成功');
     			
     			$orderType = substr($transid, 0, 2);
-                parent::afterpay_maintain($transid);
+                switch ($orderType) {
+                    case 'BY':
+                        parent::afterpay_maintain($transid);
+                        break;
+                    
+                    default:
+                        parent::afterpay_malltain($transid);
+                        break;
+                }
     		}
     		else
     		{
@@ -562,9 +570,9 @@ class WeixinController extends CommonController {
                     'Title' => '“险”中求胜',
                     'Description' => '搜索“凡购”微信公众号参加车辆保险，即可享受多重好礼，让你在车险中脱颖而出！',
                     'PicUrl' => 'https://mmbiz.qlogo.cn/mmbiz/y6pnAJqEzN4V8rd4IWtMo2YnjZwEKLn9sOiacsZy4y0icUBbAib8aXlNI1FYLJKE1BESYJh5leo1xsS9KQ6mxGic7A/0?wx_fmt=png',
-                    'Url' => 'http://mp.weixin.qq.com/s?__biz=MzIwMDQ5NzM5OQ==&tempkey=D8%2BYYyAhr2hLdW1UaKL%2BxaXF9S%2BUh7RYUyuT3S0Wdwhi3JiClGSZqIQikwMwnl2DLUm6JNa8i8cdz1et9eGSSzsTCuPk88DCUqT2lEV2hKGJYmQNQ%2F%2BkQn3BZMvkgzsPbaf9R6AxH4TRULxCU04OzQ%3D%3D&#rd',
+                    'Url' => 'http://mp.weixin.qq.com/s?__biz=MzIwMDQ5NzM5OQ==&mid=2247483662&idx=1&sn=0af86f6e54d11889dfa7e208bb91110f&scene=0#wechat_redirect',
                 )
-            )
+            );
             $this->weObj->news($news)->reply();
         }
     	

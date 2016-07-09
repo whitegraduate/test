@@ -7,15 +7,15 @@
  <ul class="list1" id="myTab" role="tabpanel" style="margin-top:0;">
        <li class="dropdown li_li">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">保养订单<b class="caret"></b></a>
-          <!--
+          
            <ul class="dropdown-menu menu">
-              <li><a class="menu_li" href="{:U('Fans/order_repair')}">维修订单</a></li>
+              <!-- <li><a class="menu_li" href="{:U('Fans/order_repair')}">维修订单</a></li> -->
               <li><a class="menu_li" href="{:U('Fans/order_maintain')}">保养订单</a></li>
-              <li><a class="menu_li" href="{:U('Fans/order_charge')}">充电订单</a></li>
-              <li><a class="menu_li" href="{:U('Fans/order_rent')}">租车订单</a></li>
+              <!-- <li><a class="menu_li" href="{:U('Fans/order_charge')}">充电订单</a></li> -->
+              <!-- <li><a class="menu_li" href="{:U('Fans/order_rent')}">租车订单</a></li> -->
               <li><a class="menu_li" href="{:U('Fans/order_mall')}">精品订单</a></li>
            </ul>
-           -->
+           
         </li>
         <volist name="Think.config.ORDER_STATUS_MAINTAIN" id="type">
 		<li class="li_li <if condition="($_GET['s'] neq '') and ($_GET['s'] eq $key)"> active</if>"><a href="{:U('Fans/order_maintain',array('s'=>$key))}" data-toggle="tabpanel">{$type}</a></li>

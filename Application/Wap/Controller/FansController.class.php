@@ -1400,12 +1400,12 @@ echo '<script type="text/javascript">alert("success!");history.go(-2);</script>'
                     $money = round($money,2);
                     if($money > 0)
                     {
-                        Log::my_log("单号:".$_POST['transid']."开始付款");
+                        Log::my_log("单号:".$_POST['transid']."开始付款",'wx_pay');
                         $shop = M('Shop')->where(array('id'=>$order['shopid']))->find();
-                        if(!$shop['openid']){
+                        if($shop['openid']){
                             $openid = $shop['openid'];
                         }else{
-                            Log::my_log("订单确认失败，单号：".$_post['transid'],'wx_pay');
+                            Log::my_log("订单确认失败，单号：".$_POST['transid'],'wx_pay');
                             $this->error('确认失败');
                         }
                         // $openid = 'o97bDvjEIITkeGk0jSwwTSBCmWt8';//付
@@ -1579,5 +1579,30 @@ echo '<script type="text/javascript">alert("success!");history.go(-2);</script>'
         $post_str = '{"Action":"GPS.GetLocationsFromDatabase","key":"2","Parameters":{"GPSID":"' . $id . '","StartTime":"' . $stime . '","EndTime":"' . $etime . '","OnlySuccessPosition":true},"Sign":"' . $sign . '","Version":"1.0"}';
         return http_post_json("open.lydong.com/svc.ashx", $post_str);
     }
-
+    public function ajax_order(){
+      if(IS_POST){
+        if(I('post.option')==1){
+        $openId = $this->gOpenId;
+        $where ['openid'] = $openId;
+        $mOrder = M('MaintainOrder');
+        $lstOrder = $mOrder->where($where)->field("*,date_format(from_unixtime(create_time),'%Y年%m月%d日%H时%i分') as time1")->order('id desc')->select();
+        foreach ($lstOrder as $k => $v) {
+            $lstOrder [$k] ['statusname'] = get_maintainorder_status($v ['status']);
+            $lstOrder [$k] ['shop'] = get_shop_id($v ['shopid']);
+        }
+      }else{
+        $openId = $this->gOpenId;
+        $where ['openid'] = $openId;
+        $mOrder = M('MallOrder');
+        $lstOrder = $mOrder->where($where)->field("*,date_format(from_unixtime(create_time),'%Y年%m月%d日%H时%i分') as time1,orderid as transid")->order('id desc')->select();
+        foreach ($lstOrder as $k => $v) {
+            $lstOrder [$k] ['statusname'] = get_maintainorder_status($v ['status']);
+            $lstOrder [$k] ['shop'] = get_shop_id($v ['shopid']);
+        }
+      }
+        
+        $this->ajaxReturn($lstOrder);
+      }
+      
+    }
 }
